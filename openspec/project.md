@@ -24,8 +24,12 @@ This project manages email templates for transactional and marketing emails. The
 
 ### Architecture Patterns
 
-- **Template Structure**: Separate template files per email type
-- **Component Reuse**: Shared header/footer components where applicable
+- **Template Structure**: Generic templates with configuration files for variants
+- **Template Variables**: Use `{{variable_name}}` syntax for configurable values
+- **Multi-Language Support**: Language files (`languages/*.json`) contain all translatable text
+- **Language Variables**: Use `{{lang.*}}` prefix for language-specific content
+- **Configuration System**: JSON config files define variant-specific values (colors, addresses, legal text)
+- **Component Reuse**: Single template file supports multiple variants and languages through configuration
 - **Responsive Design**: Mobile-first approach with media queries
 - **Email Client Compatibility**: Test against major clients (Gmail, Outlook, Apple Mail, etc.)
 - **Version Control**: Track template versions and changes
