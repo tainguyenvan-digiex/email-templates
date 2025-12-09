@@ -22,5 +22,6 @@
   "company_address": "48 Rue de la Bienfaisance, 75008 Paris, France",
   "company_address_url": "48+Rue+de+la+Bienfaisance,+75008+Paris,+France",
   "company_registration": "Green Nation, société immatriculée au R.C.S de Paris sous le numéro 953371085, et inscrit au Registre unique des Intermédiaires en Assurance, Banque et Finance sous le numéro d'immatriculation 23007580 en qualité de Mandataire non exclusif en opérations de banque et en services de paiement.",
-  "legal_text": "Cette carte Visa est émise par UAB StanHope en vertu d'une licence accordée par VISA Europe Limited. UAB Stanhope est agréée et réglementée par la Banque de Lituanie en tant qu'établissement de monnaie électronique en vertu de la loi de la République de Lituanie sur la monnaie électronique et les établissements de monnaie électronique pour l'émission de monnaie électronique (AC : LB002039)."
+  "legal_text": "Cette carte Visa est émise par UAB StanHope en vertu d'une licence accordée par VISA Europe Limited. UAB Stanhope est agréée et réglementée par la Banque de Lituanie en tant qu'établissement de monnaie électronique en vertu de la loi de la République de Lituanie sur la monnaie électronique et les établissements de monnaie électronique pour l'émission de monnaie électronique (AC : LB002039).",
+  "chatbox_image_url": "https://raw.githubusercontent.com/tainguyenvan-digiex/email-templates/main/assets/chatbox_fr.png"
 }

@@ -19,8 +19,9 @@
   "social_hashtags_part2": "AND ABOVE ALL... EXCLUSIVE",
   "social_hashtags_part3": "INFO!",
   "footer_unsubscribe_link_text": "To unsubscribe, click here.",
-  "company_address": "[European Address - To be updated]",
-  "company_address_url": "[European+Address+URL+-+To+be+updated]",
+  "company_address": "48 Rue de la Bienfaisance, 75008 Paris, France",
+  "company_address_url": "48+Rue+de+la+Bienfaisance,+75008+Paris,+France",
   "company_registration": "[European B2C registration text - To be updated]",
-  "legal_text": "[European legal text - To be updated]"
+  "legal_text": "[European legal text - To be updated]",
+  "chatbox_image_url": "https://raw.githubusercontent.com/tainguyenvan-digiex/email-templates/main/assets/chatbox_en.png"
 }
