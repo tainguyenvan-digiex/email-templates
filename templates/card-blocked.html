@@ -188,12 +188,8 @@
             <tr>
               <td
                 style="
-                  background-color: #3651f3;
-                  background: linear-gradient(
-                    181deg,
-                    #3651f3 -4.19%,
-                    rgba(255, 255, 255, 0) 65.81%
-                  );
+                  background-color: {{primary_color}};
+                  background: {{header_gradient}};
                   padding: 0;
                 "
               >
@@ -246,12 +242,13 @@
                         style="
                           margin: 0;
                           font-family: 'Poppins', Arial, sans-serif;
-                          font-size: 32px;
+                          font-size: 28px;
                           font-weight: 700;
-                          line-height: 44px;
+                          line-height: 30px;
                           text-align: center;
                           text-transform: uppercase;
                           letter-spacing: 0.5px;
+                          text-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
                         "
                       >
                         <span style="color: #000000">{{heading_part1}} </span
@@ -421,9 +418,9 @@
                         style="
                           margin: 0;
                           font-family: 'Poppins', Arial, sans-serif;
-                          font-size: 28px;
+                          font-size: 26px;
                           font-weight: 700;
-                          line-height: 36px;
+                          line-height: 34px;
                           color: #000000;
                           text-align: center;
                         "
@@ -760,9 +757,9 @@
                               style="
                                 margin: 0;
                                 font-family: 'Poppins', Arial, sans-serif;
-                                font-size: 11px;
+                                font-size: 8px;
                                 font-weight: 500;
-                                line-height: 14px;
+                                line-height: 12px;
                                 color: #ffffff;
                                 text-align: center;
                               "
@@ -772,35 +769,73 @@
                           </td>
                         </tr>
 
-                        <!-- Legal Text -->
+                        <!-- Company Registration Part 1 -->
                         <tr>
-                          <td align="center" style="padding: 0 0 10px 0">
+                          <td align="center" style="padding: 0">
                             <p
                               class="footer-text"
                               style="
                                 margin: 0;
                                 font-family: 'Poppins', Arial, sans-serif;
-                                font-size: 10px;
+                                font-size: 8px;
+                                font-weight: 400;
+                                line-height: 12px;
+                                color: #ffffff;
+                                text-align: center;
+                              "
+                            >
+                              {{company_registration_part1}}
+                            </p>
+                          </td>
+                        </tr>
+                        <!-- Company Registration Part 2 -->
+                        <tr>
+                          <td align="center" style="padding: 0">
+                            <p
+                              class="footer-text"
+                              style="
+                                margin: 0;
+                                font-family: 'Poppins', Arial, sans-serif;
+                                font-size: 8px;
                                 font-weight: 400;
                                 line-height: 14px;
                                 color: #ffffff;
                                 text-align: center;
                               "
                             >
-                              {{company_registration}}
+                              {{company_registration_part2}}
                             </p>
                           </td>
                         </tr>
+                        <!-- Company Registration Part 3 -->
                         <tr>
-                          <td align="center" style="padding: 0 0 10px 0">
+                          <td align="center" style="padding: 0">
                             <p
                               class="footer-text"
                               style="
                                 margin: 0;
                                 font-family: 'Poppins', Arial, sans-serif;
-                                font-size: 10px;
+                                font-size: 8px;
                                 font-weight: 400;
-                                line-height: 14px;
+                                line-height: 12px;
+                                color: #ffffff;
+                                text-align: center;
+                              "
+                            >
+                              {{company_registration_part3}}
+                            </p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center" style="padding: 10px 0">
+                            <p
+                              class="footer-text"
+                              style="
+                                margin: 0;
+                                font-family: 'Poppins', Arial, sans-serif;
+                                font-size: 8px;
+                                font-weight: 400;
+                                line-height: 12px;
                                 color: #ffffff;
                                 text-align: center;
                               "
@@ -836,9 +871,9 @@
                         style="
                           margin: 0;
                           font-family: 'Poppins', Arial, sans-serif;
-                          font-size: 16px;
+                          font-size: 14px;
                           font-weight: 500;
-                          line-height: 22px;
+                          line-height: 20px;
                           color: #000000;
                           text-align: center;
                         "
@@ -859,9 +894,9 @@
                         style="
                           margin: 0;
                           font-family: 'Poppins', Arial, sans-serif;
-                          font-size: 16px;
+                          font-size: 14px;
                           font-weight: 500;
-                          line-height: 22px;
+                          line-height: 20px;
                           color: #000000;
                           text-align: center;
                         "
@@ -881,9 +916,9 @@
                         style="
                           margin: 0;
                           font-family: 'Poppins', Arial, sans-serif;
-                          font-size: 16px;
+                          font-size: 14px;
                           font-weight: 500;
-                          line-height: 22px;
+                          line-height: 20px;
                           color: #000000;
                           text-align: center;
                         "
@@ -892,7 +927,7 @@
                         <a
                           href="https://maps.google.com/?q={{company_address_url}}"
                           target="_blank"
-                          style="color: {{primary_color}}; text-decoration: underline"
+                          style="color: #3651f3; text-decoration: underline"
                           >{{company_address}}</a
                         >
                       </p>
