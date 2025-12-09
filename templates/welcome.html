@@ -272,35 +272,23 @@
                   <!-- Greeting and Account Active Message -->
                   <tr>
                     <td
-                      style="padding: 0 40px 30px 40px"
+                      style="padding: 0 40px 20px 40px"
                       class="mobile-padding"
                     >
                       <p
                         style="
-                          margin: 0 0 16px 0;
-                          font-family: 'Poppins', Arial, sans-serif;
-                          font-size: 20px;
-                          font-weight: 500;
-                          line-height: 28px;
-                          color: #000000;
-                          text-align: center;
-                        "
-                        class="body-text"
-                      >
-                        {{greeting}} {{first_name}},
-                      </p>
-                      <p
-                        style="
                           margin: 0;
                           font-family: 'Poppins', Arial, sans-serif;
-                          font-size: 18px;
-                          font-weight: 400;
-                          line-height: 28px;
+                          font-size: 16px;
+                          font-weight: 500;
+                          line-height: 20px;
                           color: #000000;
                           text-align: center;
+                          letter-spacing: -0.32px;
                         "
                         class="body-text"
                       >
+                        {{greeting}} {{first_name}},<br />
                         {{account_active_message}}
                       </p>
                     </td>
@@ -309,7 +297,7 @@
                   <tr>
                     <td
                       align="center"
-                      style="padding: 0 40px 30px 40px"
+                      style="padding: 0 40px 20px 40px"
                       class="mobile-padding"
                     >
                       <table
@@ -328,8 +316,7 @@
                                 ),
                                 #3651f3;
                               border-radius: 12px;
-                              padding: 12px 24px;
-                              width: 300px;
+                              padding: 4px 40px;
                             "
                           >
                             <a
@@ -355,12 +342,12 @@
                     <td
                       style="
                         background-image: linear-gradient(
-                            180deg,
-                            rgba(255, 255, 255, 0.6) 60.41%,
+                            0deg,
+                            rgba(255, 255, 255, 0.7) 31%,
                             rgba(255, 255, 255, 0) 91.78%
                           ),
-                          url({{iphone_image_url}});
-                        background-position: center 75%, center 1%;
+                          url(https://raw.githubusercontent.com/tainguyenvan-digiex/email-templates/main/assets/iphone.png);
+                        background-position: center 100%, center 1%;
                         background-size: 100% 50%, 50%;
                         background-repeat: no-repeat, no-repeat;
                         height: 300px;
@@ -431,28 +418,34 @@
                             >
                               <tr>
                                 <td align="center" style="padding-bottom: 16px">
-                                  <div
-                                    class="feature-icon"
+                                  <table
+                                    role="presentation"
+                                    cellspacing="0"
+                                    cellpadding="0"
+                                    border="0"
                                     style="
-                                      width: 80px;
-                                      height: 80px;
-                                      background-color: #43e8b3;
+                                      width: 60px;
+                                      height: 60px;
+                                      background: {{feature_icon_background}};
                                       border-radius: 50%;
-                                      display: inline-block;
-                                      text-align: center;
-                                      line-height: 80px;
+                                      margin: 0 auto;
                                     "
                                   >
-                                    <img
-                                      src="../assets/globe.png"
-                                      alt=""
-                                      width="40"
-                                      style="
-                                        display: inline-block;
-                                        vertical-align: middle;
-                                      "
-                                    />
-                                  </div>
+                                    <tr>
+                                      <td
+                                        align="center"
+                                        valign="middle"
+                                        style="padding: 16px 0"
+                                      >
+                                        <img
+                                          src="{{feature_1_icon_url}}"
+                                          alt=""
+                                          width="28"
+                                          style="display: block"
+                                        />
+                                      </td>
+                                    </tr>
+                                  </table>
                                 </td>
                               </tr>
                               <tr>
@@ -462,7 +455,7 @@
                                     style="
                                       margin: 0 0 8px 0;
                                       font-family: 'Poppins', Arial, sans-serif;
-                                      font-size: 18px;
+                                      font-size: 16px;
                                       font-weight: 600;
                                       line-height: 24px;
                                       color: #000000;
@@ -476,10 +469,10 @@
                                     style="
                                       margin: 0;
                                       font-family: 'Poppins', Arial, sans-serif;
-                                      font-size: 14px;
+                                      font-size: 12px;
                                       font-weight: 400;
-                                      line-height: 20px;
-                                      color: #333333;
+                                      line-height: 16px;
+                                      color: #000000;
                                       text-align: center;
                                     "
                                   >
@@ -505,28 +498,34 @@
                             >
                               <tr>
                                 <td align="center" style="padding-bottom: 16px">
-                                  <div
-                                    class="feature-icon"
+                                  <table
+                                    role="presentation"
+                                    cellspacing="0"
+                                    cellpadding="0"
+                                    border="0"
                                     style="
-                                      width: 80px;
-                                      height: 80px;
-                                      background-color: #43e8b3;
+                                      width: 60px;
+                                      height: 60px;
+                                      background: {{feature_icon_background}};
                                       border-radius: 50%;
-                                      display: inline-block;
-                                      text-align: center;
-                                      line-height: 80px;
+                                      margin: 0 auto;
                                     "
                                   >
-                                    <img
-                                      src="../assets/coins.png"
-                                      alt=""
-                                      width="40"
-                                      style="
-                                        display: inline-block;
-                                        vertical-align: middle;
-                                      "
-                                    />
-                                  </div>
+                                    <tr>
+                                      <td
+                                        align="center"
+                                        valign="middle"
+                                        style="padding: 16px 0"
+                                      >
+                                        <img
+                                          src="{{feature_2_icon_url}}"
+                                          alt=""
+                                          width="28"
+                                          style="display: block"
+                                        />
+                                      </td>
+                                    </tr>
+                                  </table>
                                 </td>
                               </tr>
                               <tr>
@@ -536,7 +535,7 @@
                                     style="
                                       margin: 0 0 8px 0;
                                       font-family: 'Poppins', Arial, sans-serif;
-                                      font-size: 18px;
+                                      font-size: 16px;
                                       font-weight: 600;
                                       line-height: 24px;
                                       color: #000000;
@@ -550,10 +549,10 @@
                                     style="
                                       margin: 0;
                                       font-family: 'Poppins', Arial, sans-serif;
-                                      font-size: 14px;
+                                      font-size: 12px;
                                       font-weight: 400;
-                                      line-height: 20px;
-                                      color: #333333;
+                                      line-height: 16px;
+                                      color: #000000;
                                       text-align: center;
                                     "
                                   >
@@ -594,28 +593,34 @@
                             >
                               <tr>
                                 <td align="center" style="padding-bottom: 16px">
-                                  <div
-                                    class="feature-icon"
+                                  <table
+                                    role="presentation"
+                                    cellspacing="0"
+                                    cellpadding="0"
+                                    border="0"
                                     style="
-                                      width: 80px;
-                                      height: 80px;
-                                      background-color: #43e8b3;
+                                      width: 60px;
+                                      height: 60px;
+                                      background: {{feature_icon_background}};
                                       border-radius: 50%;
-                                      display: inline-block;
-                                      text-align: center;
-                                      line-height: 80px;
+                                      margin: 0 auto;
                                     "
                                   >
-                                    <img
-                                      src="../assets/card.png"
-                                      alt=""
-                                      width="40"
-                                      style="
-                                        display: inline-block;
-                                        vertical-align: middle;
-                                      "
-                                    />
-                                  </div>
+                                    <tr>
+                                      <td
+                                        align="center"
+                                        valign="middle"
+                                        style="padding: 16px 0"
+                                      >
+                                        <img
+                                          src="{{feature_3_icon_url}}"
+                                          alt=""
+                                          width="28"
+                                          style="display: block"
+                                        />
+                                      </td>
+                                    </tr>
+                                  </table>
                                 </td>
                               </tr>
                               <tr>
@@ -625,7 +630,7 @@
                                     style="
                                       margin: 0 0 8px 0;
                                       font-family: 'Poppins', Arial, sans-serif;
-                                      font-size: 18px;
+                                      font-size: 16px;
                                       font-weight: 600;
                                       line-height: 24px;
                                       color: #000000;
@@ -639,10 +644,10 @@
                                     style="
                                       margin: 0;
                                       font-family: 'Poppins', Arial, sans-serif;
-                                      font-size: 14px;
+                                      font-size: 12px;
                                       font-weight: 400;
-                                      line-height: 20px;
-                                      color: #333333;
+                                      line-height: 16px;
+                                      color: #000000;
                                       text-align: center;
                                     "
                                   >
@@ -668,28 +673,34 @@
                             >
                               <tr>
                                 <td align="center" style="padding-bottom: 16px">
-                                  <div
-                                    class="feature-icon"
+                                  <table
+                                    role="presentation"
+                                    cellspacing="0"
+                                    cellpadding="0"
+                                    border="0"
                                     style="
-                                      width: 80px;
-                                      height: 80px;
-                                      background-color: #43e8b3;
+                                      width: 60px;
+                                      height: 60px;
+                                      background: {{feature_icon_background}};
                                       border-radius: 50%;
-                                      display: inline-block;
-                                      text-align: center;
-                                      line-height: 80px;
+                                      margin: 0 auto;
                                     "
                                   >
-                                    <img
-                                      src="../assets/spending.png"
-                                      alt=""
-                                      width="40"
-                                      style="
-                                        display: inline-block;
-                                        vertical-align: middle;
-                                      "
-                                    />
-                                  </div>
+                                    <tr>
+                                      <td
+                                        align="center"
+                                        valign="middle"
+                                        style="padding: 16px 0"
+                                      >
+                                        <img
+                                          src="{{feature_4_icon_url}}"
+                                          alt=""
+                                          width="28"
+                                          style="display: block"
+                                        />
+                                      </td>
+                                    </tr>
+                                  </table>
                                 </td>
                               </tr>
                               <tr>
@@ -699,7 +710,7 @@
                                     style="
                                       margin: 0 0 8px 0;
                                       font-family: 'Poppins', Arial, sans-serif;
-                                      font-size: 18px;
+                                      font-size: 16px;
                                       font-weight: 600;
                                       line-height: 24px;
                                       color: #000000;
@@ -713,10 +724,10 @@
                                     style="
                                       margin: 0;
                                       font-family: 'Poppins', Arial, sans-serif;
-                                      font-size: 14px;
+                                      font-size: 12px;
                                       font-weight: 400;
-                                      line-height: 20px;
-                                      color: #333333;
+                                      line-height: 16px;
+                                      color: #000000;
                                       text-align: center;
                                     "
                                   >
@@ -791,7 +802,7 @@
                       style="padding-right: 20px"
                     >
                       <img
-                        src="{{personalized_support_image_url}}"
+                        src="https://raw.githubusercontent.com/tainguyenvan-digiex/email-templates/main/assets/personalized-support.png"
                         alt="Personalized support"
                         width="100%"
                         style="display: block; max-width: 100%; height: auto"
@@ -813,14 +824,14 @@
                       >
                         <!-- Section Title -->
                         <tr>
-                          <td style="padding-bottom: 24px">
+                          <td style="padding-bottom: 8px">
                             <h2
                               style="
                                 margin: 0;
                                 font-family: 'Poppins', Arial, sans-serif;
-                                font-size: 24px;
+                                font-size: 22px;
                                 font-weight: 700;
-                                line-height: 32px;
+                                line-height: 28px;
                                 color: #000000;
                               "
                             >
@@ -830,61 +841,21 @@
                         </tr>
                         <!-- Support Description -->
                         <tr>
-                          <td style="padding-bottom: 24px">
+                          <td style="padding-bottom: 16px">
                             <p
                               style="
                                 margin: 0;
                                 font-family: 'Poppins', Arial, sans-serif;
-                                font-size: 16px;
+                                font-size: 13px;
                                 font-weight: 400;
-                                line-height: 26px;
-                                color: #333333;
+                                color: #000000;
                               "
                               class="body-text"
                             >
-                              {{support_description}}
+                              {{support_description_part1}}
+                              <b>{{support_description_bold}}</b>
+                              {{support_description_part2}}
                             </p>
-                          </td>
-                        </tr>
-                        <!-- Chat Button -->
-                        <tr>
-                          <td>
-                            <table
-                              role="presentation"
-                              cellspacing="0"
-                              cellpadding="0"
-                              border="0"
-                            >
-                              <tr>
-                                <td
-                                  style="
-                                    background: linear-gradient(
-                                      90deg,
-                                      #3651f3 0%,
-                                      #3c9dd3 50%,
-                                      #43e8b3 100%
-                                    );
-                                    border-radius: 30px;
-                                    padding: 14px 32px;
-                                  "
-                                >
-                                  <a
-                                    href="{{chat_url}}"
-                                    style="
-                                      font-family: 'Poppins', Arial, sans-serif;
-                                      font-size: 16px;
-                                      font-weight: 500;
-                                      color: #ffffff;
-                                      text-decoration: none;
-                                      display: inline-block;
-                                    "
-                                    class="cta-button"
-                                  >
-                                    {{chat_button_text}}
-                                  </a>
-                                </td>
-                              </tr>
-                            </table>
                           </td>
                         </tr>
                       </table>
@@ -921,14 +892,14 @@
                       >
                         <!-- Section Title -->
                         <tr>
-                          <td style="padding-bottom: 24px">
+                          <td style="padding-bottom: 8px">
                             <h2
                               style="
                                 margin: 0;
                                 font-family: 'Poppins', Arial, sans-serif;
-                                font-size: 24px;
+                                font-size: 22px;
                                 font-weight: 700;
-                                line-height: 32px;
+                                line-height: 28px;
                                 color: #000000;
                               "
                             >
@@ -943,32 +914,19 @@
                               style="
                                 margin: 0;
                                 font-family: 'Poppins', Arial, sans-serif;
-                                font-size: 16px;
+                                font-size: 13px;
                                 font-weight: 400;
-                                line-height: 26px;
-                                color: #333333;
-                              "
-                              class="body-text"
-                            >
-                              {{impact_description}}
-                            </p>
-                          </td>
-                        </tr>
-                        <!-- Partnership Text -->
-                        <tr>
-                          <td>
-                            <p
-                              style="
-                                margin: 0;
-                                font-family: 'Poppins', Arial, sans-serif;
-                                font-size: 16px;
-                                font-weight: 500;
-                                line-height: 26px;
                                 color: #000000;
                               "
                               class="body-text"
                             >
-                              {{partnership_text}}
+                              {{impact_description_part1}}
+                              <b>{{impact_description_bold1}}</b>
+                              {{impact_description_part2}}
+                              <b>{{impact_description_bold2}}</b
+                              ><br /><br />{{impact_description_part3}}
+                              <b>{{impact_description_bold3}}</b>
+                              {{impact_description_part4}}
                             </p>
                           </td>
                         </tr>
@@ -982,7 +940,7 @@
                       style="padding-left: 20px"
                     >
                       <img
-                        src="{{carbon_offset_image_url}}"
+                        src="https://raw.githubusercontent.com/tainguyenvan-digiex/email-templates/main/assets/carbon-offset.png"
                         alt="Carbon offset"
                         width="100%"
                         style="display: block; max-width: 100%; height: auto"
@@ -995,10 +953,7 @@
 
             <!-- ========== NEED ASSISTANCE SECTION ========== -->
             <tr>
-              <td
-                style="padding: 50px 40px; background-color: #f8faf9"
-                class="mobile-padding"
-              >
+              <td style="padding: 50px 40px" class="mobile-padding">
                 <table
                   role="presentation"
                   cellspacing="0"
@@ -1032,9 +987,9 @@
                         style="
                           margin: 0;
                           font-family: 'Poppins', Arial, sans-serif;
-                          font-size: 16px;
-                          font-weight: 400;
-                          color: #333333;
+                          font-size: 14px;
+                          font-weight: 600;
+                          color: #000;
                           text-align: center;
                         "
                       >
@@ -1055,15 +1010,15 @@
                           <td
                             style="
                               background-color: #3651f3;
-                              border-radius: 20px;
-                              padding: 14px 32px;
+                              border-radius: 12px;
+                              padding: 8px 32px;
                             "
                           >
                             <a
                               href="{{book_call_url}}"
                               style="
                                 font-family: 'Poppins', Arial, sans-serif;
-                                font-size: 16px;
+                                font-size: 14px;
                                 font-weight: 600;
                                 color: #ffffff;
                                 text-decoration: none;
@@ -1115,9 +1070,9 @@
                         style="
                           margin: 0;
                           font-family: 'Poppins', Arial, sans-serif;
-                          font-size: 16px;
-                          font-weight: 400;
-                          color: #333333;
+                          font-size: 14px;
+                          font-weight: 600;
+                          color: #000;
                           text-align: center;
                         "
                       >
@@ -1138,15 +1093,15 @@
                           <td
                             style="
                               background-color: #3651f3;
-                              border-radius: 20px;
-                              padding: 14px 32px;
+                              border-radius: 12px;
+                              padding: 8px 32px;
                             "
                           >
                             <a
                               href="{{faq_url}}"
                               style="
                                 font-family: 'Poppins', Arial, sans-serif;
-                                font-size: 16px;
+                                font-size: 14px;
                                 font-weight: 600;
                                 color: #ffffff;
                                 text-decoration: none;
@@ -1198,15 +1153,16 @@
                         style="
                           margin: 0;
                           font-family: 'Poppins', Arial, sans-serif;
-                          font-size: 18px;
+                          font-size: 14px;
                           font-weight: 500;
-                          line-height: 28px;
+                          line-height: 24px;
                           color: #000000;
                           text-align: center;
                         "
                         class="body-text"
                       >
-                        {{signoff}}
+                        {{signoff_part1}}<br />
+                        {{signoff_part2}}
                       </p>
                     </td>
                   </tr>
