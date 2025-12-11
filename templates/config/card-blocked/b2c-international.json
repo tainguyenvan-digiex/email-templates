@@ -2,8 +2,6 @@
   "lang_code": "en",
   "header_gradient": "linear-gradient(181deg, #2CCA97 -4.19%, rgba(255, 255, 255, 0) 65.81%)",
   "primary_color": "#2CCA97",
-  "first_name": "Tai Van",
-  "card_last_four": "1234",
   "title": "Your card has been blocked - Green Nation",
   "preheader": "⚠️ Your Green Nation card has been blocked. Verify your account immediately if you did not initiate this action.",
   "heading_part1": "YOUR CARD",
@@ -20,12 +18,16 @@
   "social_hashtags_part2": "AND ABOVE ALL... ",
   "social_hashtags_part3": "EXCLUSIVE UPDATES!",
   "footer_unsubscribe_link_text": "To unsubscribe, click here.",
-  "unsubscribe_url": "",
   "company_address": "205 – 50 Lonsdale Ave #2630, Vancouver, BC V6M 2E6, Canada.",
-  "company_address_url": "205+%E2%80%93+50+Lonsdale+Ave+%232630,+Vancouver,+BC+V6M+2E6,+Canada",
   "company_registration_part1": "Green Nation is a trademark of Lapki Digital Pay Inc.",
   "company_registration_part2": "Lapki Digital Pay Inc. is a registered Money Services Business (MSB) located at 205 – 50 Lonsdale Ave #2630, Vancouver, BC V6M 2E6, Canada.",
   "company_registration_part3": "We are registered with FINTRAC under registration number C100000671.",
   "legal_text": "",
-  "chatbox_image_url": "https://raw.githubusercontent.com/tainguyenvan-digiex/email-templates/main/assets/chatbox_en.png"
+  "sent_to_text": "Sent to:",
+  "recipient_email": "c.garreau@greennation.green",
+  "company_address_url": "205+%E2%80%93+50+Lonsdale+Ave+%232630,+Vancouver,+BC+V6M+2E6,+Canada",
+  "chatbox_image_url": "https://raw.githubusercontent.com/tainguyenvan-digiex/email-templates/main/assets/chatbox_en.png",
+  "unsubscribe_url": "",
+  "first_name": "Tai Van",
+  "card_last_four": "1234"
 }
