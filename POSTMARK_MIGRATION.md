@@ -176,7 +176,7 @@ The following fields are **always provided by the server** at runtime and should
 ### Image URLs
 
 All image URLs are hosted on GitHub Raw Content CDN:
-- Base URL: `https://raw.githubusercontent.com/tainguyenvan-digiex/email-templates/main/assets/`
+- Base URL: `https://referral-dev.greennation.green/b2b/emails/assets/`
 - See `POSTMARK_MIGRATION.md` (this file) for complete list of image URLs
 
 ### Template Variables Order
