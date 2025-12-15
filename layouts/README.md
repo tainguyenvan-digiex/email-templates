@@ -24,7 +24,7 @@ The layout requires the following template variables to be provided:
 
 ### Footer Variables
 
-- `{{chatbox_image_url}}` - URL to chatbox/automated email notice image
+- Chatbox image URL is automatically generated from `lang_code`: `https://referral-dev.greennation.green/b2b/emails/assets/chatbox_{{lang_code}}.png`
 - `{{company_registration_part1}}` - First line of company registration
 - `{{company_registration_part2}}` - Second line of company registration
 - `{{company_registration_part3}}` - Third line of company registration

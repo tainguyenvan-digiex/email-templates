@@ -1,0 +1,113 @@
+<!-- 
+  Card Blocked Content (v2) - For use with card-blocked-layout.html
+  
+  This content file is designed to work with the card-blocked-layout.html layout.
+  It only contains the card-specific body content (card information and security message).
+  
+  The layout provides: logo, heading, greeting, social media promotion, footer, and unsubscribe sections.
+-->
+
+<!-- Card Information -->
+<tr>
+  <td style="padding: 0 40px 20px 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 20px 0 0">
+          <p
+            style="
+              margin: 0 0 16px 0;
+              font-family: 'Poppins', Arial, sans-serif;
+              font-size: 22px;
+              font-weight: 500;
+              line-height: 28px;
+              color: #000000;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            {{card_info_prefix}}
+          </p>
+          <p
+            style="
+              margin: 0 0 16px 0;
+              font-family: 'Poppins', Arial, sans-serif;
+              font-size: 24px;
+              font-weight: 700;
+              color: #000000;
+              text-align: center;
+            "
+            class="card-number"
+          >
+            {{card_last_four}}
+          </p>
+          <p
+            style="
+              margin: 0;
+              font-family: 'Poppins', Arial, sans-serif;
+              font-size: 22px;
+              font-weight: 500;
+              line-height: 28px;
+              color: #000000;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            {{card_info_suffix}}
+          </p>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<!-- Security Message -->
+<tr>
+  <td style="padding: 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 0">
+          <p
+            style="
+              margin: 0 0 20px 0;
+              font-family: 'Poppins', Arial, sans-serif;
+              font-size: 22px;
+              font-weight: 500;
+              line-height: 30px;
+              color: #000000;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            {{security_warning}}
+          </p>
+          <p
+            style="
+              margin: 0;
+              font-family: 'Poppins', Arial, sans-serif;
+              font-size: 22px;
+              font-weight: 500;
+              line-height: 28px;
+              color: #000000;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            {{security_signature}}
+          </p>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>

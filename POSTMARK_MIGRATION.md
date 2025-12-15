@@ -6,23 +6,46 @@ This document provides instructions for the backend team on how to use the new P
 
 Email templates have been restructured to use a **common layout** in Postmark, which centralizes shared components (footer, unsubscribe section, CSS) and reduces duplication.
 
-## Layout
+## Layouts
+
+There are two layouts available, depending on the email type:
+
+### 1. Common Layout
 
 **Layout Name:** `green-nation-common-layout`
 
 This layout contains:
+
 - Common CSS styles (reset, responsive, utility classes)
 - Footer section (wave decoration, logo, chatbox, social icons, copyright, company registration, legal text)
 - Unsubscribe section (sent to email, unsubscribe link, company address)
+
+**Use for:** Welcome emails and general communications.
+
+### 2. Card Blocked Layout
+
+**Layout Name:** `card-blocked-layout`
+
+This layout contains everything in the common layout, plus:
+
+- Logo row (Green Nation logo, top-right placement)
+- Header section with gradient background
+- Heading section (multipart with emoji)
+- Greeting section
+- Social Media Promotion section
+
+**Use for:** Card blocked notifications, suspicious login alerts, security warnings, and other account-related security notifications.
+
+See `layouts/README-card-blocked-layout.md` for detailed documentation.
 
 ## Template Mappings
 
 ### Old Template Names → New Template Names
 
-| Old Template Name | New Template Name | Description |
-|-------------------|-------------------|-------------|
-| `gn-b2b-onboarding-completed-en` | `welcome-email` | Welcome email template (account activation) |
-| `gn-b2b-card-blocked-en` | `card-block-email` | Card blocked notification email |
+| Old Template Name                | New Template Name  | Description                                 |
+| -------------------------------- | ------------------ | ------------------------------------------- |
+| `gn-b2b-onboarding-completed-en` | `welcome-email`    | Welcome email template (account activation) |
+| `gn-b2b-card-blocked-en`         | `card-block-email` | Card blocked notification email             |
 
 ## Using the Templates
 
@@ -61,18 +84,20 @@ or
 All templates require these variables for the layout:
 
 #### Page Metadata
+
 - `lang_code` - Language code (e.g., "en", "fr")
 - `title` - Email subject line
 - `preheader` - Hidden preview text
 
 #### Footer Variables
-- `chatbox_image_url` - URL to chatbox/automated email notice image
+
 - `company_registration_part1` - First line of company registration
 - `company_registration_part2` - Second line of company registration
 - `company_registration_part3` - Third line of company registration
 - `legal_text` - Legal disclaimer text
 
 #### Unsubscribe Variables
+
 - `sent_to_text` - Text before recipient email (e.g., "Sent to:")
 - `recipient_email` - Recipient email address
 - `footer_unsubscribe_link_text` - Unsubscribe link text
@@ -85,6 +110,7 @@ All templates require these variables for the layout:
 In addition to common variables, the welcome email requires:
 
 #### Dynamic Variables (Provided by Server)
+
 - `first_name` - User's first name
 - `welcome_button_url` - URL for welcome button
 - `book_call_url` - URL for booking a call
@@ -92,6 +118,7 @@ In addition to common variables, the welcome email requires:
 - `unsubscribe_url` - Unsubscribe URL
 
 #### Content Variables
+
 - `header_gradient` - CSS gradient for header background
 - `primary_color` - Primary brand color
 - `feature_icon_background` - Background for feature icons
@@ -121,18 +148,20 @@ In addition to common variables, the welcome email requires:
 In addition to common variables, the card blocked email requires:
 
 #### Dynamic Variables (Provided by Server)
+
 - `first_name` - User's first name
 - `card_last_four` - Last 4 digits of blocked card
 - `unsubscribe_url` - Unsubscribe URL
 
 #### Content Variables
+
 - `header_gradient` - CSS gradient for header background
 - `primary_color` - Primary brand color
-- `heading_part1`, `heading_part2`, `heading_part3` - Heading parts
+- `heading` - Heading text (plain text)
 - `greeting` - Greeting text (e.g., "Hello", "Bonjour")
 - `card_info_prefix` - Text before card number
 - `card_info_suffix` - Text after card number
-- `security_warning_part1`, `security_warning_part2` - Security warning parts
+- `security_warning` - Security warning text (plain text)
 - `security_signature` - Security team signature
 - `social_title` - Social media section title
 - `social_hashtags_part1`, `social_hashtags_part2`, `social_hashtags_part3` - Hashtag parts
@@ -157,31 +186,34 @@ Template variable values can be found in the configuration files:
 The following fields are **always provided by the server** at runtime and should not be hardcoded:
 
 **Welcome Email:**
+
 - `first_name`
 - `welcome_button_url`
 - `book_call_url`
 - `faq_url`
 - `unsubscribe_url`
 - All `*_icon_url` fields
-- `chatbox_image_url`
 - `company_address_url`
 
 **Card Blocked Email:**
+
 - `first_name`
 - `card_last_four`
 - `unsubscribe_url`
-- `chatbox_image_url`
 - `company_address_url`
 
 ### Image URLs
 
 All image URLs are hosted on GitHub Raw Content CDN:
+
 - Base URL: `https://referral-dev.greennation.green/b2b/emails/assets/`
+- Chatbox image URL is automatically generated from `lang_code`: `https://referral-dev.greennation.green/b2b/emails/assets/chatbox_{{lang_code}}.png`
 - See `POSTMARK_MIGRATION.md` (this file) for complete list of image URLs
 
 ### Template Variables Order
 
 When sending template variables, ensure:
+
 1. All common layout variables are included
 2. Template-specific variables are included
 3. Dynamic variables (URLs, user data) are provided at runtime
@@ -198,7 +230,13 @@ When sending template variables, ensure:
 ## Support
 
 For questions or issues with the new template system, refer to:
-- Layout file: `layouts/common-layout.html`
-- Content files: `content/welcome-content.html`, `content/card-blocked-content.html`
-- Configuration examples: `templates/config/`
 
+- Layout files:
+  - `layouts/common-layout.html` - General layout for welcome emails
+  - `layouts/card-blocked-layout.html` - Specialized layout for card-blocked type emails
+  - `layouts/README-card-blocked-layout.md` - Documentation for card-blocked layout
+- Content files:
+  - `content/welcome-content.html` - Welcome email content (use with common-layout)
+  - `content/card-blocked-content.html` - Card blocked content (use with common-layout)
+  - `content/card-blocked-content-v2.html` - Card blocked content (use with card-blocked-layout)
+- Configuration examples: `templates/config/`
