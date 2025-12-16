@@ -1,0 +1,499 @@
+<h1>Email Templates Reference Table</h1>
+
+<p>
+  This document lists all email templates with their aliases, mappings to the
+  database, and dynamic fields that need to be provided from the server.
+</p>
+
+<h2>Template List</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Template Name</th>
+      <th>Alias</th>
+      <th>CSV Mapping</th>
+      <th>Dynamic Fields (Server-Provided)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Account Closed</td>
+      <td><code>account-closed</code></td>
+      <td><code>gn-b2b-account-closed-confirmation-en/fr</code></td>
+      <td><code>first_name</code>, <code>unsubscribe_url</code></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Account Opened</td>
+      <td><code>account-opened</code></td>
+      <td><code>gn-b2b-account-opened-confirmation-en/fr</code></td>
+      <td><code>first_name</code>, <code>unsubscribe_url</code></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Account Opening Incomplete</td>
+      <td><code>account-opening-incomplete</code></td>
+      <td><code>gn-b2b-onboarding-incomplete-en/fr</code></td>
+      <td><code>first_name</code>, <code>unsubscribe_url</code></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Call Cancelled</td>
+      <td><code>call-cancelled</code></td>
+      <td><code>gn-b2b-call-cancelled-en/fr</code></td>
+      <td><code>first_name</code>, <code>unsubscribe_url</code></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Call Confirmed</td>
+      <td><code>call-confirmed</code></td>
+      <td><code>gn-b2b-call-booked-en/fr</code></td>
+      <td>
+        <code>first_name</code>, <code>appointment_date</code>,
+        <code>appointment_time</code>, <code>location</code>,
+        <code>unsubscribe_url</code>
+      </td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Call Reminder</td>
+      <td><code>call-reminder</code></td>
+      <td><code>gn-b2b-call-reminder-1h-en/fr</code></td>
+      <td>
+        <code>first_name</code>, <code>date</code>, <code>time</code>,
+        <code>meeting_link</code>, <code>unsubscribe_url</code>
+      </td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Call Rescheduled</td>
+      <td><code>call-rescheduled</code></td>
+      <td><code>gn-b2b-call-rescheduled-en/fr</code></td>
+      <td>
+        <code>first_name</code>, <code>date</code>, <code>time</code>,
+        <code>meeting_link</code>, <code>unsubscribe_url</code>
+      </td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Card Blocked</td>
+      <td><code>card-blocked</code></td>
+      <td><code>gn-b2b-card-blocked-en/fr</code></td>
+      <td>
+        <code>first_name</code>, <code>card_last_four</code>,
+        <code>unsubscribe_url</code>
+      </td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Card Deleted</td>
+      <td><code>card-deleted</code></td>
+      <td><code>gn-b2b-card-deleted-en/fr</code></td>
+      <td>
+        <code>first_name</code>, <code>card_last_four</code>,
+        <code>unsubscribe_url</code>
+      </td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Card Shipping</td>
+      <td><code>card-shipping</code></td>
+      <td>❌ Not in DB</td>
+      <td><code>first_name</code>, <code>unsubscribe_url</code></td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Card Temporarily Disabled</td>
+      <td><code>card-temporarily-disabled</code></td>
+      <td>❌ Not in DB</td>
+      <td><code>first_name</code>, <code>unsubscribe_url</code></td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Card Unblocked</td>
+      <td><code>card-unblocked</code></td>
+      <td>❌ Not in DB</td>
+      <td>
+        <code>first_name</code>, <code>card_last_four</code>,
+        <code>unsubscribe_url</code>
+      </td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Company Verified</td>
+      <td><code>company-verified</code></td>
+      <td><code>gn-b2b-onboarding-kyb-validated-en/fr</code></td>
+      <td><code>first_name</code>, <code>unsubscribe_url</code></td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Document Resubmit Required</td>
+      <td><code>document-resubmit-required</code></td>
+      <td><code>gn-b2b-onboarding-document-rejected-en/fr</code></td>
+      <td>
+        <code>first_name</code>, <code>reason</code>, <code>cta_url</code>,
+        <code>unsubscribe_url</code>
+      </td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Failed Login Attempts</td>
+      <td><code>failed-login-attempts</code></td>
+      <td><code>gn-b2b-auth-multiple-failed-login-attempts-en/fr</code></td>
+      <td><code>first_name</code>, <code>unsubscribe_url</code></td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>High Spending</td>
+      <td><code>high-spending</code></td>
+      <td><code>gn-b2b-card-high-spending-en/fr</code></td>
+      <td>
+        <code>first_name</code>, <code>amount</code>,
+        <code>card_last_four</code>, <code>location</code>,
+        <code>unsubscribe_url</code>
+      </td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>ID Update Required</td>
+      <td><code>id-update-required</code></td>
+      <td><code>gn-b2b-onboarding-expired-or-missing-document-en/fr</code></td>
+      <td>
+        <code>first_name</code>, <code>cta_url</code>,
+        <code>unsubscribe_url</code>
+      </td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>KYB Process Started</td>
+      <td><code>kyb-process-started</code></td>
+      <td><code>gn-b2b-onboarding-started-kyb-process-en/fr</code></td>
+      <td><code>first_name</code>, <code>unsubscribe_url</code></td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Maintenance Extended</td>
+      <td><code>maintenance-extended</code></td>
+      <td>❌ Not in DB</td>
+      <td>
+        <code>first_name</code>, <code>eta</code>, <code>unsubscribe_url</code>
+      </td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Missing Receipts Summary</td>
+      <td><code>missing-receipts-summary</code></td>
+      <td><code>gn-b2b-receipt-weekly-summary-report-en/fr</code></td>
+      <td>
+        <code>first_name</code>, <code>start_date</code>, <code>end_date</code>,
+        <code>expense_item_1</code>, <code>expense_item_2</code>,
+        <code>expense_item_3</code>, <code>expense_item_4</code>,
+        <code>expense_item_5</code>, <code>unsubscribe_url</code>
+      </td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Monthly Statement Ready</td>
+      <td><code>monthly-statement-ready</code></td>
+      <td><code>gn-b2b-account-monthly-statement-en/fr</code></td>
+      <td>
+        <code>first_name</code>, <code>month_year</code>, <code>cta_url</code>,
+        <code>unsubscribe_url</code>
+      </td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>Monthly Summary</td>
+      <td><code>monthly-summary</code></td>
+      <td><code>gn-b2b-account-monthly-activity-summary-en/fr</code></td>
+      <td>
+        <code>first_name</code>, <code>month_year</code>, <code>cta_url</code>,
+        <code>unsubscribe_url</code>
+      </td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>New Device Login</td>
+      <td><code>new-device-login</code></td>
+      <td><code>gn-b2b-auth-first-login-en/fr</code></td>
+      <td>
+        <code>first_name</code>, <code>location</code>, <code>time</code>,
+        <code>unsubscribe_url</code>
+      </td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>Password Updated</td>
+      <td><code>password-updated</code></td>
+      <td><code>gn-b2b-account-password-pin-changed-en/fr</code></td>
+      <td><code>first_name</code>, <code>unsubscribe_url</code></td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>Payment Approval Pending</td>
+      <td><code>payment-approval-pending</code></td>
+      <td><code>gn-b2b-transfer-pending-approval-en/fr</code></td>
+      <td>
+        <code>first_name</code>, <code>amount</code>, <code>cta_url</code>,
+        <code>unsubscribe_url</code>
+      </td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>Payment Approval Required</td>
+      <td><code>payment-approval-required</code></td>
+      <td>❌ Not in DB</td>
+      <td>
+        <code>first_name</code>, <code>amount</code>, <code>initiated_by</code>,
+        <code>beneficiary</code>, <code>iban</code>, <code>heading</code>,
+        <code>subject</code>, <code>unsubscribe_url</code>
+      </td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>Payment Confirmed</td>
+      <td><code>payment-confirmed</code></td>
+      <td>❌ Not in DB</td>
+      <td>
+        <code>first_name</code>, <code>amount</code>, <code>merchant</code>,
+        <code>heading</code>, <code>subject</code>, <code>unsubscribe_url</code>
+      </td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>Preferences Updated</td>
+      <td><code>preferences-updated</code></td>
+      <td><code>gn-b2b-account-preferences-updated-en/fr</code></td>
+      <td><code>first_name</code>, <code>unsubscribe_url</code></td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>Receipt Final Reminder</td>
+      <td><code>receipt-final-reminder</code></td>
+      <td><code>gn-b2b-receipt-missing-72h-en/fr</code></td>
+      <td>
+        <code>first_name</code>, <code>cta_url</code>,
+        <code>unsubscribe_url</code>
+      </td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>Receipt Reminder</td>
+      <td><code>receipt-reminder</code></td>
+      <td><code>gn-b2b-receipt-missing-24h-en/fr</code></td>
+      <td>
+        <code>first_name</code>, <code>amount</code>, <code>merchant</code>,
+        <code>unsubscribe_url</code>
+      </td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>Subscription Updated</td>
+      <td><code>subscription-updated</code></td>
+      <td><code>gn-b2b-account-subscription-plan-changed-en/fr</code></td>
+      <td>
+        <code>first_name</code>, <code>effective_date</code>,
+        <code>previous_plan</code>, <code>new_plan</code>,
+        <code>unsubscribe_url</code>
+      </td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>Team Invitation</td>
+      <td><code>team-invitation</code></td>
+      <td><code>gn-b2b-account-invitation-sent-en/fr</code></td>
+      <td>
+        <code>first_name</code>, <code>cta_url</code>,
+        <code>unsubscribe_url</code>
+      </td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>Team Member Removed</td>
+      <td><code>team-member-removed</code></td>
+      <td>❌ Not in DB</td>
+      <td>
+        <code>first_name</code>, <code>removed_user_info</code>,
+        <code>company_name</code>, <code>unsubscribe_url</code>
+      </td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>Technical Incident</td>
+      <td><code>technical-incident</code></td>
+      <td>❌ Not in DB</td>
+      <td><code>first_name</code>, <code>unsubscribe_url</code></td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>Terms Updated</td>
+      <td><code>terms-updated</code></td>
+      <td>❌ Not in DB</td>
+      <td>
+        <code>first_name</code>, <code>update_date</code>, <code>cta_url</code>,
+        <code>unsubscribe_url</code>
+      </td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>Transfer Alert</td>
+      <td><code>transfer-alert</code></td>
+      <td>❌ Not in DB</td>
+      <td>
+        <code>first_name</code>, <code>account_name</code>, <code>amount</code>,
+        <code>unsubscribe_url</code>
+      </td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>Transfer Failed</td>
+      <td><code>transfer-failed</code></td>
+      <td><code>gn-b2b-transfer-failed-en/fr</code></td>
+      <td>
+        <code>first_name</code>, <code>amount</code>,
+        <code>failure_reason</code>, <code>transaction_type</code>,
+        <code>unsubscribe_url</code>
+      </td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>Transfer Sent</td>
+      <td><code>transfer-sent</code></td>
+      <td>❌ Not in DB</td>
+      <td>
+        <code>first_name</code>, <code>amount</code>,
+        <code>recipient_name</code>, <code>heading</code>, <code>subject</code>,
+        <code>unsubscribe_url</code>
+      </td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>Unsubscribed</td>
+      <td><code>unsubscribed</code></td>
+      <td><code>gn-b2b-account-newsletter-unsubscription-en/fr</code></td>
+      <td><code>first_name</code>, <code>unsubscribe_url</code></td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>Unusual Login</td>
+      <td><code>unusual-login</code></td>
+      <td><code>gn-b2b-auth-suspicious-login-attempt-en/fr</code></td>
+      <td>
+        <code>first_name</code>, <code>ip_address</code>, <code>location</code>,
+        <code>time</code>, <code>unsubscribe_url</code>
+      </td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>Update Personal Info</td>
+      <td><code>update-personal-info</code></td>
+      <td><code>gn-b2b-onboarding-legal-compliance-requirement-en/fr</code></td>
+      <td>
+        <code>first_name</code>, <code>cta_url</code>,
+        <code>unsubscribe_url</code>
+      </td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>Welcome (B2B)</td>
+      <td><code>welcome</code> (b2b.json)</td>
+      <td>❌ Not in DB</td>
+      <td>
+        <code>first_name</code>, <code>book_call_url</code>,
+        <code>faq_url</code>, <code>unsubscribe_url</code>
+      </td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>Welcome (B2C)</td>
+      <td><code>welcome</code> (b2c.json)</td>
+      <td>❌ Not in DB</td>
+      <td>
+        <code>first_name</code>, <code>book_call_url</code>,
+        <code>faq_url</code>, <code>unsubscribe_url</code>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Common Dynamic Fields</h2>
+
+<p>Most templates require these common fields:</p>
+<ul>
+  <li><code>first_name</code> - User's first name</li>
+  <li><code>unsubscribe_url</code> - URL for unsubscribing from emails</li>
+</ul>
+
+<h2>Field Notes</h2>
+
+<h3>Dynamic Headings/Subjects</h3>
+<p>
+  Some templates have dynamic <code>heading</code> and
+  <code>subject</code> fields that are provided by the server:
+</p>
+<ul>
+  <li>
+    <strong>Payment Confirmed</strong>: <code>heading</code> and
+    <code>subject</code> contain <code>{{amount}}</code> and
+    <code>{{merchant}}</code>
+  </li>
+  <li>
+    <strong>Transfer Sent</strong>: <code>heading</code> and
+    <code>subject</code> contain <code>{{amount}}</code> and
+    <code>{{recipient_name}}</code>
+  </li>
+  <li>
+    <strong>Payment Approval Required</strong>: <code>heading</code> and
+    <code>subject</code> contain <code>{{amount}}</code>
+  </li>
+</ul>
+
+<h3>CTA URLs</h3>
+<p>Templates with CTA buttons require <code>cta_url</code>:</p>
+<ul>
+  <li>Document Resubmit Required</li>
+  <li>ID Update Required</li>
+  <li>Payment Approval Pending</li>
+  <li>Receipt Reminder</li>
+  <li>Receipt Final Reminder</li>
+  <li>Team Invitation</li>
+  <li>Terms Updated</li>
+  <li>Update Personal Info</li>
+  <li>Welcome (B2B/B2C)</li>
+</ul>
+
+<h3>Date/Time Fields</h3>
+<p>Call-related templates use different date/time field names:</p>
+<ul>
+  <li>
+    <strong>Call Confirmed</strong>: <code>appointment_date</code>,
+    <code>appointment_time</code>, <code>location</code>
+  </li>
+  <li>
+    <strong>Call Reminder</strong>: <code>date</code>, <code>time</code>,
+    <code>meeting_link</code>
+  </li>
+  <li>
+    <strong>Call Rescheduled</strong>: <code>date</code>, <code>time</code>,
+    <code>meeting_link</code>
+  </li>
+</ul>
+
+<h2>CSV Mapping Notes</h2>
+
+<ul>
+  <li>
+    Templates marked with ❌ Not in DB are not yet registered in the database
+  </li>
+  <li>
+    Templates with CSV mappings use the format:
+    <code>gn-b2b-{alias}-en</code> and <code>gn-b2b-{alias}-fr</code>
+  </li>
+  <li>
+    Some CSV aliases differ slightly from template aliases (e.g.,
+    <code>account-opened</code> vs <code>account-opened-confirmation</code>)
+  </li>
+</ul>
