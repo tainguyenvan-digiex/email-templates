@@ -25,7 +25,7 @@
               font-family: 'Poppins', Arial, sans-serif;
               font-size: 18px;
               font-weight: 500;
-              line-height: 22px;
+              line-height: 24px;
               color: #000000;
               text-align: center;
             "
@@ -39,7 +39,7 @@
               font-family: 'Poppins', Arial, sans-serif;
               font-size: 18px;
               font-weight: 500;
-              line-height: 22px;
+              line-height: 24px;
               color: #000000;
               text-align: center;
             "
@@ -53,13 +53,41 @@
               font-family: 'Poppins', Arial, sans-serif;
               font-size: 18px;
               font-weight: 500;
-              line-height: 22px;
+              line-height: 24px;
               color: #000000;
               text-align: center;
             "
             class="body-text"
           >
-            {{recipient_label}} <b>{{recipient}}</b>
+            {{initiated_by_label}} <b>{{initiated_by}}</b>
+          </p>
+          <p
+            style="
+              margin: 0 0 8px 0;
+              font-family: 'Poppins', Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 24px;
+              color: #000000;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            {{beneficiary_label}} <b>{{beneficiary}}</b>
+          </p>
+          <p
+            style="
+              margin: 0 0 16px 0;
+              font-family: 'Poppins', Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 24px;
+              color: #000000;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            {{iban_label}} <b>{{iban}}</b>
           </p>
           <p
             style="
@@ -67,57 +95,14 @@
               font-family: 'Poppins', Arial, sans-serif;
               font-size: 18px;
               font-weight: 500;
-              line-height: 22px;
+              line-height: 24px;
               color: #000000;
               text-align: center;
             "
             class="body-text"
           >
-            {{date_label}} <b>{{date}}</b>
+            {{cta_message}}
           </p>
-        </td>
-      </tr>
-    </table>
-  </td>
-</tr>
-
-<!-- CTA Button -->
-<tr>
-  <td style="padding: 0 40px 20px 40px" class="mobile-padding">
-    <table
-      role="presentation"
-      cellspacing="0"
-      cellpadding="0"
-      border="0"
-      width="100%"
-    >
-      <tr>
-        <td align="center">
-          <table role="presentation" cellspacing="0" cellpadding="0" border="0">
-            <tr>
-              <td
-                style="
-                  background-color: #3651f3;
-                  border-radius: 12px;
-                  padding: 12px 32px;
-                "
-              >
-                <a
-                  href="{{cta_url}}"
-                  style="
-                    font-family: 'Poppins', Arial, sans-serif;
-                    font-size: 16px;
-                    font-weight: 600;
-                    color: #ffffff;
-                    text-decoration: none;
-                    display: inline-block;
-                  "
-                >
-                  {{cta_text}}
-                </a>
-              </td>
-            </tr>
-          </table>
         </td>
       </tr>
     </table>
@@ -155,4 +140,3 @@
     </table>
   </td>
 </tr>
-

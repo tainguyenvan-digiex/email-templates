@@ -25,7 +25,7 @@
               font-family: 'Poppins', Arial, sans-serif;
               font-size: 18px;
               font-weight: 500;
-              line-height: 22px;
+              line-height: 24px;
               color: #000000;
               text-align: center;
             "
@@ -39,13 +39,13 @@
               font-family: 'Poppins', Arial, sans-serif;
               font-size: 18px;
               font-weight: 500;
-              line-height: 22px;
+              line-height: 24px;
               color: #000000;
               text-align: center;
             "
             class="body-text"
           >
-            📅 {{date_label}} <b>{{date}}</b>
+            {{updated_details_label}}
           </p>
           <p
             style="
@@ -53,13 +53,41 @@
               font-family: 'Poppins', Arial, sans-serif;
               font-size: 18px;
               font-weight: 500;
-              line-height: 22px;
+              line-height: 24px;
               color: #000000;
               text-align: center;
             "
             class="body-text"
           >
-            🕐 {{time_label}} <b>{{time}}</b>
+            {{date_label}} <b>{{new_date}}</b>
+          </p>
+          <p
+            style="
+              margin: 0 0 8px 0;
+              font-family: 'Poppins', Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 24px;
+              color: #000000;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            {{time_label}} <b>{{new_time}}</b>
+          </p>
+          <p
+            style="
+              margin: 0 0 16px 0;
+              font-family: 'Poppins', Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 24px;
+              color: #000000;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            {{location_label}} <b>{{location}}</b>
           </p>
           <p
             style="
@@ -67,13 +95,13 @@
               font-family: 'Poppins', Arial, sans-serif;
               font-size: 18px;
               font-weight: 500;
-              line-height: 22px;
+              line-height: 24px;
               color: #000000;
               text-align: center;
             "
             class="body-text"
           >
-            💻 {{meeting_link_label}} <b>{{meeting_link}}</b>
+            {{reschedule_message}}
           </p>
         </td>
       </tr>

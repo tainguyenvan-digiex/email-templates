@@ -410,118 +410,261 @@ The system SHALL provide a reusable HTML email template for confirming that a us
 
 The system SHALL provide a reusable HTML email template for confirming that a payment transaction was successful.
 
-#### Scenario: Template displays payment details
+#### Scenario: Template displays payment details in English
 
-- **WHEN** the payment confirmed email is rendered
+- **WHEN** the payment confirmed email is rendered with English language configuration
 - **THEN** it displays:
-  - Payment amount (bolded) via `{{amount}}` variable
-  - Merchant name (bolded) via `{{merchant}}` variable
-  - CTA link to view transaction history
-  - Security warning if unauthorized
+  - Heading: "💸 Payment of {{amount}} to {{merchant}} confirmed"
+  - Greeting: "Hi {{first_name}},"
+  - Payment message: "Your payment of {{amount}} at {{merchant}} was successful." (with amount and merchant bolded)
+  - CTA message: "👉 View transaction history in your app."
+  - Security warning: "If this wasn't you, please contact our support immediately."
+  - Signature: "The Green Nation Team"
+
+#### Scenario: Template displays payment details in French
+
+- **WHEN** the payment confirmed email is rendered with French language configuration
+- **THEN** it displays:
+  - Heading: "💸 Paiement de {{amount}} chez {{merchant}} confirmé"
+  - Greeting: "Bonjour {{first_name}},"
+  - Payment message: "Votre paiement de {{amount}} chez {{merchant}} a bien été effectué." (with amount and merchant bolded)
+  - CTA message: "👉 Consultez l'historique de vos transactions dans l'application."
+  - Security warning: "Si ce n'était pas vous, contactez notre support immédiatement."
+  - Signature: "L'équipe Green Nation."
 
 ### Requirement: Transfer Sent Email Template
 
 The system SHALL provide a reusable HTML email template for confirming that a transfer was successfully sent.
 
-#### Scenario: Template displays transfer details
+#### Scenario: Template displays transfer details in English
 
-- **WHEN** the transfer sent email is rendered
+- **WHEN** the transfer sent email is rendered with English language configuration
 - **THEN** it displays:
-  - Transfer amount (bolded) via `{{amount}}` variable
-  - Recipient name (bolded) via `{{recipient_name}}` variable
-  - CTA link to view transaction history
-  - Security warning if unauthorized
+  - Heading: "✅ Transfer of {{amount}} sent to {{recipient_name}}"
+  - Greeting: "Hi {{first_name}},"
+  - Transfer message: "Your transfer of {{amount}} was succesfully sent to {{recipient_name}}." (with amount and recipient_name bolded)
+  - CTA message: "👉 View transaction history in your app."
+  - Security warning: "If this operation wasn't made by you, please contact our support immediately."
+  - Signature: "The Green Nation Team"
+
+#### Scenario: Template displays transfer details in French
+
+- **WHEN** the transfer sent email is rendered with French language configuration
+- **THEN** it displays:
+  - Heading: "✅ Virement de {{amount}} envoyé à {{recipient_name}}"
+  - Greeting: "Bonjour {{first_name}},"
+  - Transfer message: "Votre virement de {{amount}} à été envoyé avec succès à {{recipient_name}}." (with amount and recipient_name bolded)
+  - CTA message: "👉 Consultez l'historique de vos transactions dans l'application."
+  - Security warning: "Si cette opération n'a pas été effectué par vous, contactez notre support immédiatement."
+  - Signature: "L'équipe Green Nation."
 
 ### Requirement: Card Shipping Email Template
 
 The system SHALL provide a reusable HTML email template for notifying users that their card is being shipped.
 
-#### Scenario: Template displays shipping information
+#### Scenario: Template displays shipping information in English
 
-- **WHEN** the card shipping email is rendered
+- **WHEN** the card shipping email is rendered with English language configuration
 - **THEN** it displays:
-  - Message about card being successfully ordered
-  - Delivery timeframe (5-7 business days)
-  - CTA link to track delivery in app
+  - Heading: "📨 Your Green Nation card is on the way"
+  - Greeting: "Hi {{first_name}},"
+  - Card ordered message: "Your new Green Nation card has been successfully ordered."
+  - Delivery info: "It will be delivered to your registered address within 5 to 7 business days."
+  - CTA message: "👉 You can track your delivery in the app."
+  - Signature: "The Green Nation Team."
+
+#### Scenario: Template displays shipping information in French
+
+- **WHEN** the card shipping email is rendered with French language configuration
+- **THEN** it displays:
+  - Heading: "📨 Votre carte Green Nation est en cours d'expédition"
+  - Greeting: "Bonjour {{first_name}},"
+  - Card ordered message: "Votre nouvelle carte Green Nation a bien été commandée."
+  - Delivery info: "Elle sera livrée à votre adresse enregistrée sous 5 à 7 jours ouvrés."
+  - CTA message: "👉 Vous pouvez suivre la livraison dans l'application."
+  - Signature: "L'équipe Green Nation"
 
 ### Requirement: Payment Approval Required Email Template
 
 The system SHALL provide a reusable HTML email template for requesting approval of a payment with detailed information.
 
-#### Scenario: Template displays detailed payment information
+#### Scenario: Template displays detailed payment information in English
 
-- **WHEN** the payment approval required email is rendered
+- **WHEN** the payment approval required email is rendered with English language configuration
 - **THEN** it displays:
+  - Heading: "✅ Approval required: payment of {{amount}}"
+  - Greeting: "Hi {{first_name}},"
+  - Approval message: "A new payment has been initiated and requires your approval:"
   - Payment amount (bolded) via `{{amount}}` variable
   - Initiated by (bolded) via `{{initiated_by}}` variable
   - Beneficiary (bolded) via `{{beneficiary}}` variable
   - IBAN (masked, bolded) via `{{iban}}` variable
-  - CTA button to validate or reject payment
+  - CTA message: "👉 You can validate or reject this payment in your Green Nation Business account."
+  - Signature: "The Green Nation Team"
+
+#### Scenario: Template displays detailed payment information in French
+
+- **WHEN** the payment approval required email is rendered with French language configuration
+- **THEN** it displays:
+  - Heading: "✅ Validation requise : paiement de {{amount}}"
+  - Greeting: "Bonjour {{first_name}},"
+  - Approval message: "Un nouveau paiement a été initié et nécessite votre validation :"
+  - Payment amount (bolded) via `{{amount}}` variable
+  - Initiated by (bolded) via `{{initiated_by}}` variable
+  - Beneficiary (bolded) via `{{beneficiary}}` variable
+  - IBAN (masked, bolded) via `{{iban}}` variable
+  - CTA message: "👉 Vous pouvez valider ou refuser ce paiement dans votre compte Green Nation Business."
+  - Signature: "L'équipe Green Nation"
 
 ### Requirement: Account Opening Incomplete Email Template
 
 The system SHALL provide a reusable HTML email template for reminding users to complete their account opening process.
 
-#### Scenario: Template displays completion reminder with CTA
+#### Scenario: Template displays completion reminder in English
 
-- **WHEN** the account opening incomplete email is rendered
+- **WHEN** the account opening incomplete email is rendered with English language configuration
 - **THEN** it displays:
-  - Message about incomplete account opening
-  - Message about taking only a few minutes
-  - CTA button/link to open Green Nation App
+  - Heading: "📝 Complete your Green Nation account opening"
+  - Message: "You started creating your Green Nation Business account but didn't complete the process."
+  - CTA message: "👉 It only takes a few minutes to finish and unlock all features."
+  - App instruction: "Open the Green Nation App to finish opening your account."
+  - Signature: "The Green Nation Team"
+
+#### Scenario: Template displays completion reminder in French
+
+- **WHEN** the account opening incomplete email is rendered with French language configuration
+- **THEN** it displays:
+  - Heading: "📝 Finalisez l'ouverture de votre compte Green Nation"
+  - Message: "Vous avez commencé l'ouverture de votre compte Green Nation Business mais n'avez pas terminé le processus."
+  - CTA message: "👉 Cela ne prend que quelques minutes pour finaliser et accéder à toutes les fonctionnalités."
+  - App instruction: "Ouvre l'app Green Nation pour finaliser l'ouverture de votre compte."
+  - Signature: "L'équipe Green Nation"
 
 ### Requirement: Call Confirmed Email Template
 
 The system SHALL provide a reusable HTML email template for confirming an Account Manager appointment.
 
-#### Scenario: Template displays appointment details
+#### Scenario: Template displays appointment details in English
 
-- **WHEN** the call confirmed email is rendered
+- **WHEN** the call confirmed email is rendered with English language configuration
 - **THEN** it displays:
+  - Heading: "Your call with your Account Manager is confirmed"
+  - Greeting: "Hi {{first_name}},"
+  - Confirmation message: "Your appointment with your Green Nation Account Manager is confirmed."
   - Appointment date (with 📅 emoji) via `{{appointment_date}}` variable
   - Appointment time (with 🕒 emoji) via `{{appointment_time}}` variable
-  - Location/link (with 📍 emoji) via `{{location}}` variable
-  - Information about what to expect during call
-  - Instructions to reschedule or cancel
+  - Location (with 📍 emoji) via `{{location}}` variable (e.g., "[Video call link / phone / details]")
+  - Call details message: "During the call, you can ask your questions and get support with your account, transactions, or any specific needs."
+  - Reschedule message: "Need to reschedule or cancel? You can do it anytime within the app."
+  - Sign-off: "Speak to you soon,"
+  - Signature: "The Green Nation Team"
+
+#### Scenario: Template displays appointment details in French
+
+- **WHEN** the call confirmed email is rendered with French language configuration
+- **THEN** it displays:
+  - Heading: "Votre appel avec votre Account Manager est confirmé"
+  - Greeting: "Bonjour {{first_name}},"
+  - Confirmation message: "Votre rendez-vous avec votre Account Manager Green Nation a bien été confirmé."
+  - Appointment date (with 📅 emoji) via `{{appointment_date}}` variable
+  - Appointment time (with 🕒 emoji) via `{{appointment_time}}` variable
+  - Location (with 📍 emoji) via `{{location}}` variable (e.g., "[Lien visio / téléphone / précisions]")
+  - Call details message: "Lors de cet échange, vous pourrez poser toutes vos questions et être accompagné sur l'usage de votre compte, vos opérations, ou vos besoins spécifiques."
+  - Reschedule message: "Besoin de modifier ou annuler ce rendez-vous ? Vous pouvez le faire directement dans votre app."
+  - Sign-off: "À très bientôt,"
+  - Signature: "L'équipe Green Nation"
 
 ### Requirement: Call Rescheduled Email Template
 
 The system SHALL provide a reusable HTML email template for notifying users that their Account Manager appointment has been rescheduled.
 
-#### Scenario: Template displays updated appointment details
+#### Scenario: Template displays updated appointment details in English
 
-- **WHEN** the call rescheduled email is rendered
+- **WHEN** the call rescheduled email is rendered with English language configuration
 - **THEN** it displays:
+  - Heading: "Update – Your call with your Account Manager has been rescheduled"
+  - Greeting: "Hi {{first_name}},"
+  - Rescheduled message: "Your upcoming call with your Green Nation Account Manager has been rescheduled."
+  - Updated details label: "Here are the updated details:"
   - New appointment date (with 📅 emoji) via `{{new_date}}` variable
   - New appointment time (with 🕒 emoji) via `{{new_time}}` variable
-  - Updated location/link (with 📍 emoji) via `{{location}}` variable
-  - Instructions to reschedule if needed
+  - Location (with 📍 emoji) via `{{location}}` variable
+  - Reschedule message: "If this new time still doesn't work for you, feel free to reschedule directly from your app."
+  - Signature: "The Green Nation Team"
+
+#### Scenario: Template displays updated appointment details in French
+
+- **WHEN** the call rescheduled email is rendered with French language configuration
+- **THEN** it displays:
+  - Heading: "Mise à jour de votre rendez-vous avec votre Account Manager"
+  - Greeting: "Bonjour {{first_name}},"
+  - Rescheduled message: "Votre appel avec votre Account Manager Green Nation a été modifié."
+  - Updated details label: "Voici les nouvelles informations :"
+  - New appointment date (with 📅 emoji) via `{{new_date}}` variable
+  - New appointment time (with 🕒 emoji) via `{{new_time}}` variable
+  - Location (with 📍 emoji) via `{{location}}` variable
+  - Reschedule message: "Si ce nouvel horaire ne vous convient toujours pas, vous pouvez reprogrammer l'appel à tout moment via votre app."
+  - Signature: "L'équipe Green Nation"
 
 ### Requirement: Call Cancelled Email Template
 
 The system SHALL provide a reusable HTML email template for notifying users that their Account Manager appointment has been cancelled.
 
-#### Scenario: Template displays cancellation notification
+#### Scenario: Template displays cancellation notification in English
 
-- **WHEN** the call cancelled email is rendered
+- **WHEN** the call cancelled email is rendered with English language configuration
 - **THEN** it displays:
-  - Cancellation confirmation message
-  - Instructions to book a new call via app
-  - Support availability message
+  - Heading: "Your call with Green Nation has been cancelled"
+  - Greeting: "Hi {{first_name}},"
+  - Cancellation message: "Your appointment with your Green Nation Account Manager has been cancelled."
+  - Book new call message: "If you'd like to book a new call, you can do so at any time via the app."
+  - Support message: "We're here if you need support."
+  - Sign-off: "Best regards,"
+  - Signature: "The Green Nation Team"
+
+#### Scenario: Template displays cancellation notification in French
+
+- **WHEN** the call cancelled email is rendered with French language configuration
+- **THEN** it displays:
+  - Heading: "Votre appel avec Green Nation a été annulé"
+  - Greeting: "Bonjour {{first_name}},"
+  - Cancellation message: "Votre rendez-vous avec votre Account Manager Green Nation a été annulé."
+  - Book new call message: "Si vous souhaitez fixer un nouveau rendez-vous, vous pouvez le faire à tout moment depuis l'application."
+  - Support message: "Nous restons à votre disposition si vous avez besoin d'assistance."
+  - Sign-off: "Cordialement,"
+  - Signature: "L'équipe Green Nation"
 
 ### Requirement: Call Reminder Email Template
 
 The system SHALL provide a reusable HTML email template for reminding users about an upcoming Account Manager appointment.
 
-#### Scenario: Template displays reminder with appointment details
+#### Scenario: Template displays reminder with appointment details in English
 
-- **WHEN** the call reminder email is rendered
+- **WHEN** the call reminder email is rendered with English language configuration
 - **THEN** it displays:
-  - Reminder message (1 hour before)
+  - Heading: "Reminder – Your call with Green Nation is in 1 hour"
+  - Greeting: "Hi {{first_name}},"
+  - Reminder message: "Just a quick reminder: your call with your Green Nation Account Manager is in 1 hour."
   - Appointment date (with 📅 emoji) via `{{appointment_date}}` variable
   - Appointment time (with 🕒 emoji) via `{{appointment_time}}` variable
   - Join link (with 📍 emoji) via `{{call_link}}` variable
-  - Suggestion to prepare questions
+  - Prepare questions message: "Feel free to prepare any questions you may have."
+  - Sign-off: "Talk to you soon,"
+  - Signature: "The Green Nation Team"
+
+#### Scenario: Template displays reminder with appointment details in French
+
+- **WHEN** the call reminder email is rendered with French language configuration
+- **THEN** it displays:
+  - Heading: "Rappel – votre appel avec Green Nation dans 1 heure"
+  - Greeting: "Bonjour {{first_name}},"
+  - Reminder message: "Petit rappel : votre appel avec votre Account Manager Green Nation aura lieu dans une heure."
+  - Appointment date (with 📅 emoji) via `{{appointment_date}}` variable
+  - Appointment time (with 🕒 emoji) via `{{appointment_time}}` variable
+  - Join link (with 📍 emoji) via `{{call_link}}` variable
+  - Prepare questions message: "Pensez à préparer vos éventuelles questions pour optimiser l'échange."
+  - Sign-off: "À tout à l'heure,"
+  - Signature: "L'équipe Green Nation"
 
 ### Requirement: Additional Templates Configuration System
 
