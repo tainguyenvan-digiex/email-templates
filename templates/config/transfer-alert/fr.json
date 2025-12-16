@@ -12,22 +12,18 @@
   "social_hashtags_part2": "ET SURTOUT... DES",
   "social_hashtags_part3": "INFOS EXCLUSIVES!",
   "footer_unsubscribe_link_text": "Pour vous désinscrire, cliquez ici.",
-  "company_address": "48 Rue de la Bienfaisance, 75008 Paris, France",
   "company_registration_part1": "Green Nation, société immatriculée au R.C.S de Paris sous le numéro 953371085, et inscrit au Registre unique des Intermédiaires en Assurance, Banque et Finance sous le numéro d'immatriculation 23007580 en qualité de Mandataire non exclusif en opérations de banque et en services de paiement.",
   "company_registration_part2": "",
   "company_registration_part3": "",
   "legal_text": "Cette carte Visa est émise par UAB StanHope en vertu d'une licence accordée par VISA Europe Limited. UAB Stanhope est agréée et réglementée par la Banque de Lituanie en tant qu'établissement de monnaie électronique en vertu de la loi de la République de Lituanie sur la monnaie électronique et les établissements de monnaie électronique pour l'émission de monnaie électronique (AC : LB002039).",
-  "sent_to_text": "Sent to:",
-  "recipient_email": "c.garreau@greennation.green",
-  "company_address_url": "48+Rue+de+la+Bienfaisance,+75008+Paris,+France",
-  "unsubscribe_url": "",
-
-  "transfer_alert_intro": "Un virement supérieur à votre seuil défini a été effectué :",
-  "amount_label": "Montant :",
-  "amount": "8 720,00 €",
   "account_label": "Compte débité :",
-  "account_name": "Green Nation Business",
+  "amount_label": "Montant :",
   "security_warning": "👉 Si ce virement n'est pas autorisé, veuillez nous contacter immédiatement.",
   "signature": "L'équipe Sécurité",
-  "first_name": "Tai Van"
+  "transfer_alert_intro": "Un virement supérieur à votre seuil défini a été effectué :",
+
+  "account_name": "Green Nation Business",
+  "amount": "8 720,00 €",
+  "first_name": "Tai Van",
+  "unsubscribe_url": ""
 }

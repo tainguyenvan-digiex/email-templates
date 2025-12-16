@@ -51,12 +51,17 @@ Use `common-layout.html` for:
 | `company_registration_part2`   | Company registration text (part 2) | Additional details                                                        |
 | `company_registration_part3`   | Company registration text (part 3) | Additional details                                                        |
 | `legal_text`                   | Legal disclaimer text              | Visa card issuer info                                                     |
-| `sent_to_text`                 | "Sent to" label                    | `Sent to:`                                                                |
-| `recipient_email`              | Recipient's email address          | `user@example.com`                                                        |
 | `footer_unsubscribe_link_text` | Unsubscribe link text              | `To unsubscribe, click here.`                                             |
 | `unsubscribe_url`              | Unsubscribe URL                    | Unsubscribe link                                                          |
-| `company_address`              | Company address                    | `48 Rue de la Bienfaisance, 75008 Paris, France`                          |
-| `company_address_url`          | URL-encoded address for maps       | `48+Rue+de+la+Bienfaisance,+75008+Paris,+France`                          |
+
+### Static Values (Hardcoded in Layout)
+
+The following values are hardcoded in the layout file and do not need to be provided in JSON config:
+
+- `sent_to_text`: `Sent to:` (hardcoded)
+- `recipient_email`: `c.garreau@greennation.green` (hardcoded)
+- `company_address`: `205 – 50 Lonsdale Ave #2630, Vancouver, BC V6M 2E6, Canada.` (hardcoded)
+- `company_address_url`: `205+–+50+Lonsdale+Ave+%232630,+Vancouver,+BC+V6M+2E6,+Canada.` (hardcoded)
 
 ### Content Variables (used in content files)
 

@@ -135,7 +135,8 @@ The system SHALL provide a generic, reusable HTML email template for welcoming n
   - Support section: `{{support_title}}`, `{{support_description}}`, `{{chat_button_text}}`
   - Assistance section: `{{assistance_title}}`, `{{book_call_text}}`, `{{book_call_url}}`, `{{faq_text}}`, `{{faq_url}}`, `{{signoff}}`
   - Footer section variables (provided to layout): `{{chatbox_image_url}}`, `{{company_registration_part1}}`, `{{company_registration_part2}}`, `{{company_registration_part3}}`, `{{legal_text}}`
-  - Unsubscribe section variables (provided to layout): `{{footer_unsubscribe_link_text}}`, `{{unsubscribe_url}}`, `{{company_address}}`, `{{company_address_url}}`, `{{recipient_email}}`
+  - Unsubscribe section variables (provided to layout): `{{footer_unsubscribe_link_text}}`, `{{unsubscribe_url}}`
+  - Note: `sent_to_text`, `recipient_email`, `company_address`, and `company_address_url` are hardcoded in the layout
 
 #### Scenario: Template renders welcome content in English language
 
@@ -221,9 +222,9 @@ The system SHALL provide a generic, reusable HTML email template for welcoming n
 
 - **WHEN** the welcome email is rendered
 - **THEN** it displays (via Postmark layout):
-  - Sent to email address (via `{{recipient_email}}`)
+  - Sent to email address (hardcoded as `Sent to: c.garreau@greennation.green`)
   - Unsubscribe link (via `{{footer_unsubscribe_link_text}}`, `{{unsubscribe_url}}`)
-  - Company address with map link (via `{{company_address}}`, `{{company_address_url}}`)
+  - Company address with map link (hardcoded as `205 – 50 Lonsdale Ave #2630, Vancouver, BC V6M 2E6, Canada.`)
 
 #### Scenario: Welcome content file uses Postmark layout
 - **WHEN** the welcome content file is created
@@ -273,7 +274,8 @@ The system SHALL provide configuration files that define all text content and va
   - Support section: `support_title`, `support_description`, `chat_button_text`
   - Assistance section: `assistance_title`, `book_call_text`, `book_call_url`, `faq_text`, `faq_url`, `signoff`
   - Footer: `chatbox_image_url`, `company_registration_part1`, `company_registration_part2`, `company_registration_part3`, `legal_text`
-  - Unsubscribe: `footer_unsubscribe_link_text`, `unsubscribe_url`, `company_address`, `company_address_url`
+  - Unsubscribe: `footer_unsubscribe_link_text`, `unsubscribe_url`
+  - Note: `sent_to_text`, `recipient_email`, `company_address`, and `company_address_url` are hardcoded in the layout
 
 ### Requirement: Postmark Layout System
 
@@ -303,9 +305,9 @@ The system SHALL provide a reusable Postmark layout file that contains common co
 #### Scenario: Layout contains unsubscribe section
 - **WHEN** the layout file is created
 - **THEN** it includes the complete unsubscribe section with:
-  - "Sent to" text with recipient email (via `{{recipient_email}}` variable)
+  - "Sent to" text with recipient email (hardcoded as `Sent to: c.garreau@greennation.green`)
   - Unsubscribe link (via `{{footer_unsubscribe_link_text}}` and `{{unsubscribe_url}}` variables)
-  - Company address with map link (via `{{company_address}}` and `{{company_address_url}}` variables)
+  - Company address with map link (hardcoded as `205 – 50 Lonsdale Ave #2630, Vancouver, BC V6M 2E6, Canada.`)
 
 #### Scenario: Layout uses Postmark content placeholder
 - **WHEN** the layout file is created
@@ -448,9 +450,9 @@ The system SHALL provide a specialized Postmark layout file for card-blocked typ
 
 - **WHEN** the card-blocked layout is created
 - **THEN** it includes the unsubscribe section with:
-  - "Sent to" text with recipient email via `{{sent_to_text}}`, `{{recipient_email}}`
+  - "Sent to" text with recipient email (hardcoded as `Sent to: c.garreau@greennation.green`)
   - Unsubscribe link via `{{footer_unsubscribe_link_text}}`, `{{unsubscribe_url}}`
-  - Company address with map link via `{{company_address}}`, `{{company_address_url}}`
+  - Company address with map link (hardcoded as `205 – 50 Lonsdale Ave #2630, Vancouver, BC V6M 2E6, Canada.`)
 
 #### Scenario: Layout can be uploaded to Postmark
 

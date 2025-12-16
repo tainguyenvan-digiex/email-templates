@@ -1,0 +1,27 @@
+{
+  "lang_code": "fr",
+  "header_gradient": "linear-gradient(181deg, #3651F3 -4.19%, rgba(255, 255, 255, 0) 65.81%)",
+  "primary_color": "#3651F3",
+  "title": "Reçu toujours manquant – Dernier rappel - Green Nation",
+  "preheader": "⏰ Dernier rappel : reçu toujours manquant après 3 jours.",
+  "heading": "⏰ Reçu toujours manquant – Dernier rappel",
+  "subject": "⏰ Reçu toujours manquant – Dernier rappel",
+  "greeting": "Bonjour",
+  "social_title": "Ne passez pas à côté de notre actu !",
+  "social_hashtags_part1": "#CLEANTECH #ARGENT #PLANETE...",
+  "social_hashtags_part2": "ET SURTOUT... DES",
+  "social_hashtags_part3": "INFOS EXCLUSIVES!",
+  "footer_unsubscribe_link_text": "Pour vous désinscrire, cliquez ici.",
+  "company_registration_part1": "Green Nation, société immatriculée au R.C.S de Paris sous le numéro 953371085, et inscrit au Registre unique des Intermédiaires en Assurance, Banque et Finance sous le numéro d'immatriculation 23007580 en qualité de Mandataire non exclusif en opérations de banque et en services de paiement.",
+  "company_registration_part2": "",
+  "company_registration_part3": "",
+  "legal_text": "Cette carte Visa est émise par UAB StanHope en vertu d'une licence accordée par VISA Europe Limited. UAB Stanhope est agréée et réglementée par la Banque de Lituanie en tant qu'établissement de monnaie électronique en vertu de la loi de la République de Lituanie sur la monnaie électronique et les établissements de monnaie électronique pour l'émission de monnaie électronique (AC : LB002039).",
+  "action_message": "👉 Merci de régulariser cette dépense rapidement pour éviter toute alerte.",
+  "cta_text": "Ajouter mon reçu",
+  "final_reminder_message": "Cela fait 3 jours que vous avez effectué une dépense de 72,00 € sans fournir de justificatif.",
+  "signature": "L'équipe Green Nation.",
+
+  "cta_url": "",
+  "first_name": "Tai Van",
+  "unsubscribe_url": ""
+}

@@ -32,12 +32,17 @@ The layout requires the following template variables to be provided:
 
 ### Unsubscribe Variables
 
-- `{{sent_to_text}}` - Text before recipient email (e.g., "Sent to:")
-- `{{recipient_email}}` - Recipient email address
 - `{{footer_unsubscribe_link_text}}` - Unsubscribe link text
 - `{{unsubscribe_url}}` - Unsubscribe URL
-- `{{company_address}}` - Company address text
-- `{{company_address_url}}` - URL-encoded company address for map link
+
+### Static Values (Hardcoded in Layout)
+
+The following values are hardcoded in the layout file and do not need to be provided:
+
+- `sent_to_text`: `Sent to:` (hardcoded)
+- `recipient_email`: `c.garreau@greennation.green` (hardcoded)
+- `company_address`: `205 – 50 Lonsdale Ave #2630, Vancouver, BC V6M 2E6, Canada.` (hardcoded)
+- `company_address_url`: `205+–+50+Lonsdale+Ave+%232630,+Vancouver,+BC+V6M+2E6,+Canada.` (hardcoded)
 
 ## Uploading to Postmark
 
