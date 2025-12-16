@@ -86,8 +86,8 @@
 
 ## Phase 9: Account Lifecycle Templates
 
-- [ ] 9.1 Create `content/welcome-b2c-content.html` with B2C welcome message
-- [ ] 9.2 Create `templates/config/welcome-b2c/en.json` and `fr.json`
+- [ ] 9.1 Create `content/account-opened-content.html` with account opened message
+- [ ] 9.2 Create `templates/config/account-opened/en.json` and `fr.json`
 - [ ] 9.3 Create `content/account-closed-content.html` with closure confirmation
 - [ ] 9.4 Create `templates/config/account-closed/en.json` and `fr.json`
 - [ ] 9.5 Create `content/account-opening-incomplete-content.html` with completion reminder

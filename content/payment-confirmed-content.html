@@ -25,41 +25,43 @@
               font-family: 'Poppins', Arial, sans-serif;
               font-size: 18px;
               font-weight: 500;
-              line-height: 22px;
+              line-height: 24px;
               color: #000000;
               text-align: center;
             "
             class="body-text"
           >
-            {{payment_confirmed_message}}
+            {{payment_confirmed_message_prefix}}
+            <b>{{amount}}</b> {{payment_confirmed_message_middle}}
+            <b>{{merchant}}</b> {{payment_confirmed_message_suffix}}
           </p>
           <p
             style="
-              margin: 0 0 8px 0;
+              margin: 0 0 16px 0;
               font-family: 'Poppins', Arial, sans-serif;
               font-size: 18px;
               font-weight: 500;
-              line-height: 22px;
+              line-height: 24px;
               color: #000000;
               text-align: center;
             "
             class="body-text"
           >
-            {{amount_label}} <b>{{amount}}</b>
+            {{cta_message}}
           </p>
           <p
             style="
-              margin: 0;
+              margin: 0 0 20px 0;
               font-family: 'Poppins', Arial, sans-serif;
               font-size: 18px;
               font-weight: 500;
-              line-height: 22px;
+              line-height: 24px;
               color: #000000;
               text-align: center;
             "
             class="body-text"
           >
-            {{recipient_label}} <b>{{recipient}}</b>
+            {{security_warning}}
           </p>
         </td>
       </tr>
@@ -98,4 +100,3 @@
     </table>
   </td>
 </tr>
-

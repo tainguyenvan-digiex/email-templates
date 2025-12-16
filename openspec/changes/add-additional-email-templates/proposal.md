@@ -44,7 +44,7 @@ These templates will follow the same architecture pattern as existing templates,
 - `content/monthly-statement-ready-content.html` - Monthly statement ready
 - `content/card-temporarily-disabled-content.html` - Card temporarily disabled for security
 - `content/payment-approval-pending-content.html` - Payment awaits approval
-- `content/welcome-b2c-content.html` - Welcome to Green Nation (B2C)
+- `content/account-opened-content.html` - Account opened notification
 - `content/account-closed-content.html` - Account closed confirmation
 - `content/password-updated-content.html` - Password/PIN updated confirmation
 - `content/preferences-updated-content.html` - Preferences updated confirmation
@@ -82,7 +82,7 @@ These templates will follow the same architecture pattern as existing templates,
 - `templates/config/monthly-statement-ready/` - en.json, fr.json
 - `templates/config/card-temporarily-disabled/` - en.json, fr.json
 - `templates/config/payment-approval-pending/` - en.json, fr.json
-- `templates/config/welcome-b2c/` - en.json, fr.json
+- `templates/config/account-opened/` - en.json, fr.json
 - `templates/config/account-closed/` - en.json, fr.json
 - `templates/config/password-updated/` - en.json, fr.json
 - `templates/config/preferences-updated/` - en.json, fr.json

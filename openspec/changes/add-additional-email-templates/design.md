@@ -68,7 +68,7 @@ All new email templates will follow the established pattern:
 
 ### 11. Account Lifecycle Templates
 
-- **welcome-b2c**: Welcome email for B2C customers
+- **account-opened**: Account opened notification
 - **account-closed**: Account closed confirmation
 - **account-opening-incomplete**: Reminder to complete account opening
 

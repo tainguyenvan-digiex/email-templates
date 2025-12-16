@@ -2,10 +2,10 @@
   "lang_code": "en",
   "header_gradient": "linear-gradient(181deg, #3651F3 -4.19%, rgba(255, 255, 255, 0) 65.81%)",
   "primary_color": "#3651F3",
-  "title": "Company verified - Green Nation",
+  "title": "✅ Your company has been verified",
   "preheader": "✅ Your company verification has been completed successfully.",
-  "heading": "✅ Company verified",
-  "subject": "✅ Company verified",
+  "heading": "✅ Your company has been verified",
+  "subject": "✅ Your company has been verified",
   "greeting": "Hello",
   "social_title": "Don't miss out on our latest updates!",
   "social_hashtags_part1": "#CLEANTECH #MONEY #PLANET...",
@@ -17,7 +17,8 @@
   "company_registration_part3": "",
   "legal_text": "This Visa card is issued by UAB StanHope under a license granted by VISA Europe Limited. UAB StanHope is authorized and regulated by the Bank of Lithuania as an electronic money institution under the Law of the Republic of Lithuania on Electronic Money and Electronic Money Institutions for the issuance of electronic money (AC: LB002039).",
   "signature": "The Green Nation Team",
-  "verification_success_message": "Your company verification has been completed successfully. Your Green Nation Business account is now fully activated.",
+  "verification_success_message": "Good news! Your company verification has been successfully completed.",
+  "verification_access_message": "You can now access all features of your Green Nation Business account.",
 
   "first_name": "Tai Van",
   "unsubscribe_url": ""

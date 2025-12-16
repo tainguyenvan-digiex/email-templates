@@ -228,25 +228,45 @@ The system SHALL provide a reusable HTML email template for notifying users that
 
 The system SHALL provide a reusable HTML email template for notifying users that their company verification has been completed successfully.
 
-#### Scenario: Template displays success message
+#### Scenario: Template displays success message in English
 
-- **WHEN** the company verified email is rendered
+- **WHEN** the company verified email is rendered with English language configuration
 - **THEN** it displays:
   - Success message: "Good news! Your company verification has been successfully completed."
-  - Message about accessing all features
-  - Signature from Green Nation Team
+  - Message: "You can now access all features of your Green Nation Business account."
+  - Signature: "The Green Nation Team"
+
+#### Scenario: Template displays success message in French
+
+- **WHEN** the company verified email is rendered with French language configuration
+- **THEN** it displays:
+  - Success message: "Bonne nouvelle ! Votre vérification d'entreprise a été validée avec succès."
+  - Message: "Vous avez désormais accès à toutes les fonctionnalités de votre compte Green Nation Business."
+  - Signature: "L'équipe Green Nation."
 
 ### Requirement: Document Resubmit Required Email Template
 
 The system SHALL provide a reusable HTML email template for requesting users to resubmit a document that failed validation.
 
-#### Scenario: Template displays rejection reason and CTA
+#### Scenario: Template displays rejection reason and CTA in English
 
-- **WHEN** the document resubmit required email is rendered
+- **WHEN** the document resubmit required email is rendered with English language configuration
 - **THEN** it displays:
-  - Rejection reason (bolded) via `{{rejection_reason}}` variable (e.g., "unreadable / invalid format / expired")
-  - CTA button to upload valid document
-  - Compliance team signature
+  - Message: "The document you submitted could not be validated for the following reason:"
+  - Rejection reason (bolded) via `{{rejection_reason}}` variable (e.g., "unreadable / invalid format / expired" - input the relevant one only)
+  - CTA message: "👉 Please upload a valid version in your Green Nation Business account to complete verification."
+  - CTA button to upload valid document via `{{cta_text}}` and `{{cta_url}}` variables
+  - Signature: "The Compliance Team – Green Nation"
+
+#### Scenario: Template displays rejection reason and CTA in French
+
+- **WHEN** the document resubmit required email is rendered with French language configuration
+- **THEN** it displays:
+  - Message: "Le document que vous avez soumis n'a pas pu être validé pour la raison suivante :"
+  - Rejection reason (bolded) via `{{rejection_reason}}` variable (e.g., "illisible / format invalide / expiré" - input the relevant one only)
+  - CTA message: "👉 Merci de téléverser une version valide dans votre compte Green Nation Business afin de finaliser la vérification."
+  - CTA button to upload valid document via `{{cta_text}}` and `{{cta_url}}` variables
+  - Signature: "L'équipe Conformité – Green Nation"
 
 ### Requirement: ID Update Required Email Template
 
@@ -275,36 +295,69 @@ The system SHALL provide a reusable HTML email template for notifying users that
 
 The system SHALL provide a reusable HTML email template for notifying users that their card has been temporarily disabled for security reasons.
 
-#### Scenario: Template displays security message
+#### Scenario: Template displays security message in English
 
-- **WHEN** the card temporarily disabled email is rendered
+- **WHEN** the card temporarily disabled email is rendered with English language configuration
 - **THEN** it displays:
-  - Message about suspicious activity
-  - Instructions to contact support to reactivate
-  - Security team signature
+  - Message: "Due to suspicious activity, your card has been disabled."
+  - CTA message: "👉 Contact our support to reactivate it."
+  - Signature: "The Green Nation Team."
+
+#### Scenario: Template displays security message in French
+
+- **WHEN** the card temporarily disabled email is rendered with French language configuration
+- **THEN** it displays:
+  - Message: "Suite à une activité suspecte, votre carte a été désactivée."
+  - CTA message: "👉 Contactez notre support pour la réactiver."
+  - Signature: "L'équipe Green Nation."
 
 ### Requirement: Payment Approval Pending Email Template
 
 The system SHALL provide a reusable HTML email template for notifying users that a payment is awaiting approval.
 
-#### Scenario: Template displays payment amount and CTA
+#### Scenario: Template displays payment amount and CTA in English
 
-- **WHEN** the payment approval pending email is rendered
+- **WHEN** the payment approval pending email is rendered with English language configuration
 - **THEN** it displays:
-  - Payment amount (bolded) via `{{amount}}` variable
-  - CTA button/link to approve or decline in dashboard
+  - Message: "A draft payment of {{amount}} is pending approval."
+  - Payment amount (bolded) via `{{amount}}` variable (e.g., "€2,300")
+  - CTA message: "👉 [Approve or decline in dashboard]"
+  - CTA button/link to approve or decline in dashboard via `{{cta_text}}` and `{{cta_url}}` variables
+  - Signature: "The Green Nation Team."
 
-### Requirement: Welcome B2C Email Template
+#### Scenario: Template displays payment amount and CTA in French
 
-The system SHALL provide a reusable HTML email template for welcoming B2C customers when their account is opened.
-
-#### Scenario: Template displays B2C welcome message
-
-- **WHEN** the welcome B2C email is rendered
+- **WHEN** the payment approval pending email is rendered with French language configuration
 - **THEN** it displays:
-  - Welcome message about account being opened
-  - Information about accessing app, ordering card, and benefits
-  - Friendly sign-off from Green Nation Team
+  - Message: "Un paiement de {{amount}} est en attente de validation."
+  - Payment amount (bolded) via `{{amount}}` variable (e.g., "2 300 €")
+  - CTA message: "👉 [Valider ou refuser dans votre interface]"
+  - CTA button/link to approve or decline in dashboard via `{{cta_text}}` and `{{cta_url}}` variables
+  - Signature: "L'équipe Green Nation."
+
+### Requirement: Account Opened Email Template
+
+The system SHALL provide a reusable HTML email template for notifying customers when their account has been opened.
+
+#### Scenario: Template displays account opened message in English
+
+- **WHEN** the account opened email is rendered with English language configuration
+- **THEN** it displays:
+  - Greeting: "Hi {{first_name}}," (using `{{first_name}}` variable)
+  - Welcome message: "Your Green Nation account has been successfully opened. You're now part of a community committed to a more responsible and rewarding future."
+  - Information: "You can now access the app, order your card, and start enjoying your benefits."
+  - Sign-off: "See you soon,"
+  - Signature: "The Green Nation Team"
+
+#### Scenario: Template displays account opened message in French
+
+- **WHEN** the account opened email is rendered with French language configuration
+- **THEN** it displays:
+  - Greeting: "Bonjour {{first_name}}," (using `{{first_name}}` variable)
+  - Welcome message: "Votre compte Green Nation a bien été ouvert. Vous faites désormais partie d'une communauté engagée pour un avenir plus responsable et plus performant."
+  - Information: "Vous pouvez dès maintenant accéder à l'app, commander votre carte, et commencer à profiter de tous vos avantages."
+  - Sign-off: "À très vite,"
+  - Signature: "L'équipe Green Nation"
 
 ### Requirement: Account Closed Email Template
 
