@@ -1,13 +1,13 @@
 <!-- 
-  Card Blocked Content (v2) - For use with shared-layout.html
+  Transfer Alert Content - For use with shared-layout.html
   
   This content file is designed to work with the shared-layout.html layout.
-  It only contains the card-specific body content (card information and security message).
+  It contains the transfer alert notification content (transfer exceeding threshold details and security message).
   
   The layout provides: logo, heading, greeting, social media promotion, footer, and unsubscribe sections.
 -->
 
-<!-- Card Information -->
+<!-- Transfer Alert Information -->
 <tr>
   <td style="padding: 0 40px 20px 40px" class="mobile-padding">
     <table
@@ -25,26 +25,27 @@
               font-family: 'Poppins', Arial, sans-serif;
               font-size: 18px;
               font-weight: 500;
-              line-height: 24px;
+              line-height: 22px;
               color: #000000;
               text-align: center;
             "
             class="body-text"
           >
-            {{card_info_prefix}}
+            {{transfer_alert_intro}}
           </p>
           <p
             style="
-              margin: 0 0 16px 0;
+              margin: 0 0 8px 0;
               font-family: 'Poppins', Arial, sans-serif;
-              font-size: 24px;
-              font-weight: 700;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 22px;
               color: #000000;
               text-align: center;
             "
-            class="card-number"
+            class="body-text"
           >
-            {{card_last_four}}
+            {{amount_label}} <b>{{amount}}</b>
           </p>
           <p
             style="
@@ -52,13 +53,13 @@
               font-family: 'Poppins', Arial, sans-serif;
               font-size: 18px;
               font-weight: 500;
-              line-height: 24px;
+              line-height: 22px;
               color: #000000;
               text-align: center;
             "
             class="body-text"
           >
-            {{card_info_suffix}}
+            {{account_label}} <b>{{account_name}}</b>
           </p>
         </td>
       </tr>
@@ -84,7 +85,7 @@
               font-family: 'Poppins', Arial, sans-serif;
               font-size: 18px;
               font-weight: 500;
-              line-height: 24px;
+              line-height: 34px;
               color: #000000;
               text-align: center;
             "
@@ -98,13 +99,13 @@
               font-family: 'Poppins', Arial, sans-serif;
               font-size: 18px;
               font-weight: 500;
-              line-height: 24px;
+              line-height: 22px;
               color: #000000;
               text-align: center;
             "
             class="body-text"
           >
-            {{security_signature}}
+            {{signature}}
           </p>
         </td>
       </tr>

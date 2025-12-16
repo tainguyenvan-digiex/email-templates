@@ -5,11 +5,8 @@
   "title": "Votre carte a été bloquée - Green Nation",
   "preheader": "⚠️ Votre carte Green Nation a été bloquée. Vérifiez votre compte immédiatement si vous n'êtes pas à l'origine de cette action.",
   "heading": "VOTRE CARTE A ÉTÉ BLOQUÉE, VÉRIFIEZ VOTRE COMPTE 🔔",
+  "subject": "🔒 Carte bloquée",
   "greeting": "Bonjour",
-  "card_info_prefix": "La carte terminant par",
-  "card_info_suffix": "a été bloquée depuis l'application Green Nation.",
-  "security_warning": "👉 Si vous n'êtes pas à l'origine de cette action, contactez notre support immédiatement.",
-  "security_signature": "L'équipe Sécurité.",
   "social_title": "Ne passez pas à côté de notre actu !",
   "social_hashtags_part1": "#CLEANTECH #ARGENT #PLANETE...",
   "social_hashtags_part2": "ET SURTOUT... DES",
@@ -24,6 +21,11 @@
   "recipient_email": "c.garreau@greennation.green",
   "company_address_url": "48+Rue+de+la+Bienfaisance,+75008+Paris,+France",
   "unsubscribe_url": "",
+
+  "card_info_prefix": "La carte terminant par",
+  "card_info_suffix": "a été bloquée depuis l'application Green Nation.",
+  "security_warning": "👉 Si vous n'êtes pas à l'origine de cette action, contactez notre support immédiatement.",
+  "security_signature": "L'équipe Sécurité.",
   "first_name": "Tai Van",
   "card_last_four": "1234"
 }

@@ -2,10 +2,10 @@
   "lang_code": "fr",
   "header_gradient": "linear-gradient(181deg, #3651F3 -4.19%, rgba(255, 255, 255, 0) 65.81%)",
   "primary_color": "#3651F3",
-  "title": "Votre carte a été bloquée - Green Nation",
-  "preheader": "⚠️ Votre carte Green Nation a été bloquée. Vérifiez votre compte immédiatement si vous n'êtes pas à l'origine de cette action.",
-  "heading": "VOTRE CARTE A ÉTÉ BLOQUÉE, VÉRIFIEZ VOTRE COMPTE 🔔",
-  "subject": "🔒 Carte bloquée",
+  "title": "Alerte de virement - Green Nation",
+  "preheader": "⚠️ Un virement supérieur à votre seuil défini a été effectué. Veuillez vérifier s'il est autorisé.",
+  "heading": "🔔 Alerte : virement important détecté",
+  "subject": "🔔 Alerte : virement important détecté",
   "greeting": "Bonjour",
   "social_title": "Ne passez pas à côté de notre actu !",
   "social_hashtags_part1": "#CLEANTECH #ARGENT #PLANETE...",
@@ -22,10 +22,12 @@
   "company_address_url": "48+Rue+de+la+Bienfaisance,+75008+Paris,+France",
   "unsubscribe_url": "",
 
-  "card_info_prefix": "La carte terminant par",
-  "card_info_suffix": "a été bloquée depuis l'application Green Nation.",
-  "security_warning": "👉 Si vous n'êtes pas à l'origine de cette action, contactez notre support immédiatement.",
-  "security_signature": "L'équipe Sécurité.",
-  "first_name": "Tai Van",
-  "card_last_four": "1234"
+  "transfer_alert_intro": "Un virement supérieur à votre seuil défini a été effectué :",
+  "amount_label": "Montant :",
+  "amount": "8 720,00 €",
+  "account_label": "Compte débité :",
+  "account_name": "Green Nation Business",
+  "security_warning": "👉 Si ce virement n'est pas autorisé, veuillez nous contacter immédiatement.",
+  "signature": "L'équipe Sécurité",
+  "first_name": "Tai Van"
 }

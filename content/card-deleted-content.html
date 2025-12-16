@@ -1,8 +1,8 @@
 <!-- 
-  Card Blocked Content (v2) - For use with shared-layout.html
+  Card Deleted Content - For use with shared-layout.html
   
   This content file is designed to work with the shared-layout.html layout.
-  It only contains the card-specific body content (card information and security message).
+  It contains the card deletion notification content (card information and action message).
   
   The layout provides: logo, heading, greeting, social media promotion, footer, and unsubscribe sections.
 -->
@@ -31,7 +31,7 @@
             "
             class="body-text"
           >
-            {{card_info_prefix}}
+            {{card_deleted_prefix}}
           </p>
           <p
             style="
@@ -58,7 +58,7 @@
             "
             class="body-text"
           >
-            {{card_info_suffix}}
+            {{card_deleted_suffix}}
           </p>
         </td>
       </tr>
@@ -66,7 +66,7 @@
   </td>
 </tr>
 
-<!-- Security Message -->
+<!-- Action Message -->
 <tr>
   <td style="padding: 0 40px" class="mobile-padding">
     <table
@@ -84,13 +84,13 @@
               font-family: 'Poppins', Arial, sans-serif;
               font-size: 18px;
               font-weight: 500;
-              line-height: 24px;
+              line-height: 34px;
               color: #000000;
               text-align: center;
             "
             class="body-text"
           >
-            {{security_warning}}
+            {{action_message}}
           </p>
           <p
             style="
@@ -104,7 +104,7 @@
             "
             class="body-text"
           >
-            {{security_signature}}
+            {{signature}}
           </p>
         </td>
       </tr>

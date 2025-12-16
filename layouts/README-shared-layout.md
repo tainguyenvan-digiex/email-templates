@@ -1,10 +1,10 @@
-# Card Blocked Layout
+# Shared Layout
 
-A specialized Postmark layout for card-blocked type emails (security notifications, alerts).
+A shared Postmark layout for emails that require a header with gradient background, social media promotion section, and standard footer structure.
 
 ## Purpose
 
-This layout centralizes common components for card-blocked type emails:
+This layout centralizes common components for multiple email types:
 
 - Logo row (Green Nation logo, top-right placement)
 - Header section with gradient background
@@ -16,17 +16,18 @@ This layout centralizes common components for card-blocked type emails:
 
 ## When to Use
 
-Use `card-blocked-layout.html` for:
+Use `shared-layout.html` for:
 
 - Card blocked notifications
-- Suspicious login alerts
+- Transfer failed notifications
 - Security warnings
-- Account-related security notifications
+- Account-related notifications
+- Any email type that needs header gradient and social media promotion
 
 Use `common-layout.html` for:
 
 - Welcome emails
-- Other email types with different structures
+- Other email types with different structures (simpler layout without header gradient)
 
 ## Required Template Variables
 
@@ -57,34 +58,44 @@ Use `common-layout.html` for:
 | `company_address`              | Company address                    | `48 Rue de la Bienfaisance, 75008 Paris, France`                          |
 | `company_address_url`          | URL-encoded address for maps       | `48+Rue+de+la+Bienfaisance,+75008+Paris,+France`                          |
 
-### Content Variables (used in content file)
+### Content Variables (used in content files)
 
-For `card-blocked-content-v2.html`:
+Content variables depend on the specific content file being used:
 
-| Variable             | Description                    | Example                                      |
-| -------------------- | ------------------------------ | -------------------------------------------- |
-| `card_info_prefix`   | Text before card number        | `The card ending in`                         |
-| `card_last_four`     | Last 4 digits of card          | `1234`                                       |
-| `card_info_suffix`   | Text after card number         | `has been blocked via the Green Nation app.` |
-| `security_warning`   | Security warning text (plain text) | `👉 If you didn't initiate this action, please contact our support immediately.` |
-| `security_signature` | Signature                      | `The Security Team.`                         |
+**For `card-blocked-content-v2.html`:**
+- `card_info_prefix` - Text before card number
+- `card_last_four` - Last 4 digits of card
+- `card_info_suffix` - Text after card number
+- `security_warning` - Security warning text
+- `security_signature` - Signature
+
+**For `transfer-failed-content.html`:**
+- `transaction_failed_intro` - Introduction text
+- `amount_label` - Amount label text
+- `amount` - Transaction amount
+- `transaction_type_label` - Transaction type label
+- `transaction_type` - Transaction type
+- `failure_reason_label` - Failure reason label
+- `failure_reason` - Failure reason
+- `action_message` - Action message
+- `signature` - Signature
 
 ## How to Upload to Postmark
 
 1. **Upload the Layout**:
 
    - Go to Postmark → Server → Templates → Layouts
-   - Create a new layout named `card-blocked-layout`
-   - Paste the contents of `layouts/card-blocked-layout.html`
+   - Create a new layout named `shared-layout`
+   - Paste the contents of `layouts/shared-layout.html`
    - Save
 
 2. **Create Template with Content**:
 
    - Go to Postmark → Server → Templates
    - Create a new template
-   - Select `card-blocked-layout` as the layout
-   - Paste the contents of `content/card-blocked-content-v2.html` in the content section
-   - Configure the template alias (e.g., `card-block-email`)
+   - Select `shared-layout` as the layout
+   - Paste the contents of your content file (e.g., `content/card-blocked-content-v2.html` or `content/transfer-failed-content.html`) in the content section
+   - Configure the template alias (e.g., `card-block-email` or `transfer-failed-email`)
    - Save
 
 3. **Test**:
@@ -96,22 +107,23 @@ For `card-blocked-content-v2.html`:
 ```
 layouts/
 ├── common-layout.html           # General layout (for welcome emails, etc.)
-├── card-blocked-layout.html     # Card-blocked specific layout (this file)
-└── README-card-blocked-layout.md # This documentation
+├── shared-layout.html           # Shared layout with header gradient and social media (this file)
+└── README-shared-layout.md      # This documentation
 
 content/
 ├── card-blocked-content.html    # Original content (works with common-layout)
-├── card-blocked-content-v2.html # New content (works with card-blocked-layout)
+├── card-blocked-content-v2.html # Card blocked content (works with shared-layout)
+├── transfer-failed-content.html # Transfer failed content (works with shared-layout)
 └── welcome-content.html         # Welcome email content
 
-templates/config/card-blocked/
-├── b2b-european.json            # English config
-└── b2b-european-fr.json         # French config
+templates/config/
+├── card-blocked/                # Config files for card-blocked templates
+└── transfer-failed/             # Config files for transfer-failed templates
 ```
 
 ## Migration Notes
 
 - Existing templates using `common-layout.html` + `card-blocked-content.html` continue to work
-- New templates can use `card-blocked-layout.html` + `card-blocked-content-v2.html`
-- Both approaches produce the same visual result
-- The new approach has less duplication for similar notification emails
+- New templates can use `shared-layout.html` + appropriate content file
+- The shared layout reduces duplication for similar notification emails
+- Multiple email types (card-blocked, transfer-failed) can use the same layout

@@ -2,10 +2,10 @@
   "lang_code": "en",
   "header_gradient": "linear-gradient(181deg, #3651F3 -4.19%, rgba(255, 255, 255, 0) 65.81%)",
   "primary_color": "#3651F3",
-  "title": "Your card has been blocked - Green Nation",
-  "preheader": "⚠️ Your Green Nation card has been blocked. Verify your account immediately if you did not initiate this action.",
-  "heading": "YOUR CARD HAS BEEN BLOCKED, PLEASE CHECK YOUR ACCOUNT 🔔",
-  "subject": "🔒 Card blocked",
+  "title": "Card deleted - Green Nation",
+  "preheader": "🗑️ Your Green Nation card has been deleted from your company account.",
+  "heading": "🗑️ Card deleted",
+  "subject": "🗑️ Card deleted",
   "greeting": "Hello",
   "social_title": "Don't miss out on our latest updates!",
   "social_hashtags_part1": "#CLEANTECH #MONEY #PLANET...",
@@ -22,10 +22,10 @@
   "company_address_url": "48+Rue+de+la+Bienfaisance,+75008+Paris,+France",
   "unsubscribe_url": "",
 
-  "card_info_prefix": "The card ending in",
-  "card_info_suffix": "has been blocked via the Green Nation app.",
-  "security_warning": "👉 If you didn't initiate this action, please contact our support immediately.",
-  "security_signature": "The Security Team.",
+  "card_deleted_prefix": "The Green Nation card ending in",
+  "card_deleted_suffix": "has been deleted from your company account.",
+  "action_message": "👉 You can review all changes in the \"Cards\" section.",
+  "signature": "The Green Nation team.",
   "first_name": "Tai Van",
-  "card_last_four": "1234"
+  "card_last_four": "2391"
 }

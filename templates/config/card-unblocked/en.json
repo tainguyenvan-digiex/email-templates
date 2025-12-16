@@ -2,10 +2,10 @@
   "lang_code": "en",
   "header_gradient": "linear-gradient(181deg, #3651F3 -4.19%, rgba(255, 255, 255, 0) 65.81%)",
   "primary_color": "#3651F3",
-  "title": "Your card has been blocked - Green Nation",
-  "preheader": "⚠️ Your Green Nation card has been blocked. Verify your account immediately if you did not initiate this action.",
-  "heading": "YOUR CARD HAS BEEN BLOCKED, PLEASE CHECK YOUR ACCOUNT 🔔",
-  "subject": "🔒 Card blocked",
+  "title": "Card unblocked - Green Nation",
+  "preheader": "🔒 Your Green Nation card has been unblocked. Verify your account if you did not initiate this action.",
+  "heading": "🔒 Card unblocked",
+  "subject": "🔒 Card unblocked",
   "greeting": "Hello",
   "social_title": "Don't miss out on our latest updates!",
   "social_hashtags_part1": "#CLEANTECH #MONEY #PLANET...",
@@ -23,9 +23,9 @@
   "unsubscribe_url": "",
 
   "card_info_prefix": "The card ending in",
-  "card_info_suffix": "has been blocked via the Green Nation app.",
+  "card_info_suffix": "has been unblocked via the Green Nation app.",
   "security_warning": "👉 If you didn't initiate this action, please contact our support immediately.",
-  "security_signature": "The Security Team.",
+  "security_signature": "The Security Team",
   "first_name": "Tai Van",
-  "card_last_four": "1234"
+  "card_last_four": "4827"
 }

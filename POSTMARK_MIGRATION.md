@@ -22,9 +22,9 @@ This layout contains:
 
 **Use for:** Welcome emails and general communications.
 
-### 2. Card Blocked Layout
+### 2. Shared Layout
 
-**Layout Name:** `card-blocked-layout`
+**Layout Name:** `shared-layout`
 
 This layout contains everything in the common layout, plus:
 
@@ -34,9 +34,9 @@ This layout contains everything in the common layout, plus:
 - Greeting section
 - Social Media Promotion section
 
-**Use for:** Card blocked notifications, suspicious login alerts, security warnings, and other account-related security notifications.
+**Use for:** Card blocked notifications, transfer failed notifications, suspicious login alerts, security warnings, and other account-related security notifications.
 
-See `layouts/README-card-blocked-layout.md` for detailed documentation.
+See `layouts/README-shared-layout.md` for detailed documentation.
 
 ## Template Mappings
 
@@ -233,10 +233,11 @@ For questions or issues with the new template system, refer to:
 
 - Layout files:
   - `layouts/common-layout.html` - General layout for welcome emails
-  - `layouts/card-blocked-layout.html` - Specialized layout for card-blocked type emails
-  - `layouts/README-card-blocked-layout.md` - Documentation for card-blocked layout
+  - `layouts/shared-layout.html` - Shared layout with header gradient and social media promotion
+  - `layouts/README-shared-layout.md` - Documentation for shared layout
 - Content files:
   - `content/welcome-content.html` - Welcome email content (use with common-layout)
   - `content/card-blocked-content.html` - Card blocked content (use with common-layout)
-  - `content/card-blocked-content-v2.html` - Card blocked content (use with card-blocked-layout)
+  - `content/card-blocked-content-v2.html` - Card blocked content (use with shared-layout)
+  - `content/transfer-failed-content.html` - Transfer failed content (use with shared-layout)
 - Configuration examples: `templates/config/`
