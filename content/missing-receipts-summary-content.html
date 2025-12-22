@@ -51,6 +51,7 @@
     >
       <tr>
         <td align="center" style="padding: 0">
+          {{#each expenses}}
           <p
             style="
               margin: 0 0 8px 0;
@@ -63,22 +64,9 @@
             "
             class="body-text"
           >
-            {{expense_item_1}}
+            {{this}}
           </p>
-          <p
-            style="
-              margin: 0 0 8px 0;
-              font-family: 'Poppins', Arial, sans-serif;
-              font-size: 18px;
-              font-weight: 500;
-              line-height: 24px;
-              color: #000000;
-              text-align: center;
-            "
-            class="body-text"
-          >
-            {{expense_item_2}}
-          </p>
+          {{/each}}
         </td>
       </tr>
     </table>

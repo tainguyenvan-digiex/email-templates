@@ -21,9 +21,7 @@
   "resubmission_request_message": "Le document que vous avez soumis n'a pas pu être validé pour la raison suivante :",
   "cta_message": "👉 Merci de téléverser une version valide dans votre compte Green Nation Business afin de finaliser la vérification.",
   "signature": "L'équipe Conformité – Green Nation",
-
   "cta_url": "",
   "first_name": "Tai Van",
-  "reason": "Qualité du document insuffisante ou document expiré",
-  "unsubscribe_url": ""
+  "reason": "Qualité du document insuffisante ou document expiré"
 }

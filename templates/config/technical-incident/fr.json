@@ -19,7 +19,5 @@
   "action_message": "👉 Vous serez informé dès la résolution.",
   "incident_message": "Un incident technique impacte actuellement certains services Green Nation (ex. virements sortants). Nos équipes sont mobilisées pour résoudre le problème au plus vite.",
   "signature": "L'équipe technique",
-
-  "first_name": "Tai Van",
-  "unsubscribe_url": ""
+  "first_name": "Tai Van"
 }

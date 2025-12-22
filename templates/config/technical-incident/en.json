@@ -19,7 +19,5 @@
   "action_message": "👉 You'll be notified as soon as it's resolved.",
   "incident_message": "A technical incident is currently impacting some Green Nation services (e.g. outgoing transfers). Our teams are actively working to resolve it.",
   "signature": "The Tech Team",
-
-  "first_name": "Tai Van",
-  "unsubscribe_url": ""
+  "first_name": "Tai Van"
 }

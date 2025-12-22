@@ -26,11 +26,9 @@
   "cta_message": "👉 Consultez l'historique de vos transactions dans l'application.",
   "security_warning": "Si ce n'était pas vous, contactez notre support immédiatement.",
   "signature": "L'équipe Green Nation.",
-
   "heading": "💸 Payment of {{amount}} to {{merchant}} confirmed",
   "subject": "💸 Payment of {{amount}} to {{merchant}} confirmed",
   "amount": "643,14€",
   "first_name": "Tai Van",
-  "merchant": "Carrefour",
-  "unsubscribe_url": ""
+  "merchant": "Carrefour"
 }

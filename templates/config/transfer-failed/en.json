@@ -22,10 +22,8 @@
   "signature": "The Green Nation Team",
   "transaction_failed_intro": "A transaction on your business account has failed:",
   "transaction_type_label": "Type:",
-
   "amount": "€650.00",
   "failure_reason": "Insufficient balance",
   "first_name": "Tai Van",
-  "transaction_type": "Direct Debit",
-  "unsubscribe_url": ""
+  "transaction_type": "Direct Debit"
 }

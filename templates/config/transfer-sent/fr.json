@@ -20,11 +20,9 @@
   "cta_message": "👉 Consultez l'historique de vos transactions dans l'application.",
   "security_warning": "Si cette opération n'a pas été effectué par vous, contactez notre support immédiatement.",
   "signature": "L'équipe Green Nation.",
-
   "amount": "780€",
   "first_name": "Tai Van",
   "recipient_name": "Marie",
   "heading": "✅ Virement de {{amount}} envoyé à {{recipient_name}}",
-  "subject": "✅ Virement de {{amount}} envoyé à {{recipient_name}}",
-  "unsubscribe_url": ""
+  "subject": "✅ Virement de {{amount}} envoyé à {{recipient_name}}"
 }

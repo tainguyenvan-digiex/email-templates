@@ -22,10 +22,8 @@
   "signature": "L'équipe Green Nation",
   "transaction_failed_intro": "Une transaction sur votre compte professionnel a échoué :",
   "transaction_type_label": "Type :",
-
   "amount": "650,00 €",
   "failure_reason": "[Solde insuffisant / IBAN incorrect / autre erreur]",
   "first_name": "Tai Van",
-  "transaction_type": "Prélèvement / Virement",
-  "unsubscribe_url": ""
+  "transaction_type": "Prélèvement / Virement"
 }

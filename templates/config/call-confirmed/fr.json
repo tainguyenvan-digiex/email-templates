@@ -24,10 +24,8 @@
   "reschedule_message": "Besoin de modifier ou annuler ce rendez-vous ? Vous pouvez le faire directement dans votre app.",
   "sign_off": "À très bientôt,",
   "signature": "L'équipe Green Nation",
-
   "appointment_date": "[Date du rendez-vous]",
   "appointment_time": "[Heure]",
   "location": "[Lien visio / téléphone / précisions]",
-  "first_name": "Tai Van",
-  "unsubscribe_url": ""
+  "first_name": "Tai Van"
 }

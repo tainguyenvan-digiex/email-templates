@@ -21,9 +21,7 @@
   "receipt_reminder_prefix": "Vous avez effectué une dépense de ",
   "receipt_reminder_suffix": ") sans ajouter de justificatif.",
   "signature": "L'équipe Green Nation",
-
   "amount": "58,90 €",
   "first_name": "Tai Van",
-  "merchant": "Biocoop",
-  "unsubscribe_url": ""
+  "merchant": "Biocoop"
 }

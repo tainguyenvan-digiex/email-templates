@@ -20,9 +20,7 @@
   "failed_attempts_intro": "There have been",
   "security_warning": "👉 If this wasn't you, change your password.",
   "signature": "The Green Nation Team.",
-
   "attempt_count": "3",
   "email_address": "user@email.com",
-  "first_name": "Tai Van",
-  "unsubscribe_url": ""
+  "first_name": "Tai Van"
 }

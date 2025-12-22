@@ -23,10 +23,8 @@
   "prepare_questions_message": "Feel free to prepare any questions you may have.",
   "sign_off": "Talk to you soon,",
   "signature": "The Green Nation Team",
-
   "appointment_date": "[Date]",
   "appointment_time": "[Time]",
   "call_link": "[Call link]",
-  "first_name": "Tai Van",
-  "unsubscribe_url": ""
+  "first_name": "Tai Van"
 }

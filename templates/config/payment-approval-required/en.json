@@ -21,13 +21,11 @@
   "approval_required_message": "A new payment has been initiated and requires your approval:",
   "cta_message": "👉 You can validate or reject this payment in your Green Nation Business account.",
   "signature": "The Green Nation Team",
-
   "amount": "€2,450.00",
   "initiated_by": "Thomas D.",
   "beneficiary": "Solyvia SARL",
   "iban": "FR76 **** **** 1234",
   "first_name": "Tai Van",
   "heading": "✅ Approval required: payment of {{amount}}",
-  "subject": "✅ Approval required: payment of {{amount}}",
-  "unsubscribe_url": ""
+  "subject": "✅ Approval required: payment of {{amount}}"
 }

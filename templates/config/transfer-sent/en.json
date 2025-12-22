@@ -20,11 +20,9 @@
   "cta_message": "👉 View transaction history in your app.",
   "security_warning": "If this operation wasn't made by you, please contact our support immediately.",
   "signature": "The Green Nation Team",
-
   "amount": "€780",
   "first_name": "Tai Van",
   "recipient_name": "Marie",
   "heading": "✅ Transfer of {{amount}} sent to {{recipient_name}}",
-  "subject": "✅ Transfer of {{amount}} sent to {{recipient_name}}",
-  "unsubscribe_url": ""
+  "subject": "✅ Transfer of {{amount}} sent to {{recipient_name}}"
 }

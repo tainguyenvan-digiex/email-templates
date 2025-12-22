@@ -23,10 +23,8 @@
   "location_label": "📍 Location:",
   "reschedule_message": "If this new time still doesn't work for you, feel free to reschedule directly from your app.",
   "signature": "The Green Nation Team",
-
   "new_date": "[New Date]",
   "new_time": "[New Time]",
   "location": "[Video call link / phone / details]",
-  "first_name": "Tai Van",
-  "unsubscribe_url": ""
+  "first_name": "Tai Van"
 }

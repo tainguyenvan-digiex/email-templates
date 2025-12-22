@@ -21,9 +21,7 @@
   "removal_message_suffix_part1": " has been removed from your ",
   "removal_message_suffix_part2": " company.",
   "signature": "The Green Nation Team.",
-
   "company_name": "Green Nation",
   "first_name": "Tai Van",
-  "removed_user_info": "Green Nation",
-  "unsubscribe_url": ""
+  "removed_user_info": "Green Nation"
 }

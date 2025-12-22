@@ -20,9 +20,7 @@
   "payment_pending_message_suffix": "is pending approval.",
   "cta_message": "👉 Approve or decline in dashboard",
   "signature": "The Green Nation Team.",
-
   "cta_url": "",
   "first_name": "Tai Van",
-  "amount": "€2,300",
-  "unsubscribe_url": ""
+  "amount": "€2,300"
 }

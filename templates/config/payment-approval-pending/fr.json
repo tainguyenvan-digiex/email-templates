@@ -20,9 +20,7 @@
   "payment_pending_message_suffix": "est en attente de validation.",
   "cta_message": "👉 Valider ou refuser dans votre interface",
   "signature": "L'équipe Green Nation.",
-
   "cta_url": "",
   "first_name": "Tai Van",
-  "amount": "2 300 €",
-  "unsubscribe_url": ""
+  "amount": "2 300 €"
 }

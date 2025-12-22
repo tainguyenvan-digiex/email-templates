@@ -22,10 +22,8 @@
   "location_label": "Location:",
   "security_warning": "👉 Please verify this transaction if you did not authorize it.",
   "signature": "The Security Team",
-
   "amount": "€2,150.00",
   "card_last_four": "9173",
   "first_name": "Tai Van",
-  "location": "Apple Store – Paris",
-  "unsubscribe_url": ""
+  "location": "Apple Store – Paris"
 }

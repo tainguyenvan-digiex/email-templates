@@ -21,9 +21,7 @@
   "receipt_reminder_prefix": "You made a ",
   "receipt_reminder_suffix": ") without uploading a receipt.",
   "signature": "The Green Nation Team",
-
   "amount": "€58.90",
   "first_name": "Tai Van",
-  "merchant": "Biocoop",
-  "unsubscribe_url": ""
+  "merchant": "Biocoop"
 }

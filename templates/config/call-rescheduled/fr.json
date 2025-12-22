@@ -23,10 +23,8 @@
   "location_label": "📍 Lieu :",
   "reschedule_message": "Si ce nouvel horaire ne vous convient toujours pas, vous pouvez reprogrammer l'appel à tout moment via votre app.",
   "signature": "L'équipe Green Nation",
-
   "new_date": "[Nouvelle date]",
   "new_time": "[Nouvelle heure]",
   "location": "[Lien visio / téléphone / précisions]",
-  "first_name": "Tai Van",
-  "unsubscribe_url": ""
+  "first_name": "Tai Van"
 }

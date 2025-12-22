@@ -19,8 +19,6 @@
   "cta_text": "Update my ID",
   "id_update_request_message": "Your ID document has expired or is missing. Please update it to continue using your Green Nation account.",
   "signature": "The Compliance Team",
-
   "cta_url": "",
-  "first_name": "Tai Van",
-  "unsubscribe_url": ""
+  "first_name": "Tai Van"
 }

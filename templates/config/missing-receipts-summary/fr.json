@@ -19,11 +19,9 @@
   "action_message": "👉 Vous pouvez les relancer depuis votre interface.",
   "signature": "L'équipe Green Nation.",
   "summary_intro": "Voici le résumé des dépenses non justifiées :",
-
   "end_date": "27 juillet",
   "expense_item_1": "Thomas D. – 58,90 € – Biocoop – 27/07",
   "expense_item_2": "Lucie M. – 72,00 € – Uber – 25/07",
   "first_name": "Tai Van",
-  "start_date": "21",
-  "unsubscribe_url": ""
+  "start_date": "21"
 }

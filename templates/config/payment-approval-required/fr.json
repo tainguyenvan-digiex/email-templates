@@ -21,13 +21,11 @@
   "approval_required_message": "Un nouveau paiement a été initié et nécessite votre validation :",
   "cta_message": "👉 Vous pouvez valider ou refuser ce paiement dans votre compte Green Nation Business.",
   "signature": "L'équipe Green Nation",
-
   "amount": "2 450,00 €",
   "initiated_by": "Thomas D.",
   "beneficiary": "Solyvia SARL",
   "iban": "FR76 **** **** 1234",
   "first_name": "Tai Van",
   "heading": "✅ Validation requise : paiement de {{amount}}",
-  "subject": "✅ Validation requise : paiement de {{amount}}",
-  "unsubscribe_url": ""
+  "subject": "✅ Validation requise : paiement de {{amount}}"
 }

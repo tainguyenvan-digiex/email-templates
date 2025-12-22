@@ -19,11 +19,9 @@
   "action_message": "👉 You can follow up directly from your dashboard.",
   "signature": "The Green Nation Team.",
   "summary_intro": "Here is your summary of unverified expenses:",
-
   "end_date": "27",
   "expense_item_1": "Thomas D. – €58.90 – Biocoop – 27/07",
   "expense_item_2": "Lucie M. – €72.00 – Uber – 25/07",
   "first_name": "Tai Van",
-  "start_date": "July 21",
-  "unsubscribe_url": ""
+  "start_date": "July 21"
 }

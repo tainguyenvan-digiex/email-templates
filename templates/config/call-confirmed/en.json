@@ -24,10 +24,8 @@
   "reschedule_message": "Need to reschedule or cancel? You can do it anytime within the app.",
   "sign_off": "Speak to you soon,",
   "signature": "The Green Nation Team",
-
   "appointment_date": "[Appointment Date]",
   "appointment_time": "[Time]",
   "location": "[Video call link / phone / details]",
-  "first_name": "Tai Van",
-  "unsubscribe_url": ""
+  "first_name": "Tai Van"
 }

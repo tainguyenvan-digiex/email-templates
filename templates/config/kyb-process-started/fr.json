@@ -20,8 +20,6 @@
   "kyb_started_message": "Le processus de vérification (KYB) de votre entreprise vient de démarrer. Merci de compléter les documents requis depuis votre interface Green Nation Business.",
   "signature": "L'équipe Green Nation",
   "tracking_message": "Vous pouvez suivre l'avancement à tout moment dans votre espace entreprise.",
-
   "cta_url": "",
-  "first_name": "Tai Van",
-  "unsubscribe_url": ""
+  "first_name": "Tai Van"
 }
