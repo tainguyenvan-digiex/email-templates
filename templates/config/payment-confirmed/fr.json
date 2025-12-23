@@ -26,8 +26,8 @@
   "cta_message": "👉 Consultez l'historique de vos transactions dans l'application.",
   "security_warning": "Si ce n'était pas vous, contactez notre support immédiatement.",
   "signature": "L'équipe Green Nation.",
-  "heading": "💸 Payment of {{amount}} to {{merchant}} confirmed",
-  "subject": "💸 Payment of {{amount}} to {{merchant}} confirmed",
+  "heading": "💸 Paiement de {{amount}} chez {{merchant}} confirmé",
+  "subject": "💸 Paiement de {{amount}} chez {{merchant}} confirmé",
   "amount": "643,14€",
   "first_name": "Tai Van",
   "merchant": "Carrefour"

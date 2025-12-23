@@ -25,8 +25,18 @@
   "cta_url": "",
   "first_name": "Tai Van",
   "month_year": "July 2025",
-  "summary_item_1": "• 46 transactions",
-  "summary_item_2": "• 5 active users",
-  "summary_item_3": "• €8,350.00 total spending",
-  "summary_item_4": "• 2 expenses without receipts"
+  "metrics": [
+    {
+      "this": "46 transactions"
+    },
+    {
+      "this": "5 active users"
+    },
+    {
+      "this": "€8,350.00 total spending"
+    },
+    {
+      "this": "2 expenses without receipts"
+    }
+  ]
 }
