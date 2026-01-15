@@ -1,0 +1,18 @@
+{
+  "title": "Votre demande a été rejetée",
+  "preheader": "Malheureusement, nous n'avons pas pu approuver votre demande.",
+  "heading": "Votre demande a été rejetée",
+  "subject": "Votre demande a été rejetée",
+  "company_registration_part2": "",
+  "company_registration_part3": "",
+
+  "greeting": "Bonjour",
+  "rejection_message_part1": "Malheureusement, nous n'avons pas pu approuver votre demande. Cette décision est basée sur:",
+  "rejection_message_part2": "",
+  "support_message": "Si vous avez des questions ou avez besoin d'une assistance supplémentaire, veuillez contacter notre service client",
+  "sign_off": "Cordialement,",
+  "signature": "L'équipe Conformité",
+  "reason": "documentation incomplète",
+  "first_name": "Tai Van",
+  "recipient_email": ""
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Your Request Has Been Rejected",
+  "preheader": "Unfortunately, we could not approve your request.",
+  "heading": "Your Request Has Been Rejected",
+  "subject": "Your Request Has Been Rejected",
+  "company_registration_part2": "",
+  "company_registration_part3": "",
+
+  "greeting": "Dear",
+  "rejection_message_part1": "Unfortunately, we could not approve your request. This decision was based on:",
+  "rejection_message_part2": "",
+  "support_message": "If you have any questions or need further assistance, please contact our support team.",
+  "sign_off": "Best regards,",
+  "signature": "The Compliance Team",
+  "reason": "incomplete documentation",
+  "first_name": "Tai Van",
+  "recipient_email": ""
+}

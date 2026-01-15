@@ -1,0 +1,20 @@
+{
+  "title": "Action required: Your plan payment has failed ❌",
+  "preheader": "We were unable to process your Oxen subscription payment.",
+  "heading": "Action required: Your plan payment has failed ❌",
+  "subject": "Action required: Your plan payment has failed ❌",
+  "company_registration_part2": "",
+  "company_registration_part3": "",
+
+  "failure_message": "We were unable to process your Oxen subscription payment. Your benefits are now on hold.",
+  "defer_notice_part1": "💡 You have",
+  "defer_notice_part2": "days to top up your balance to avoid service suspension.",
+  "steps_heading": "📌 What to do?",
+  "step_1": "✅ Add funds to your Oxen account.",
+  "step_2": "✅ We will automatically collect the payment as soon as your balance is sufficient.",
+  "cta_text": "👉 Add Funds",
+  "defer_day": "7",
+  "cta_url": "",
+  "first_name": "Tai Van",
+  "recipient_email": ""
+}

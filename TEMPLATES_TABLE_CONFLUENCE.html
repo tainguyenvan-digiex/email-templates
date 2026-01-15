@@ -43,9 +43,16 @@
 <p>
   <strong>Note:</strong> Template-specific fields such as <code>title</code>,
   <code>preheader</code>, <code>heading</code>, <code>subject</code>,
-  <code>first_name</code> are not included in the common layout config as they
-  vary per template. The card-blocked template is excluded from this common
-  layout as it has additional card-specific fields and a different structure.
+  <code>first_name</code>, <code>cta_url</code>, and <code>recipient_email</code>
+  are not included in the common layout config as they vary per template. The
+  card-blocked template is excluded from this common layout as it has additional
+  card-specific fields and a different structure.
+</p>
+
+<p>
+  <strong>CTA URLs:</strong> Templates with call-to-action buttons require a
+  <code>cta_url</code> field to be provided dynamically by the server. This field
+  should contain the full URL where the button should redirect users.
 </p>
 
 <h2>Template List</h2>
@@ -137,21 +144,21 @@
       <td>10</td>
       <td>Card Shipping</td>
       <td><code>card-shipping</code></td>
-      <td>❌ Not in DB</td>
+      <td><code>automatic-account-closure-15-day-left-en/fr</code></td>
       <td><code>first_name</code></td>
     </tr>
     <tr>
       <td>11</td>
       <td>Card Temporarily Disabled</td>
       <td><code>card-temporarily-disabled</code></td>
-      <td>❌ Not in DB</td>
+      <td><code>automatic-account-closure-15-day-left-en/fr</code></td>
       <td><code>first_name</code></td>
     </tr>
     <tr>
       <td>12</td>
       <td>Card Unblocked</td>
       <td><code>card-unblocked</code></td>
-      <td>❌ Not in DB</td>
+      <td><code>automatic-account-closure-15-day-left-en/fr</code></td>
       <td><code>first_name</code>, <code>card_last_four</code>,</td>
     </tr>
     <tr>
@@ -205,7 +212,7 @@
       <td>19</td>
       <td>Maintenance Extended</td>
       <td><code>maintenance-extended</code></td>
-      <td>❌ Not in DB</td>
+      <td><code>automatic-account-closure-15-day-left-en/fr</code></td>
       <td><code>first_name</code>, <code>eta</code></td>
     </tr>
     <tr>
@@ -265,7 +272,7 @@
       <td>26</td>
       <td>Payment Approval Required</td>
       <td><code>payment-approval-required</code></td>
-      <td>❌ Not in DB</td>
+      <td><code>automatic-account-closure-15-day-left-en/fr</code></td>
       <td>
         <code>first_name</code>, <code>amount</code>, <code>initiated_by</code>,
         <code>beneficiary</code>, <code>iban</code>, <code>heading</code>,
@@ -276,7 +283,7 @@
       <td>27</td>
       <td>Payment Confirmed</td>
       <td><code>payment-confirmed</code></td>
-      <td>❌ Not in DB</td>
+      <td><code>automatic-account-closure-15-day-left-en/fr</code></td>
       <td>
         <code>first_name</code>, <code>amount</code>, <code>merchant</code>,
         <code>heading</code>, <code>subject</code>
@@ -326,7 +333,7 @@
       <td>33</td>
       <td>Team Member Removed</td>
       <td><code>team-member-removed</code></td>
-      <td>❌ Not in DB</td>
+      <td><code>automatic-account-closure-15-day-left-en/fr</code></td>
       <td>
         <code>first_name</code>, <code>removed_user_info</code>,
         <code>company_name</code>
@@ -336,14 +343,14 @@
       <td>34</td>
       <td>Technical Incident</td>
       <td><code>technical-incident</code></td>
-      <td>❌ Not in DB</td>
+      <td><code>automatic-account-closure-15-day-left-en/fr</code></td>
       <td><code>first_name</code></td>
     </tr>
     <tr>
       <td>35</td>
       <td>Terms Updated</td>
       <td><code>terms-updated</code></td>
-      <td>❌ Not in DB</td>
+      <td><code>automatic-account-closure-15-day-left-en/fr</code></td>
       <td>
         <code>first_name</code>, <code>update_date</code>, <code>cta_url</code>,
       </td>
@@ -352,7 +359,7 @@
       <td>36</td>
       <td>Transfer Alert</td>
       <td><code>transfer-alert</code></td>
-      <td>❌ Not in DB</td>
+      <td><code>automatic-account-closure-15-day-left-en/fr</code></td>
       <td>
         <code>first_name</code>, <code>account_name</code>, <code>amount</code>,
       </td>
@@ -371,7 +378,7 @@
       <td>38</td>
       <td>Transfer Sent</td>
       <td><code>transfer-sent</code></td>
-      <td>❌ Not in DB</td>
+      <td><code>automatic-account-closure-15-day-left-en/fr</code></td>
       <td>
         <code>first_name</code>, <code>amount</code>,
         <code>recipient_name</code>, <code>heading</code>, <code>subject</code>,
@@ -405,7 +412,7 @@
       <td>42</td>
       <td>Welcome (B2B)</td>
       <td><code>welcome</code> (b2b.json)</td>
-      <td>❌ Not in DB</td>
+      <td><code>automatic-account-closure-15-day-left-en/fr</code></td>
       <td>
         <code>first_name</code>, <code>book_call_url</code>,
         <code>faq_url</code>
@@ -415,10 +422,89 @@
       <td>43</td>
       <td>Welcome (B2C)</td>
       <td><code>welcome</code> (b2c.json)</td>
-      <td>❌ Not in DB</td>
+      <td><code>automatic-account-closure-15-day-left-en/fr</code></td>
       <td>
         <code>first_name</code>, <code>book_call_url</code>,
         <code>faq_url</code>
+      </td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>Automatic Account Closure - 15 Days Left</td>
+      <td><code>automatic-account-closure-15-day-left</code></td>
+      <td><code>automatic-account-closure-15-day-left-en/fr</code></td>
+      <td><code>first_name</code>, <code>cta_url</code></td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>Automatic Account Closure - Final Reminder</td>
+      <td><code>automatic-account-closure-final-remind</code></td>
+      <td><code>automatic-account-closure-final-remind-en/fr</code></td>
+      <td><code>first_name</code>, <code>cta_url</code></td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>Compliance Request Approved</td>
+      <td><code>compliance-request-approved</code></td>
+      <td><code>compliance-request-approved-en/fr</code></td>
+      <td><code>first_name</code></td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>Compliance Request - Need Additional Information</td>
+      <td><code>compliance-request-need-additional-information</code></td>
+      <td><code>compliance-request-need-additional-information-en/fr</code></td>
+      <td><code>first_name</code></td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>Compliance Request Rejected</td>
+      <td><code>compliance-request-rejected</code></td>
+      <td><code>compliance-request-rejected-en/fr</code></td>
+      <td><code>first_name</code>, <code>reason</code></td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>Account Closed Confirmation (B2B)</td>
+      <td><code>gn-b2b-account-closed-confirmation</code></td>
+      <td><code>gn-b2b-account-closed-confirmation-en/fr</code></td>
+      <td><code>first_name</code></td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>Subscription Account Suspend</td>
+      <td><code>subscription-account-suspend</code></td>
+      <td><code>subscription-account-suspend-en/fr</code></td>
+      <td><code>first_name</code>, <code>cta_url</code></td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>Subscription Collection Reminder - 24 Hours</td>
+      <td><code>subscription-collection-remind-24-hours</code></td>
+      <td><code>subscription-collection-remind-24-hours-en/fr</code></td>
+      <td><code>first_name</code>, <code>cta_url</code></td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>Subscription Collection Reminder - 3 Days</td>
+      <td><code>subscription-collection-remind-3-days</code></td>
+      <td><code>subscription-collection-remind-3-days-en/fr</code></td>
+      <td><code>first_name</code>, <code>cta_url</code></td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>Subscription Collection Reminder - 7 Days</td>
+      <td><code>subscription-collection-remind-7-days</code></td>
+      <td><code>subscription-collection-remind-7-days-en/fr</code></td>
+      <td><code>first_name</code>, <code>cta_url</code></td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td>Subscription Payment Failed Warning</td>
+      <td><code>subscription-payment-failed-warning-block</code></td>
+      <td><code>subscription-payment-failed-warning-block-en/fr</code></td>
+      <td>
+        <code>first_name</code>, <code>defer_day</code>, <code>cta_url</code>
       </td>
     </tr>
   </tbody>
@@ -429,6 +515,7 @@
 <p>Most templates require these common fields:</p>
 <ul>
   <li><code>first_name</code> - User's first name</li>
+  <li><code>recipient_email</code> - User's email address</li>
 </ul>
 
 <p>
@@ -472,6 +559,13 @@
   <li>Terms Updated</li>
   <li>Update Personal Info</li>
   <li>Welcome (B2B/B2C)</li>
+  <li>Automatic Account Closure - 15 Days Left</li>
+  <li>Automatic Account Closure - Final Reminder</li>
+  <li>Subscription Account Suspend</li>
+  <li>Subscription Collection Reminder - 24 Hours</li>
+  <li>Subscription Collection Reminder - 3 Days</li>
+  <li>Subscription Collection Reminder - 7 Days</li>
+  <li>Subscription Payment Failed Warning</li>
 </ul>
 
 <h3>Date/Time Fields</h3>

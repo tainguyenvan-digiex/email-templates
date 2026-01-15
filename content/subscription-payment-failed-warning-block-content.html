@@ -1,0 +1,146 @@
+<!--
+  Subscription Payment Failed Warning Content - For use with shared-layout.html
+
+  This content file is designed to work with the shared-layout.html layout.
+  It contains the payment failed warning content with defer period notice.
+
+  The layout provides: logo, heading, greeting, social media promotion, footer, and unsubscribe sections.
+-->
+
+<!-- Failure Message -->
+<tr>
+  <td style="padding: 0 40px 20px 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="left" style="padding: 20px 0 0">
+          <p
+            style="
+              margin: 0 0 16px 0;
+              font-family: 'Poppins', Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 22px;
+              color: #000000;
+              text-align: left;
+            "
+            class="body-text"
+          >
+            {{failure_message}}
+          </p>
+          <p
+            style="
+              margin: 0 0 20px 0;
+              font-family: 'Poppins', Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 22px;
+              color: #000000;
+              text-align: left;
+            "
+            class="body-text"
+          >
+            {{defer_notice_part1}} {{defer_day}} {{defer_notice_part2}}
+          </p>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<!-- Action Steps -->
+<tr>
+  <td style="padding: 0 40px 20px 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="left" style="padding: 0">
+          <p
+            style="
+              margin: 0 0 12px 0;
+              font-family: 'Poppins', Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 600;
+              line-height: 22px;
+              color: #000000;
+              text-align: left;
+            "
+            class="body-text"
+          >
+            {{steps_heading}}
+          </p>
+          <p
+            style="
+              margin: 0 0 8px 0;
+              font-family: 'Poppins', Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 400;
+              line-height: 22px;
+              color: #000000;
+              text-align: left;
+            "
+            class="body-text"
+          >
+            {{step_1}}
+          </p>
+          <p
+            style="
+              margin: 0 0 20px 0;
+              font-family: 'Poppins', Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 400;
+              line-height: 22px;
+              color: #000000;
+              text-align: left;
+            "
+            class="body-text"
+          >
+            {{step_2}}
+          </p>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<!-- CTA Button -->
+<tr>
+  <td align="center" style="padding: 0 40px 20px 40px" class="mobile-padding">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td
+          style="
+            background-color: #3651f3;
+            border-radius: 12px;
+            padding: 12px 32px;
+          "
+        >
+          <a
+            href="{{cta_url}}"
+            style="
+              font-family: 'Poppins', Arial, sans-serif;
+              font-size: 16px;
+              font-weight: 600;
+              color: #ffffff;
+              text-decoration: none;
+              display: inline-block;
+            "
+            class="cta-button"
+          >
+            {{cta_text}}
+          </a>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>

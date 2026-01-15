@@ -1,0 +1,20 @@
+{
+  "title": "Action requise : le paiement de votre abonnement a échoué ❌",
+  "preheader": "Nous n'avons pas pu traiter le paiement de votre abonnement Oxen.",
+  "heading": "Action requise : le paiement de votre abonnement a échoué ❌",
+  "subject": "Action requise : le paiement de votre abonnement a échoué ❌",
+  "company_registration_part2": "",
+  "company_registration_part3": "",
+
+  "failure_message": "Nous n'avons pas pu traiter le paiement de votre abonnement Oxen. Vos avantages sont temporairement suspendus.",
+  "defer_notice_part1": "💡 Vous disposez de",
+  "defer_notice_part2": "jours pour recharger votre solde afin d'éviter la suspension du service.",
+  "steps_heading": "📌 Que faire ?",
+  "step_1": "✅ Ajoutez des fonds à votre compte Oxen.",
+  "step_2": "✅ Le paiement sera automatiquement prélevé dès que le solde sera suffisant.",
+  "cta_text": "👉 Ajouter des fonds",
+  "defer_day": "7",
+  "cta_url": "",
+  "first_name": "Tai Van",
+  "recipient_email": ""
+}
