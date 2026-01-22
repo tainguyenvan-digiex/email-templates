@@ -1,0 +1,17 @@
+{
+  "title": "Submit KYB - Oxen",
+  "preheader": "A new KYB request has been submitted and is waiting for your approval",
+  "heading": "Submit KYB",
+  "subject": "Submit KYB",
+  "company_registration_part2": "",
+  "company_registration_part3": "",
+  "kyb_request_prefix": "A new KYB request Business Name",
+  "kyb_request_suffix": "has been submitted and is waiting for your approval.",
+  "instruction": "Please log in to the Oxen Admin Console to review the KYB documentation and complete the approval process",
+  "cta_text": "👉 Review KYB Request",
+  "signature": "The Oxen Team 🌱",
+  "cta_url": "",
+  "first_name": "",
+  "company_name": "",
+  "recipient_email": ""
+}

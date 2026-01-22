@@ -1,0 +1,103 @@
+<!--
+  Verify Email Content - For use with shared-layout.html
+
+  This content file is designed to work with the shared-layout.html layout.
+  It contains the email verification with OTP code content.
+
+  The layout provides: logo, heading, greeting, social media promotion, footer, and unsubscribe sections.
+-->
+
+<!-- Instruction -->
+<tr>
+  <td style="padding: 0 40px 20px 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="left" style="padding: 0">
+          <p
+            style="
+              margin: 0 0 20px 0;
+              font-family: &quot;Poppins&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 22px;
+              color: #000000;
+              text-align: left;
+            "
+            class="body-text"
+          >
+            {{instruction}}
+          </p>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<!-- OTP Code Display -->
+<tr>
+  <td align="center" style="padding: 0 40px 30px 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      style="background-color: #f5f5f5; border-radius: 12px; padding: 24px 40px"
+    >
+      <tr>
+        <td align="center">
+          <p
+            style="
+              margin: 0;
+              font-family: &quot;Courier New&quot;, Courier, monospace;
+              font-size: 36px;
+              font-weight: 700;
+              letter-spacing: 8px;
+              color: #3651f3;
+              text-align: center;
+            "
+          >
+            {{otp_code}}
+          </p>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<!-- Validity Notice -->
+<tr>
+  <td style="padding: 0 40px 20px 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 0">
+          <p
+            style="
+              margin: 0 0 20px 0;
+              font-family: &quot;Poppins&quot;, Arial, sans-serif;
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 20px;
+              color: #000000;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            {{validity_notice}}
+          </p>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>

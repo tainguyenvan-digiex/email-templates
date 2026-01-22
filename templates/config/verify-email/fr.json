@@ -1,0 +1,15 @@
+{
+  "title": "Verify your email - Oxen",
+  "preheader": "Votre code de vérification d'email pour Oxen",
+  "heading": "Verify your email",
+  "subject": "Verify your email",
+  "company_registration_part2": "",
+  "company_registration_part3": "",
+  "greeting": "Bonjour",
+  "instruction": "Pour vérifier votre adresse e-mail pour Oxen, veuillez utiliser le code OTP ci-dessous:",
+  "validity_notice": "Ce code est valable pour 1 minute.",
+  "signature": "L'équipe Oxen 🌱",
+  "otp_code": "",
+  "first_name": "",
+  "recipient_email": ""
+}

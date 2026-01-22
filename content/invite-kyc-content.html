@@ -1,0 +1,72 @@
+<!--
+  Invite KYC Content - For use with shared-layout.html
+
+  This content file is designed to work with the shared-layout.html layout.
+  It contains the KYC invitation content.
+
+  The layout provides: logo, heading, greeting, social media promotion, footer, and unsubscribe sections.
+-->
+
+<!-- KYC Invitation Message -->
+<tr>
+  <td style="padding: 0 40px 20px 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="left" style="padding: 0">
+          <p
+            style="
+              margin: 0 0 20px 0;
+              font-family: 'Poppins', Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 22px;
+              color: #000000;
+              text-align: left;
+            "
+            class="body-text"
+          >
+            {{kyc_invitation_message}}
+          </p>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<!-- CTA Button -->
+<tr>
+  <td align="center" style="padding: 0 40px 20px 40px" class="mobile-padding">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td
+          style="
+            background-color: #3651f3;
+            border-radius: 12px;
+            padding: 12px 32px;
+          "
+        >
+          <a
+            href="{{cta_url}}"
+            style="
+              font-family: 'Poppins', Arial, sans-serif;
+              font-size: 16px;
+              font-weight: 600;
+              color: #ffffff;
+              text-decoration: none;
+              display: inline-block;
+            "
+            class="cta-button"
+          >
+            {{cta_text}}
+          </a>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>

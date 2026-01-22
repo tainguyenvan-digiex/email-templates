@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git push)",
+      "Skill(openspec:proposal)",
+      "Skill(openspec:proposal:*)",
+      "Bash(openspec list:*)",
+      "Bash(openspec show:*)",
+      "Bash(openspec validate:*)"
+    ]
+  }
+}
