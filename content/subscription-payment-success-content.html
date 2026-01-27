@@ -1,0 +1,139 @@
+<!--
+  Subscription Payment Success Content - For use with shared-layout.html
+
+  This content file is designed to work with the shared-layout.html layout.
+  It contains the payment success confirmation with benefits and reminder.
+
+  The layout provides: logo, heading, greeting, social media promotion, footer, and unsubscribe sections.
+-->
+
+<!-- Success Message -->
+<tr>
+  <td style="padding: 0 40px 20px 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="left" style="padding: 20px 0 0">
+          <p
+            style="
+              margin: 0;
+              font-family: 'Poppins', Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 22px;
+              color: #000000;
+              text-align: left;
+            "
+            class="body-text"
+          >
+            {{success_message}}
+          </p>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<!-- Benefits -->
+<tr>
+  <td style="padding: 0 40px 20px 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="left" style="padding: 0">
+          {{#each benefits}}
+          <p
+            style="
+              margin: 0 0 8px 0;
+              font-family: 'Poppins', Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 600;
+              line-height: 22px;
+              color: #000000;
+              text-align: left;
+              padding-left: 20px;
+            "
+            class="body-text"
+          >
+            {{this}}
+          </p>
+          {{/each}}
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<!-- Reminder Message -->
+<tr>
+  <td style="padding: 0 40px 20px 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="left" style="padding: 0">
+          <p
+            style="
+              margin: 8px 0 16px 0;
+              font-family: 'Poppins', Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 22px;
+              color: #000000;
+              text-align: left;
+            "
+            class="body-text"
+          >
+            {{reminder_message}}
+          </p>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<!-- Closing Message -->
+<tr>
+  <td style="padding: 0 40px 20px 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="left" style="padding: 0">
+          <p
+            style="
+              margin: 0 0 20px 0;
+              font-family: 'Poppins', Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 400;
+              line-height: 22px;
+              color: #000000;
+              text-align: left;
+            "
+            class="body-text"
+          >
+            {{closing_message}}
+          </p>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>

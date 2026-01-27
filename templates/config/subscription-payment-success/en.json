@@ -1,0 +1,19 @@
+{
+  "title": "Your Oxen subscription is active! 🎉",
+  "preheader": "Thank you for updating your Oxen subscription!",
+  "heading": "Your Oxen subscription is active! 🎉",
+  "subject": "Your Oxen subscription is active! 🎉",
+  "company_registration_part2": "",
+  "company_registration_part3": "",
+
+  "success_message": "Thank you for updating your Oxen subscription! 🎉 All your benefits are now active again, and you can enjoy them fully.",
+  "benefits": [
+    {
+      "this": "✔ Tree planting 🌱"
+    }
+  ],
+  "reminder_message": "📌 Remember to maintain sufficient funds in your account to ensure a smooth renewal next time.",
+  "closing_message": "Thank you for your commitment, and welcome back to the Oxen active users!",
+  "first_name": "Tai Van",
+  "recipient_email": ""
+}
