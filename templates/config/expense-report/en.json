@@ -1,0 +1,23 @@
+{
+  "title": "Expense report ready - Oxen",
+  "preheader": "📊 Your company expense report is now ready for download.",
+  "heading": "📊 Expense report ready",
+  "subject": "📊 Expense report ready",
+  "greeting": "Dear",
+  "first_name": "Card Holder & Administrator",
+  "report_ready_text": "Your company expense report for the period ",
+  "to_text": " to ",
+  "ready_suffix": " is now ready...",
+  "date_from": "dateFrom_Value",
+  "date_to": "dateTo_Value",
+  "cta_text": "Download Report",
+  "cta_url": "",
+  "important_info_heading": "Important Information",
+  "info_link_expiry": "All download link will expire on 3 days",
+  "info_receipts": "Receipts are included as requested",
+  "thanks_text": "Thank you for your understanding!",
+  "signature": "The Oxen Team 🌱",
+  "recipient_email": "",
+  "company_registration_part2": "",
+  "company_registration_part3": ""
+}

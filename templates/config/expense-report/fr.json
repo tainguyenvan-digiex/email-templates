@@ -1,0 +1,23 @@
+{
+  "title": "Rapport de dépenses prêt - Oxen",
+  "preheader": "📊 Votre rapport de dépenses d'entreprise est maintenant prêt à être téléchargé.",
+  "heading": "📊 Rapport de dépenses prêt",
+  "subject": "📊 Rapport de dépenses prêt",
+  "greeting": "Cher",
+  "first_name": "titulaire de carte et administrateur",
+  "report_ready_text": "Votre rapport de dépenses d'entreprise pour la période du ",
+  "to_text": " au ",
+  "ready_suffix": " est maintenant prêt...",
+  "date_from": "dateFrom_Value",
+  "date_to": "dateTo_Value",
+  "cta_text": "Télécharger le rapport",
+  "cta_url": "",
+  "important_info_heading": "Informations importantes",
+  "info_link_expiry": "Tous les liens de téléchargement expireront dans 3 jours",
+  "info_receipts": "Les reçus sont inclus comme demandé",
+  "thanks_text": "Merci de votre compréhension !",
+  "signature": "L'équipe Oxen 🌱",
+  "recipient_email": "",
+  "company_registration_part2": "",
+  "company_registration_part3": ""
+}

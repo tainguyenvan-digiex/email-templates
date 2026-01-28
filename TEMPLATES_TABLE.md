@@ -49,6 +49,7 @@ This document lists all email templates with their aliases, mappings to the data
 | 41 | Update Personal Info | `update-personal-info` | `gn-b2b-onboarding-legal-compliance-requirement-en/fr` | `first_name`, `cta_url` |
 | 42 | Welcome (B2B) | `welcome` (b2b.json) | ❌ Not in DB | `first_name`, `book_call_url`, `faq_url` |
 | 43 | Welcome (B2C) | `welcome` (b2c.json) | ❌ Not in DB | `first_name`, `book_call_url`, `faq_url` |
+| 44 | Expense Report | `expense-report` | `gn-b2b-expense-report-ready-en/fr` | `first_name`, `date_from`, `date_to`, `cta_url` |
 
 ## Common Dynamic Fields
 
@@ -76,6 +77,7 @@ Templates with CTA buttons require `cta_url`:
 - Terms Updated
 - Update Personal Info
 - Welcome (B2B/B2C)
+- Expense Report
 
 ### Date/Time Fields
 Call-related templates use different date/time field names:
