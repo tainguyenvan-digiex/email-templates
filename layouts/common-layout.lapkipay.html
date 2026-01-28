@@ -109,9 +109,13 @@
           font-size: 16px !important;
           line-height: 24px !important;
         }
-        .card-number {
-          font-size: 32px !important;
-          line-height: 40px !important;
+        .feature-title {
+          font-size: 18px !important;
+          line-height: 24px !important;
+        }
+        .feature-description {
+          font-size: 14px !important;
+          line-height: 20px !important;
         }
         .social-icon {
           width: 50px !important;
@@ -137,6 +141,18 @@
           font-size: 14px !important;
           line-height: 18px !important;
           text-align: center !important;
+        }
+        .cta-button {
+          padding: 12px 24px !important;
+          font-size: 16px !important;
+        }
+        .feature-icon {
+          width: 60px !important;
+          height: 60px !important;
+        }
+        .card-number {
+          font-size: 32px !important;
+          line-height: 40px !important;
         }
       }
     </style>
@@ -184,352 +200,8 @@
               box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
             "
           >
-            <!-- ========== HEADER SECTION (wrapped to include security message) ========== -->
-            <tr>
-              <td
-                style="
-                  background-color: {{primary_color}};
-                  background: {{header_gradient}};
-                  padding: 0;
-                "
-              >
-                <table
-                  role="presentation"
-                  cellspacing="0"
-                  cellpadding="0"
-                  border="0"
-                  width="100%"
-                >
-                  <!-- Logo Row -->
-                  <tr>
-                    <td
-                      align="right"
-                      style="padding: 24px 32px 0 32px"
-                      class="mobile-padding"
-                    >
-                      <table
-                        role="presentation"
-                        cellspacing="0"
-                        cellpadding="0"
-                        border="0"
-                        align="right"
-                      >
-                        <tr>
-                          <td style="border-radius: 8px; padding: 8px 16px">
-                            <img
-                              src="https://referral-dev.oxen.finance/b2b/emails/assets/logo.png"
-                              alt="Oxen"
-                              width="120"
-                              style="
-                                display: block;
-                                max-width: 120px;
-                                height: auto;
-                              "
-                            />
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                  <!-- Main Title -->
-                  <tr>
-                    <td
-                      align="center"
-                      style="padding: 40px 32px 30px 32px"
-                      class="mobile-padding"
-                    >
-                      <h1
-                        style="
-                          margin: 0;
-                          font-family: 'Poppins', Arial, sans-serif;
-                          font-size: 28px;
-                          font-weight: 700;
-                          line-height: 30px;
-                          text-align: center;
-                          text-transform: uppercase;
-                          letter-spacing: 0.5px;
-                          text-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-                        "
-                      >
-                        <span style="color: #000000">{{heading_part1}} </span
-                        ><span
-                          style="
-                            color: #ffffff;
-                            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-                          "
-                          >{{heading_part2}}</span
-                        ><br />
-                        <span style="color: #000000">{{heading_part3}} </span
-                        ><span style="font-size: 32px">🔔</span>
-                      </h1>
-                    </td>
-                  </tr>
-
-                  <!-- Greeting -->
-                  <tr>
-                    <td
-                      style="padding: 0 40px 20px 40px"
-                      class="mobile-padding"
-                    >
-                      <p
-                        style="
-                          margin: 0;
-                          font-family: 'Poppins', Arial, sans-serif;
-                          font-size: 22px;
-                          font-weight: 500;
-                          line-height: 28px;
-                          color: #000000;
-                        "
-                        class="body-text"
-                      >
-                        {{greeting}} {{first_name}},
-                      </p>
-                    </td>
-                  </tr>
-
-                  <!-- Card Information -->
-                  <tr>
-                    <td
-                      style="padding: 0 40px 20px 40px"
-                      class="mobile-padding"
-                    >
-                      <table
-                        role="presentation"
-                        cellspacing="0"
-                        cellpadding="0"
-                        border="0"
-                        width="100%"
-                      >
-                        <tr>
-                          <td align="center" style="padding: 20px 0 0">
-                            <p
-                              style="
-                                margin: 0 0 16px 0;
-                                font-family: 'Poppins', Arial, sans-serif;
-                                font-size: 22px;
-                                font-weight: 500;
-                                line-height: 28px;
-                                color: #000000;
-                                text-align: center;
-                              "
-                              class="body-text"
-                            >
-                              {{card_info_prefix}}
-                            </p>
-                            <p
-                              style="
-                                margin: 0 0 16px 0;
-                                font-family: 'Poppins', Arial, sans-serif;
-                                font-size: 24px;
-                                font-weight: 700;
-                                color: #000000;
-                                text-align: center;
-                              "
-                              class="card-number"
-                            >
-                              {{card_last_four}}
-                            </p>
-                            <p
-                              style="
-                                margin: 0;
-                                font-family: 'Poppins', Arial, sans-serif;
-                                font-size: 22px;
-                                font-weight: 500;
-                                line-height: 28px;
-                                color: #000000;
-                                text-align: center;
-                              "
-                              class="body-text"
-                            >
-                              {{card_info_suffix}}
-                            </p>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-
-                  <!-- Security Message -->
-                  <tr>
-                    <td style="padding: 0 40px" class="mobile-padding">
-                      <table
-                        role="presentation"
-                        cellspacing="0"
-                        cellpadding="0"
-                        border="0"
-                        width="100%"
-                      >
-                        <tr>
-                          <td align="center" style="padding: 0">
-                            <p
-                              style="
-                                margin: 0 0 20px 0;
-                                font-family: 'Poppins', Arial, sans-serif;
-                                font-size: 22px;
-                                font-weight: 500;
-                                line-height: 30px;
-                                color: #000000;
-                                text-align: center;
-                              "
-                              class="body-text"
-                            >
-                              {{security_warning_part1}}<br />{{security_warning_part2}}
-                            </p>
-                            <p
-                              style="
-                                margin: 0;
-                                font-family: 'Poppins', Arial, sans-serif;
-                                font-size: 22px;
-                                font-weight: 500;
-                                line-height: 28px;
-                                color: #000000;
-                                text-align: center;
-                              "
-                              class="body-text"
-                            >
-                              {{security_signature}}
-                            </p>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-
-            <!-- ========== SOCIAL MEDIA PROMOTION SECTION ========== -->
-            <tr>
-              <td
-                style="padding: 40px 40px 50px 40px; background-color: #ffffff"
-                class="mobile-padding"
-              >
-                <table
-                  role="presentation"
-                  cellspacing="0"
-                  cellpadding="0"
-                  border="0"
-                  width="100%"
-                >
-                  <!-- Section Title -->
-                  <tr>
-                    <td align="center" style="padding-bottom: 30px">
-                      <h2
-                        style="
-                          margin: 0;
-                          font-family: 'Poppins', Arial, sans-serif;
-                          font-size: 26px;
-                          font-weight: 700;
-                          line-height: 34px;
-                          color: #000000;
-                          text-align: center;
-                        "
-                      >
-                        {{social_title}}
-                      </h2>
-                    </td>
-                  </tr>
-                  <!-- Social Media Icons -->
-                  <tr>
-                    <td align="center" style="padding-bottom: 30px">
-                      <table
-                        role="presentation"
-                        cellspacing="0"
-                        cellpadding="0"
-                        border="0"
-                        align="center"
-                      >
-                        <tr>
-                          <td style="padding: 0 16px">
-                            <a
-                              href="https://www.instagram.com/oxenfinance"
-                              target="_blank"
-                              style="display: block; text-decoration: none"
-                            >
-                              <img
-                                src="https://referral-dev.oxen.finance/b2b/emails/assets/instagram.png"
-                                alt="Follow us on Instagram"
-                                width="50"
-                                class="social-icon"
-                                style="
-                                  display: block;
-                                  max-width: 50px;
-                                  height: auto;
-                                  border-radius: 12px;
-                                "
-                              />
-                            </a>
-                          </td>
-                          <td style="padding: 0 16px">
-                            <a
-                              href="#"
-                              target="_blank"
-                              style="display: block; text-decoration: none"
-                            >
-                              <img
-                                src="https://referral-dev.oxen.finance/b2b/emails/assets/tiktok.png"
-                                alt="Follow us on TikTok"
-                                width="50"
-                                class="social-icon"
-                                style="
-                                  display: block;
-                                  max-width: 50px;
-                                  height: auto;
-                                  border-radius: 12px;
-                                "
-                              />
-                            </a>
-                          </td>
-                          <td style="padding: 0 16px">
-                            <a
-                              href="https://www.linkedin.com/company/oxen-finance"
-                              target="_blank"
-                              style="display: block; text-decoration: none"
-                            >
-                              <img
-                                src="https://referral-dev.oxen.finance/b2b/emails/assets/linkedin.png"
-                                alt="Follow us on LinkedIn"
-                                width="50"
-                                class="social-icon"
-                                style="
-                                  display: block;
-                                  max-width: 50px;
-                                  height: auto;
-                                  border-radius: 12px;
-                                "
-                              />
-                            </a>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                  <!-- Hashtags -->
-                  <tr>
-                    <td align="center">
-                      <h3
-                        style="
-                          margin: 0;
-                          font-family: 'Poppins', Arial, sans-serif;
-                          font-size: 24px;
-                          font-weight: 700;
-                          line-height: 32px;
-                          color: #000000;
-                          text-align: center;
-                          text-transform: uppercase;
-                        "
-                      >
-                        {{social_hashtags_part1}}<br /><span
-                          style="font-weight: 500"
-                          >{{social_hashtags_part2}}</span
-                        >
-                        {{social_hashtags_part3}}
-                      </h3>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
+            <!-- Template-specific content will be inserted here -->
+            {{{ @content }}}
 
             <!-- ========== FOOTER SECTION ========== -->
             <tr>
@@ -552,7 +224,7 @@
                       "
                     >
                       <img
-                        src="https://referral-dev.oxen.finance/b2b/emails/assets/wave.png"
+                        src="https://public-assets.oxen.finance/b2b/emails/assets/wave.png"
                         alt=""
                         width="600"
                         style="
@@ -601,16 +273,16 @@
                                 <!-- Logo Column -->
                                 <td
                                   valign="center"
-                                  width="140"
+                                  width="100"
                                   class="mobile-stack mobile-center"
                                 >
                                   <img
-                                    src="https://referral-dev.oxen.finance/b2b/emails/assets/logo-footer.png"
-                                    alt="Oxen"
-                                    width="130"
+                                    src="https://public-assets.oxen.finance/b2b/emails/assets/lapkipay.svg"
+                                    alt="LapkiPay"
+                                    width="100"
                                     style="
                                       display: block;
-                                      max-width: 130px;
+                                      max-width: 100px;
                                       height: auto;
                                     "
                                   />
@@ -640,7 +312,7 @@
                                         style="padding-bottom: 10px"
                                       >
                                         <img
-                                          src="{{chatbox_image_url}}"
+                                          src="https://public-assets.oxen.finance/b2b/emails/assets/chatbox_{{lang_code}}.png"
                                           alt="Automatic email"
                                           width="480"
                                           class="notice-box"
@@ -669,7 +341,7 @@
                                   </table>
                                 </td>
                                 <!-- Social Icons Column -->
-                                <td
+                                <!-- <td
                                   valign="center"
                                   align="right"
                                   class="mobile-stack mobile-center"
@@ -691,7 +363,7 @@
                                           style="display: block"
                                         >
                                           <img
-                                            src="https://referral-dev.oxen.finance/b2b/emails/assets/instagram.png"
+                                            src="https://public-assets.oxen.finance/b2b/emails/assets/instagram.png"
                                             alt="Instagram"
                                             width="20"
                                             class="footer-social-icon"
@@ -710,7 +382,7 @@
                                           style="display: block"
                                         >
                                           <img
-                                            src="https://referral-dev.oxen.finance/b2b/emails/assets/tiktok.png"
+                                            src="https://public-assets.oxen.finance/b2b/emails/assets/tiktok.png"
                                             alt="TikTok"
                                             width="20"
                                             class="footer-social-icon"
@@ -729,7 +401,7 @@
                                           style="display: block"
                                         >
                                           <img
-                                            src="https://referral-dev.oxen.finance/b2b/emails/assets/linkedin.png"
+                                            src="https://public-assets.oxen.finance/b2b/emails/assets/linkedin.png"
                                             alt="LinkedIn"
                                             width="20"
                                             class="footer-social-icon"
@@ -743,7 +415,7 @@
                                       </td>
                                     </tr>
                                   </table>
-                                </td>
+                                </td> -->
                               </tr>
                             </table>
                           </td>
@@ -764,13 +436,13 @@
                                 text-align: center;
                               "
                             >
-                              © Oxen 2025
+                              © Lapki Pay 2026
                             </p>
                           </td>
                         </tr>
 
                         <!-- Company Registration Part 1 -->
-                        <tr>
+                        <!-- <tr>
                           <td align="center" style="padding: 0">
                             <p
                               class="footer-text"
@@ -787,9 +459,9 @@
                               {{company_registration_part1}}
                             </p>
                           </td>
-                        </tr>
+                        </tr> -->
                         <!-- Company Registration Part 2 -->
-                        <tr>
+                        <!-- <tr>
                           <td align="center" style="padding: 0">
                             <p
                               class="footer-text"
@@ -806,9 +478,9 @@
                               {{company_registration_part2}}
                             </p>
                           </td>
-                        </tr>
+                        </tr> -->
                         <!-- Company Registration Part 3 -->
-                        <tr>
+                        <!-- <tr>
                           <td align="center" style="padding: 0">
                             <p
                               class="footer-text"
@@ -843,7 +515,7 @@
                               {{legal_text}}
                             </p>
                           </td>
-                        </tr>
+                        </tr> -->
                       </table>
                     </td>
                   </tr>
@@ -902,7 +574,7 @@
                         "
                       >
                         <a
-                          href="{{unsubscribe_url}}"
+                          href="{{{ pm:unsubscribe }}}"
                           style="color: #000000; text-decoration: underline"
                           >{{footer_unsubscribe_link_text}}</a
                         >
@@ -923,12 +595,13 @@
                           text-align: center;
                         "
                       >
-                        Oxen,
+                        Lapki Pay,
                         <a
-                          href="https://maps.google.com/?q={{company_address_url}}"
+                          href="https://maps.google.com/?q=205+–+50+Lonsdale+Ave+%232630,+Vancouver,+BC+V6M+2E6,+Canada."
                           target="_blank"
                           style="color: #3651f3; text-decoration: underline"
-                          >{{company_address}}</a
+                          >205 – 50 Lonsdale Ave #2630, Vancouver, BC V6M 2E6,
+                          Canada.</a
                         >
                       </p>
                     </td>
