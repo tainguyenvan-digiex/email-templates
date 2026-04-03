@@ -108,7 +108,7 @@
                 style="
                   padding: 0;
                   background-color: #0c0d14;
-                  background-image: url('https://raw.githubusercontent.com/tainguyenvan-digiex/email-templates/main/assets/silk-wave-header.png');
+                  background-image: url(&quot;https://raw.githubusercontent.com/tainguyenvan-digiex/email-templates/main/assets/silk-wave-header.png&quot;);
                   background-size: 600px 240px;
                   background-position: center top;
                   background-repeat: no-repeat;
@@ -160,7 +160,12 @@
                 >
                   <tr>
                     <td
-                      style="border-top: 1px solid rgba(192,139,136,0.08); font-size: 0; line-height: 0; height: 1px"
+                      style="
+                        border-top: 1px solid rgba(192, 139, 136, 0.08);
+                        font-size: 0;
+                        line-height: 0;
+                        height: 1px;
+                      "
                     >
                       &nbsp;
                     </td>
@@ -176,7 +181,7 @@
 
             <!-- Footer divider -->
             <tr>
-              <td style="padding: 0 32px">
+              <td style="padding: 16px 32px 0">
                 <table
                   role="presentation"
                   width="100%"
@@ -186,7 +191,12 @@
                 >
                   <tr>
                     <td
-                      style="border-top: 1px solid rgba(192,139,136,0.08); font-size: 0; line-height: 0; height: 1px"
+                      style="
+                        border-top: 1px solid rgba(192, 139, 136, 0.08);
+                        font-size: 0;
+                        line-height: 0;
+                        height: 1px;
+                      "
                     >
                       &nbsp;
                     </td>
@@ -200,13 +210,13 @@
               <td
                 style="
                   padding: 24px 32px 0 32px;
-                  font-family: 'DM Sans', Arial, sans-serif;
+                  font-family: &quot;DM Sans&quot;, Arial, sans-serif;
                   font-size: 11px;
-                  color: rgba(245,240,235,0.35);
+                  color: rgba(245, 240, 235, 0.35);
                   line-height: 18px;
                 "
               >
-                {{footer_automated}}
+                This is an automated message from Oxen. Please do not reply.
               </td>
             </tr>
 
@@ -215,13 +225,15 @@
               <td
                 style="
                   padding: 12px 32px 0 32px;
-                  font-family: 'DM Sans', Arial, sans-serif;
+                  font-family: &quot;DM Sans&quot;, Arial, sans-serif;
                   font-size: 10px;
-                  color: rgba(245,240,235,0.35);
+                  color: rgba(245, 240, 235, 0.35);
                   line-height: 16px;
                 "
               >
-                {{footer_legal}}
+                Oxen is a platform operated by Escrowfy GmbH, Bahnhofstrasse 7,
+                6300 Zug, Switzerland (CHE-281.608.494). VQF/SRO Member Nr.
+                101009.
               </td>
             </tr>
 
@@ -231,60 +243,44 @@
                 align="center"
                 style="
                   padding: 12px 32px 0 32px;
-                  font-family: 'DM Sans', Arial, sans-serif;
+                  font-family: &quot;DM Sans&quot;, Arial, sans-serif;
                   font-size: 11px;
                   line-height: 18px;
                 "
               >
                 <a
-                  href="https://oxen.finance/help"
-                  style="color: rgba(245,240,235,0.6); text-decoration: none"
-                  >{{footer_help}}</a
+                  href="#"
+                  style="color: rgba(245, 240, 235, 0.6); text-decoration: none"
+                  >Help Centre</a
                 >
-                <span style="color: rgba(245,240,235,0.35)"> &middot; </span>
+                <span style="color: rgba(245, 240, 235, 0.35)"> &middot; </span>
                 <a
-                  href="https://oxen.finance/privacy"
-                  style="color: rgba(245,240,235,0.6); text-decoration: none"
-                  >{{footer_privacy}}</a
+                  href="#"
+                  style="color: rgba(245, 240, 235, 0.6); text-decoration: none"
+                  >Privacy Policy</a
                 >
-                <span style="color: rgba(245,240,235,0.35)"> &middot; </span>
+                <span style="color: rgba(245, 240, 235, 0.35)"> &middot; </span>
                 <a
-                  href="https://oxen.finance/terms"
-                  style="color: rgba(245,240,235,0.6); text-decoration: none"
-                  >{{footer_terms}}</a
+                  href="#"
+                  style="color: rgba(245, 240, 235, 0.6); text-decoration: none"
+                  >Terms of Service</a
                 >
               </td>
             </tr>
 
             <!-- Copyright -->
-            <tr>
+            <tr style="padding-bottom: 20px">
               <td
                 align="center"
                 style="
                   padding: 8px 32px 0 32px;
-                  font-family: 'DM Sans', Arial, sans-serif;
+                  font-family: &quot;DM Sans&quot;, Arial, sans-serif;
                   font-size: 10px;
-                  color: rgba(245,240,235,0.35);
+                  color: rgba(245, 240, 235, 0.35);
                   line-height: 16px;
                 "
               >
-                {{footer_copyright}}
-              </td>
-            </tr>
-
-            <!-- Ref -->
-            <tr>
-              <td
-                align="right"
-                style="
-                  padding: 16px 32px 32px 32px;
-                  font-family: 'DM Sans', Arial, sans-serif;
-                  font-size: 9px;
-                  color: rgba(245,240,235,0.2);
-                  line-height: 14px;
-                "
-              >
-                {{ref}}
+                © 2026 Oxen Finance
               </td>
             </tr>
           </table>
