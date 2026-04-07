@@ -7,16 +7,13 @@
   "_backend_fields": [
     "first_name",
     "account_holder",
-    "account_id",
-    "iban_eur",
-    "iban_usd",
+    "iban",
     "currencies",
     "bic",
     "am_initials",
     "am_name",
     "am_title",
     "am_email",
-    "am_phone",
     "portal_url",
     "portal_domain",
     "onboarding_url"
@@ -31,9 +28,7 @@
   "section_getting_started": "POUR COMMENCER",
 
   "label_account_holder": "Titulaire du compte",
-  "label_account_id": "Identifiant du compte",
-  "label_iban_eur": "IBAN (EUR)",
-  "label_iban_usd": "IBAN (USD)",
+  "label_iban": "IBAN",
   "label_currencies": "Devises",
   "label_bic": "BIC",
 
@@ -51,16 +46,13 @@
 
   "first_name": null,
   "account_holder": null,
-  "account_id": null,
-  "iban_eur": null,
-  "iban_usd": null,
+  "iban": null,
   "currencies": null,
   "bic": null,
   "am_initials": null,
   "am_name": null,
   "am_title": null,
   "am_email": null,
-  "am_phone": null,
   "portal_url": null,
   "portal_domain": null,
   "onboarding_url": null

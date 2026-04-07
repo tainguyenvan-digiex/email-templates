@@ -29,16 +29,13 @@ The `oxen-layout` config currently uses staging URLs. These **must be replaced w
 | ---------------- | -------------------------------- | ---------------------------------------------- |
 | `first_name`     | Recipient's first name           | `Jane`                                         |
 | `account_holder` | Company / account name           | `Acme Corp`                                    |
-| `account_id`     | Oxen account ID                  | `OXEN-AC-29481`                                |
-| `iban_eur`       | IBAN for EUR account             | `DE89 3704 0044 0532 0130 00`                  |
-| `iban_usd`       | IBAN for USD account             | `US12 3456 7890 1234 5678 90`                  |
+| `iban`           | Account IBAN                     | `DE89 3704 0044 0532 0130 00`                  |
 | `currencies`     | Supported currencies             | `EUR · USD · GBP`                              |
 | `bic`            | BIC / SWIFT code                 | `COBADEFFXXX`                                  |
 | `am_initials`    | Account manager initials         | `C`                                            |
 | `am_name`        | Account manager full name        | `Christel`                                     |
 | `am_title`       | Account manager job title        | `Account Manager`                              |
 | `am_email`       | Account manager email            | `cr@oxen.finance`                              |
-| `am_phone`       | Account manager phone            | `+41 79 123 45 67`                             |
 | `portal_url`     | Full URL to the client portal    | `https://portal.oxen.finance`                  |
 | `portal_domain`  | Display text for the portal link | `portal.oxen.finance`                          |
 | `onboarding_url` | Onboarding call booking URL      | `https://portal.oxen.finance/customer-support` |
