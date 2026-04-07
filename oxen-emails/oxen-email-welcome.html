@@ -1,989 +1,706 @@
-<!doctype html>
-<html
-  lang="en"
-  xmlns="http://www.w3.org/1999/xhtml"
-  xmlns:v="urn:schemas-microsoft-com:vml"
-  xmlns:o="urn:schemas-microsoft-com:office:office"
->
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="only dark" />
-    <meta name="supported-color-schemes" content="only dark" />
-    <title>Welcome to Oxen</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bellfair&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <!--[if mso]>
-      <style>
-        table,
-        td {
-          font-family: "DM Sans", Arial, sans-serif !important;
-        }
-      </style>
-    <![endif]-->
-    <style>
-      :root {
-        color-scheme: dark only;
-      }
-      body,
-      .body {
-        background-color: #0c0d14 !important;
-      }
-      [data-ogsc] body,
-      [data-ogsc] .body {
-        background-color: #0c0d14 !important;
-      }
-      u + .body {
-        background-color: #0c0d14 !important;
-      }
-    </style>
-  </head>
-  <body
+<!-- Greeting -->
+<tr>
+  <td
     style="
-      margin: 0;
-      padding: 0;
-      background-color: #0c0d14;
-      color-scheme: dark only;
-      -webkit-text-size-adjust: none;
+      padding: 40px 32px 0 32px;
+      font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+      font-size: 16px;
+      color: #f5f0eb;
+      line-height: 24px;
     "
   >
+    Hello {{first_name}},
+  </td>
+</tr>
+
+<!-- Body -->
+<tr>
+  <td
+    style="
+      padding: 44px 32px 0 32px;
+      font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+      font-size: 14px;
+      color: rgba(245, 240, 235, 0.8);
+      line-height: 24px;
+    "
+  >
+    {{body_line_1}}<br /><br />
+    {{body_line_2}}
+  </td>
+</tr>
+
+<!-- Section: YOUR ACCOUNT -->
+<tr>
+  <td
+    style="
+      padding: 28px 32px 0 32px;
+      font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+      font-size: 10px;
+      font-weight: 500;
+      color: rgba(245, 240, 235, 0.35);
+      line-height: 16px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+    "
+  >
+    {{section_your_account}}
+  </td>
+</tr>
+
+<!-- Account card -->
+<tr>
+  <td style="padding: 12px 32px 0 32px">
     <table
       role="presentation"
       width="100%"
       cellpadding="0"
       cellspacing="0"
       border="0"
-      style="background-color: #0c0d14"
+      style="
+        background-color: #0f1118;
+        border: 1px solid rgba(192, 139, 136, 0.08);
+        border-radius: 12px;
+      "
     >
       <tr>
-        <td align="center" style="padding: 0">
+        <td style="padding: 24px">
           <table
             role="presentation"
-            width="600"
+            width="100%"
             cellpadding="0"
             cellspacing="0"
             border="0"
-            style="max-width: 600px; width: 100%; background-color: #0c0d14"
           >
-            <!-- Silk wave header background -->
-            <tr>
-              <td
-                align="center"
-                style="
-                  padding: 0;
-                  background-color: #0c0d14;
-                  background-image: url(&quot;https://raw.githubusercontent.com/tainguyenvan-digiex/email-templates/main/assets/silk-wave-header.png&quot;);
-                  background-size: 600px 240px;
-                  background-position: center top;
-                  background-repeat: no-repeat;
-                "
-              >
-                <!--[if gte mso 9]><v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:240px;"><v:fill type="frame" src="https://raw.githubusercontent.com/tainguyenvan-digiex/email-templates/main/assets/silk-wave-header.png" color="#0C0D14"/><v:textbox inset="0,0,0,0"><div style="text-align:center;"><![endif]-->
-                <table
-                  role="presentation"
-                  cellpadding="0"
-                  cellspacing="0"
-                  border="0"
-                >
-                  <tr>
-                    <td style="height: 40px; font-size: 0; line-height: 0">
-                      &nbsp;
-                    </td>
-                  </tr>
-                  <tr>
-                    <td align="center">
-                      <a href="https://oxen.finance" target="_blank">
-                        <img
-                          src="https://raw.githubusercontent.com/tainguyenvan-digiex/email-templates/main/assets/logo.png"
-                          alt="Oxen"
-                          width="140"
-                          style="display: block; width: 140px; height: auto"
-                        />
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="height: 40px; font-size: 0; line-height: 0">
-                      &nbsp;
-                    </td>
-                  </tr>
-                </table>
-                <!--[if gte mso 9]></div></v:textbox></v:rect><![endif]-->
-              </td>
-            </tr>
-
-            <!-- Divider -->
-            <tr>
-              <td style="padding: 0 32px">
-                <table
-                  role="presentation"
-                  width="100%"
-                  cellpadding="0"
-                  cellspacing="0"
-                  border="0"
-                >
-                  <tr>
-                    <td
-                      style="
-                        border-top: 1px solid #1a1820;
-                        font-size: 0;
-                        line-height: 0;
-                        height: 1px;
-                      "
-                    >
-                      &nbsp;
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-
-            <!-- Greeting -->
             <tr>
               <td
                 style="
-                  padding: 40px 32px 0 32px;
-                  font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-                  font-size: 16px;
-                  color: #f5f0eb;
-                  line-height: 24px;
-                "
-              >
-                Hello {{first_name}},
-              </td>
-            </tr>
-
-            <!-- Divider -->
-            <tr>
-              <td style="padding: 20px 32px 0 32px">
-                <table
-                  role="presentation"
-                  width="100%"
-                  cellpadding="0"
-                  cellspacing="0"
-                  border="0"
-                >
-                  <tr>
-                    <td
-                      style="
-                        border-top: 1px solid #15131a;
-                        font-size: 0;
-                        line-height: 0;
-                        height: 1px;
-                      "
-                    >
-                      &nbsp;
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-
-            <!-- Body -->
-            <tr>
-              <td
-                style="
-                  padding: 24px 32px 0 32px;
-                  font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-                  font-size: 14px;
-                  color: #d4cfc9;
-                  line-height: 24px;
-                "
-              >
-                Your account is now active.<br /><br />
-                Below are your account details and your dedicated account
-                manager.
-              </td>
-            </tr>
-
-            <!-- Section: YOUR ACCOUNT -->
-            <tr>
-              <td
-                style="
-                  padding: 28px 32px 0 32px;
-                  font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-                  font-size: 10px;
-                  color: #6b6762;
-                  line-height: 16px;
-                  letter-spacing: 2.5px;
-                  text-transform: uppercase;
-                "
-              >
-                YOUR ACCOUNT
-              </td>
-            </tr>
-
-            <!-- Account card -->
-            <tr>
-              <td style="padding: 12px 32px 0 32px">
-                <table
-                  role="presentation"
-                  width="100%"
-                  cellpadding="0"
-                  cellspacing="0"
-                  border="0"
-                  style="
-                    background-color: #0f1118;
-                    border: 1px solid #1a1820;
-                    border-radius: 12px;
-                  "
-                >
-                  <tr>
-                    <td style="padding: 24px">
-                      <table
-                        role="presentation"
-                        width="100%"
-                        cellpadding="0"
-                        cellspacing="0"
-                        border="0"
-                      >
-                        <tr>
-                          <td
-                            style="
-                              padding: 0 0 14px 0;
-                              font-family:
-                                &quot;DM Sans&quot;, Arial, sans-serif;
-                              font-size: 12px;
-                              color: #6b6762;
-                              line-height: 20px;
-                              width: 130px;
-                              vertical-align: top;
-                            "
-                          >
-                            Account holder
-                          </td>
-                          <td
-                            style="
-                              padding: 0 0 14px 0;
-                              font-family:
-                                &quot;DM Sans&quot;, Arial, sans-serif;
-                              font-size: 14px;
-                              color: #f5f0eb;
-                              font-weight: 500;
-                              line-height: 20px;
-                              vertical-align: top;
-                            "
-                          >
-                            Oxen Technologies AG
-                          </td>
-                        </tr>
-                        <tr>
-                          <td
-                            style="
-                              padding: 0 0 14px 0;
-                              font-family:
-                                &quot;DM Sans&quot;, Arial, sans-serif;
-                              font-size: 12px;
-                              color: #6b6762;
-                              line-height: 20px;
-                              width: 130px;
-                              vertical-align: top;
-                            "
-                          >
-                            Account ID
-                          </td>
-                          <td
-                            style="
-                              padding: 0 0 14px 0;
-                              font-family:
-                                &quot;DM Sans&quot;, Arial, sans-serif;
-                              font-size: 14px;
-                              color: #f5f0eb;
-                              font-weight: 500;
-                              line-height: 20px;
-                              vertical-align: top;
-                            "
-                          >
-                            OXEN-AC-29481
-                          </td>
-                        </tr>
-                        <tr>
-                          <td
-                            style="
-                              padding: 0 0 14px 0;
-                              font-family:
-                                &quot;DM Sans&quot;, Arial, sans-serif;
-                              font-size: 12px;
-                              color: #6b6762;
-                              line-height: 20px;
-                              width: 130px;
-                              vertical-align: top;
-                            "
-                          >
-                            IBAN (EUR)
-                          </td>
-                          <td
-                            style="
-                              padding: 0 0 14px 0;
-                              font-family:
-                                &quot;DM Sans&quot;, Arial, sans-serif;
-                              font-size: 14px;
-                              color: #f5f0eb;
-                              font-weight: 500;
-                              line-height: 20px;
-                              letter-spacing: 0.5px;
-                              vertical-align: top;
-                            "
-                          >
-                            CH93 0076 2011 6238 5295 7
-                          </td>
-                        </tr>
-                        <tr>
-                          <td
-                            style="
-                              padding: 0 0 14px 0;
-                              font-family:
-                                &quot;DM Sans&quot;, Arial, sans-serif;
-                              font-size: 12px;
-                              color: #6b6762;
-                              line-height: 20px;
-                              width: 130px;
-                              vertical-align: top;
-                            "
-                          >
-                            IBAN (USD)
-                          </td>
-                          <td
-                            style="
-                              padding: 0 0 14px 0;
-                              font-family:
-                                &quot;DM Sans&quot;, Arial, sans-serif;
-                              font-size: 14px;
-                              color: #f5f0eb;
-                              font-weight: 500;
-                              line-height: 20px;
-                              letter-spacing: 0.5px;
-                              vertical-align: top;
-                            "
-                          >
-                            CH44 0076 2011 6238 5296 8
-                          </td>
-                        </tr>
-                        <tr>
-                          <td
-                            style="
-                              padding: 0 0 14px 0;
-                              font-family:
-                                &quot;DM Sans&quot;, Arial, sans-serif;
-                              font-size: 12px;
-                              color: #6b6762;
-                              line-height: 20px;
-                              width: 130px;
-                              vertical-align: top;
-                            "
-                          >
-                            Currencies
-                          </td>
-                          <td
-                            style="
-                              padding: 0 0 14px 0;
-                              font-family:
-                                &quot;DM Sans&quot;, Arial, sans-serif;
-                              font-size: 14px;
-                              color: #f5f0eb;
-                              font-weight: 500;
-                              line-height: 20px;
-                              vertical-align: top;
-                            "
-                          >
-                            EUR &middot; USD &middot; GBP
-                          </td>
-                        </tr>
-                        <tr>
-                          <td
-                            style="
-                              padding: 0;
-                              font-family:
-                                &quot;DM Sans&quot;, Arial, sans-serif;
-                              font-size: 12px;
-                              color: #6b6762;
-                              line-height: 20px;
-                              width: 130px;
-                              vertical-align: top;
-                            "
-                          >
-                            BIC
-                          </td>
-                          <td
-                            style="
-                              padding: 0;
-                              font-family:
-                                &quot;DM Sans&quot;, Arial, sans-serif;
-                              font-size: 14px;
-                              color: #f5f0eb;
-                              font-weight: 500;
-                              line-height: 20px;
-                              vertical-align: top;
-                            "
-                          >
-                            ESCWCHZZ
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-
-            <!-- Note below card -->
-            <tr>
-              <td
-                style="
-                  padding: 10px 32px 0 32px;
+                  padding: 0 0 14px 0;
                   font-family: &quot;DM Sans&quot;, Arial, sans-serif;
                   font-size: 12px;
-                  color: #6b6762;
-                  font-style: italic;
-                  line-height: 18px;
-                "
-              >
-                Share these details with your accountant or payment
-                counterparties.
-              </td>
-            </tr>
-
-            <!-- Section: YOUR ACCOUNT MANAGER -->
-            <tr>
-              <td
-                style="
-                  padding: 28px 32px 0 32px;
-                  font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-                  font-size: 10px;
-                  color: #6b6762;
-                  line-height: 16px;
-                  letter-spacing: 2.5px;
-                  text-transform: uppercase;
-                "
-              >
-                YOUR ACCOUNT MANAGER
-              </td>
-            </tr>
-
-            <!-- AM featured card -->
-            <tr>
-              <td style="padding: 12px 32px 0 32px">
-                <table
-                  role="presentation"
-                  width="100%"
-                  cellpadding="0"
-                  cellspacing="0"
-                  border="0"
-                  style="
-                    background-color: #12131b;
-                    border: 1px solid #231e20;
-                    border-radius: 12px;
-                  "
-                >
-                  <tr>
-                    <td style="padding: 24px">
-                      <table
-                        role="presentation"
-                        width="100%"
-                        cellpadding="0"
-                        cellspacing="0"
-                        border="0"
-                      >
-                        <!-- Avatar + Name row -->
-                        <tr>
-                          <td style="vertical-align: top; width: 64px">
-                            <!-- Avatar circle -->
-                            <table
-                              role="presentation"
-                              cellpadding="0"
-                              cellspacing="0"
-                              border="0"
-                            >
-                              <tr>
-                                <td
-                                  align="center"
-                                  style="
-                                    width: 48px;
-                                    height: 48px;
-                                    background-color: #1e1a1a;
-                                    border: 1px solid #3d302f;
-                                    border-radius: 50%;
-                                    font-family:
-                                      &quot;DM Sans&quot;, Arial, sans-serif;
-                                    font-size: 16px;
-                                    color: #c08b88;
-                                    font-weight: 600;
-                                    line-height: 48px;
-                                  "
-                                >
-                                  LM
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                          <td style="vertical-align: top; padding-left: 0">
-                            <span
-                              style="
-                                font-family:
-                                  &quot;DM Sans&quot;, Arial, sans-serif;
-                                font-size: 16px;
-                                color: #f5f0eb;
-                                font-weight: 600;
-                                line-height: 22px;
-                              "
-                              >Louis Martin</span
-                            ><br />
-                            <span
-                              style="
-                                font-family:
-                                  &quot;DM Sans&quot;, Arial, sans-serif;
-                                font-size: 12px;
-                                color: #8a857f;
-                                line-height: 18px;
-                              "
-                              >Dedicated Account Manager</span
-                            >
-                          </td>
-                        </tr>
-                        <!-- Spacer -->
-                        <tr>
-                          <td
-                            colspan="2"
-                            style="height: 16px; font-size: 0; line-height: 0"
-                          >
-                            &nbsp;
-                          </td>
-                        </tr>
-                        <!-- Email -->
-                        <tr>
-                          <td colspan="2" style="padding: 0 0 6px 0">
-                            <a
-                              href="mailto:louis@oxen.finance"
-                              style="
-                                font-family:
-                                  &quot;DM Sans&quot;, Arial, sans-serif;
-                                font-size: 13px;
-                                color: #c08b88;
-                                text-decoration: none;
-                                line-height: 20px;
-                              "
-                              >louis@oxen.finance</a
-                            >
-                          </td>
-                        </tr>
-                        <!-- Phone -->
-                        <tr>
-                          <td colspan="2" style="padding: 0">
-                            <span
-                              style="
-                                font-family:
-                                  &quot;DM Sans&quot;, Arial, sans-serif;
-                                font-size: 13px;
-                                color: #d4cfc9;
-                                line-height: 20px;
-                              "
-                              >+41 XX XXX XX XX</span
-                            >
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-
-            <!-- CTA: Schedule Onboarding -->
-            <tr>
-              <td align="center" style="padding: 20px 32px 0 32px">
-                <table
-                  role="presentation"
-                  cellpadding="0"
-                  cellspacing="0"
-                  border="0"
-                >
-                  <tr>
-                    <td
-                      align="center"
-                      style="
-                        background-color: #c8c8c8;
-                        background: linear-gradient(
-                          135deg,
-                          #e8e8e8 0%,
-                          #c0c0c0 40%,
-                          #e0e0e0 50%,
-                          #a8a8a8 100%
-                        );
-                        border-radius: 40px;
-                        border: 1px solid rgba(255, 255, 255, 0.15);
-                        box-shadow:
-                          0 2px 8px rgba(0, 0, 0, 0.3),
-                          inset 0 1px 0 rgba(255, 255, 255, 0.25);
-                      "
-                    >
-                      <a
-                        href="https://portal.oxen.finance/onboarding"
-                        target="_blank"
-                        style="
-                          display: inline-block;
-                          padding: 14px 32px;
-                          font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-                          font-size: 14px;
-                          font-weight: 600;
-                          color: #0c0d14;
-                          text-decoration: none;
-                          line-height: 20px;
-                        "
-                        >Schedule Your Onboarding Call</a
-                      >
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-
-            <!-- Section: GETTING STARTED -->
-            <tr>
-              <td
-                style="
-                  padding: 32px 32px 0 32px;
-                  font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-                  font-size: 10px;
-                  color: #6b6762;
-                  line-height: 16px;
-                  letter-spacing: 2.5px;
-                  text-transform: uppercase;
-                "
-              >
-                GETTING STARTED
-              </td>
-            </tr>
-
-            <!-- List items -->
-            <tr>
-              <td
-                style="
-                  padding: 16px 32px 0 32px;
-                  font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-                  font-size: 14px;
-                  color: #d4cfc9;
-                  line-height: 24px;
-                "
-              >
-                <table
-                  role="presentation"
-                  width="100%"
-                  cellpadding="0"
-                  cellspacing="0"
-                  border="0"
-                >
-                  <tr>
-                    <td
-                      style="
-                        width: 24px;
-                        color: #c08b88;
-                        font-size: 14px;
-                        vertical-align: top;
-                        padding: 0 0 12px 0;
-                      "
-                    >
-                      &rarr;
-                    </td>
-                    <td style="padding: 0 0 12px 0">
-                      <a
-                        href="https://portal.oxen.finance"
-                        style="color: #d4cfc9; text-decoration: none"
-                        >Send and receive payments via SEPA Instant and SWIFT</a
-                      >
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      style="
-                        width: 24px;
-                        color: #c08b88;
-                        font-size: 14px;
-                        vertical-align: top;
-                        padding: 0 0 12px 0;
-                      "
-                    >
-                      &rarr;
-                    </td>
-                    <td style="padding: 0 0 12px 0">
-                      <a
-                        href="https://portal.oxen.finance"
-                        style="color: #d4cfc9; text-decoration: none"
-                        >Issue physical and virtual cards for your team</a
-                      >
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      style="
-                        width: 24px;
-                        color: #c08b88;
-                        font-size: 14px;
-                        vertical-align: top;
-                        padding: 0 0 12px 0;
-                      "
-                    >
-                      &rarr;
-                    </td>
-                    <td style="padding: 0 0 12px 0">
-                      <a
-                        href="https://portal.oxen.finance"
-                        style="color: #d4cfc9; text-decoration: none"
-                        >Convert between fiat and crypto from your dashboard</a
-                      >
-                    </td>
-                  </tr>
-                  <tr>
-                    <td
-                      style="
-                        width: 24px;
-                        color: #c08b88;
-                        font-size: 14px;
-                        vertical-align: top;
-                        padding: 0 0 0 0;
-                      "
-                    >
-                      &rarr;
-                    </td>
-                    <td style="padding: 0">
-                      <a
-                        href="https://portal.oxen.finance"
-                        style="color: #d4cfc9; text-decoration: none"
-                        >Invite team members and set access permissions</a
-                      >
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-
-            <!-- What happens next -->
-            <tr>
-              <td
-                style="
-                  padding: 28px 32px 0 32px;
-                  font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-                  font-size: 14px;
-                  color: #d4cfc9;
-                  line-height: 24px;
-                "
-              >
-                Your account manager will reach out within 24 hours to walk you
-                through your dashboard and answer any questions about your
-                setup. In the meantime, you can explore your account at
-                <a
-                  href="https://portal.oxen.finance"
-                  style="color: #c08b88; text-decoration: none"
-                  >portal.oxen.finance</a
-                >.
-              </td>
-            </tr>
-
-            <!-- CTA: Go to Dashboard -->
-            <tr>
-              <td align="center" style="padding: 24px 32px 0 32px">
-                <table
-                  role="presentation"
-                  cellpadding="0"
-                  cellspacing="0"
-                  border="0"
-                >
-                  <tr>
-                    <td
-                      align="center"
-                      style="
-                        background-color: #c8c8c8;
-                        background: linear-gradient(
-                          135deg,
-                          #e8e8e8 0%,
-                          #c0c0c0 40%,
-                          #e0e0e0 50%,
-                          #a8a8a8 100%
-                        );
-                        border-radius: 40px;
-                        border: 1px solid rgba(255, 255, 255, 0.15);
-                        box-shadow:
-                          0 2px 8px rgba(0, 0, 0, 0.3),
-                          inset 0 1px 0 rgba(255, 255, 255, 0.25);
-                      "
-                    >
-                      <a
-                        href="https://portal.oxen.finance"
-                        target="_blank"
-                        style="
-                          display: inline-block;
-                          padding: 14px 32px;
-                          font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-                          font-size: 14px;
-                          font-weight: 600;
-                          color: #0c0d14;
-                          text-decoration: none;
-                          line-height: 20px;
-                        "
-                        >Go to Dashboard</a
-                      >
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-
-            <tr>
-              <td style="height: 40px; font-size: 0; line-height: 0">&nbsp;</td>
-            </tr>
-
-            <!-- Sign-off divider -->
-            <tr>
-              <td style="padding: 0 32px">
-                <table
-                  role="presentation"
-                  width="100%"
-                  cellpadding="0"
-                  cellspacing="0"
-                  border="0"
-                >
-                  <tr>
-                    <td
-                      style="
-                        border-top: 1px solid #15131a;
-                        font-size: 0;
-                        line-height: 0;
-                        height: 1px;
-                      "
-                    >
-                      &nbsp;
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-
-            <tr>
-              <td
-                style="
-                  padding: 16px 32px 0 32px;
-                  font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-                  font-size: 13px;
-                  color: #6b6762;
+                  color: rgba(245, 240, 235, 0.35);
                   line-height: 20px;
+                  width: 130px;
+                  vertical-align: top;
                 "
               >
-                The Oxen Team
+                {{label_account_holder}}
               </td>
-            </tr>
-
-            <tr>
-              <td style="height: 32px; font-size: 0; line-height: 0">&nbsp;</td>
-            </tr>
-
-            <!-- Footer -->
-            <tr>
-              <td style="padding: 0 32px">
-                <table
-                  role="presentation"
-                  width="100%"
-                  cellpadding="0"
-                  cellspacing="0"
-                  border="0"
-                >
-                  <tr>
-                    <td
-                      style="
-                        border-top: 1px solid #1a1820;
-                        font-size: 0;
-                        line-height: 0;
-                        height: 1px;
-                      "
-                    >
-                      &nbsp;
-                    </td>
-                  </tr>
-                </table>
+              <td
+                style="
+                  padding: 0 0 14px 0;
+                  font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                  font-size: 14px;
+                  color: #f5f0eb;
+                  font-weight: 500;
+                  line-height: 20px;
+                  vertical-align: top;
+                "
+              >
+                {{account_holder}}
               </td>
             </tr>
             <tr>
               <td
                 style="
-                  padding: 24px 32px 0 32px;
+                  padding: 0 0 14px 0;
                   font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-                  font-size: 11px;
-                  color: #6b6762;
-                  line-height: 18px;
+                  font-size: 12px;
+                  color: rgba(245, 240, 235, 0.35);
+                  line-height: 20px;
+                  width: 130px;
+                  vertical-align: top;
                 "
               >
-                This is an automated message from Oxen. Please do not reply.
+                {{label_account_id}}
+              </td>
+              <td
+                style="
+                  padding: 0 0 14px 0;
+                  font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                  font-size: 14px;
+                  color: #f5f0eb;
+                  font-weight: 500;
+                  line-height: 20px;
+                  vertical-align: top;
+                "
+              >
+                {{account_id}}
               </td>
             </tr>
             <tr>
               <td
                 style="
-                  padding: 12px 32px 0 32px;
+                  padding: 0 0 14px 0;
                   font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-                  font-size: 10px;
-                  color: #6b6762;
-                  line-height: 16px;
+                  font-size: 12px;
+                  color: rgba(245, 240, 235, 0.35);
+                  line-height: 20px;
+                  width: 130px;
+                  vertical-align: top;
                 "
               >
-                Oxen is a platform operated by Escrowfy GmbH, Bahnhofstrasse 7,
-                6300 Zug, Switzerland (CHE-281.608.494). VQF/SRO Member Nr.
-                101009.
+                {{label_iban_eur}}
+              </td>
+              <td
+                style="
+                  padding: 0 0 14px 0;
+                  font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                  font-size: 14px;
+                  color: #f5f0eb;
+                  font-weight: 500;
+                  line-height: 20px;
+                  letter-spacing: 0.5px;
+                  vertical-align: top;
+                "
+              >
+                {{iban_eur}}
               </td>
             </tr>
             <tr>
               <td
-                align="center"
                 style="
-                  padding: 12px 32px 0 32px;
+                  padding: 0 0 14px 0;
                   font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-                  font-size: 11px;
-                  line-height: 18px;
+                  font-size: 12px;
+                  color: rgba(245, 240, 235, 0.35);
+                  line-height: 20px;
+                  width: 130px;
+                  vertical-align: top;
                 "
               >
-                <a href="#" style="color: #8a857f; text-decoration: none"
-                  >Help Centre</a
-                >
-                <span style="color: #6b6762"> &middot; </span>
-                <a href="#" style="color: #8a857f; text-decoration: none"
-                  >Privacy Policy</a
-                >
-                <span style="color: #6b6762"> &middot; </span>
-                <a href="#" style="color: #8a857f; text-decoration: none"
-                  >Terms of Service</a
-                >
+                {{label_iban_usd}}
+              </td>
+              <td
+                style="
+                  padding: 0 0 14px 0;
+                  font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                  font-size: 14px;
+                  color: #f5f0eb;
+                  font-weight: 500;
+                  line-height: 20px;
+                  letter-spacing: 0.5px;
+                  vertical-align: top;
+                "
+              >
+                {{iban_usd}}
               </td>
             </tr>
             <tr>
               <td
-                align="center"
                 style="
-                  padding: 8px 32px 0 32px;
+                  padding: 0 0 14px 0;
                   font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-                  font-size: 10px;
-                  color: #6b6762;
-                  line-height: 16px;
+                  font-size: 12px;
+                  color: rgba(245, 240, 235, 0.35);
+                  line-height: 20px;
+                  width: 130px;
+                  vertical-align: top;
                 "
               >
-                &copy; 2026 Oxen Finance
+                {{label_currencies}}
+              </td>
+              <td
+                style="
+                  padding: 0 0 14px 0;
+                  font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                  font-size: 14px;
+                  color: #f5f0eb;
+                  font-weight: 500;
+                  line-height: 20px;
+                  vertical-align: top;
+                "
+              >
+                {{currencies}}
               </td>
             </tr>
             <tr>
               <td
-                align="right"
                 style="
-                  padding: 16px 32px 32px 32px;
+                  padding: 0;
                   font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-                  font-size: 9px;
-                  color: #3d3a37;
-                  line-height: 14px;
+                  font-size: 12px;
+                  color: rgba(245, 240, 235, 0.35);
+                  line-height: 20px;
+                  width: 130px;
+                  vertical-align: top;
                 "
               >
-                Ref: ACC-2026-29481
+                {{label_bic}}
+              </td>
+              <td
+                style="
+                  padding: 0;
+                  font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                  font-size: 14px;
+                  color: #f5f0eb;
+                  font-weight: 500;
+                  line-height: 20px;
+                  vertical-align: top;
+                "
+              >
+                {{bic}}
               </td>
             </tr>
           </table>
         </td>
       </tr>
     </table>
-  </body>
-</html>
+  </td>
+</tr>
+
+<!-- Note below card -->
+<tr>
+  <td
+    style="
+      padding: 10px 32px 0 32px;
+      font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      color: rgba(245, 240, 235, 0.35);
+      font-style: italic;
+      line-height: 18px;
+    "
+  >
+    {{note_account_share}}
+  </td>
+</tr>
+
+<!-- Section: YOUR ACCOUNT MANAGER -->
+<tr>
+  <td
+    style="
+      padding: 28px 32px 0 32px;
+      font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+      font-size: 10px;
+      font-weight: 500;
+      color: rgba(245, 240, 235, 0.35);
+      line-height: 16px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+    "
+  >
+    {{section_your_account_manager}}
+  </td>
+</tr>
+
+<!-- AM featured card -->
+<tr>
+  <td style="padding: 12px 32px 0 32px">
+    <table
+      role="presentation"
+      width="100%"
+      cellpadding="0"
+      cellspacing="0"
+      border="0"
+      style="
+        background: linear-gradient(
+          140deg,
+          #0f1118 0%,
+          rgba(192, 139, 136, 0.2) 15%,
+          rgba(192, 139, 136, 0.2) 55%,
+          #0f1118 100%
+        );
+        border: 1px solid rgba(192, 139, 136, 0.1);
+        border-radius: 12px;
+      "
+    >
+      <tr>
+        <td style="padding: 24px">
+          <table
+            role="presentation"
+            width="100%"
+            cellpadding="0"
+            cellspacing="0"
+            border="0"
+          >
+            <!-- Avatar + Name row -->
+            <tr>
+              <td style="vertical-align: top; width: 64px">
+                <table
+                  role="presentation"
+                  cellpadding="0"
+                  cellspacing="0"
+                  border="0"
+                >
+                  <tr>
+                    <td
+                      align="center"
+                      style="
+                        width: 48px;
+                        height: 48px;
+                        background-color: #1e1a1a;
+                        border: 1px solid #3d302f;
+                        border-radius: 50%;
+                        font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                        font-size: 16px;
+                        color: #c08b88;
+                        font-weight: 600;
+                        line-height: 48px;
+                      "
+                    >
+                      {{am_initials}}
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td style="vertical-align: top; padding-left: 0">
+                <span
+                  style="
+                    font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                    font-size: 16px;
+                    color: #f5f0eb;
+                    font-weight: 600;
+                    line-height: 22px;
+                  "
+                  >{{am_name}}</span
+                ><br />
+                <span
+                  style="
+                    font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                    font-size: 12px;
+                    color: rgba(245, 240, 235, 0.5);
+                    line-height: 18px;
+                  "
+                  >{{am_title}}</span
+                >
+              </td>
+            </tr>
+            <!-- Spacer -->
+            <tr>
+              <td
+                colspan="2"
+                style="height: 16px; font-size: 0; line-height: 0"
+              >
+                &nbsp;
+              </td>
+            </tr>
+            <!-- Email -->
+            <tr>
+              <td colspan="2" style="padding: 0 0 6px 0">
+                <a
+                  href="mailto:{{am_email}}"
+                  style="
+                    font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                    font-size: 13px;
+                    color: #c08b88;
+                    text-decoration: none;
+                    line-height: 20px;
+                  "
+                  >{{am_email}}</a
+                >
+              </td>
+            </tr>
+            <!-- Phone -->
+            <tr>
+              <td colspan="2" style="padding: 0">
+                <span
+                  style="
+                    font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                    font-size: 13px;
+                    color: rgba(245, 240, 235, 0.6);
+                    line-height: 20px;
+                  "
+                  >{{am_phone}}</span
+                >
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<!-- CTA: Schedule Onboarding -->
+<tr>
+  <td align="center" style="padding: 20px 32px 0 32px">
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td
+          align="center"
+          style="
+            background: linear-gradient(
+              188.53deg,
+              #e8e8e8 14.645%,
+              #c0c0c0 42.929%,
+              #e0e0e0 50%,
+              #a8a8a8 85.355%
+            );
+            border-radius: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow:
+              0 2px 8px rgba(0, 0, 0, 0.3),
+              inset 0 1px 0 rgba(255, 255, 255, 0.25);
+          "
+        >
+          <a
+            href="{{onboarding_url}}"
+            target="_blank"
+            style="
+              display: inline-block;
+              padding: 14px 32px;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 14px;
+              font-weight: 600;
+              color: #060709;
+              text-decoration: none;
+              line-height: 20px;
+            "
+            >{{cta_schedule_onboarding}}</a
+          >
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<!-- Section: GETTING STARTED -->
+<tr>
+  <td
+    style="
+      padding: 32px 32px 0 32px;
+      font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+      font-size: 10px;
+      font-weight: 500;
+      color: rgba(245, 240, 235, 0.35);
+      line-height: 16px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+    "
+  >
+    {{section_getting_started}}
+  </td>
+</tr>
+
+<!-- List items -->
+<tr>
+  <td style="padding: 16px 32px 0 32px">
+    <table
+      role="presentation"
+      width="100%"
+      cellpadding="0"
+      cellspacing="0"
+      border="0"
+    >
+      <tr>
+        <td
+          style="
+            width: 24px;
+            color: #c08b88;
+            font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+            font-size: 14px;
+            vertical-align: top;
+            padding: 0 0 12px 0;
+          "
+        >
+          &rarr;
+        </td>
+        <td
+          style="
+            padding: 0 0 12px 0;
+            font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 24px;
+          "
+        >
+          <a
+            href="{{portal_url}}"
+            style="color: rgba(245, 240, 235, 0.8); text-decoration: none"
+            >{{list_item_1}}</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td
+          style="
+            width: 24px;
+            color: #c08b88;
+            font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+            font-size: 14px;
+            vertical-align: top;
+            padding: 0 0 12px 0;
+          "
+        >
+          &rarr;
+        </td>
+        <td
+          style="
+            padding: 0 0 12px 0;
+            font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 24px;
+          "
+        >
+          <a
+            href="{{portal_url}}"
+            style="color: rgba(245, 240, 235, 0.8); text-decoration: none"
+            >{{list_item_2}}</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td
+          style="
+            width: 24px;
+            color: #c08b88;
+            font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+            font-size: 14px;
+            vertical-align: top;
+            padding: 0 0 12px 0;
+          "
+        >
+          &rarr;
+        </td>
+        <td
+          style="
+            padding: 0 0 12px 0;
+            font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 24px;
+          "
+        >
+          <a
+            href="{{portal_url}}"
+            style="color: rgba(245, 240, 235, 0.8); text-decoration: none"
+            >{{list_item_3}}</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td
+          style="
+            width: 24px;
+            color: #c08b88;
+            font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+            font-size: 14px;
+            vertical-align: top;
+            padding: 0;
+          "
+        >
+          &rarr;
+        </td>
+        <td
+          style="
+            padding: 0;
+            font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 24px;
+          "
+        >
+          <a
+            href="{{portal_url}}"
+            style="color: rgba(245, 240, 235, 0.8); text-decoration: none"
+            >{{list_item_4}}</a
+          >
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<!-- What happens next -->
+<tr>
+  <td
+    style="
+      padding: 28px 32px 0 32px;
+      font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+      font-size: 14px;
+      color: rgba(245, 240, 235, 0.8);
+      line-height: 24px;
+    "
+  >
+    {{body_next_steps}}
+    <a href="{{portal_url}}" style="color: #c08b88; text-decoration: none"
+      >{{portal_domain}}</a
+    >.
+  </td>
+</tr>
+
+<!-- CTA: Go to Dashboard -->
+<tr>
+  <td align="center" style="padding: 24px 32px 0 32px">
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td
+          align="center"
+          style="
+            background: linear-gradient(
+              189.73deg,
+              #e8e8e8 14.645%,
+              #c0c0c0 42.929%,
+              #e0e0e0 50%,
+              #a8a8a8 85.355%
+            );
+            border-radius: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow:
+              0 2px 8px rgba(0, 0, 0, 0.3),
+              inset 0 1px 0 rgba(255, 255, 255, 0.25);
+          "
+        >
+          <a
+            href="{{portal_url}}"
+            target="_blank"
+            style="
+              display: inline-block;
+              padding: 14px 32px;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 14px;
+              font-weight: 600;
+              color: #060709;
+              text-decoration: none;
+              line-height: 20px;
+            "
+            >{{cta_go_to_dashboard}}</a
+          >
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<!-- Spacer -->
+<tr>
+  <td style="height: 40px; font-size: 0; line-height: 0">&nbsp;</td>
+</tr>
+
+<!-- Sign-off divider -->
+<tr>
+  <td style="padding: 0 32px">
+    <table
+      role="presentation"
+      width="100%"
+      cellpadding="0"
+      cellspacing="0"
+      border="0"
+    >
+      <tr>
+        <td
+          style="
+            border-top: 1px solid rgba(192, 139, 136, 0.05);
+            font-size: 0;
+            line-height: 0;
+            height: 1px;
+          "
+        >
+          &nbsp;
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<!-- Sign-off -->
+<tr>
+  <td
+    style="
+      padding: 16px 32px 0 32px;
+      font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+      font-size: 13px;
+      color: rgba(245, 240, 235, 0.35);
+      line-height: 20px;
+    "
+  >
+    {{sign_off}}
+  </td>
+</tr>

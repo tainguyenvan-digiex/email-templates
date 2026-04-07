@@ -1,0 +1,67 @@
+{
+  "layout": "oxen-layout",
+  "subject": "Bienvenue sur Oxen",
+  "title": "Bienvenue sur Oxen",
+  "lang_code": "fr",
+
+  "_backend_fields": [
+    "first_name",
+    "account_holder",
+    "account_id",
+    "iban_eur",
+    "iban_usd",
+    "currencies",
+    "bic",
+    "am_initials",
+    "am_name",
+    "am_title",
+    "am_email",
+    "am_phone",
+    "portal_url",
+    "portal_domain",
+    "onboarding_url"
+  ],
+
+  "body_line_1": "Votre compte est désormais actif.",
+  "body_line_2": "Vous trouverez ci-dessous les détails de votre compte et votre chargé de compte dédié.",
+  "body_next_steps": "Votre chargé de compte vous contactera dans les 24 heures pour vous présenter votre tableau de bord et répondre à vos questions. En attendant, vous pouvez explorer votre compte sur",
+
+  "section_your_account": "VOTRE COMPTE",
+  "section_your_account_manager": "VOTRE CHARGÉ DE COMPTE",
+  "section_getting_started": "POUR COMMENCER",
+
+  "label_account_holder": "Titulaire du compte",
+  "label_account_id": "Identifiant du compte",
+  "label_iban_eur": "IBAN (EUR)",
+  "label_iban_usd": "IBAN (USD)",
+  "label_currencies": "Devises",
+  "label_bic": "BIC",
+
+  "note_account_share": "Partagez ces informations avec votre comptable ou vos contreparties de paiement.",
+
+  "cta_schedule_onboarding": "Planifier votre appel d'intégration",
+  "cta_go_to_dashboard": "Accéder au tableau de bord",
+
+  "list_item_1": "Envoyez et recevez des paiements via SEPA Instant et SWIFT",
+  "list_item_2": "Émettez des cartes physiques et virtuelles pour votre équipe",
+  "list_item_3": "Convertissez entre fiat et crypto depuis votre tableau de bord",
+  "list_item_4": "Invitez des membres de l'équipe et définissez leurs droits d'accès",
+
+  "sign_off": "L'équipe Oxen",
+
+  "first_name": null,
+  "account_holder": null,
+  "account_id": null,
+  "iban_eur": null,
+  "iban_usd": null,
+  "currencies": null,
+  "bic": null,
+  "am_initials": null,
+  "am_name": null,
+  "am_title": null,
+  "am_email": null,
+  "am_phone": null,
+  "portal_url": null,
+  "portal_domain": null,
+  "onboarding_url": null
+}

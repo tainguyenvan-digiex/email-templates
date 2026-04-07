@@ -6,7 +6,12 @@
       "Skill(openspec:proposal:*)",
       "Bash(openspec list:*)",
       "Bash(openspec show:*)",
-      "Bash(openspec validate:*)"
+      "Bash(openspec validate:*)",
+      "Bash(cat /Users/nguyenquangtam/Documents/email-templates/templates/config-v2/oxen-welcome/*)",
+      "Bash(mv config-v2/oxen-welcome/en.json config/welcome-email/en.json)",
+      "Bash(mv config-v2/oxen-welcome/fr.json config/welcome-email/fr.json)",
+      "Bash(mv config-v2/oxen-layout config/oxen-layout)",
+      "Bash(rmdir config-v2/oxen-welcome)"
     ]
   }
 }

@@ -1,0 +1,67 @@
+{
+  "layout": "oxen-layout",
+  "subject": "Welcome to Oxen",
+  "title": "Welcome to Oxen",
+  "lang_code": "en",
+
+  "_backend_fields": [
+    "first_name",
+    "account_holder",
+    "account_id",
+    "iban_eur",
+    "iban_usd",
+    "currencies",
+    "bic",
+    "am_initials",
+    "am_name",
+    "am_title",
+    "am_email",
+    "am_phone",
+    "portal_url",
+    "portal_domain",
+    "onboarding_url"
+  ],
+
+  "body_line_1": "Your account is now active.",
+  "body_line_2": "Below are your account details and your dedicated account manager.",
+  "body_next_steps": "Your account manager will reach out within 24 hours to walk you through your dashboard and answer any questions about your setup. In the meantime, you can explore your account at",
+
+  "section_your_account": "YOUR ACCOUNT",
+  "section_your_account_manager": "YOUR ACCOUNT MANAGER",
+  "section_getting_started": "GETTING STARTED",
+
+  "label_account_holder": "Account holder",
+  "label_account_id": "Account ID",
+  "label_iban_eur": "IBAN (EUR)",
+  "label_iban_usd": "IBAN (USD)",
+  "label_currencies": "Currencies",
+  "label_bic": "BIC",
+
+  "note_account_share": "Share these details with your accountant or payment counterparties.",
+
+  "cta_schedule_onboarding": "Schedule Your Onboarding Call",
+  "cta_go_to_dashboard": "Go to Dashboard",
+
+  "list_item_1": "Send and receive payments via SEPA Instant and SWIFT",
+  "list_item_2": "Issue physical and virtual cards for your team",
+  "list_item_3": "Convert between fiat and crypto from your dashboard",
+  "list_item_4": "Invite team members and set access permissions",
+
+  "sign_off": "The Oxen Team",
+
+  "first_name": null,
+  "account_holder": null,
+  "account_id": null,
+  "iban_eur": null,
+  "iban_usd": null,
+  "currencies": null,
+  "bic": null,
+  "am_initials": null,
+  "am_name": null,
+  "am_title": null,
+  "am_email": null,
+  "am_phone": null,
+  "portal_url": null,
+  "portal_domain": null,
+  "onboarding_url": null
+}

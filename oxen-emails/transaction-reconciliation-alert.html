@@ -1,0 +1,426 @@
+<!-- Alert Introduction -->
+<tr>
+  <td style="padding: 20px 40px 20px 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 0">
+          <p
+            class="body-text"
+            style="
+              margin: 0;
+              text-align: center;
+              color: rgba(245, 240, 235, 0.8);
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+            "
+          >
+            {{alert_intro}} <b>{{date}}</b> {{alert_intro_suffix}}
+          </p>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<!-- Discrepancies Badge -->
+<tr>
+  <td style="padding: 0 40px 20px 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center">
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td
+                style="
+                  background-color: rgba(220, 53, 69, 0.1);
+                  border: 1px solid rgba(220, 53, 69, 0.2);
+                  border-radius: 8px;
+                  padding: 10px 20px;
+                "
+              >
+                <span
+                  style="
+                    font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #ff6b6b;
+                  "
+                >
+                  {{discrepancies_badge_prefix}} {{differencesCount}}
+                  {{discrepancies_badge_suffix}}
+                </span>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<!-- Action Required Box -->
+<tr>
+  <td style="padding: 0 40px 20px 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+      style="
+        background-color: rgba(220, 53, 69, 0.05);
+        border-radius: 8px;
+        border-left: 4px solid #dc3545;
+      "
+    >
+      <tr>
+        <td style="padding: 20px">
+          <p
+            class="body-text"
+            style="
+              margin: 0 0 10px 0;
+              font-weight: 600;
+              color: #f5f0eb;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+            "
+          >
+            {{action_required_title}}
+          </p>
+          <p
+            class="body-text"
+            style="
+              margin: 0;
+              font-weight: 400;
+              color: rgba(245, 240, 235, 0.8);
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+            "
+          >
+            {{action_required_message}}
+          </p>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<!-- Summary Box -->
+<tr>
+  <td style="padding: 0 40px 20px 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+      style="
+        background-color: #0f1118;
+        border: 1px solid rgba(192, 139, 136, 0.08);
+        border-radius: 8px;
+        border-left: 4px solid #dc3545;
+      "
+    >
+      <tr>
+        <td style="padding: 20px">
+          <!-- Summary Items -->
+          <table
+            role="presentation"
+            cellspacing="0"
+            cellpadding="0"
+            border="0"
+            width="100%"
+          >
+            <tr>
+              <td style="padding: 8px 0">
+                <span
+                  style="
+                    font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: #f5f0eb;
+                  "
+                  >{{label_reconciliation_date}}</span
+                >
+                <span
+                  style="
+                    font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: rgba(245, 240, 235, 0.5);
+                  "
+                  >{{date}}</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 8px 0">
+                <span
+                  style="
+                    font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: #f5f0eb;
+                  "
+                  >{{label_db_transactions}}</span
+                >
+                <span
+                  style="
+                    font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: rgba(245, 240, 235, 0.5);
+                  "
+                  >{{dbTransactionsCount}}</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 8px 0">
+                <span
+                  style="
+                    font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: #f5f0eb;
+                  "
+                  >{{label_shlt_transactions}}</span
+                >
+                <span
+                  style="
+                    font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: rgba(245, 240, 235, 0.5);
+                  "
+                  >{{shltTransactionsCount}}</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 8px 0">
+                <span
+                  style="
+                    font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: #f5f0eb;
+                  "
+                  >{{label_db_total}}</span
+                >
+                <span
+                  style="
+                    font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: rgba(245, 240, 235, 0.5);
+                  "
+                  >{{dbTotalAmount}}</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 8px 0">
+                <span
+                  style="
+                    font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: #f5f0eb;
+                  "
+                  >{{label_shlt_total}}</span
+                >
+                <span
+                  style="
+                    font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: rgba(245, 240, 235, 0.5);
+                  "
+                  >{{shltTotalAmount}}</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 8px 0">
+                <span
+                  style="
+                    font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: #f5f0eb;
+                  "
+                  >{{label_discrepancies_count}}</span
+                >
+                <span
+                  style="
+                    font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: #ff6b6b;
+                  "
+                  >{{differencesCount}}</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 8px 0">
+                <span
+                  style="
+                    font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: #f5f0eb;
+                  "
+                  >{{label_difference_amount}}</span
+                >
+                <span
+                  style="
+                    font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: #ff6b6b;
+                  "
+                  >{{differencesTotalAmount}}</span
+                >
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<!-- Discrepancy Summary -->
+<tr>
+  <td style="padding: 0 40px 10px 40px" class="mobile-padding">
+    <h2
+      style="
+        margin: 0;
+        font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        color: #f5f0eb;
+        text-align: center;
+      "
+    >
+      {{discrepancy_summary_title}}
+    </h2>
+  </td>
+</tr>
+<tr>
+  <td style="padding: 0 40px 20px 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+      style="
+        background-color: #0f1118;
+        border: 1px solid rgba(192, 139, 136, 0.08);
+        border-radius: 8px;
+      "
+    >
+      <tr>
+        <td style="padding: 20px">
+          {{#each discrepancySummary}}
+          <div
+            style="
+              padding: 12px 0;
+              border-bottom: 1px solid rgba(192, 139, 136, 0.08);
+            "
+          >
+            <span
+              style="
+                font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                font-size: 15px;
+                font-weight: 600;
+                color: #ff6b6b;
+              "
+              >{{type}}:</span
+            >
+            <span
+              style="
+                font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                font-size: 15px;
+                font-weight: 400;
+                color: rgba(245, 240, 235, 0.5);
+              "
+              >{{count}} occurrences</span
+            >
+          </div>
+          {{/each}}
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<!-- Closing Message -->
+<tr>
+  <td style="padding: 0 40px 20px 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 0">
+          <p
+            class="body-text"
+            style="
+              margin: 0;
+              text-align: center;
+              color: rgba(245, 240, 235, 0.8);
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+            "
+          >
+            {{closing_message}}
+          </p>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<!-- Signature -->
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 0">
+          <p
+            class="body-text"
+            style="
+              margin: 0;
+              text-align: center;
+              color: rgba(245, 240, 235, 0.5);
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+            "
+          >
+            {{signature}}
+          </p>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>

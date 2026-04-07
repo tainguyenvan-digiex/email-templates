@@ -19,7 +19,7 @@
     <title>{{title}}</title>
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Bellfair&family=DM+Sans:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bellfair&amp;family=DM+Sans:wght@400;500;600&amp;display=swap"
       rel="stylesheet"
     />
 
@@ -54,6 +54,14 @@
       }
       u + .body {
         background-color: #0c0d14 !important;
+      }
+      body,
+      table,
+      td,
+      p,
+      a,
+      span {
+        font-family: "DM Sans", Arial, sans-serif;
       }
       img {
         border: 0;
@@ -108,13 +116,13 @@
                 style="
                   padding: 0;
                   background-color: #0c0d14;
-                  background-image: url(&quot;https://raw.githubusercontent.com/tainguyenvan-digiex/email-templates/main/assets/silk-wave-header.png&quot;);
+                  background-image: url(&quot;https://public-assets.oxen.finance/b2b/emails/assets/silk-wave-header.png&quot;);
                   background-size: 600px 240px;
                   background-position: center top;
                   background-repeat: no-repeat;
                 "
               >
-                <!--[if gte mso 9]><v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:240px;"><v:fill type="frame" src="https://raw.githubusercontent.com/tainguyenvan-digiex/email-templates/main/assets/silk-wave-header.png" color="#0C0D14"/><v:textbox inset="0,0,0,0"><div style="text-align:center;"><![endif]-->
+                <!--[if gte mso 9]><v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:240px;"><v:fill type="frame" src="https://public-assets.oxen.finance/b2b/emails/assets/silk-wave-header.png" color="#0C0D14"/><v:textbox inset="0,0,0,0"><div style="text-align:center;"><![endif]-->
                 <table
                   role="presentation"
                   cellpadding="0"
@@ -128,9 +136,9 @@
                   </tr>
                   <tr>
                     <td align="center">
-                      <a href="https://oxen.finance" target="_blank">
+                      <a href="{{website_url}}" target="_blank">
                         <img
-                          src="https://raw.githubusercontent.com/tainguyenvan-digiex/email-templates/main/assets/logo.png"
+                          src="https://public-assets.oxen.finance/b2b/emails/assets/logo.png"
                           alt="Oxen"
                           width="140"
                           style="display: block; width: 140px; height: auto"
@@ -216,7 +224,7 @@
                   line-height: 18px;
                 "
               >
-                This is an automated message from Oxen. Please do not reply.
+                {{footer_automated}}
               </td>
             </tr>
 
@@ -231,9 +239,7 @@
                   line-height: 16px;
                 "
               >
-                Oxen is a platform operated by Escrowfy GmbH, Bahnhofstrasse 7,
-                6300 Zug, Switzerland (CHE-281.608.494). VQF/SRO Member Nr.
-                101009.
+                {{footer_legal}}
               </td>
             </tr>
 
@@ -249,21 +255,21 @@
                 "
               >
                 <a
-                  href="#"
+                  href="{{help_url}}"
                   style="color: rgba(245, 240, 235, 0.6); text-decoration: none"
-                  >Help Centre</a
+                  >{{footer_help}}</a
                 >
                 <span style="color: rgba(245, 240, 235, 0.35)"> &middot; </span>
                 <a
-                  href="#"
+                  href="{{privacy_url}}"
                   style="color: rgba(245, 240, 235, 0.6); text-decoration: none"
-                  >Privacy Policy</a
+                  >{{footer_privacy}}</a
                 >
                 <span style="color: rgba(245, 240, 235, 0.35)"> &middot; </span>
                 <a
-                  href="#"
+                  href="{{terms_url}}"
                   style="color: rgba(245, 240, 235, 0.6); text-decoration: none"
-                  >Terms of Service</a
+                  >{{footer_terms}}</a
                 >
               </td>
             </tr>
@@ -280,7 +286,7 @@
                   line-height: 16px;
                 "
               >
-                © 2026 Oxen Finance
+                {{footer_copyright}}
               </td>
             </tr>
           </table>
