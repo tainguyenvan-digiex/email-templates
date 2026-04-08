@@ -1,0 +1,98 @@
+<!-- Message -->
+<tr>
+  <td style="padding: 20px 40px 20px 40px" class="mobile-padding">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+      <tr>
+        <td align="center" style="padding: 0">
+          <p class="body-text" style="margin: 0; text-align: center; color: #F5F0EB">
+            {{message_prefix}} <strong>{{period}}</strong> {{message_suffix}}
+          </p>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<!-- CTA Button -->
+<tr>
+  <td style="padding: 0 40px 20px 40px" class="mobile-padding">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+      <tr>
+        <td align="center">
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td style="
+                              padding: 12px 32px;
+                  background-color: #c8c8c8;
+                        background: linear-gradient(
+                          135deg,
+                          #e8e8e8 0%,
+                          #c0c0c0 40%,
+                          #e0e0e0 50%,
+                          #a8a8a8 100%
+                        );
+                        border-radius: 40px;
+                        border: 1px solid rgba(255, 255, 255, 0.15);
+                        box-shadow:
+                          0 2px 8px rgba(0, 0, 0, 0.3),
+                          inset 0 1px 0 rgba(255, 255, 255, 0.25);
+                            ">
+                <a href="{{download_url}}" data-pm-no-track style="
+                                font-family: 'DM Sans', Arial, sans-serif;
+                                font-size: 16px;
+                                font-weight: 600;
+                                color: #000;
+                                text-decoration: none;
+                                display: inline-block;
+                              ">
+                  {{cta_text}}
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<!-- Expiration Notice -->
+<tr>
+  <td style="padding: 0 40px 20px 40px" class="mobile-padding">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+      <tr>
+        <td align="center" style="padding: 0">
+          <p style="
+                          margin: 0;
+                          font-family: 'DM Sans', Arial, sans-serif;
+                          font-size: 14px;
+                          font-weight: 400;
+                          line-height: 20px;
+                          color: #6b7280;
+                          text-align: center;
+                        ">
+            {{expiration_message_prefix}} <strong>{{expiration_time}}</strong>
+            {{expiration_message_suffix}}<br>
+            <span style="font-size: 12px;">{{expiration_note}}</span>
+          </p>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<!-- Support Contact -->
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+      <tr>
+        <td align="center" style="padding: 0">
+          <p class="body-text" style="margin: 0; text-align: center; font-size: 16px; color: #F5F0EB">
+            {{support_message}}<br>
+            <strong>{{support_email}}</strong>
+          </p>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
