@@ -5,48 +5,40 @@
   database, and dynamic fields that need to be provided from the server.
 </p>
 
-<h2>Common Layout Configuration</h2>
+<h2>Oxen Layout Configuration</h2>
 
 <p>
-  A common layout JSON configuration file is available for all email templates
-  (excluding the card-blocked template, which has its own structure). This
-  configuration contains shared layout variables that are consistent across
-  templates.
+  All email templates use <code>oxen-layout</code> as the shared layout.
+  This layout features a dark theme (#0c0d14) with silk wave header decoration,
+  DM Sans + Bellfair fonts, and a standardized footer structure.
 </p>
 
 <p><strong>Location:</strong></p>
 <ul>
-  <li><code>templates/config/common-layout/en.json</code> - English version</li>
-  <li><code>templates/config/common-layout/fr.json</code> - French version</li>
+  <li><code>layouts/oxen-layout.html</code> - Layout HTML template</li>
+  <li><code>templates/config/oxen-layout/en.json</code> - English footer/config</li>
+  <li><code>templates/config/oxen-layout/fr.json</code> - French footer/config</li>
 </ul>
 
-<p><strong>Common Layout Fields:</strong></p>
+<p><strong>Oxen Layout Fields (shared across all templates):</strong></p>
 <ul>
-  <li><code>lang_code</code> - Language code ("en" or "fr")</li>
-  <li><code>header_gradient</code> - CSS gradient for header background</li>
-  <li><code>primary_color</code> - Primary brand color</li>
-  <li><code>greeting</code> - Greeting text ("Hello" / "Bonjour")</li>
-  <li><code>social_title</code> - Social media section title</li>
-  <li><code>social_hashtags_part1</code> - First part of social hashtags</li>
-  <li><code>social_hashtags_part2</code> - Second part of social hashtags</li>
-  <li><code>social_hashtags_part3</code> - Third part of social hashtags</li>
-  <li>
-    <code>footer_unsubscribe_link_text</code> - Unsubscribe link text in footer
-  </li>
-  <li>
-    <code>company_registration_part1</code> - First line of company registration
-    information
-  </li>
-  <li><code>legal_text</code> - Legal disclaimer text</li>
+  <li><code>website_url</code> - Website URL for logo link</li>
+  <li><code>help_url</code> - Help centre URL</li>
+  <li><code>privacy_url</code> - Privacy policy URL</li>
+  <li><code>terms_url</code> - Terms of service URL</li>
+  <li><code>footer_automated</code> - Automated message text</li>
+  <li><code>footer_legal</code> - Legal disclaimer text</li>
+  <li><code>footer_help</code> - Help link label</li>
+  <li><code>footer_privacy</code> - Privacy link label</li>
+  <li><code>footer_terms</code> - Terms link label</li>
+  <li><code>footer_copyright</code> - Copyright text</li>
 </ul>
 
 <p>
-  <strong>Note:</strong> Template-specific fields such as <code>title</code>,
-  <code>preheader</code>, <code>heading</code>, <code>subject</code>,
-  <code>first_name</code>, <code>recipient_email</code>, <code>cta_url</code>, and <code>recipient_email</code>
-  are not included in the common layout config as they vary per template. The
-  card-blocked template is excluded from this common layout as it has additional
-  card-specific fields and a different structure.
+  <strong>Note:</strong> Each template provides its own <code>title</code> and
+  <code>subject</code> in its config. Template-specific content fields vary per template.
+  The <code>first_name</code> and <code>recipient_email</code> fields are null in configs
+  and must be provided dynamically by the server.
 </p>
 
 <p>
@@ -91,470 +83,416 @@
     </tr>
     <tr>
       <td>4</td>
-      <td>Call Cancelled</td>
-      <td><code>call-cancelled</code></td>
-      <td><code>gn-b2b-call-cancelled-en/fr</code></td>
-      <td><code>first_name</code>, <code>recipient_email</code></td>
+      <td>Approve KYB</td>
+      <td><code>approve-kyb</code></td>
+      <td><code>email_approve_kyb_en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code>, <code>company_name</code>, <code>cta_url</code></td>
     </tr>
     <tr>
       <td>5</td>
-      <td>Call Confirmed</td>
-      <td><code>call-confirmed</code></td>
-      <td><code>gn-b2b-call-booked-en/fr</code></td>
-      <td>
-        <code>first_name</code>, <code>recipient_email</code>, <code>appointment_date</code>,
-        <code>appointment_time</code>, <code>location</code>,
-      </td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>Call Reminder</td>
-      <td><code>call-reminder</code></td>
-      <td><code>gn-b2b-call-reminder-1h-en/fr</code></td>
-      <td>
-        <code>first_name</code>, <code>recipient_email</code>, <code>date</code>, <code>time</code>,
-        <code>meeting_link</code>
-      </td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>Call Rescheduled</td>
-      <td><code>call-rescheduled</code></td>
-      <td><code>gn-b2b-call-rescheduled-en/fr</code></td>
-      <td>
-        <code>first_name</code>, <code>recipient_email</code>, <code>date</code>, <code>time</code>,
-        <code>meeting_link</code>
-      </td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>Card Blocked</td>
-      <td><code>card-blocked</code></td>
-      <td><code>gn-b2b-card-blocked-en/fr</code></td>
-      <td><code>first_name</code>, <code>recipient_email</code>, <code>card_last_four</code>,</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>Card Deleted</td>
-      <td><code>card-deleted</code></td>
-      <td><code>gn-b2b-card-deleted-en/fr</code></td>
-      <td><code>first_name</code>, <code>recipient_email</code>, <code>card_last_four</code>,</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>Card Shipping</td>
-      <td><code>card-shipping</code></td>
-      <td><code>automatic-account-closure-15-day-left-en/fr</code></td>
-      <td><code>first_name</code>, <code>recipient_email</code></td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>Card Temporarily Disabled</td>
-      <td><code>card-temporarily-disabled</code></td>
-      <td><code>automatic-account-closure-15-day-left-en/fr</code></td>
-      <td><code>first_name</code>, <code>recipient_email</code></td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>Card Unblocked</td>
-      <td><code>card-unblocked</code></td>
-      <td><code>automatic-account-closure-15-day-left-en/fr</code></td>
-      <td><code>first_name</code>, <code>recipient_email</code>, <code>card_last_four</code>,</td>
-    </tr>
-    <tr>
-      <td>13</td>
-      <td>Company Verified</td>
-      <td><code>company-verified</code></td>
-      <td><code>gn-b2b-onboarding-kyb-validated-en/fr</code></td>
-      <td><code>first_name</code>, <code>recipient_email</code></td>
-    </tr>
-    <tr>
-      <td>14</td>
-      <td>Document Resubmit Required</td>
-      <td><code>document-resubmit-required</code></td>
-      <td><code>gn-b2b-onboarding-document-rejected-en/fr</code></td>
-      <td>
-        <code>first_name</code>, <code>recipient_email</code>, <code>reason</code>, <code>cta_url</code>,
-      </td>
-    </tr>
-    <tr>
-      <td>15</td>
-      <td>Failed Login Attempts</td>
-      <td><code>failed-login-attempts</code></td>
-      <td><code>gn-b2b-auth-multiple-failed-login-attempts-en/fr</code></td>
-      <td><code>first_name</code>, <code>recipient_email</code></td>
-    </tr>
-    <tr>
-      <td>16</td>
-      <td>High Spending</td>
-      <td><code>high-spending</code></td>
-      <td><code>gn-b2b-card-high-spending-en/fr</code></td>
-      <td>
-        <code>first_name</code>, <code>recipient_email</code>, <code>amount</code>,
-        <code>card_last_four</code>, <code>location</code>,
-      </td>
-    </tr>
-    <tr>
-      <td>17</td>
-      <td>ID Update Required</td>
-      <td><code>id-update-required</code></td>
-      <td><code>gn-b2b-onboarding-expired-or-missing-document-en/fr</code></td>
-      <td><code>first_name</code>, <code>recipient_email</code>, <code>cta_url</code>,</td>
-    </tr>
-    <tr>
-      <td>18</td>
-      <td>KYB Process Started</td>
-      <td><code>kyb-process-started</code></td>
-      <td><code>gn-b2b-onboarding-started-kyb-process-en/fr</code></td>
-      <td><code>first_name</code>, <code>recipient_email</code></td>
-    </tr>
-    <tr>
-      <td>19</td>
-      <td>Maintenance Extended</td>
-      <td><code>maintenance-extended</code></td>
-      <td><code>automatic-account-closure-15-day-left-en/fr</code></td>
-      <td><code>first_name</code>, <code>recipient_email</code>, <code>eta</code></td>
-    </tr>
-    <tr>
-      <td>20</td>
-      <td>Missing Receipts Summary</td>
-      <td><code>missing-receipts-summary</code></td>
-      <td><code>gn-b2b-receipt-weekly-summary-report-en/fr</code></td>
-      <td>
-        <code>first_name</code>, <code>recipient_email</code>, <code>start_date</code>, <code>end_date</code>,
-        <code>expenses</code> (array)
-      </td>
-    </tr>
-    <tr>
-      <td>21</td>
-      <td>Monthly Statement Ready</td>
-      <td><code>monthly-statement-ready</code></td>
-      <td><code>gn-b2b-account-monthly-statement-en/fr</code></td>
-      <td>
-        <code>first_name</code>, <code>recipient_email</code>, <code>month_year</code>, <code>cta_url</code>,
-      </td>
-    </tr>
-    <tr>
-      <td>22</td>
-      <td>Monthly Summary</td>
-      <td><code>monthly-summary</code></td>
-      <td><code>gn-b2b-account-monthly-activity-summary-en/fr</code></td>
-      <td>
-        <code>first_name</code>, <code>recipient_email</code>, <code>month_year</code>, <code>cta_url</code>,
-      </td>
-    </tr>
-    <tr>
-      <td>23</td>
-      <td>New Device Login</td>
-      <td><code>new-device-login</code></td>
-      <td><code>gn-b2b-auth-first-login-en/fr</code></td>
-      <td>
-        <code>first_name</code>, <code>recipient_email</code>, <code>location</code>, <code>time</code>,
-      </td>
-    </tr>
-    <tr>
-      <td>24</td>
-      <td>Password Updated</td>
-      <td><code>password-updated</code></td>
-      <td><code>gn-b2b-account-password-pin-changed-en/fr</code></td>
-      <td><code>first_name</code>, <code>recipient_email</code></td>
-    </tr>
-    <tr>
-      <td>25</td>
-      <td>Payment Approval Pending</td>
-      <td><code>payment-approval-pending</code></td>
-      <td><code>gn-b2b-transfer-pending-approval-en/fr</code></td>
-      <td>
-        <code>first_name</code>, <code>recipient_email</code>, <code>amount</code>, <code>cta_url</code>,
-      </td>
-    </tr>
-    <tr>
-      <td>26</td>
-      <td>Payment Approval Required</td>
-      <td><code>payment-approval-required</code></td>
-      <td><code>automatic-account-closure-15-day-left-en/fr</code></td>
-      <td>
-        <code>first_name</code>, <code>recipient_email</code>, <code>amount</code>, <code>initiated_by</code>,
-        <code>beneficiary</code>, <code>iban</code>, <code>heading</code>,
-        <code>subject</code>
-      </td>
-    </tr>
-    <tr>
-      <td>27</td>
-      <td>Payment Confirmed</td>
-      <td><code>payment-confirmed</code></td>
-      <td><code>automatic-account-closure-15-day-left-en/fr</code></td>
-      <td>
-        <code>first_name</code>, <code>recipient_email</code>, <code>amount</code>, <code>merchant</code>,
-        <code>heading</code>, <code>subject</code>
-      </td>
-    </tr>
-    <tr>
-      <td>28</td>
-      <td>Preferences Updated</td>
-      <td><code>preferences-updated</code></td>
-      <td><code>gn-b2b-account-preferences-updated-en/fr</code></td>
-      <td><code>first_name</code>, <code>recipient_email</code></td>
-    </tr>
-    <tr>
-      <td>29</td>
-      <td>Receipt Final Reminder</td>
-      <td><code>receipt-final-reminder</code></td>
-      <td><code>gn-b2b-receipt-missing-72h-en/fr</code></td>
-      <td><code>first_name</code>, <code>recipient_email</code>, <code>cta_url</code>,</td>
-    </tr>
-    <tr>
-      <td>30</td>
-      <td>Receipt Reminder</td>
-      <td><code>receipt-reminder</code></td>
-      <td><code>gn-b2b-receipt-missing-24h-en/fr</code></td>
-      <td>
-        <code>first_name</code>, <code>recipient_email</code>, <code>amount</code>, <code>merchant</code>,
-      </td>
-    </tr>
-    <tr>
-      <td>31</td>
-      <td>Subscription Updated</td>
-      <td><code>subscription-updated</code></td>
-      <td><code>gn-b2b-account-subscription-plan-changed-en/fr</code></td>
-      <td>
-        <code>first_name</code>, <code>recipient_email</code>, <code>effective_date</code>,
-        <code>previous_plan</code>, <code>new_plan</code>,
-      </td>
-    </tr>
-    <tr>
-      <td>32</td>
-      <td>Team Invitation</td>
-      <td><code>team-invitation</code></td>
-      <td><code>gn-b2b-account-invitation-sent-en/fr</code></td>
-      <td><code>first_name</code>, <code>recipient_email</code>, <code>cta_url</code>,</td>
-    </tr>
-    <tr>
-      <td>33</td>
-      <td>Team Member Removed</td>
-      <td><code>team-member-removed</code></td>
-      <td><code>automatic-account-closure-15-day-left-en/fr</code></td>
-      <td>
-        <code>first_name</code>, <code>recipient_email</code>, <code>removed_user_info</code>,
-        <code>company_name</code>
-      </td>
-    </tr>
-    <tr>
-      <td>34</td>
-      <td>Technical Incident</td>
-      <td><code>technical-incident</code></td>
-      <td><code>automatic-account-closure-15-day-left-en/fr</code></td>
-      <td><code>first_name</code>, <code>recipient_email</code></td>
-    </tr>
-    <tr>
-      <td>35</td>
-      <td>Terms Updated</td>
-      <td><code>terms-updated</code></td>
-      <td><code>automatic-account-closure-15-day-left-en/fr</code></td>
-      <td>
-        <code>first_name</code>, <code>recipient_email</code>, <code>update_date</code>, <code>cta_url</code>,
-      </td>
-    </tr>
-    <tr>
-      <td>36</td>
-      <td>Transfer Alert</td>
-      <td><code>transfer-alert</code></td>
-      <td><code>automatic-account-closure-15-day-left-en/fr</code></td>
-      <td>
-        <code>first_name</code>, <code>recipient_email</code>, <code>account_name</code>, <code>amount</code>,
-      </td>
-    </tr>
-    <tr>
-      <td>37</td>
-      <td>Transfer Failed</td>
-      <td><code>transfer-failed</code></td>
-      <td><code>gn-b2b-transfer-failed-en/fr</code></td>
-      <td>
-        <code>first_name</code>, <code>recipient_email</code>, <code>amount</code>,
-        <code>failure_reason</code>, <code>transaction_type</code>,
-      </td>
-    </tr>
-    <tr>
-      <td>38</td>
-      <td>Transfer Sent</td>
-      <td><code>transfer-sent</code></td>
-      <td><code>automatic-account-closure-15-day-left-en/fr</code></td>
-      <td>
-        <code>first_name</code>, <code>recipient_email</code>, <code>amount</code>,
-        <code>recipient_name</code>, <code>heading</code>, <code>subject</code>,
-      </td>
-    </tr>
-    <tr>
-      <td>39</td>
-      <td>Unsubscribed</td>
-      <td><code>unsubscribed</code></td>
-      <td><code>gn-b2b-account-newsletter-unsubscription-en/fr</code></td>
-      <td><code>first_name</code>, <code>recipient_email</code></td>
-    </tr>
-    <tr>
-      <td>40</td>
-      <td>Unusual Login</td>
-      <td><code>unusual-login</code></td>
-      <td><code>gn-b2b-auth-suspicious-login-attempt-en/fr</code></td>
-      <td>
-        <code>first_name</code>, <code>recipient_email</code>, <code>ip_address</code>, <code>location</code>,
-        <code>time</code>
-      </td>
-    </tr>
-    <tr>
-      <td>41</td>
-      <td>Update Personal Info</td>
-      <td><code>update-personal-info</code></td>
-      <td><code>gn-b2b-onboarding-legal-compliance-requirement-en/fr</code></td>
-      <td><code>first_name</code>, <code>recipient_email</code>, <code>cta_url</code>,</td>
-    </tr>
-    <tr>
-      <td>42</td>
-      <td>Welcome</td>
-      <td><code>welcome-email</code></td>
-      <td>❌ Not in DB</td>
-      <td>
-        <code>first_name</code>, <code>recipient_email</code>, <code>book_call_url</code>,
-        <code>faq_url</code>
-      </td>
-    </tr>
-    <tr>
-      <td>43</td>
       <td>Automatic Account Closure - 15 Days Left</td>
       <td><code>automatic-account-closure-15-day-left</code></td>
       <td><code>automatic-account-closure-15-day-left-en/fr</code></td>
       <td><code>first_name</code>, <code>recipient_email</code>, <code>cta_url</code></td>
     </tr>
     <tr>
-      <td>44</td>
+      <td>6</td>
       <td>Automatic Account Closure - Final Reminder</td>
       <td><code>automatic-account-closure-final-remind</code></td>
       <td><code>automatic-account-closure-final-remind-en/fr</code></td>
       <td><code>first_name</code>, <code>recipient_email</code>, <code>cta_url</code></td>
     </tr>
     <tr>
-      <td>45</td>
+      <td>7</td>
+      <td>Balance Statement</td>
+      <td><code>balance-statement</code></td>
+      <td><code>gn-b2b-balance-statement-en/fr</code></td>
+      <td><code>customer_name</code>, <code>account_name</code>, <code>account_number</code>, <code>download_url</code></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Call Cancelled</td>
+      <td><code>call-cancelled</code></td>
+      <td><code>gn-b2b-call-cancelled-en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code></td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Call Confirmed</td>
+      <td><code>call-confirmed</code></td>
+      <td><code>gn-b2b-call-booked-en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code>, <code>appointment_date</code>, <code>appointment_time</code>, <code>location</code></td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Call Reminder</td>
+      <td><code>call-reminder</code></td>
+      <td><code>gn-b2b-call-reminder-1h-en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code>, <code>appointment_date</code>, <code>appointment_time</code>, <code>call_link</code></td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Call Rescheduled</td>
+      <td><code>call-rescheduled</code></td>
+      <td><code>gn-b2b-call-rescheduled-en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code>, <code>new_date</code>, <code>new_time</code>, <code>location</code></td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Card Blocked</td>
+      <td><code>card-blocked</code></td>
+      <td><code>gn-b2b-card-blocked-en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code>, <code>card_last_four</code></td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Card Deleted</td>
+      <td><code>card-deleted</code></td>
+      <td><code>gn-b2b-card-deleted-en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code>, <code>card_last_four</code></td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Card Shipping</td>
+      <td><code>card-shipping</code></td>
+      <td><code>gn-b2b-card-shipping-en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code></td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Card Temporarily Disabled</td>
+      <td><code>card-temporarily-disabled</code></td>
+      <td><code>gn-b2b-card-temporarily-disabled-en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code></td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Card Unblocked</td>
+      <td><code>card-unblocked</code></td>
+      <td><code>gn-b2b-card-unblocked-en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code>, <code>card_last_four</code></td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Company Verified</td>
+      <td><code>company-verified</code></td>
+      <td><code>gn-b2b-onboarding-kyb-validated-en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code></td>
+    </tr>
+    <tr>
+      <td>18</td>
       <td>Compliance Request Approved</td>
       <td><code>compliance-request-approved</code></td>
       <td><code>email_compliance_request_approved_en/fr</code></td>
       <td><code>first_name</code>, <code>recipient_email</code></td>
     </tr>
     <tr>
-      <td>46</td>
+      <td>19</td>
       <td>Compliance Request - Need Additional Information</td>
       <td><code>compliance-request-need-additional-information</code></td>
       <td><code>email_compliance_request_need_additional_information_en/fr</code></td>
       <td><code>first_name</code>, <code>recipient_email</code></td>
     </tr>
     <tr>
-      <td>47</td>
+      <td>20</td>
       <td>Compliance Request Rejected</td>
       <td><code>compliance-request-rejected</code></td>
       <td><code>email_compliance_request_rejected_en/fr</code></td>
       <td><code>first_name</code>, <code>recipient_email</code>, <code>reason</code></td>
     </tr>
     <tr>
-      <td>48</td>
-      <td>Account Closed Confirmation (B2B)</td>
+      <td>21</td>
+      <td>Crypto Transaction Statement</td>
+      <td><code>crypto-transaction-statement</code></td>
+      <td><code>gn-b2b-crypto-transaction-statement-en/fr</code></td>
+      <td><code>customer_name</code>, <code>transaction_amount</code>, <code>transaction_currency</code>, <code>transaction_date</code>, <code>download_url</code></td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>Document Resubmit Required</td>
+      <td><code>document-resubmit-required</code></td>
+      <td><code>gn-b2b-onboarding-document-rejected-en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code>, <code>reason</code>, <code>cta_url</code></td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>Expense Report</td>
+      <td><code>expense-report</code></td>
+      <td><code>gn-b2b-expense-report-ready-en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code>, <code>date_from</code>, <code>date_to</code>, <code>cta_url</code></td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>Failed Login Attempts</td>
+      <td><code>failed-login-attempts</code></td>
+      <td><code>gn-b2b-auth-multiple-failed-login-attempts-en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code>, <code>attempt_count</code>, <code>email_address</code></td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>GN B2B Account Closed Confirmation</td>
       <td><code>gn-b2b-account-closed-confirmation</code></td>
       <td><code>gn-b2b-account-closed-confirmation-en/fr</code></td>
-      <td><code>first_name</code>, <code>recipient_email</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code>, <code>reason</code></td>
     </tr>
     <tr>
-      <td>49</td>
-      <td>Subscription Account Suspend</td>
-      <td><code>subscription-account-suspend</code></td>
-      <td><code>email_subscription_account_suspend_en/fr</code></td>
+      <td>26</td>
+      <td>High Spending</td>
+      <td><code>high-spending</code></td>
+      <td><code>gn-b2b-card-high-spending-en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code>, <code>amount</code>, <code>card_last_four</code>, <code>location</code></td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>ID Update Required</td>
+      <td><code>id-update-required</code></td>
+      <td><code>gn-b2b-onboarding-expired-or-missing-document-en/fr</code></td>
       <td><code>first_name</code>, <code>recipient_email</code>, <code>cta_url</code></td>
     </tr>
     <tr>
-      <td>50</td>
-      <td>Subscription Collection Reminder - 24 Hours</td>
-      <td><code>subscription-collection-remind-24-hours</code></td>
-      <td><code>email_subscription_collection_remind_24_hours_en/fr</code></td>
-      <td><code>first_name</code>, <code>recipient_email</code>, <code>cta_url</code></td>
-    </tr>
-    <tr>
-      <td>51</td>
-      <td>Subscription Collection Reminder - 3 Days</td>
-      <td><code>subscription-collection-remind-3-days</code></td>
-      <td><code>email_subscription_collection_remind_3_days_en/fr</code></td>
-      <td><code>first_name</code>, <code>recipient_email</code>, <code>cta_url</code></td>
-    </tr>
-    <tr>
-      <td>52</td>
-      <td>Subscription Collection Reminder - 7 Days</td>
-      <td><code>subscription-collection-remind-7-days</code></td>
-      <td><code>email_subscription_collection_remind_7_days_en/fr</code></td>
-      <td><code>first_name</code>, <code>recipient_email</code>, <code>cta_url</code></td>
-    </tr>
-    <tr>
-      <td>53</td>
-      <td>Subscription Payment Failed Warning</td>
-      <td><code>subscription-payment-failed-warning-block</code></td>
-      <td><code>email_subscription_payment_failed_warning_block_en/fr</code></td>
-      <td>
-        <code>first_name</code>, <code>recipient_email</code>, <code>defer_day</code>, <code>cta_url</code>
-      </td>
-    </tr>
-    <tr>
-      <td>54</td>
-      <td>Subscription Payment Success</td>
-      <td><code>subscription-payment-success</code></td>
-      <td><code>email_subscription_payment_success_en/fr</code></td>
-      <td>
-        <code>first_name</code>, <code>recipient_email</code>, <code>benefits</code> (array)
-      </td>
-    </tr>
-    <tr>
-      <td>55</td>
-      <td>Invite Director Access</td>
-      <td><code>invite-director-access</code></td>
-      <td><code>email_invite_director_accsee_en/fr</code></td>
-      <td>
-        <code>first_name</code>, <code>recipient_email</code>, <code>inviter_name</code>,
-        <code>company_name</code>, <code>cta_url</code>
-      </td>
-    </tr>
-    <tr>
-      <td>56</td>
+      <td>28</td>
       <td>Invite Admin</td>
       <td><code>invite-admin</code></td>
       <td><code>email_invite_admin_en/fr</code></td>
       <td><code>first_name</code>, <code>recipient_email</code>, <code>cta_url</code></td>
     </tr>
     <tr>
-      <td>57</td>
-      <td>Approve KYB</td>
-      <td><code>approve-kyb</code></td>
-      <td><code>email_approve_kyb_en/fr</code></td>
-      <td>
-        <code>first_name</code>, <code>recipient_email</code>, <code>company_name</code>, <code>cta_url</code>
-      </td>
+      <td>29</td>
+      <td>Invite Director Access</td>
+      <td><code>invite-director-access</code></td>
+      <td><code>email_invite_director_accsee_en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code>, <code>inviter_name</code>, <code>company_name</code>, <code>cta_url</code></td>
     </tr>
     <tr>
-      <td>58</td>
+      <td>30</td>
       <td>Invite KYC</td>
       <td><code>invite-kyc</code></td>
       <td><code>email_invite_kyc_en/fr</code></td>
       <td><code>first_name</code>, <code>recipient_email</code>, <code>cta_url</code></td>
     </tr>
     <tr>
+      <td>31</td>
+      <td>Invite Member Access</td>
+      <td><code>invite-member-access</code></td>
+      <td><code>email_invite_member_access_en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code>, <code>inviter_name</code>, <code>company_name</code>, <code>cta_url</code></td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>KYB Process Started</td>
+      <td><code>kyb-process-started</code></td>
+      <td><code>gn-b2b-onboarding-started-kyb-process-en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code>, <code>cta_url</code></td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>Missing Receipts Summary</td>
+      <td><code>missing-receipts-summary</code></td>
+      <td><code>gn-b2b-receipt-weekly-summary-report-en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code>, <code>start_date</code>, <code>end_date</code>, <code>expenses</code> (array)</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>Monthly Statement Ready</td>
+      <td><code>monthly-statement-ready</code></td>
+      <td><code>gn-b2b-account-monthly-statement-en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code>, <code>month_year</code>, <code>cta_url</code></td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>Monthly Summary</td>
+      <td><code>monthly-summary</code></td>
+      <td><code>gn-b2b-account-monthly-activity-summary-en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code>, <code>month_year</code>, <code>cta_url</code>, <code>metrics</code> (array)</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>New Device Login</td>
+      <td><code>new-device-login</code></td>
+      <td><code>gn-b2b-auth-first-login-en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code>, <code>device_name</code>, <code>location</code>, <code>time</code></td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>Password Updated</td>
+      <td><code>password-updated</code></td>
+      <td><code>gn-b2b-account-password-pin-changed-en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code></td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>Payment Approval Pending</td>
+      <td><code>payment-approval-pending</code></td>
+      <td><code>gn-b2b-transfer-pending-approval-en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code>, <code>amount</code>, <code>cta_url</code></td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>Payment Sent</td>
+      <td><code>payment-sent</code></td>
+      <td><code>gn-b2b-payment-sent-en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code></td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>Preferences Updated</td>
+      <td><code>preferences-updated</code></td>
+      <td><code>gn-b2b-account-preferences-updated-en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code></td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>Receipt Final Reminder</td>
+      <td><code>receipt-final-reminder</code></td>
+      <td><code>gn-b2b-receipt-missing-72h-en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code>, <code>cta_url</code></td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>Receipt Reminder</td>
+      <td><code>receipt-reminder</code></td>
+      <td><code>gn-b2b-receipt-missing-24h-en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code>, <code>amount</code>, <code>merchant</code></td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>RIB Document</td>
+      <td><code>rib-document</code></td>
+      <td><code>gn-b2b-rib-document-en/fr</code></td>
+      <td><code>customer_name</code>, <code>account_name</code>, <code>account_number</code>, <code>download_url</code></td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>Statement - Single Transaction</td>
+      <td><code>statement-single-transaction</code></td>
+      <td><code>gn-b2b-statement-single-transaction-en/fr</code></td>
+      <td><code>customer_name</code>, <code>transaction_amount</code>, <code>transaction_currency</code>, <code>transaction_date</code>, <code>download_url</code></td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>Statement - Transactions by Period</td>
+      <td><code>statement-transactions-by-period</code></td>
+      <td><code>gn-b2b-statement-transactions-by-period-en/fr</code></td>
+      <td><code>customer_name</code>, <code>period</code>, <code>download_url</code></td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>Subscription Account Suspend</td>
+      <td><code>subscription-account-suspend</code></td>
+      <td><code>email_subscription_account_suspend_en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code>, <code>cta_url</code></td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>Subscription Collection Reminder - 24 Hours</td>
+      <td><code>subscription-collection-remind-24-hours</code></td>
+      <td><code>email_subscription_collection_remind_24_hours_en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code>, <code>cta_url</code></td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>Subscription Collection Reminder - 3 Days</td>
+      <td><code>subscription-collection-remind-3-days</code></td>
+      <td><code>email_subscription_collection_remind_3_days_en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code>, <code>cta_url</code></td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>Subscription Collection Reminder - 7 Days</td>
+      <td><code>subscription-collection-remind-7-days</code></td>
+      <td><code>email_subscription_collection_remind_7_days_en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code>, <code>cta_url</code></td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>Subscription Invoice</td>
+      <td><code>subscription-invoice</code></td>
+      <td><code>email_subscription_invoice_en/fr</code></td>
+      <td><code>customer_name</code>, <code>invoice_number</code>, <code>invoice_date</code>, <code>due_date</code>, <code>invoice_amount</code>, <code>invoice_currency</code>, <code>invoice_status</code>, <code>download_url</code></td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>Subscription Payment Failed Warning</td>
+      <td><code>subscription-payment-failed-warning-block</code></td>
+      <td><code>email_subscription_payment_failed_warning_block_en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code>, <code>defer_day</code>, <code>cta_url</code></td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>Subscription Payment Success</td>
+      <td><code>subscription-payment-success</code></td>
+      <td><code>email_subscription_payment_success_en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code></td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>Subscription Updated</td>
+      <td><code>subscription-updated</code></td>
+      <td><code>gn-b2b-account-subscription-plan-changed-en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code>, <code>effective_date</code>, <code>previous_plan</code>, <code>new_plan</code></td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td>Team Invitation</td>
+      <td><code>team-invitation</code></td>
+      <td><code>gn-b2b-account-invitation-sent-en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code>, <code>cta_url</code></td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td>Transaction Reconciliation Alert</td>
+      <td><code>transaction-reconciliation-alert</code></td>
+      <td><code>gn-b2b-transaction-reconciliation-alert-en/fr</code></td>
+      <td><code>date</code>, <code>dbTransactionsCount</code>, <code>shltTransactionsCount</code>, <code>dbTotalAmount</code>, <code>shltTotalAmount</code>, <code>differencesCount</code>, <code>differencesTotalAmount</code>, <code>discrepancySummary</code>, <code>bigQueryLink</code></td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td>Transaction Reconciliation Success</td>
+      <td><code>transaction-reconciliation-success</code></td>
+      <td><code>gn-b2b-transaction-reconciliation-success-en/fr</code></td>
+      <td><code>date</code>, <code>dbTransactionsCount</code>, <code>shltTransactionsCount</code>, <code>dbTotalAmount</code>, <code>shltTotalAmount</code></td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td>Transfer Failed</td>
+      <td><code>transfer-failed</code></td>
+      <td><code>gn-b2b-transfer-failed-en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code>, <code>amount</code>, <code>failure_reason</code>, <code>transaction_type</code></td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>Unsubscribed</td>
+      <td><code>unsubscribed</code></td>
+      <td><code>gn-b2b-account-newsletter-unsubscription-en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code></td>
+    </tr>
+    <tr>
       <td>59</td>
+      <td>Unusual Login</td>
+      <td><code>unusual-login</code></td>
+      <td><code>gn-b2b-auth-suspicious-login-attempt-en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code>, <code>ip_address</code>, <code>location</code>, <code>time</code></td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>Update Personal Info</td>
+      <td><code>update-personal-info</code></td>
+      <td><code>gn-b2b-onboarding-legal-compliance-requirement-en/fr</code></td>
+      <td><code>first_name</code>, <code>recipient_email</code></td>
+    </tr>
+    <tr>
+      <td>61</td>
       <td>Verify Email</td>
       <td><code>verify-email</code></td>
       <td><code>email_verify_email_en/fr</code></td>
       <td><code>first_name</code>, <code>recipient_email</code>, <code>otp_code</code></td>
     </tr>
     <tr>
-      <td>60</td>
-      <td>Expense Report</td>
-      <td><code>expense-report</code></td>
-      <td><code>gn-b2b-expense-report-ready-en/fr</code></td>
-      <td>
-        <code>first_name</code>, <code>recipient_email</code>, <code>date_from</code>,
-        <code>date_to</code>, <code>cta_url</code>
-      </td>
+      <td>62</td>
+      <td>Welcome Email</td>
+      <td><code>welcome-email</code></td>
+      <td><code>gn-b2b-welcome-en/fr</code></td>
+      <td><code>first_name</code>, <code>account_holder</code>, <code>iban</code>, <code>currencies</code>, <code>bic</code>, <code>portal_url</code>, <code>portal_domain</code>, <code>onboarding_url</code></td>
     </tr>
   </tbody>
 </table>
@@ -565,67 +503,106 @@
 <ul>
   <li><code>first_name</code> - User's first name</li>
   <li><code>recipient_email</code> - User's email address</li>
-  <li><code>inviter_name</code> - Name of the person inviting (used in invite-director-access)</li>
-  <li><code>company_name</code> - Company/business name (used in invite-director-access, approve-kyb)</li>
+  <li><code>inviter_name</code> - Name of the person inviting (used in invite-director-access, invite-member-access)</li>
+  <li><code>company_name</code> - Company/business name (used in invite-director-access, invite-member-access, approve-kyb)</li>
   <li><code>otp_code</code> - One-time password code for email verification (used in verify-email)</li>
+  <li><code>card_last_four</code> - Last 4 digits of card number (used in card-blocked, card-deleted, card-unblocked, high-spending)</li>
 </ul>
 
-<p>
-  <strong>Note:</strong> Unsubscribe links are handled automatically by Postmark
-  using <code>{{{ pm:unsubscribe }}}</code> variable.
-</p>
+<h2>Statement/Document Templates</h2>
 
-<h2>Field Notes</h2>
-
-<h3>Dynamic Headings/Subjects</h3>
-<p>
-  Some templates have dynamic <code>heading</code> and
-  <code>subject</code> fields that are provided by the server:
-</p>
+<p>Templates that generate downloadable documents (statements, invoices, RIB) share these fields:</p>
 <ul>
-  <li>
-    <strong>Payment Confirmed</strong>: <code>heading</code> and
-    <code>subject</code> contain <code>{{amount}}</code> and
-    <code>{{merchant}}</code>
-  </li>
-  <li>
-    <strong>Transfer Sent</strong>: <code>heading</code> and
-    <code>subject</code> contain <code>{{amount}}</code> and
-    <code>{{recipient_name}}</code>
-  </li>
-  <li>
-    <strong>Payment Approval Required</strong>: <code>heading</code> and
-    <code>subject</code> contain <code>{{amount}}</code>
-  </li>
+  <li><code>customer_name</code> - Customer/account holder name</li>
+  <li><code>download_url</code> - URL to download the document</li>
+  <li><code>expiration_time</code> - Link expiration duration</li>
+  <li><code>expiration_hours</code> - Link expiration in hours</li>
 </ul>
 
-<h3>CTA URLs</h3>
-<p>Templates with CTA buttons require <code>cta_url</code>:</p>
-<ul>
-  <li>Document Resubmit Required</li>
-  <li>ID Update Required</li>
-  <li>Payment Approval Pending</li>
-  <li>Receipt Reminder</li>
-  <li>Receipt Final Reminder</li>
-  <li>Team Invitation</li>
-  <li>Terms Updated</li>
-  <li>Update Personal Info</li>
-  <li>Welcome (B2B/B2C)</li>
-  <li>Automatic Account Closure - 15 Days Left</li>
-  <li>Automatic Account Closure - Final Reminder</li>
-  <li>Subscription Account Suspend</li>
-  <li>Subscription Collection Reminder - 24 Hours</li>
-  <li>Subscription Collection Reminder - 3 Days</li>
-  <li>Subscription Collection Reminder - 7 Days</li>
-  <li>Subscription Payment Failed Warning</li>
-  <li>Invite Director Access</li>
-  <li>Invite Admin</li>
-  <li>Approve KYB</li>
-  <li>Invite KYC</li>
-  <li>Expense Report</li>
-</ul>
+<h2>CTA URLs</h2>
 
-<h3>Date/Time Fields</h3>
+<p>Templates with CTA buttons require <code>cta_url</code> with these paths:</p>
+<table>
+  <thead>
+    <tr>
+      <th>Template</th>
+      <th>CTA Path</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Document Resubmit Required</td>
+      <td><code>/document-resubmit</code></td>
+    </tr>
+    <tr>
+      <td>ID Update Required</td>
+      <td><em>TBD</em></td>
+    </tr>
+    <tr>
+      <td>Payment Approval Pending</td>
+      <td><code>/dashboard</code></td>
+    </tr>
+    <tr>
+      <td>Receipt Final Reminder</td>
+      <td><code>/receipt-reminder</code></td>
+    </tr>
+    <tr>
+      <td>Team Invitation</td>
+      <td><code>/invitation/:token</code></td>
+    </tr>
+    <tr>
+      <td>Welcome</td>
+      <td><code>/</code></td>
+    </tr>
+    <tr>
+      <td>Automatic Account Closure - 15 Days Left</td>
+      <td><code>/</code></td>
+    </tr>
+    <tr>
+      <td>Automatic Account Closure - Final Reminder</td>
+      <td><code>/</code></td>
+    </tr>
+    <tr>
+      <td>Subscription Account Suspend</td>
+      <td><code>/</code></td>
+    </tr>
+    <tr>
+      <td>Subscription Collection Reminder - 24 Hours</td>
+      <td><code>/</code></td>
+    </tr>
+    <tr>
+      <td>Subscription Collection Reminder - 3 Days</td>
+      <td><code>/</code></td>
+    </tr>
+    <tr>
+      <td>Subscription Collection Reminder - 7 Days</td>
+      <td><code>/</code></td>
+    </tr>
+    <tr>
+      <td>Subscription Payment Failed Warning</td>
+      <td><code>/</code></td>
+    </tr>
+    <tr>
+      <td>Invite Director Access</td>
+      <td><em>TBD</em></td>
+    </tr>
+    <tr>
+      <td>Invite Admin</td>
+      <td><em>TBD</em></td>
+    </tr>
+    <tr>
+      <td>Approve KYB</td>
+      <td><em>TBD</em></td>
+    </tr>
+    <tr>
+      <td>Invite KYC</td>
+      <td><em>TBD</em></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Date/Time Fields</h2>
+
 <p>Call-related templates use different date/time field names:</p>
 <ul>
   <li>
@@ -633,12 +610,12 @@
     <code>appointment_time</code>, <code>location</code>
   </li>
   <li>
-    <strong>Call Reminder</strong>: <code>date</code>, <code>time</code>,
-    <code>meeting_link</code>
+    <strong>Call Reminder</strong>: <code>appointment_date</code>, <code>appointment_time</code>,
+    <code>call_link</code>
   </li>
   <li>
-    <strong>Call Rescheduled</strong>: <code>date</code>, <code>time</code>,
-    <code>meeting_link</code>
+    <strong>Call Rescheduled</strong>: <code>new_date</code>, <code>new_time</code>,
+    <code>location</code>
   </li>
 </ul>
 
@@ -646,14 +623,14 @@
 
 <ul>
   <li>
-    Templates marked with ❌ Not in DB are not yet registered in the database
-  </li>
-  <li>
     Templates with CSV mappings use the format:
     <code>gn-b2b-{alias}-en</code> and <code>gn-b2b-{alias}-fr</code>
   </li>
   <li>
+    Some templates use legacy naming: <code>email_{name}_en/fr</code>
+  </li>
+  <li>
     Some CSV aliases differ slightly from template aliases (e.g.,
-    <code>account-opened</code> vs <code>account-opened-confirmation</code>)
+    <code>call-confirmed</code> maps to <code>gn-b2b-call-booked-en/fr</code>)
   </li>
 </ul>
