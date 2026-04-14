@@ -1,17 +1,13 @@
 {
+  "layout": "oxen-layout",
   "title": "Last chance to prevent account deactivation",
-  "preheader": "This is your final notice. Your account will be closed tomorrow without payment.",
-  "heading": "Last chance to prevent account deactivation",
   "subject": "Last chance to prevent account deactivation",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-
   "greeting": "Hi",
   "urgent_message": "This is your final notice.",
   "deadline": "If payment is not completed by tomorrow, your Oxen account will be automatically closed.",
   "cta_text": "👉 Access your account",
-  "signature": "The Oxen Team 🌱",
+  "signature": "The Oxen Team.",
   "cta_url": "",
-  "first_name": "Tai Van",
+  "first_name": "",
   "recipient_email": ""
 }

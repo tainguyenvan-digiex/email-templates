@@ -1,12 +1,9 @@
 {
-  "title": "Your preferences have been updated",
-  "preheader": "Your preferences have been updated",
-  "heading": "Your preferences have been updated",
-  "subject": "Your preferences have been updated",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-  "preferences_updated_message": "Your notification preferences have been successfully updated.",
-  "signature": "The Oxen Team",
-  "first_name": "Tai Van",
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "Your preferences have been updated",
+    "subject": "Your preferences have been updated",
+    "preferences_updated_message": "Your notification preferences have been successfully updated.",
+    "signature": "The Oxen Team.",
+    "first_name": "",
+    "recipient_email": ""
 }

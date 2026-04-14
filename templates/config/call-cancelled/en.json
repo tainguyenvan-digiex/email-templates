@@ -1,16 +1,13 @@
 {
+  "layout": "oxen-layout",
   "title": "Your call with Oxen has been cancelled - Oxen",
-  "preheader": "Your call with Oxen has been cancelled",
-  "heading": "Your call with Oxen has been cancelled",
   "subject": "Your call with Oxen has been cancelled",
   "greeting": "Hi",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
   "call_cancelled_message": "Your appointment with your Oxen Account Manager has been cancelled.",
   "book_new_call_message": "If you'd like to book a new call, you can do so at any time via the app.",
   "support_message": "We're here if you need support.",
   "sign_off": "Best regards,",
-  "signature": "The Oxen Team",
-  "first_name": "Tai Van",
+  "signature": "The Oxen Team.",
+  "first_name": "",
   "recipient_email": ""
 }

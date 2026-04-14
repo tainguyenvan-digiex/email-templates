@@ -1,12 +1,9 @@
 {
-  "title": "Désabonné - Oxen",
-  "preheader": "Vous êtes bien désinscrit(e)",
-  "heading": "Vous êtes bien désinscrit(e)",
-  "subject": "Vous êtes bien désinscrit(e)",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-  "signature": "L'équipe Oxen",
-  "unsubscribed_message": "Vous avez été désabonné avec succès des e-mails marketing. Vous continuerez à recevoir des e-mails transactionnels importants.",
-  "first_name": "Tai Van",
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "Désabonné - Oxen",
+    "subject": "Vous êtes bien désinscrit(e)",
+    "signature": "L'équipe Oxen.",
+    "unsubscribed_message": "Vous avez été désabonné avec succès des e-mails marketing. Vous continuerez à recevoir des e-mails transactionnels importants.",
+    "first_name": "",
+    "recipient_email": ""
 }

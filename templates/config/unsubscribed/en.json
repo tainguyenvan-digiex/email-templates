@@ -1,12 +1,9 @@
 {
-  "title": "You’ve been unsubscribed",
-  "preheader": "You’ve been unsubscribed",
-  "heading": "You’ve been unsubscribed",
-  "subject": "You’ve been unsubscribed",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-  "signature": "The Oxen Team",
-  "unsubscribed_message": "You have been successfully unsubscribed from marketing emails. You will continue to receive important transactional emails.",
-  "first_name": "Tai Van",
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "You’ve been unsubscribed",
+    "subject": "You’ve been unsubscribed",
+    "signature": "The Oxen Team.",
+    "unsubscribed_message": "You have been successfully unsubscribed from marketing emails. You will continue to receive important transactional emails.",
+    "first_name": "",
+    "recipient_email": ""
 }

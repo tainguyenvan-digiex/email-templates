@@ -1,15 +1,12 @@
 {
-  "title": "Maintenance prolongée – nouveau délai estimé - Oxen",
-  "preheader": "⚠️ La maintenance en cours prend plus de temps que prévu.",
-  "heading": "⚠️ Maintenance prolongée – nouveau délai estimé",
-  "subject": "⚠️ Maintenance prolongée – nouveau délai estimé",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-  "action_message": "👉 Vous serez informé dès la fin de l'intervention.",
-  "eta": "04h00 (UTC+2)",
-  "eta_label": "Retour à la normale estimé à",
-  "maintenance_message": "La maintenance en cours prend plus de temps que prévu.",
-  "signature": "L'équipe Oxen",
-  "first_name": "Tai Van",
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "Maintenance prolongée – nouveau délai estimé - Oxen",
+    "subject": "⚠️ Maintenance prolongée – nouveau délai estimé",
+    "action_message": "👉 Vous serez informé dès la fin de l'intervention.",
+    "eta": "04h00 (UTC+2)",
+    "eta_label": "Retour à la normale estimé à",
+    "maintenance_message": "La maintenance en cours prend plus de temps que prévu.",
+    "signature": "L'équipe Oxen.",
+    "first_name": "",
+    "recipient_email": ""
 }

@@ -1,17 +1,20 @@
 {
+  "layout": "oxen-layout",
   "title": "Missing receipts – Week summary - Oxen",
-  "preheader": "📊 Summary of unverified expenses for the week.",
-  "heading": "📊 Missing receipts",
   "subject": "📊 Missing receipts",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
   "action_message": "👉 You can follow up directly from your dashboard.",
   "signature": "The Oxen Team.",
   "summary_intro": "Here is your summary of unverified expenses:",
   "end_date": "27",
-  "expense_item_1": "Thomas D. – €58.90 – Biocoop – 27/07",
-  "expense_item_2": "Lucie M. – €72.00 – Uber – 25/07",
-  "first_name": "Tai Van",
+  "first_name": "",
   "start_date": "July 21",
-  "recipient_email": ""
+  "recipient_email": "",
+  "expenses": [
+    {
+      "this": "Thomas D. – €58.90 – Biocoop – 27/07"
+    },
+    {
+      "this": "Lucie M. – €72.00 – Uber – 25/07"
+    }
+  ]
 }

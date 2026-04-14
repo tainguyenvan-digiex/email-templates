@@ -1,11 +1,7 @@
 {
+  "layout": "oxen-layout",
   "title": "Your Oxen plan will owe soon – Ensure you have funds 💳",
-  "preheader": "Your Oxen subscription is due soon! Make sure you have sufficient funds.",
-  "heading": "Your Oxen plan will owe soon – Ensure you have funds 💳",
   "subject": "Your Oxen plan will owe soon – Ensure you have funds 💳",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-
   "greeting": "Dear",
   "renewal_message": "Your Oxen subscription is due soon! 🌍",
   "instruction": "Make sure you have sufficient funds in your account to keep enjoying all your benefits.",
@@ -13,8 +9,8 @@
   "action_item": "💡 Check your balance now to avoid any disruption.",
   "cta_text": "👉 Access your account",
   "sign_off": "Thank you,",
-  "signature": "The Oxen Team 🌱",
+  "signature": "The Oxen Team.",
   "cta_url": "",
-  "first_name": "Tai Van",
+  "first_name": "",
   "recipient_email": ""
 }

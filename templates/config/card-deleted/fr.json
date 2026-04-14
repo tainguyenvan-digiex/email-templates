@@ -1,15 +1,12 @@
 {
-  "title": "Carte supprimée - Oxen",
-  "preheader": "🗑️ Votre carte Oxen a été supprimée du compte de votre entreprise.",
-  "heading": "🗑️ Carte supprimée",
-  "subject": "🗑️ Carte supprimée",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-  "action_message": "👉 Consultez l'historique dans l'onglet \"Cartes\".",
-  "card_deleted_prefix": "La carte Oxen se terminant par",
-  "card_deleted_suffix": "a été supprimée du compte de votre entreprise.",
-  "signature": "L'équipe Oxen.",
-  "card_last_four": "2391",
-  "first_name": "Tai Van",
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "Carte supprimée - Oxen",
+    "subject": "🗑️ Carte supprimée",
+    "action_message": "👉 Consultez l'historique dans l'onglet \"Cartes\".",
+    "card_deleted_prefix": "La carte Oxen se terminant par",
+    "card_deleted_suffix": "a été supprimée du compte de votre entreprise.",
+    "signature": "L'équipe Oxen.",
+    "card_last_four": "2391",
+    "first_name": "",
+    "recipient_email": ""
 }

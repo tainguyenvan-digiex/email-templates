@@ -1,15 +1,12 @@
 {
-  "title": "Receipt still missing – Final reminder - Oxen",
-  "preheader": "⏰ Final reminder: receipt still missing after 3 days.",
-  "heading": "⏰ Receipt still missing – Final reminder",
-  "subject": "⏰ Receipt still missing – Final reminder",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-  "action_message": "👉 Please upload the document soon to avoid any alert.",
-  "cta_text": "Upload my receipt",
-  "final_reminder_message": "It's been 3 days since you made a €72.00 expense without submitting a receipt.",
-  "signature": "The Oxen Team.",
-  "cta_url": "",
-  "first_name": "Tai Van",
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "Receipt still missing – Final reminder - Oxen",
+    "subject": "⏰ Receipt still missing – Final reminder",
+    "action_message": "👉 Please upload the document soon to avoid any alert.",
+    "cta_text": "Upload my receipt",
+    "final_reminder_message": "It's been 3 days since you made a €72.00 expense without submitting a receipt.",
+    "signature": "The Oxen Team.",
+    "cta_url": "",
+    "first_name": "",
+    "recipient_email": ""
 }

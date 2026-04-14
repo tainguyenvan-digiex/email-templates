@@ -1,0 +1,23 @@
+{
+    "layout": "oxen-layout",
+    "title": "Transaction Reconciliation Success - Oxen",
+    "subject": "✅ Transaction Reconciliation Success - {{date}}",
+    "greeting": "Hello Development Team",
+    "success_intro": "The daily transaction reconciliation for",
+    "success_intro_suffix": "has completed successfully.",
+    "success_badge": "✓ No discrepancies found",
+    "summary_title": "Reconciliation Summary",
+    "label_reconciliation_date": "Reconciliation Date:",
+    "label_db_transactions": "Database Transactions:",
+    "label_shlt_transactions": "SHLT Transactions:",
+    "label_db_total": "DB Total Amount:",
+    "label_shlt_total": "SHLT Total Amount:",
+    "closing_message": "All transactions are in sync between our database and the SHLT payment provider. No action is required.",
+    "signature": "Oxen Reconciliation System.",
+    "date": "2025-12-26",
+    "dbTransactionsCount": "150",
+    "shltTransactionsCount": "150",
+    "dbTotalAmount": "€15,000.00",
+    "shltTotalAmount": "€15,000.00",
+    "currentYear": "2025"
+}

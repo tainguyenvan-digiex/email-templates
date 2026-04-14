@@ -1,15 +1,12 @@
 {
-  "title": "Card deleted - Oxen",
-  "preheader": "🗑️ Your Oxen card has been deleted from your company account.",
-  "heading": "🗑️ Card deleted",
-  "subject": "🗑️ Card deleted",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-  "action_message": "👉 You can review all changes in the \"Cards\" section.",
-  "card_deleted_prefix": "The Oxen card ending in",
-  "card_deleted_suffix": "has been deleted from your company account.",
-  "signature": "The Oxen team.",
-  "card_last_four": "2391",
-  "first_name": "Tai Van",
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "Card deleted - Oxen",
+    "subject": "🗑️ Card deleted",
+    "action_message": "👉 You can review all changes in the \"Cards\" section.",
+    "card_deleted_prefix": "The Oxen card ending in",
+    "card_deleted_suffix": "has been deleted from your company account.",
+    "signature": "The Oxen team.",
+    "card_last_four": "2391",
+    "first_name": "",
+    "recipient_email": ""
 }

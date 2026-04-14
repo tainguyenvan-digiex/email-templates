@@ -1,12 +1,9 @@
 {
+  "layout": "oxen-layout",
   "title": "Votre compte Oxen est fermé",
-  "preheader": "Votre compte Oxen a été fermé.",
-  "heading": "Votre compte Oxen est fermé",
   "subject": "Votre compte Oxen est fermé",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
   "account_closed_message": "Votre compte Oxen a été fermé. Nous sommes désolés de vous voir partir.",
-  "signature": "L'équipe Oxen",
-  "first_name": "Tai Van",
+  "signature": "L'équipe Oxen.",
+  "first_name": "",
   "recipient_email": ""
 }

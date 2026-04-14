@@ -1,15 +1,12 @@
 {
+  "layout": "oxen-layout",
   "title": "Card unblocked - Oxen",
-  "preheader": "🔒 Your Oxen card has been unblocked. Verify your account if you did not initiate this action.",
-  "heading": "🔒 Card unblocked",
   "subject": "🔒 Card unblocked",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
   "card_info_prefix": "The card ending in",
   "card_info_suffix": "has been unblocked via the Oxen app.",
-  "security_signature": "The Security Team",
+  "security_signature": "The Security Team.",
   "security_warning": "👉 If you didn't initiate this action, please contact our support immediately.",
   "card_last_four": "4827",
-  "first_name": "Tai Van",
+  "first_name": "",
   "recipient_email": ""
 }

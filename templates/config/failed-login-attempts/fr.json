@@ -1,16 +1,13 @@
 {
-  "title": "Tentatives de connexion échouées - Oxen",
-  "preheader": "🔐 Tentatives de connexion échouées détectées sur votre compte.",
-  "heading": "🔐 Tentatives de connexion échouées",
-  "subject": "🔐 Tentatives de connexion échouées",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-  "attempt_count_suffix": "tentatives de connexion ont échoué sur",
-  "failed_attempts_intro": "",
-  "security_warning": "👉 Si ce n'est pas vous, modifiez votre mot de passe.",
-  "signature": "L'équipe Oxen.",
-  "attempt_count": "3",
-  "email_address": "user@email.com",
-  "first_name": "Tai Van",
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "Tentatives de connexion échouées - Oxen",
+    "subject": "🔐 Tentatives de connexion échouées",
+    "attempt_count_suffix": "tentatives de connexion ont échoué sur",
+    "failed_attempts_intro": "",
+    "security_warning": "👉 Si ce n'était pas vous, veuillez modifier votre mot de passe immédiatement. Contactez votre gestionnaire de compte si vous avez besoin d'aide.",
+    "signature": "L'équipe Oxen.",
+    "attempt_count": "3",
+    "email_address": "user@email.com",
+    "first_name": "",
+    "recipient_email": ""
 }

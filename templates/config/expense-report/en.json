@@ -1,7 +1,5 @@
 {
   "title": "Expense report ready - Oxen",
-  "preheader": "📊 Your company expense report is now ready for download.",
-  "heading": "📊 Expense report ready",
   "subject": "📊 Expense report ready",
   "greeting": "Dear",
   "first_name": "Card Holder & Administrator",
@@ -17,7 +15,5 @@
   "info_receipts": "Receipts are included as requested",
   "thanks_text": "Thank you for your understanding!",
   "signature": "The Oxen Team 🌱",
-  "recipient_email": "",
-  "company_registration_part2": "",
-  "company_registration_part3": ""
+  "recipient_email": ""
 }

@@ -1,15 +1,12 @@
 {
-  "title": "Démarrage du processus de vérification de votre entreprise - Oxen",
-  "preheader": "🎬 Le processus de vérification (KYB) de votre entreprise vient de démarrer.",
-  "heading": "🎬 Démarrage du processus de vérification de votre entreprise",
-  "subject": "🎬 Démarrage du processus de vérification de votre entreprise",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-  "cta_text": "Accéder au suivi KYB",
-  "kyb_started_message": "Le processus de vérification (KYB) de votre entreprise vient de démarrer. Merci de compléter les documents requis depuis votre interface Oxen Business.",
-  "signature": "L'équipe Oxen",
-  "tracking_message": "Vous pouvez suivre l'avancement à tout moment dans votre espace entreprise.",
-  "cta_url": "",
-  "first_name": "Tai Van",
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "Démarrage du processus de vérification de votre entreprise - Oxen",
+    "subject": "🎬 Démarrage du processus de vérification de votre entreprise",
+    "cta_text": "Accéder au suivi KYB",
+    "kyb_started_message": "Le processus de vérification (KYB) de votre entreprise vient de démarrer. Merci de mettre à jour les documents requis depuis votre interface Oxen Business.",
+    "signature": "L'équipe Oxen.",
+    "tracking_message": "Vous pouvez suivre l'avancement à tout moment dans votre espace entreprise.",
+    "cta_url": "",
+    "first_name": "",
+    "recipient_email": ""
 }

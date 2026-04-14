@@ -1,0 +1,23 @@
+{
+    "layout": "oxen-layout",
+    "title": "Relevé de transaction prêt - Oxen",
+    "subject": "📄 Votre relevé de transaction est prêt à être téléchargé",
+    "greeting": "Bonjour",
+    "message_prefix": "Votre relevé pour la transaction de",
+    "message_middle": "le",
+    "message_suffix": "a été généré et est prêt à être consulté.",
+    "cta_text": "📄 Voir le relevé",
+    "expiration_message_prefix": "Ce lien expirera le",
+    "expiration_message_suffix": "(1 heure à partir de maintenant).",
+    "expiration_note": "* Tous les horaires sont en UTC",
+    "support_message": "Pour toute demande ou assistance, le seul canal de contact sera :",
+    "support_email": "support@oxen.finance",
+    "footer_note": "Cet e-mail a été envoyé parce que vous avez demandé un téléchargement de relevé qui a pris plus de 5 secondes à traiter.",
+    "customer_name": "Jean Dupont",
+    "transaction_amount": "250,00 €",
+    "transaction_currency": "EUR",
+    "transaction_date": "26 décembre 2025",
+    "download_url": "",
+    "expiration_time": "26 décembre 2025 14:30 UTC",
+    "expiration_hours": "1"
+}

@@ -1,13 +1,10 @@
 {
-  "title": "Password / PIN successfully updated",
-  "preheader": "Password / PIN successfully updated",
-  "heading": "Password / PIN successfully updated",
-  "subject": "Password / PIN successfully updated",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-  "password_updated_message": "Your password/PIN has been successfully updated.",
-  "security_message": "👉 If you didn't make this change, please contact our support team immediately.",
-  "signature": "The Security Team",
-  "first_name": "Tai Van",
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "Password / PIN successfully updated",
+    "subject": "Password / PIN successfully updated",
+    "password_updated_message": "Your password/PIN has been successfully updated.",
+    "security_message": "👉 If you didn't make this change, please contact our support team immediately.",
+    "signature": "The Security Team.",
+    "first_name": "",
+    "recipient_email": ""
 }

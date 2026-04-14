@@ -1,16 +1,13 @@
 {
-  "title": "Nos Conditions Générales évoluent - Oxen",
-  "preheader": "📄 Nos Conditions Générales d'Utilisation et notre politique de confidentialité seront mises à jour.",
-  "heading": "📄 Nos Conditions Générales évoluent",
-  "subject": "📄 Nos Conditions Générales évoluent",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-  "action_message": "👉 Merci de lire et accepter les nouvelles conditions avant cette date.",
-  "cta_text": "Consulter les CGU",
-  "signature": "L'équipe Oxen.",
-  "terms_update_prefix": "Nos Conditions Générales d'Utilisation et notre politique de confidentialité seront mises à jour le ",
-  "cta_url": "",
-  "first_name": "Tai Van",
-  "update_date": "1er septembre 2025",
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "Nos Conditions Générales évoluent - Oxen",
+    "subject": "📄 Nos Conditions Générales évoluent",
+    "action_message": "👉 Merci de lire et accepter les nouvelles conditions avant cette date.",
+    "cta_text": "Consulter les CGU",
+    "signature": "L'équipe Oxen.",
+    "terms_update_prefix": "Nos Conditions Générales d'Utilisation et notre politique de confidentialité seront mises à jour le ",
+    "cta_url": "",
+    "first_name": "",
+    "update_date": "1er septembre 2025",
+    "recipient_email": ""
 }

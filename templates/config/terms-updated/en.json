@@ -1,16 +1,13 @@
 {
-  "title": "Our Terms of Service are changing - Oxen",
-  "preheader": "📄 Our Terms of Service and Privacy Policy will be updated.",
-  "heading": "📄 Our Terms of Service are changing",
-  "subject": "📄 Our Terms of Service are changing",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-  "action_message": "👉 Please read and accept the new terms before this date.",
-  "cta_text": "Review Terms",
-  "signature": "The Oxen Team.",
-  "terms_update_prefix": "Our Terms of Service and Privacy Policy will be updated on ",
-  "cta_url": "",
-  "first_name": "Tai Van",
-  "update_date": "September 1st, 2025",
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "Our Terms of Service are changing - Oxen",
+    "subject": "📄 Our Terms of Service are changing",
+    "action_message": "👉 Please read and accept the new terms before this date.",
+    "cta_text": "Review Terms",
+    "signature": "The Oxen Team.",
+    "terms_update_prefix": "Our Terms of Service and Privacy Policy will be updated on ",
+    "cta_url": "",
+    "first_name": "",
+    "update_date": "September 1st, 2025",
+    "recipient_email": ""
 }

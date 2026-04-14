@@ -1,20 +1,17 @@
 {
+  "layout": "oxen-layout",
   "title": "Rappel – votre appel avec Oxen dans 1 heure - Oxen",
-  "preheader": "Rappel – votre appel avec Oxen dans 1 heure",
-  "heading": "Rappel – votre appel avec Oxen dans 1 heure",
   "subject": "Rappel – votre appel avec Oxen dans 1 heure",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
   "call_reminder_message": "Petit rappel : votre appel avec votre Account Manager Oxen aura lieu dans une heure.",
   "date_label": "📅 Date :",
   "time_label": "🕒 Heure :",
   "join_link_label": "📍 Lien pour rejoindre l'appel :",
   "prepare_questions_message": "Pensez à préparer vos éventuelles questions pour optimiser l'échange.",
   "sign_off": "À tout à l'heure,",
-  "signature": "L'équipe Oxen",
+  "signature": "L'équipe Oxen.",
   "appointment_date": "[Date]",
   "appointment_time": "[Heure]",
   "call_link": "[Lien visio ou téléphone]",
-  "first_name": "Tai Van",
+  "first_name": "",
   "recipient_email": ""
 }

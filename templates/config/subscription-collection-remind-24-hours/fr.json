@@ -1,17 +1,13 @@
 {
-  "title": "Votre abonnement Oxen est renouvelé demain – Vérifiez votre solde !",
-  "preheader": "Votre abonnement Oxen sera renouvelé demain ! Assurez-vous que votre compte est approvisionné.",
-  "heading": "Votre abonnement Oxen est renouvelé demain – Vérifiez votre solde !",
-  "subject": "Votre abonnement Oxen est renouvelé demain – Vérifiez votre solde !",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-
-  "renewal_message": "Votre abonnement Oxen sera renouvelé demain ! 🚀",
-  "instruction": "Assurez-vous que votre compte est suffisamment approvisionné pour continuer à profiter de tous vos avantages.",
-  "renewal_notice": "📅 Renouvellement demain",
-  "action_item": "💡 Évitez toute interruption, vérifiez votre solde maintenant.",
-  "cta_text": "👉 Accédez à votre compte",
-  "cta_url": "",
-  "first_name": "Tai Van",
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "Votre abonnement Oxen est renouvelé demain – Vérifiez votre solde !",
+    "subject": "Votre abonnement Oxen est renouvelé demain – Vérifiez votre solde !",
+    "renewal_message": "Votre abonnement Oxen sera renouvelé demain ! 🚀",
+    "instruction": "Assurez-vous que votre compte est suffisamment approvisionné pour continuer à profiter de tous vos avantages.",
+    "renewal_notice": "📅 Renouvellement demain",
+    "action_item": "💡 Évitez toute interruption, vérifiez votre solde maintenant.",
+    "cta_text": "👉 Accédez à votre compte",
+    "cta_url": "",
+    "first_name": "",
+    "recipient_email": ""
 }

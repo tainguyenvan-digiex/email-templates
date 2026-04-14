@@ -4,21 +4,6 @@
   "title": "Bienvenue sur Oxen",
   "lang_code": "fr",
 
-  "_backend_fields": [
-    "first_name",
-    "account_holder",
-    "iban",
-    "currencies",
-    "bic",
-    "am_initials",
-    "am_name",
-    "am_title",
-    "am_email",
-    "portal_url",
-    "portal_domain",
-    "onboarding_url"
-  ],
-
   "body_line_1": "Votre compte est désormais actif.",
   "body_line_2": "Vous trouverez ci-dessous les détails de votre compte et votre chargé de compte dédié.",
   "body_next_steps": "Votre chargé de compte vous contactera dans les 24 heures pour vous présenter votre tableau de bord et répondre à vos questions. En attendant, vous pouvez explorer votre compte sur",
@@ -42,17 +27,17 @@
   "list_item_3": "Convertissez entre fiat et crypto depuis votre tableau de bord",
   "list_item_4": "Invitez des membres de l'équipe et définissez leurs droits d'accès",
 
-  "sign_off": "L'équipe Oxen",
+  "sign_off": "L'équipe Oxen.",
+  "am_initials": "C",
+  "am_name": "Christel",
+  "am_title": "Chargé de compte",
+  "am_email": "cr@oxen.finance",
 
   "first_name": null,
   "account_holder": null,
   "iban": null,
   "currencies": null,
   "bic": null,
-  "am_initials": null,
-  "am_name": null,
-  "am_title": null,
-  "am_email": null,
   "portal_url": null,
   "portal_domain": null,
   "onboarding_url": null

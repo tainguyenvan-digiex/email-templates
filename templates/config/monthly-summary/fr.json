@@ -1,32 +1,29 @@
 {
-  "title": "Votre résumé mensuel – juillet 2025 - Oxen",
-  "preheader": "📊 Voici le résumé des activités de votre compte Oxen Business pour le mois de juillet.",
-  "heading": "📊 Votre résumé mensuel",
-  "heading_prefix": "📊 Votre résumé mensuel – ",
-  "heading_middle": "",
-  "heading_suffix": "",
-  "subject": "📊 Votre résumé mensuel",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-  "cta_text": "👉 Voir le détail dans votre tableau de bord",
-  "signature": "L'équipe Oxen.",
-  "summary_intro_prefix": "Voici le résumé des activités de votre compte Oxen Business pour le mois de ",
-  "cta_url": "",
-  "first_name": "Tai Van",
-  "month_year": "juillet 2025",
-  "metrics": [
-    {
-      "this": "46 transactions effectuées"
-    },
-    {
-      "this": "5 utilisateurs actifs"
-    },
-    {
-      "this": "8 350,00 € de dépenses totales"
-    },
-    {
-      "this": "2 dépenses sans justificatif"
-    }
-  ],
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "Votre résumé mensuel – juillet 2025 - Oxen",
+    "heading_prefix": "📊 Votre résumé mensuel – ",
+    "heading_middle": "",
+    "heading_suffix": "",
+    "subject": "📊 Votre résumé mensuel",
+    "cta_text": "👉 Voir le détail dans votre tableau de bord",
+    "signature": "L'équipe Oxen.",
+    "summary_intro_prefix": "Voici le résumé des activités de votre compte Oxen Business pour le mois de ",
+    "cta_url": "",
+    "first_name": "",
+    "month_year": "juillet 2025",
+    "metrics": [
+        {
+            "this": "46 transactions effectuées"
+        },
+        {
+            "this": "5 utilisateurs actifs"
+        },
+        {
+            "this": "8 350,00 € de dépenses totales"
+        },
+        {
+            "this": "2 dépenses sans justificatif"
+        }
+    ],
+    "recipient_email": ""
 }

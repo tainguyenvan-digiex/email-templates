@@ -11,7 +11,9 @@
       "Bash(mv config-v2/oxen-welcome/en.json config/welcome-email/en.json)",
       "Bash(mv config-v2/oxen-welcome/fr.json config/welcome-email/fr.json)",
       "Bash(mv config-v2/oxen-layout config/oxen-layout)",
-      "Bash(rmdir config-v2/oxen-welcome)"
+      "Bash(rmdir config-v2/oxen-welcome)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(list\\(d.keys\\(\\)\\), indent=2\\)\\)\")",
+      "Bash(python3 -c ':*)"
     ]
   }
 }

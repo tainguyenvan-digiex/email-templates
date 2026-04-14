@@ -1,17 +1,20 @@
 {
+  "layout": "oxen-layout",
   "title": "Dépenses sans justificatif – Résumé de la semaine - Oxen",
-  "preheader": "📊 Résumé des dépenses non justifiées de la semaine.",
-  "heading": "📊 Dépenses sans justificatif",
   "subject": "📊 Dépenses sans justificatif – Semaine du 21 au 27 juillet",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
   "action_message": "👉 Vous pouvez les relancer depuis votre interface.",
   "signature": "L'équipe Oxen.",
   "summary_intro": "Voici le résumé des dépenses non justifiées :",
   "end_date": "27 juillet",
-  "expense_item_1": "Thomas D. – 58,90 € – Biocoop – 27/07",
-  "expense_item_2": "Lucie M. – 72,00 € – Uber – 25/07",
-  "first_name": "Tai Van",
+  "first_name": "",
   "start_date": "21",
-  "recipient_email": ""
+  "recipient_email": "",
+  "expenses": [
+    {
+      "this": "Thomas D. – €58.90 – Biocoop – 27/07"
+    },
+    {
+      "this": "Lucie M. – €72.00 – Uber – 25/07"
+    }
+  ]
 }

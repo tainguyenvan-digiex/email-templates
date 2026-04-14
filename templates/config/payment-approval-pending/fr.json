@@ -1,16 +1,13 @@
 {
-  "title": "⏳ Un paiement est en attente de validation",
-  "preheader": "⏳ Un paiement attend votre approbation.",
-  "heading": "⏳ Un paiement est en attente de validation",
-  "subject": "⏳ Un paiement est en attente de validation",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-  "payment_pending_message_prefix": "Un paiement de",
-  "payment_pending_message_suffix": "est en attente de validation.",
-  "cta_message": "👉 Valider ou refuser dans votre interface",
-  "signature": "L'équipe Oxen.",
-  "cta_url": "",
-  "first_name": "Tai Van",
-  "amount": "2 300 €",
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "⏳ Un paiement est en attente de validation",
+    "subject": "⏳ Un paiement est en attente de validation",
+    "payment_pending_message_prefix": "Un paiement de",
+    "payment_pending_message_suffix": "est en attente de validation.",
+    "cta_message": "👉 Valider ou refuser dans votre interface",
+    "signature": "L'équipe Oxen.",
+    "cta_url": "",
+    "first_name": "",
+    "amount": "2 300 €",
+    "recipient_email": ""
 }

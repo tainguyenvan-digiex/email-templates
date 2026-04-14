@@ -1,16 +1,13 @@
 {
-  "title": "Relevé mensuel disponible - Oxen",
-  "preheader": "📄 Votre relevé mensuel est maintenant disponible au téléchargement.",
-  "heading": "📄 Relevé mensuel disponible",
-  "subject": "📄 Relevé mensuel disponible",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-  "cta_text": "👉 Télécharger le relevé",
-  "signature": "L'équipe Oxen",
-  "statement_ready_prefix": "Votre relevé mensuel pour ",
-  "statement_ready_suffix": " est maintenant disponible au téléchargement.",
-  "cta_url": "",
-  "first_name": "Tai Van",
-  "month_year": "juillet 2025",
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "Relevé mensuel disponible - Oxen",
+    "subject": "📄 Relevé mensuel disponible",
+    "cta_text": "👉 Télécharger le relevé",
+    "signature": "L'équipe Oxen.",
+    "statement_ready_prefix": "Votre relevé mensuel pour ",
+    "statement_ready_suffix": " est maintenant disponible au téléchargement.",
+    "cta_url": "",
+    "first_name": "",
+    "month_year": "juillet 2025",
+    "recipient_email": ""
 }

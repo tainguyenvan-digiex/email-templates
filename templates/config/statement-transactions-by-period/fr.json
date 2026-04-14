@@ -1,0 +1,20 @@
+{
+    "layout": "oxen-layout",
+    "title": "Relevé prêt - Oxen",
+    "subject": "📄 Votre relevé pour {{period}} est prêt à être téléchargé",
+    "greeting": "Bonjour",
+    "message_prefix": "Votre relevé pour",
+    "message_suffix": "a été généré et est prêt à être consulté. Comme cela a pris plus de temps que prévu, nous vous envoyons le lien par e-mail.",
+    "cta_text": "📄 Voir le relevé",
+    "expiration_message_prefix": "Ce lien expirera le",
+    "expiration_message_suffix": "(1 heure à partir de maintenant).",
+    "expiration_note": "* Tous les horaires sont en UTC",
+    "support_message": "Pour toute demande ou assistance, le seul canal de contact sera :",
+    "support_email": "support@oxen.finance",
+    "footer_note": "Cet e-mail a été envoyé parce que vous avez demandé un téléchargement de relevé qui a pris plus de 5 secondes à traiter.",
+    "customer_name": "Jean Dupont",
+    "period": "Décembre 2025",
+    "download_url": "",
+    "expiration_time": "26 décembre 2025 14:30 UTC",
+    "expiration_hours": "1"
+}

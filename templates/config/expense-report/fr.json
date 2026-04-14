@@ -1,7 +1,5 @@
 {
   "title": "Rapport de dépenses prêt - Oxen",
-  "preheader": "📊 Votre rapport de dépenses d'entreprise est maintenant prêt à être téléchargé.",
-  "heading": "📊 Rapport de dépenses prêt",
   "subject": "📊 Rapport de dépenses prêt",
   "greeting": "Cher",
   "first_name": "titulaire de carte et administrateur",
@@ -17,7 +15,5 @@
   "info_receipts": "Les reçus sont inclus comme demandé",
   "thanks_text": "Merci de votre compréhension !",
   "signature": "L'équipe Oxen 🌱",
-  "recipient_email": "",
-  "company_registration_part2": "",
-  "company_registration_part3": ""
+  "recipient_email": ""
 }

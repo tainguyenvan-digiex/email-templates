@@ -1,0 +1,21 @@
+{
+  "layout": "oxen-layout",
+  "title": "Statement of Balances - Oxen",
+  "subject": "📄 Your Statement of Balances is ready for download",
+  "greeting": "Hello",
+  "message_prefix": "Your Statement of Balances for account",
+  "message_suffix": "has been generated and is ready for view.",
+  "cta_text": "📄 View Statement of Balances",
+  "expiration_message_prefix": "This link will expire on",
+  "expiration_message_suffix": "(1 hour from now).",
+  "expiration_note": "* All times are in UTC",
+  "support_message": "For any request or assistance, you can contact your account manager directly or use:",
+  "support_email": "support@oxen.finance",
+  "footer_note": "This email was sent because you requested a Statement of Balances download that took longer than 5 seconds to process.",
+  "customer_name": "John Doe",
+  "account_name": "Business Account",
+  "account_number": "FR76 1234 5678 9012 3456 7890 123",
+  "download_url": "",
+  "expiration_time": "December 26, 2025 14:30 UTC",
+  "expiration_hours": "1"
+}

@@ -1,12 +1,9 @@
 {
-  "title": "Vos préférences ont bien été mises à jour",
-  "preheader": "Vos préférences ont bien été mises à jour",
-  "heading": "Vos préférences ont bien été mises à jour",
-  "subject": "Vos préférences ont bien été mises à jour",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-  "preferences_updated_message": "Vos préférences de notification ont été mises à jour avec succès.",
-  "signature": "L'équipe Oxen",
-  "first_name": "Tai Van",
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "Vos préférences ont bien été mises à jour",
+    "subject": "Vos préférences ont bien été mises à jour",
+    "preferences_updated_message": "Vos préférences de notification ont été mises à jour avec succès.",
+    "signature": "L'équipe Oxen.",
+    "first_name": "",
+    "recipient_email": ""
 }

@@ -1,15 +1,12 @@
 {
-  "title": "📨 Your Oxen card is on the way",
-  "preheader": "📨 Your Oxen card is on the way",
-  "heading": "📨 Your Oxen card is on the way",
-  "subject": "📨 Your Oxen card is on the way",
-  "greeting": "Hi",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-  "card_shipping_message": "Your new Oxen card has been successfully ordered.",
-  "delivery_info_message": "It will be delivered to your registered address within 5 to 7 business days.",
-  "cta_message": "👉 You can track your delivery in the app.",
-  "signature": "The Oxen Team.",
-  "first_name": "Tai Van",
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "📨 Your Oxen card is on the way",
+    "subject": "📨 Your Oxen card is on the way",
+    "greeting": "Hi",
+    "card_shipping_message": "Your new Oxen card has been successfully ordered.",
+    "delivery_info_message": "It will be delivered to your registered address within 5 to 7 business days.",
+    "cta_message": "👉 You can track your delivery in the app.",
+    "signature": "The Oxen Team.",
+    "first_name": "",
+    "recipient_email": ""
 }

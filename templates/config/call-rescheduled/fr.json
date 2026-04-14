@@ -1,20 +1,17 @@
 {
+  "layout": "oxen-layout",
   "title": "Mise à jour de votre rendez-vous avec votre Account Manager - Oxen",
-  "preheader": "Mise à jour de votre rendez-vous avec votre Account Manager",
-  "heading": "Mise à jour de votre rendez-vous avec votre Account Manager",
   "subject": "Mise à jour de votre rendez-vous avec votre Account Manager",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
   "call_rescheduled_message": "Votre appel avec votre Account Manager Oxen a été modifié.",
   "updated_details_label": "Voici les nouvelles informations :",
   "date_label": "📅 Nouvelle date :",
   "time_label": "🕒 Nouvelle heure :",
   "location_label": "📍 Lieu :",
   "reschedule_message": "Si ce nouvel horaire ne vous convient toujours pas, vous pouvez reprogrammer l'appel à tout moment via votre app.",
-  "signature": "L'équipe Oxen",
+  "signature": "L'équipe Oxen.",
   "new_date": "[Nouvelle date]",
   "new_time": "[Nouvelle heure]",
   "location": "[Lien visio / téléphone / précisions]",
-  "first_name": "Tai Van",
+  "first_name": "",
   "recipient_email": ""
 }

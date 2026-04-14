@@ -1,15 +1,12 @@
 {
-  "title": "📨 Votre carte Oxen est en cours d’expédition",
-  "preheader": "📨 Votre carte Oxen est en cours d’expédition",
-  "heading": "📨 Votre carte Oxen est en cours d’expédition",
-  "subject": "📨 Votre carte Oxen est en cours d’expédition",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-  "card_shipping_message": "Votre nouvelle carte Oxen a bien été commandée.",
-  "delivery_info_message": "Elle sera livrée à votre adresse enregistrée sous 5 à 7 jours ouvrés.",
-  "cta_message": "👉 Vous pouvez suivre la livraison dans l'application.",
-  "signature": "L'équipe Oxen",
-  "cta_url": "",
-  "first_name": "Tai Van",
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "📨 Votre carte Oxen est en cours d’expédition",
+    "subject": "📨 Votre carte Oxen est en cours d’expédition",
+    "card_shipping_message": "Votre nouvelle carte Oxen a bien été commandée.",
+    "delivery_info_message": "Elle sera livrée à votre adresse enregistrée sous 5 à 7 jours ouvrés.",
+    "cta_message": "👉 Vous pouvez suivre la livraison dans l'application.",
+    "signature": "L'équipe Oxen.",
+    "cta_url": "",
+    "first_name": "",
+    "recipient_email": ""
 }

@@ -1,0 +1,22 @@
+{
+    "layout": "oxen-layout",
+    "title": "Document RIB prêt - Oxen",
+    "subject": "📄 Votre document RIB est prêt à être téléchargé",
+    "greeting": "Bonjour",
+    "message_prefix": "Votre document RIB pour le compte",
+    "message_suffix": "a été généré et est prêt à être consulté.",
+    "cta_text": "📄 Voir le document RIB",
+    "expiration_message_prefix": "Ce lien expirera le",
+    "expiration_message_suffix": "(1 heure à partir de maintenant).",
+    "expiration_note": "* Tous les horaires sont en UTC",
+    "support_message": "Pour toute demande ou assistance, le seul canal de contact sera :",
+    "support_email": "support@oxen.finance",
+    "signature": "Cordialement,<br><strong>L'équipe Oxen.</strong>",
+    "footer_note": "Cet e-mail a été envoyé parce que vous avez demandé un téléchargement de document RIB qui a pris plus de 5 secondes à traiter.",
+    "customer_name": "Jean Dupont",
+    "account_name": "Compte Professionnel",
+    "account_number": "FR76 1234 5678 9012 3456 7890 123",
+    "download_url": "",
+    "expiration_time": "26 décembre 2025 14:30 UTC",
+    "expiration_hours": "1"
+}

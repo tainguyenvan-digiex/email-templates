@@ -1,15 +1,12 @@
 {
-  "title": "Verify your email - Oxen",
-  "preheader": "Your email verification code for Oxen",
-  "heading": "Verify your email",
-  "subject": "Verify your email",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-  "greeting": "Hello",
-  "instruction": "To verify your email for Oxen, please use the OTP below:",
-  "validity_notice": "This code is valid for 1 minute.",
-  "signature": "The Oxen Team 🌱",
-  "otp_code": "",
-  "first_name": "",
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "Verify your email - Oxen",
+    "subject": "Verify your email",
+    "greeting": "Hello",
+    "instruction": "To verify your email for Oxen, please use the OTP below:",
+    "validity_notice": "This code is valid for 1 minute.",
+    "signature": "The Oxen Team.",
+    "otp_code": "",
+    "first_name": "",
+    "recipient_email": ""
 }

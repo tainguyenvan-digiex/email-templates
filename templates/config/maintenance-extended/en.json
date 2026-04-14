@@ -1,15 +1,12 @@
 {
-  "title": "Extended maintenance – new ETA - Oxen",
-  "preheader": "⚠️ Scheduled maintenance is taking longer than expected.",
-  "heading": "⚠️ Extended maintenance – new ETA",
-  "subject": "⚠️ Extended maintenance – new ETA",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-  "action_message": "👉 You'll be notified as soon as everything is back to normal.",
-  "eta": "04:00 AM (UTC+2)",
-  "eta_label": "Estimated time of resolution:",
-  "maintenance_message": "The scheduled maintenance is taking longer than expected.",
-  "signature": "The Oxen Team",
-  "first_name": "Tai Van",
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "Extended maintenance – new ETA - Oxen",
+    "subject": "⚠️ Extended maintenance – new ETA",
+    "action_message": "👉 You'll be notified as soon as everything is back to normal.",
+    "eta": "04:00 AM (UTC+2)",
+    "eta_label": "Estimated time of resolution:",
+    "maintenance_message": "The scheduled maintenance is taking longer than expected.",
+    "signature": "The Oxen Team.",
+    "first_name": "",
+    "recipient_email": ""
 }

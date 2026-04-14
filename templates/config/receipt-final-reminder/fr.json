@@ -1,15 +1,12 @@
 {
-  "title": "Reçu toujours manquant – Dernier rappel - Oxen",
-  "preheader": "⏰ Dernier rappel : reçu toujours manquant après 3 jours.",
-  "heading": "⏰ Reçu toujours manquant – Dernier rappel",
-  "subject": "⏰ Reçu toujours manquant – Dernier rappel",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-  "action_message": "👉 Merci de régulariser cette dépense rapidement pour éviter toute alerte.",
-  "cta_text": "Ajouter mon reçu",
-  "final_reminder_message": "Cela fait 3 jours que vous avez effectué une dépense de 72,00 € sans fournir de justificatif.",
-  "signature": "L'équipe Oxen.",
-  "cta_url": "",
-  "first_name": "Tai Van",
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "Reçu toujours manquant – Dernier rappel - Oxen",
+    "subject": "⏰ Reçu toujours manquant – Dernier rappel",
+    "action_message": "👉 Merci de régulariser cette dépense rapidement pour éviter toute alerte.",
+    "cta_text": "Ajouter mon reçu",
+    "final_reminder_message": "Cela fait 3 jours que vous avez effectué une dépense de 72,00 € sans fournir de justificatif.",
+    "signature": "L'équipe Oxen.",
+    "cta_url": "",
+    "first_name": "",
+    "recipient_email": ""
 }

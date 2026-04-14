@@ -1,13 +1,10 @@
 {
-  "title": "Incident technique en cours - Oxen",
-  "preheader": "⚠️ Un incident technique impacte actuellement certains services Oxen.",
-  "heading": "⚠️ Incident technique en cours",
-  "subject": "⚠️ Incident technique en cours",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-  "action_message": "👉 Vous serez informé dès la résolution.",
-  "incident_message": "Un incident technique impacte actuellement certains services Oxen (ex. virements sortants). Nos équipes sont mobilisées pour résoudre le problème au plus vite.",
-  "signature": "L'équipe technique",
-  "first_name": "Tai Van",
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "Incident technique en cours - Oxen",
+    "subject": "⚠️ Incident technique en cours",
+    "action_message": "👉 Vous serez informé dès la résolution.",
+    "incident_message": "Un incident technique impacte actuellement certains services Oxen (ex. virements sortants). Nos équipes sont mobilisées pour résoudre le problème au plus vite.",
+    "signature": "L'équipe technique.",
+    "first_name": "",
+    "recipient_email": ""
 }

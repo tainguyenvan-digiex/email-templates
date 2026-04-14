@@ -1,14 +1,11 @@
 {
-  "title": "Vous avez été invité(e) à rejoindre Oxen - Oxen",
-  "preheader": "✉️ Vous avez été invité(e) à rejoindre l'équipe Oxen Business.",
-  "heading": "✉️ Vous avez été invité(e) à rejoindre Oxen",
-  "subject": "✉️ Vous avez été invité(e) à rejoindre Oxen",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-  "cta_text": "👉 Cliquez ici pour accepter votre invitation",
-  "invitation_message": "Vous avez été invité(e) à rejoindre l'équipe Oxen Business.",
-  "signature": "L'équipe Oxen.",
-  "cta_url": "",
-  "first_name": "Tai Van",
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "Vous avez été invité(e) à rejoindre Oxen - Oxen",
+    "subject": "✉️ Vous avez été invité(e) à rejoindre Oxen",
+    "cta_text": "👉 Cliquez ici pour accepter votre invitation",
+    "invitation_message": "Vous avez été invité(e) à rejoindre l'équipe Oxen Business.",
+    "signature": "L'équipe Oxen.",
+    "cta_url": "",
+    "first_name": "",
+    "recipient_email": ""
 }

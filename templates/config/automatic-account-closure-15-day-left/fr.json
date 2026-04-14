@@ -1,17 +1,13 @@
 {
+  "layout": "oxen-layout",
   "title": "À mi-parcours avant la désactivation du compte : mettez à jour votre solde",
-  "preheader": "Votre compte Oxen est à mi-chemin de la désactivation automatique.",
-  "heading": "À mi-parcours avant la désactivation du compte : mettez à jour votre solde",
   "subject": "À mi-parcours avant la désactivation du compte : mettez à jour votre solde",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-
   "greeting": "Bonjour",
   "closure_message": "Votre compte Oxen est à mi-chemin de la désactivation automatique en raison d'un abonnement impayé.",
   "time_remaining": "Il vous reste 15 jours pour mettre à jour votre solde et conserver votre compte actif.",
   "cta_text": "👉 Accédez à votre compte",
-  "signature": "L'équipe Oxen 🌱",
+  "signature": "L'équipe Oxen.",
   "cta_url": "",
-  "first_name": "Tai Van",
+  "first_name": "",
   "recipient_email": ""
 }

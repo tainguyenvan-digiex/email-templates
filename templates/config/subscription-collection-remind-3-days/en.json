@@ -1,17 +1,13 @@
 {
-  "title": "Only 3 days left before your Oxen plan renewal ⏳",
-  "preheader": "Your Oxen subscription is renewing soon! Make sure you have sufficient funds.",
-  "heading": "Only 3 days left before your Oxen plan renewal ⏳",
-  "subject": "Only 3 days left before your Oxen plan renewal ⏳",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-
-  "renewal_message": "Your Oxen subscription is renewing soon! 🌍",
-  "instruction": "Make sure you have sufficient funds in your account to keep enjoying all your benefits.",
-  "renewal_notice": "📅 Renewal in 3 days",
-  "action_item": "💡 Check your balance now to avoid any disruption.",
-  "cta_text": "👉 Access your account",
-  "cta_url": "",
-  "first_name": "Tai Van",
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "Only 3 days left before your Oxen plan renewal ⏳",
+    "subject": "Only 3 days left before your Oxen plan renewal ⏳",
+    "renewal_message": "Your Oxen subscription is renewing soon! 🌍",
+    "instruction": "Make sure you have sufficient funds in your account to keep enjoying all your benefits.",
+    "renewal_notice": "📅 Renewal in 3 days",
+    "action_item": "💡 Check your balance now to avoid any disruption.",
+    "cta_text": "👉 Access your account",
+    "cta_url": "",
+    "first_name": "",
+    "recipient_email": ""
 }

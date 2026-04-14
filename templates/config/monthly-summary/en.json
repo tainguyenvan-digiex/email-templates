@@ -1,32 +1,29 @@
 {
-  "title": "Your monthly summary – July 2025 - Oxen",
-  "preheader": "📊 Here's your Oxen Business account summary for July.",
-  "heading": "📊 Your monthly summary – July 2025",
-  "heading_prefix": "📊 Your monthly summary – ",
-  "heading_middle": "",
-  "heading_suffix": "",
-  "subject": "📊 Your monthly summary – July 2025",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-  "cta_text": "👉 View full details in your dashboard",
-  "signature": "The Oxen Team.",
-  "summary_intro_prefix": "Here's your Oxen Business account summary for ",
-  "cta_url": "",
-  "first_name": "Tai Van",
-  "month_year": "July 2025",
-  "metrics": [
-    {
-      "this": "46 transactions"
-    },
-    {
-      "this": "5 active users"
-    },
-    {
-      "this": "€8,350.00 total spending"
-    },
-    {
-      "this": "2 expenses without receipts"
-    }
-  ],
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "Your monthly summary – July 2025 - Oxen",
+    "heading_prefix": "📊 Your monthly summary – ",
+    "heading_middle": "",
+    "heading_suffix": "",
+    "subject": "📊 Your monthly summary – July 2025",
+    "cta_text": "👉 View full details in your dashboard",
+    "signature": "The Oxen Team.",
+    "summary_intro_prefix": "Here's your Oxen Business account summary for ",
+    "cta_url": "",
+    "first_name": "",
+    "month_year": "July 2025",
+    "metrics": [
+        {
+            "this": "46 transactions"
+        },
+        {
+            "this": "5 active users"
+        },
+        {
+            "this": "€8,350.00 total spending"
+        },
+        {
+            "this": "2 expenses without receipts"
+        }
+    ],
+    "recipient_email": ""
 }

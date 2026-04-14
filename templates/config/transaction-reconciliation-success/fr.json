@@ -1,0 +1,23 @@
+{
+    "layout": "oxen-layout",
+    "title": "Rapprochement des transactions réussi - Oxen",
+    "subject": "✅ Rapprochement des transactions réussi - {{date}}",
+    "greeting": "Bonjour l'équipe de développement",
+    "success_intro": "Le rapprochement quotidien des transactions du",
+    "success_intro_suffix": "s'est terminé avec succès.",
+    "success_badge": "✓ Aucun écart trouvé",
+    "summary_title": "Résumé du rapprochement",
+    "label_reconciliation_date": "Date du rapprochement :",
+    "label_db_transactions": "Transactions en base de données :",
+    "label_shlt_transactions": "Transactions SHLT :",
+    "label_db_total": "Montant total BDD :",
+    "label_shlt_total": "Montant total SHLT :",
+    "closing_message": "Toutes les transactions sont synchronisées entre notre base de données et le fournisseur de paiement SHLT. Aucune action n'est requise.",
+    "signature": "Système de rapprochement Oxen.",
+    "date": "2025-12-26",
+    "dbTransactionsCount": "150",
+    "shltTransactionsCount": "150",
+    "dbTotalAmount": "15 000,00 €",
+    "shltTotalAmount": "15 000,00 €",
+    "currentYear": "2025"
+}

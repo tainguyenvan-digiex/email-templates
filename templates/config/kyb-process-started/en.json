@@ -1,15 +1,12 @@
 {
+  "layout": "oxen-layout",
   "title": "🎬 Start of the company verification process - Oxen",
-  "preheader": "🎬 The verification process (KYB) for your company has just started.",
-  "heading": "🎬 Start of the company verification process",
   "subject": "🎬 Start of the company verification process",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
   "cta_text": "Access KYB tracking",
-  "kyb_started_message": "The verification process (KYB) for your company has just started. Please complete the required documents from your Oxen Business interface.",
-  "signature": "The Oxen team",
+  "kyb_started_message": "The verification process (KYB) for your company has just started. Please update the required documents from your Oxen Business interface.",
+  "signature": "The Oxen Team.",
   "tracking_message": "You can track progress at any time in your company space.",
   "cta_url": "",
-  "first_name": "Tai Van",
+  "first_name": "",
   "recipient_email": ""
 }

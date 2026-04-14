@@ -1,14 +1,11 @@
 {
-  "title": "Il est temps de mettre à jour votre pièce d'identité - Oxen",
-  "preheader": "🆔 Votre pièce d'identité a expiré ou est manquante. Veuillez la mettre à jour.",
-  "heading": "🆔 Il est temps de mettre à jour votre pièce d'identité",
-  "subject": "🆔 Il est temps de mettre à jour votre pièce d'identité",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-  "cta_text": "Mettre à jour ma pièce d'identité",
-  "id_update_request_message": "Votre pièce d'identité a expiré ou est manquante. Veuillez la mettre à jour pour continuer à utiliser votre compte Oxen.",
-  "signature": "L'équipe Conformité",
-  "cta_url": "",
-  "first_name": "Tai Van",
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "Il est temps de mettre à jour votre pièce d'identité - Oxen",
+    "subject": "🆔 Il est temps de mettre à jour votre pièce d'identité",
+    "cta_text": "Mettre à jour ma pièce d'identité",
+    "id_update_request_message": "Votre pièce d'identité a expiré ou est manquante. Veuillez la mettre à jour pour continuer à utiliser votre compte Oxen.",
+    "signature": "L'équipe Conformité.",
+    "cta_url": "",
+    "first_name": "",
+    "recipient_email": ""
 }

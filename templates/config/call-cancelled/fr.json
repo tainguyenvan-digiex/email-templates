@@ -1,15 +1,12 @@
 {
+  "layout": "oxen-layout",
   "title": "Votre appel avec Oxen a été annulé - Oxen",
-  "preheader": "Votre appel avec Oxen a été annulé",
-  "heading": "Votre appel avec Oxen a été annulé",
   "subject": "Votre appel avec Oxen a été annulé",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
   "call_cancelled_message": "Votre rendez-vous avec votre Account Manager Oxen a été annulé.",
   "book_new_call_message": "Si vous souhaitez fixer un nouveau rendez-vous, vous pouvez le faire à tout moment depuis l'application.",
   "support_message": "Nous restons à votre disposition si vous avez besoin d'assistance.",
   "sign_off": "Cordialement,",
-  "signature": "L'équipe Oxen",
-  "first_name": "Tai Van",
+  "signature": "L'équipe Oxen.",
+  "first_name": "",
   "recipient_email": ""
 }

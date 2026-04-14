@@ -1,13 +1,10 @@
 {
-  "title": "✅ Your company has been verified",
-  "preheader": "✅ Your company verification has been completed successfully.",
-  "heading": "✅ Your company has been verified",
-  "subject": "✅ Your company has been verified",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-  "signature": "The Oxen Team",
-  "verification_success_message": "Good news! Your company verification has been successfully completed.",
-  "verification_access_message": "You can now access all features of your Oxen Business account.",
-  "first_name": "Tai Van",
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "✅ Your company has been verified",
+    "subject": "✅ Your company has been verified",
+    "signature": "The Oxen Team.",
+    "verification_success_message": "Good news! Your company verification has been successfully completed.",
+    "verification_access_message": "You can now access all features of your Oxen Business account.",
+    "first_name": "",
+    "recipient_email": ""
 }

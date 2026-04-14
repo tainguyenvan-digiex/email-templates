@@ -1,13 +1,12 @@
 {
-  "title": "Welcome to Oxen 🌱",
-  "preheader": "🌱 Welcome to Oxen! Your account is now active.",
-  "heading": "Welcome to Oxen 🌱",
-  "subject": "Welcome to Oxen 🌱",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-  "signature": "The Oxen Team",
-  "welcome_message": "Your Oxen account has been successfully opened. You're now part of a community committed to a more responsible and rewarding future. You can now access the app, order your card, and start enjoying your benefits.",
-  "sign_off": "See you soon,",
-  "first_name": "Tai Van",
+  "layout": "oxen-layout",
+  "title": "Welcome to Oxen",
+  "subject": "Welcome to Oxen",
+  "signature": "The Oxen Team.",
+  "welcome_message_1": "Your Oxen account is now open.",
+  "welcome_message_2": "You can now access the platform, set up your team, order your cards, and start moving funds across 30+ currencies.",
+  "welcome_message_3": "If you need anything, we're one message away.",
+  "sign_off": "Welcome on board,",
+  "first_name": "",
   "recipient_email": ""
 }

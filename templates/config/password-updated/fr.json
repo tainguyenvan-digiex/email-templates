@@ -1,13 +1,10 @@
 {
-  "title": "Mot de passe / Code PIN mis à jour avec succès",
-  "preheader": "Mot de passe / Code PIN mis à jour avec succès",
-  "heading": "Mot de passe / Code PIN mis à jour avec succès",
-  "subject": "Mot de passe / Code PIN mis à jour avec succès",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-  "password_updated_message": "Votre mot de passe/PIN a été mis à jour avec succès.",
-  "security_message": "👉 Si vous n'avez pas effectué cette modification, veuillez contacter notre équipe de support immédiatement.",
-  "signature": "L'équipe Sécurité",
-  "first_name": "Tai Van",
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "Mot de passe / Code PIN mis à jour avec succès",
+    "subject": "Mot de passe / Code PIN mis à jour avec succès",
+    "password_updated_message": "Votre mot de passe/PIN a été mis à jour avec succès.",
+    "security_message": "👉 Si vous n'avez pas effectué cette modification, veuillez contacter notre équipe de support immédiatement.",
+    "signature": "L'équipe Sécurité.",
+    "first_name": "",
+    "recipient_email": ""
 }

@@ -1,19 +1,10 @@
 {
+  "layout": "oxen-layout",
   "title": "Votre abonnement Oxen est actif ! 🎉",
-  "preheader": "Merci pour la mise à jour de votre abonnement Oxen !",
-  "heading": "Votre abonnement Oxen est actif ! 🎉",
   "subject": "Votre abonnement Oxen est actif ! 🎉",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-
   "success_message": "Merci pour la mise à jour de votre abonnement Oxen ! 🎉 Tous vos avantages sont désormais réactivés et disponibles.",
-  "benefits": [
-    {
-      "this": "✔ Plantation d'arbres 🌱"
-    }
-  ],
   "reminder_message": "📌 Gardez un solde suffisant pour garantir le bon déroulement du prochain renouvellement.",
   "closing_message": "Merci pour votre engagement, et bienvenue de nouveau parmi les utilisateurs actifs de Oxen !",
-  "first_name": "Tai Van",
+  "first_name": "",
   "recipient_email": ""
 }

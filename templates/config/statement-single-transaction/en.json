@@ -1,0 +1,23 @@
+{
+  "layout": "oxen-layout",
+  "title": "Transaction Statement Ready - Oxen",
+  "subject": "📄 Your transaction statement is ready for download",
+  "greeting": "Hello",
+  "message_prefix": "Your statement for the transaction of",
+  "message_middle": "on",
+  "message_suffix": "has been generated and is ready for view.",
+  "cta_text": "📄 View Statement",
+  "expiration_message_prefix": "This link will expire on",
+  "expiration_message_suffix": "(1 hour from now).",
+  "expiration_note": "* All times are in UTC",
+  "support_message": "For any request or assistance, you can contact your account manager directly or use:",
+  "support_email": "support@oxen.finance",
+  "footer_note": "This email was sent because you requested a statement download that took longer than 5 seconds to process.",
+  "customer_name": "John Doe",
+  "transaction_amount": "€250.00",
+  "transaction_currency": "EUR",
+  "transaction_date": "December 26, 2025",
+  "download_url": "",
+  "expiration_time": "December 26, 2025 14:30 UTC",
+  "expiration_hours": "1"
+}

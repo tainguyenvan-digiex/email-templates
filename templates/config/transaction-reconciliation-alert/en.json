@@ -1,0 +1,44 @@
+{
+    "layout": "oxen-layout",
+    "title": "Transaction Reconciliation Alert - Oxen",
+    "subject": "⚠️ Transaction Reconciliation Alert - {{date}}",
+    "greeting": "Hello Development Team",
+    "alert_intro": "The daily transaction reconciliation for",
+    "alert_intro_suffix": "has detected discrepancies that require attention.",
+    "discrepancies_badge_prefix": "⚠",
+    "discrepancies_badge_suffix": "discrepancies found",
+    "action_required_title": "⚠️ Action Required",
+    "action_required_message": "Please review the discrepancies and investigate the root cause to ensure data integrity between our database and SHLT payment provider.",
+    "summary_title": "Reconciliation Summary",
+    "label_reconciliation_date": "Reconciliation Date:",
+    "label_db_transactions": "Database Transactions:",
+    "label_shlt_transactions": "SHLT Transactions:",
+    "label_db_total": "DB Total Amount:",
+    "label_shlt_total": "SHLT Total Amount:",
+    "label_discrepancies_count": "Discrepancies Count:",
+    "label_difference_amount": "Total Difference Amount:",
+    "discrepancy_summary_title": "Discrepancy Summary",
+    "bigquery_intro": "📊 View detailed analysis in BigQuery",
+    "cta_text": "View in BigQuery",
+    "closing_message": "Please investigate these discrepancies and take appropriate action to resolve them.",
+    "signature": "Oxen Reconciliation System.",
+    "date": "2025-12-26",
+    "dbTransactionsCount": "150",
+    "shltTransactionsCount": "148",
+    "dbTotalAmount": "€15,000.00",
+    "shltTotalAmount": "€14,900.00",
+    "differencesCount": "5",
+    "differencesTotalAmount": "€100.00",
+    "discrepancySummary": [
+        {
+            "type": "Amount Mismatch",
+            "count": "3"
+        },
+        {
+            "type": "Missing in SHLT",
+            "count": "2"
+        }
+    ],
+    "bigQueryLink": "",
+    "currentYear": "2025"
+}

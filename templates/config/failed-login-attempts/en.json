@@ -1,16 +1,13 @@
 {
-  "title": "Multiple failed login attempts - Oxen",
-  "preheader": "🔐 Multiple failed login attempts detected on your account.",
-  "heading": "🔐 Multiple failed login attempts",
-  "subject": "🔐 Multiple failed login attempts",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-  "attempt_count_suffix": "failed login attempts on",
-  "failed_attempts_intro": "There have been",
-  "security_warning": "👉 If this wasn't you, change your password.",
-  "signature": "The Oxen Team.",
-  "attempt_count": "3",
-  "email_address": "user@email.com",
-  "first_name": "Tai Van",
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "Multiple failed login attempts - Oxen",
+    "subject": "🔐 Multiple failed login attempts",
+    "attempt_count_suffix": "failed login attempts on",
+    "failed_attempts_intro": "There have been",
+    "security_warning": "👉 If this wasn't you, please change your password immediately. Contact your account manager if you need help.",
+    "signature": "The Oxen Team.",
+    "attempt_count": "3",
+    "email_address": "user@email.com",
+    "first_name": "",
+    "recipient_email": ""
 }

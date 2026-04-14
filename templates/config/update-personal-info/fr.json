@@ -1,13 +1,10 @@
 {
-  "title": "Veillez mettre à jour vos informations personnelles - Oxen",
-  "preheader": "🔁 Pour respecter les obligations réglementaires, veuillez mettre à jour votre pièce d'identité ou votre justificatif de domicile.",
-  "heading": "🔁 Veillez mettre à jour vos informations personnelles",
-  "subject": "🔁 Veillez mettre à jour vos informations personnelles",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-  "action_message": "👉 Rendez-vous directement dans votre application Oxen.",
-  "signature": "L'équipe Conformité",
-  "update_request_message": "Pour respecter les obligations réglementaires, nous vous invitons à mettre à jour votre pièce d'identité ou votre justificatif de domicile.",
-  "first_name": "Tai Van",
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "Veillez mettre à jour vos informations personnelles - Oxen",
+    "subject": "🔁 Veillez mettre à jour vos informations personnelles",
+    "action_message": "👉 Rendez-vous directement dans votre application Oxen.",
+    "signature": "L'équipe Conformité.",
+    "update_request_message": "Pour respecter les obligations réglementaires, nous vous invitons à mettre à jour votre pièce d'identité ou votre justificatif de domicile.",
+    "first_name": "",
+    "recipient_email": ""
 }

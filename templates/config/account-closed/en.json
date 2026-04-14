@@ -1,12 +1,9 @@
 {
+  "layout": "oxen-layout",
   "title": "Your Oxen account has been closed",
-  "preheader": "Your Oxen account has been closed.",
-  "heading": "Your Oxen account has been closed",
   "subject": "Your Oxen account has been closed",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
   "account_closed_message": "Your Oxen account has been closed. We're sorry to see you go.",
-  "signature": "The Oxen Team",
-  "first_name": "Tai Van",
+  "signature": "The Oxen Team.",
+  "first_name": "",
   "recipient_email": ""
 }

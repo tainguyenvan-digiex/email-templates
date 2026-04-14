@@ -1,15 +1,15 @@
 {
+  "layout": "oxen-layout",
   "title": "Compte fermé : paiement non reçu après 60 jours",
-  "preheader": "Nous confirmons que votre compte Oxen a été fermé avec succès.",
-  "heading": "Compte fermé : paiement non reçu après 60 jours",
   "subject": "Compte fermé : paiement non reçu après 60 jours",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-
   "greeting": "Bonjour",
-  "confirmation_message": "Nous confirmons que votre compte Oxen a été fermé avec succès.",
-  "sign_off": "Merci pour votre confiance,",
-  "signature": "L'équipe Oxen 🌱",
-  "first_name": "Tai Van",
+  "confirmation_message": "Votre compte Oxen a été fermé.",
+  "reason": "Motif : Paiement en souffrance non reçu après 60 jours.",
+  "support_message": "Si vous souhaitez en discuter ou pensez qu'il s'agit d'une erreur, veuillez contacter",
+  "support_email": "support@oxen.finance",
+  "support_suffix": "dans les 14 jours.",
+  "sign_off": "",
+  "signature": "L'équipe Oxen.",
+  "first_name": "",
   "recipient_email": ""
 }

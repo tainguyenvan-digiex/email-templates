@@ -1,16 +1,13 @@
 {
-  "title": "Monthly statement ready - Oxen",
-  "preheader": "📄 Your monthly statement is now available for download.",
-  "heading": "📄 Monthly statement ready",
-  "subject": "📄 Monthly statement ready",
-  "company_registration_part2": "",
-  "company_registration_part3": "",
-  "cta_text": "👉 Download statement",
-  "signature": "The Oxen Team",
-  "statement_ready_prefix": "Your monthly statement for ",
-  "statement_ready_suffix": " is now available for download.",
-  "cta_url": "",
-  "first_name": "Tai Van",
-  "month_year": "July 2025",
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "Monthly statement ready - Oxen",
+    "subject": "📄 Monthly statement ready",
+    "cta_text": "👉 Download statement",
+    "signature": "The Oxen Team.",
+    "statement_ready_prefix": "Your monthly statement for ",
+    "statement_ready_suffix": " is now available for download.",
+    "cta_url": "",
+    "first_name": "",
+    "month_year": "July 2025",
+    "recipient_email": ""
 }

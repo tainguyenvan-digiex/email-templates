@@ -1,0 +1,44 @@
+{
+    "layout": "oxen-layout",
+    "title": "Alerte de rapprochement des transactions - Oxen",
+    "subject": "⚠️ Alerte de rapprochement des transactions - {{date}}",
+    "greeting": "Bonjour l'équipe de développement",
+    "alert_intro": "Le rapprochement quotidien des transactions du",
+    "alert_intro_suffix": "a détecté des écarts nécessitant une attention particulière.",
+    "discrepancies_badge_prefix": "⚠",
+    "discrepancies_badge_suffix": "écarts trouvés",
+    "action_required_title": "⚠️ Action requise",
+    "action_required_message": "Veuillez examiner les écarts et enquêter sur la cause profonde pour garantir l'intégrité des données entre notre base de données et le fournisseur de paiement SHLT.",
+    "summary_title": "Résumé du rapprochement",
+    "label_reconciliation_date": "Date du rapprochement :",
+    "label_db_transactions": "Transactions en base de données :",
+    "label_shlt_transactions": "Transactions SHLT :",
+    "label_db_total": "Montant total BDD :",
+    "label_shlt_total": "Montant total SHLT :",
+    "label_discrepancies_count": "Nombre d'écarts :",
+    "label_difference_amount": "Montant total de différence :",
+    "discrepancy_summary_title": "Résumé des écarts",
+    "bigquery_intro": "📊 Voir l'analyse détaillée dans BigQuery",
+    "cta_text": "Voir dans BigQuery",
+    "closing_message": "Veuillez enquêter sur ces écarts et prendre les mesures appropriées pour les résoudre.",
+    "signature": "Système de rapprochement Oxen.",
+    "date": "2025-12-26",
+    "dbTransactionsCount": "150",
+    "shltTransactionsCount": "148",
+    "dbTotalAmount": "15 000,00 €",
+    "shltTotalAmount": "14 900,00 €",
+    "differencesCount": "5",
+    "differencesTotalAmount": "100,00 €",
+    "discrepancySummary": [
+        {
+            "type": "Écart de montant",
+            "count": "3"
+        },
+        {
+            "type": "Manquant dans SHLT",
+            "count": "2"
+        }
+    ],
+    "bigQueryLink": "",
+    "currentYear": "2025"
+}
