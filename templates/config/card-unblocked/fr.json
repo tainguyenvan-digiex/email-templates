@@ -4,8 +4,8 @@
   "subject": "🔒 Carte débloquée",
   "card_info_prefix": "La carte terminant par",
   "card_info_suffix": "a été débloquée depuis l'application Oxen.",
-  "security_signature": "L'équipe Sécurité.",
-  "security_warning": "👉 Si vous n'êtes pas à l'origine de cette action, contactez notre support immédiatement.",
+  "security_signature": "L'équipe Sécurité Oxen.",
+  "security_warning": "👉 Si vous n'êtes pas à l'origine de cette action, contactez votre chargé de compte immédiatement.",
   "card_last_four": "4827",
   "first_name": "",
   "recipient_email": ""

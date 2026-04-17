@@ -3,8 +3,8 @@
     "title": "Password / PIN successfully updated",
     "subject": "Password / PIN successfully updated",
     "password_updated_message": "Your password/PIN has been successfully updated.",
-    "security_message": "👉 If you didn't make this change, please contact our support team immediately.",
-    "signature": "The Security Team.",
+    "security_message": "👉 If you didn't make this change, please contact your account manager immediately.",
+    "signature": "The Oxen Security Team.",
     "first_name": "",
     "recipient_email": ""
 }

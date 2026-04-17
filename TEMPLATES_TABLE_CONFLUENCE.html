@@ -743,3 +743,95 @@
     <code>location</code>
   </li>
 </ul>
+
+<h2>Update Log</h2>
+
+<h3>2026-04-16 — Notification Sheet Client Feedback Updates</h3>
+
+<p>
+  The following changes were applied based on client feedback from the updated
+  notification sheet:
+</p>
+
+<h4>1. Contact Redirection — "Support" → "Account Manager"</h4>
+<p>
+  Security warning messages updated to direct users to their
+  <strong>account manager</strong> instead of generic support:
+</p>
+<ul>
+  <li><code>card-blocked</code> — <code>security_warning</code></li>
+  <li>
+    <code>card-temporarily-disabled</code> — <code>security_message</code>
+  </li>
+  <li><code>card-unblocked</code> — <code>security_warning</code></li>
+  <li><code>new-device-login</code> — <code>security_warning</code></li>
+  <li><code>password-updated</code> — <code>security_message</code></li>
+</ul>
+
+<h4>2. Team Name Branding</h4>
+<ul>
+  <li>
+    <strong>Security Team</strong>: "The Security Team" → "The Oxen Security
+    Team" in <code>card-blocked</code>, <code>card-unblocked</code>,
+    <code>password-updated</code>
+  </li>
+  <li>
+    <strong>Compliance Team</strong>: Signature updated to "The Oxen Compliance
+    Team" in <code>kyb-process-started</code>, <code>invite-kyc</code>
+  </li>
+</ul>
+
+<h4>3. Content Additions</h4>
+<ul>
+  <li>
+    <code>welcome-email</code> — "Getting Started" list now includes
+    <strong>Faster Payments</strong> alongside SEPA Instant and SWIFT
+  </li>
+  <li>
+    <code>kyb-process-started</code> — Added formal "Thank you, The Oxen
+    Compliance Team" sign-off (config + HTML)
+  </li>
+  <li>
+    <code>invite-kyc</code> — Added formal "Thank you, The Oxen Compliance Team"
+    sign-off (config + HTML)
+  </li>
+</ul>
+
+<h4>4. Sign-off Consistency</h4>
+<p>
+  Standardized sign-offs to "Best regards / Thank you, The Oxen Team" across
+  subscription and statement templates:
+</p>
+<ul>
+  <li>
+    <code>monthly-statement-ready</code> — Added "Best regards," prefix in HTML
+  </li>
+  <li>
+    <code>automatic-account-closure-final-remind</code> — Added "Thank you,"
+    prefix in HTML
+  </li>
+  <li><code>expense-report</code> — Removed emoji from signature</li>
+  <li>
+    <code>subscription-account-suspend</code> — Added signature field + HTML
+    sign-off block
+  </li>
+  <li>
+    <code>subscription-collection-remind-24-hours</code> — Added signature field
+    + HTML sign-off block
+  </li>
+  <li>
+    <code>subscription-collection-remind-3-days</code> — Added signature field +
+    HTML sign-off block
+  </li>
+  <li>
+    <code>subscription-invoice</code> — Added signature field + HTML sign-off
+    block
+  </li>
+</ul>
+
+<p>
+  <em
+    >Note: All changes above are static config values. No new server-provided
+    dynamic fields were introduced.</em
+  >
+</p>

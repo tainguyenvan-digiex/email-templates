@@ -14,6 +14,7 @@
   "info_link_expiry": "All download link will expire on 3 days",
   "info_receipts": "Receipts are included as requested",
   "thanks_text": "Thank you for your understanding!",
-  "signature": "The Oxen Team 🌱",
+  "signature": "The Oxen Team.",
+  "sign_off_prefix": "Best regards,",
   "recipient_email": ""
 }

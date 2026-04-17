@@ -5,7 +5,8 @@
     "greeting": "Bonjour",
     "kyc_invitation_message": "Vous êtes invité(e) à compléter la procédure KYC. Cette vérification garantit un accès sécurisé à nos services.",
     "cta_text": "👉 Commencer la vérification KYC",
-    "signature": "L'équipe Oxen.",
+    "signature": "L'équipe Conformité Oxen.",
+    "sign_off_prefix": "Merci,",
     "cta_url": "",
     "first_name": "",
     "recipient_email": ""

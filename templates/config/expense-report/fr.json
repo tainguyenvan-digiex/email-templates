@@ -14,6 +14,7 @@
   "info_link_expiry": "Tous les liens de téléchargement expireront dans 3 jours",
   "info_receipts": "Les reçus sont inclus comme demandé",
   "thanks_text": "Merci de votre compréhension !",
-  "signature": "L'équipe Oxen 🌱",
+  "signature": "L'équipe Oxen.",
+  "sign_off_prefix": "Cordialement,",
   "recipient_email": ""
 }

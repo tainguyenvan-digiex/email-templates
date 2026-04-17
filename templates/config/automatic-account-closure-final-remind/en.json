@@ -7,6 +7,7 @@
   "deadline": "If payment is not completed by tomorrow, your Oxen account will be automatically closed.",
   "cta_text": "👉 Access your account",
   "signature": "The Oxen Team.",
+  "sign_off_prefix": "Thank you,",
   "cta_url": "",
   "first_name": "",
   "recipient_email": ""

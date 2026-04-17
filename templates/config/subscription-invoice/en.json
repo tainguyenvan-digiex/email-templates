@@ -16,6 +16,8 @@
   "support_message": "For any request or assistance, you can contact your account manager directly or use:",
   "support_email": "support@oxen.finance",
   "footer_note": "This email was sent because you requested a subscription invoice download that took longer than 5 seconds to process.",
+  "signature": "The Oxen Team.",
+  "sign_off_prefix": "Best regards,",
   "customer_name": "John Doe",
   "invoice_number": "INV-2025-12-001",
   "invoice_date": "December 26, 2025",
