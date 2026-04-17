@@ -1,13 +1,14 @@
 {
-    "layout": "oxen-layout",
-    "title": "⏳ A payment awaits your approval",
-    "subject": "⏳ A payment awaits your approval",
-    "payment_pending_message_prefix": "A draft payment of",
-    "payment_pending_message_suffix": "is pending approval.",
-    "cta_message": "👉 Approve or decline in dashboard",
-    "signature": "The Oxen Team.",
-    "cta_url": "",
-    "first_name": "",
-    "amount": "€2,300",
-    "recipient_email": ""
+  "layout": "oxen-layout",
+  "title": "⏳ A payment awaits your approval",
+  "subject": "⏳ A payment awaits your approval",
+  "payment_pending_message_prefix": "A draft payment of",
+  "payment_pending_message_suffix": "is pending approval.",
+  "cta_message": "👉 Approve or decline in dashboard",
+  "signature": "The Oxen Team.",
+  "cta_url": "",
+  "first_name": "",
+  "amount": "€2,300",
+  "recipient_email": "",
+  "currency_symbol": ""
 }

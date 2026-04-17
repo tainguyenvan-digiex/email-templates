@@ -1,14 +1,14 @@
 {
-  "layout": "oxen-layout",
-  "title": "Last chance to prevent account deactivation",
-  "subject": "Last chance to prevent account deactivation",
-  "greeting": "Hi",
-  "urgent_message": "This is your final notice.",
-  "deadline": "If payment is not completed by tomorrow, your Oxen account will be automatically closed.",
-  "cta_text": "👉 Access your account",
-  "signature": "The Oxen Team.",
-  "sign_off_prefix": "Thank you,",
-  "cta_url": "",
-  "first_name": "",
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "Last chance to prevent account deactivation",
+    "subject": "Last chance to prevent account deactivation",
+    "greeting": "Hi",
+    "urgent_message": "This is your final notice.",
+    "deadline": "If payment is not completed by tomorrow, your Oxen account will be automatically closed.",
+    "cta_text": "👉 Access your account",
+    "signature": "The Oxen Team.",
+    "cta_url": "",
+    "first_name": "",
+    "recipient_email": "",
+    "sign_off": "Thank you,"
 }

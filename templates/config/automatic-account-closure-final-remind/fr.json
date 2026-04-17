@@ -1,14 +1,14 @@
 {
-  "layout": "oxen-layout",
-  "title": "Dernière chance pour éviter la désactivation du compte",
-  "subject": "Dernière chance pour éviter la désactivation du compte",
-  "greeting": "Bonjour",
-  "urgent_message": "Ceci est votre dernier avertissement.",
-  "deadline": "Si le paiement n'est pas effectué d'ici demain, votre compte Oxen sera automatiquement fermé.",
-  "cta_text": "👉 Accédez à votre compte",
-  "signature": "L'équipe Oxen.",
-  "sign_off_prefix": "Merci,",
-  "cta_url": "",
-  "first_name": "",
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "Dernière chance pour éviter la désactivation du compte",
+    "subject": "Dernière chance pour éviter la désactivation du compte",
+    "greeting": "Bonjour",
+    "urgent_message": "Ceci est votre dernier avertissement.",
+    "deadline": "Si le paiement n'est pas effectué d'ici demain, votre compte Oxen sera automatiquement fermé.",
+    "cta_text": "👉 Accédez à votre compte",
+    "signature": "L'équipe Oxen.",
+    "cta_url": "",
+    "first_name": "",
+    "recipient_email": "",
+    "sign_off": "Merci,"
 }

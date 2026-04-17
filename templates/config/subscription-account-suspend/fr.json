@@ -1,14 +1,14 @@
 {
-  "layout": "oxen-layout",
-  "title": "Abonnement suspendu : mettez à jour votre solde 🚫",
-  "subject": "Abonnement suspendu : mettez à jour votre solde 🚫",
-  "suspension_message": "Votre abonnement Oxen est en retard de paiement et votre compte a été suspendu.",
-  "warning_section": "🔴 Sans paiement, vous perdrez définitivement l'accès à votre compte.",
-  "action_notice": "💡 Pour rétablir l'accès, mettez à jour votre solde dès maintenant !",
-  "cta_text": "👉 Mettre à jour mon solde",
-  "cta_url": "",
-  "signature": "L'équipe Oxen.",
-  "sign_off_prefix": "Cordialement,",
-  "first_name": "",
-  "recipient_email": ""
+    "layout": "oxen-layout",
+    "title": "Abonnement suspendu : mettez à jour votre solde 🚫",
+    "subject": "Abonnement suspendu : mettez à jour votre solde 🚫",
+    "suspension_message": "Votre abonnement Oxen est en retard de paiement et votre compte a été suspendu.",
+    "warning_section": "🔴 Sans paiement, vous perdrez définitivement l'accès à votre compte.",
+    "action_notice": "💡 Pour rétablir l'accès, mettez à jour votre solde dès maintenant !",
+    "cta_text": "👉 Mettre à jour mon solde",
+    "cta_url": "",
+    "signature": "L'équipe Oxen.",
+    "first_name": "",
+    "recipient_email": "",
+    "sign_off": "Cordialement,"
 }

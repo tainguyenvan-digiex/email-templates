@@ -1,10 +1,10 @@
 {
-    "layout": "oxen-layout",
-    "title": "Please update your personal information - Oxen",
-    "subject": "🔁 Please update your personal information",
-    "action_message": "👉 Do it directly in your Oxen app.",
-    "signature": "Oxen Compliance Team.",
-    "update_request_message": "To comply with financial regulations, we kindly ask you to update your identity document or proof of address.",
-    "first_name": "",
-    "recipient_email": ""
+  "layout": "oxen-layout",
+  "title": "Please update your personal information - Oxen",
+  "subject": "🔁 Please update your personal information",
+  "action_message": "👉 Do it directly in your Oxen app.",
+  "signature": "The Oxen Compliance Team.",
+  "update_request_message": "To comply with financial regulations, we kindly ask you to update your identity document or proof of address.",
+  "first_name": "",
+  "recipient_email": ""
 }

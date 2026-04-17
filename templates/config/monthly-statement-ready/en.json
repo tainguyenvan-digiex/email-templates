@@ -4,11 +4,11 @@
     "subject": "📄 Monthly statement ready",
     "cta_text": "👉 Download statement",
     "signature": "The Oxen Team.",
-    "sign_off_prefix": "Best regards,",
     "statement_ready_prefix": "Your monthly statement for ",
     "statement_ready_suffix": " is now available for download.",
     "cta_url": "",
     "first_name": "",
     "month_year": "July 2025",
-    "recipient_email": ""
+    "recipient_email": "",
+    "sign_off": "Best regards,"
 }

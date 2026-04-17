@@ -4,11 +4,11 @@
     "subject": "📄 Relevé mensuel disponible",
     "cta_text": "👉 Télécharger le relevé",
     "signature": "L'équipe Oxen.",
-    "sign_off_prefix": "Cordialement,",
     "statement_ready_prefix": "Votre relevé mensuel pour ",
     "statement_ready_suffix": " est maintenant disponible au téléchargement.",
     "cta_url": "",
     "first_name": "",
     "month_year": "juillet 2025",
-    "recipient_email": ""
+    "recipient_email": "",
+    "sign_off": "Cordialement,"
 }

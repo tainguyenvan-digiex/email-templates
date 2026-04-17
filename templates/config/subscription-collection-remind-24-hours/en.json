@@ -9,7 +9,7 @@
     "cta_text": "👉 Access your account",
     "cta_url": "",
     "signature": "The Oxen Team.",
-    "sign_off_prefix": "Best regards,",
     "first_name": "",
-    "recipient_email": ""
+    "recipient_email": "",
+    "sign_off": "Best regards,"
 }

@@ -17,7 +17,6 @@
     "support_email": "support@oxen.finance",
     "footer_note": "Cet e-mail a été envoyé parce que vous avez demandé un téléchargement de facture d'abonnement qui a pris plus de 5 secondes à traiter.",
     "signature": "L'équipe Oxen.",
-    "sign_off_prefix": "Cordialement,",
     "customer_name": "Jean Dupont",
     "invoice_number": "INV-2025-12-001",
     "invoice_date": "26 décembre 2025",
@@ -27,5 +26,6 @@
     "invoice_status": "Payée",
     "download_url": "",
     "expiration_time": "26 décembre 2025 14:30 UTC",
-    "expiration_hours": "1"
+    "expiration_hours": "1",
+    "sign_off": "Cordialement,"
 }

@@ -5,9 +5,9 @@
     "cta_text": "Accéder au suivi KYB",
     "kyb_started_message": "Le processus de vérification (KYB) de votre entreprise vient de démarrer. Merci de mettre à jour les documents requis depuis votre interface Oxen Business.",
     "signature": "L'équipe Conformité Oxen.",
-    "sign_off_prefix": "Merci,",
     "tracking_message": "Vous pouvez suivre l'avancement à tout moment dans votre espace entreprise.",
     "cta_url": "",
     "first_name": "",
-    "recipient_email": ""
+    "recipient_email": "",
+    "sign_off": "Merci,"
 }

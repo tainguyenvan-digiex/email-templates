@@ -185,6 +185,52 @@
             <!-- ========== BODY CONTENT (injected by each template) ========== -->
             {{{ @content }}}
 
+            <!-- ========== SIGN-OFF ========== -->
+            <tr>
+              <td style="padding: 20px 40px 0 40px" class="mobile-padding">
+                <table
+                  role="presentation"
+                  cellspacing="0"
+                  cellpadding="0"
+                  border="0"
+                  width="100%"
+                >
+                  <tr>
+                    <td align="center">
+                      <p
+                        style="
+                          margin: 0 0 4px 0;
+                          font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                          font-size: 18px;
+                          font-weight: 500;
+                          line-height: 22px;
+                          color: #f5f0eb;
+                          text-align: center;
+                        "
+                        class="body-text"
+                      >
+                        {{sign_off}}
+                      </p>
+                      <p
+                        style="
+                          margin: 0;
+                          font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                          font-size: 18px;
+                          font-weight: 500;
+                          line-height: 22px;
+                          color: #f5f0eb;
+                          text-align: center;
+                        "
+                        class="body-text"
+                      >
+                        {{signature}}
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
             <!-- ========== FOOTER ========== -->
 
             <!-- Footer divider -->
@@ -275,11 +321,11 @@
             </tr>
 
             <!-- Copyright -->
-            <tr style="padding-bottom: 20px">
+            <tr>
               <td
                 align="center"
                 style="
-                  padding: 8px 32px 0 32px;
+                  padding: 8px 32px 40px 32px;
                   font-family: &quot;DM Sans&quot;, Arial, sans-serif;
                   font-size: 10px;
                   color: rgba(245, 240, 235, 0.35);
