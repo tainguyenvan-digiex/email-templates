@@ -22,11 +22,11 @@
           <p
             style="
               margin: 0 0 20px 0;
-              font-family: 'DM Sans', Arial, sans-serif;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
               font-size: 18px;
               font-weight: 500;
               line-height: 24px;
-              color: #F5F0EB;
+              color: #f5f0eb;
             "
             class="body-text"
           >
@@ -56,24 +56,24 @@
                 style="
                   padding: 12px 32px;
                   background-color: #c8c8c8;
-                        background: linear-gradient(
-                          135deg,
-                          #e8e8e8 0%,
-                          #c0c0c0 40%,
-                          #e0e0e0 50%,
-                          #a8a8a8 100%
-                        );
-                        border-radius: 40px;
-                        border: 1px solid rgba(255, 255, 255, 0.15);
-                        box-shadow:
-                          0 2px 8px rgba(0, 0, 0, 0.3),
-                          inset 0 1px 0 rgba(255, 255, 255, 0.25);
+                  background: linear-gradient(
+                    135deg,
+                    #e8e8e8 0%,
+                    #c0c0c0 40%,
+                    #e0e0e0 50%,
+                    #a8a8a8 100%
+                  );
+                  border-radius: 40px;
+                  border: 1px solid rgba(255, 255, 255, 0.15);
+                  box-shadow:
+                    0 2px 8px rgba(0, 0, 0, 0.3),
+                    inset 0 1px 0 rgba(255, 255, 255, 0.25);
                 "
               >
                 <a
                   href="{{cta_url}}"
                   style="
-                    font-family: 'DM Sans', Arial, sans-serif;
+                    font-family: &quot;DM Sans&quot;, Arial, sans-serif;
                     font-size: 16px;
                     font-weight: 600;
                     color: #000;
@@ -101,29 +101,45 @@
       cellpadding="0"
       border="0"
       width="100%"
-      style="background-color: #12131B; border-radius: 12px; padding: 20px"
+      style="background-color: #12131b; border-radius: 12px; padding: 20px"
     >
       <tr>
         <td>
           <p
             style="
               margin: 0 0 10px 0;
-              font-family: 'DM Sans', Arial, sans-serif;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
               font-size: 16px;
               font-weight: 700;
               line-height: 22px;
-              color: #F5F0EB;
+              color: #f5f0eb;
             "
           >
             {{important_info_heading}}
           </p>
           <ul style="margin: 0; padding: 0 0 0 20px; color: #475569">
-             <li style="margin-bottom: 8px; font-family: 'DM Sans', Arial, sans-serif; font-size: 14px; line-height: 20px; color: #F5F0EB;">
-               {{info_link_expiry}}
-             </li>
-             <li style="margin-bottom: 0; font-family: 'DM Sans', Arial, sans-serif; font-size: 14px; line-height: 20px; color: #F5F0EB;">
-               {{info_receipts}}
-             </li>
+            <li
+              style="
+                margin-bottom: 8px;
+                font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                font-size: 14px;
+                line-height: 20px;
+                color: #f5f0eb;
+              "
+            >
+              {{info_link_expiry}}
+            </li>
+            <li
+              style="
+                margin-bottom: 0;
+                font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                font-size: 14px;
+                line-height: 20px;
+                color: #f5f0eb;
+              "
+            >
+              {{info_receipts}}
+            </li>
           </ul>
         </td>
       </tr>
@@ -131,3 +147,32 @@
   </td>
 </tr>
 
+<!-- Thank You Message -->
+<tr>
+  <td style="padding: 0 40px 20px 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td style="padding: 10px 0 0">
+          <p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 24px;
+              color: #f5f0eb;
+            "
+          >
+            {{thanks_text}}
+          </p>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>

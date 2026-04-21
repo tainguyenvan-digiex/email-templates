@@ -1,14 +1,14 @@
 {
-    "layout": "oxen-layout",
-    "title": "Action required: resubmit your document - Oxen",
-    "subject": "📑 Action required: resubmit your document",
-    "cta_text": "Resubmit document",
-    "reason_label": "Reason:",
-    "resubmission_request_message": "The document you submitted could not be validated for the following reason:",
-    "cta_message": "👉 Please upload a valid version in your Oxen Business account to complete verification.",
-    "signature": "The Oxen Compliance Team.",
-    "cta_url": "",
-    "first_name": "",
-    "reason": "Document quality insufficient or expired",
-    "recipient_email": ""
+  "layout": "oxen-layout",
+  "title": "Action required: resubmit your document - Oxen",
+  "subject": "📑 Action required: resubmit your document",
+  "cta_text": "Resubmit document",
+  "reason_label": "Reason:",
+  "resubmission_request_message": "The document you submitted could not be validated for the following reason:",
+  "cta_message": "👉 Please upload a valid version in your Oxen Business account to complete verification.",
+  "signature": "The Oxen Security Team.",
+  "cta_url": "",
+  "first_name": "",
+  "reason": "Document quality insufficient or expired",
+  "recipient_email": ""
 }

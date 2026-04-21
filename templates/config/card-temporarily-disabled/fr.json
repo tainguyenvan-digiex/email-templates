@@ -1,10 +1,10 @@
 {
-    "layout": "oxen-layout",
-    "title": "🔒 Nous avons temporairement désactivé votre carte pour des raisons de sécurité",
-    "subject": "🔒 Nous avons temporairement désactivé votre carte pour des raisons de sécurité",
-    "card_disabled_message": "Suite à une activité suspecte, votre carte a été désactivée.",
-    "security_message": "👉 Contactez votre chargé de compte pour la réactiver.",
-    "signature": "L'équipe Oxen.",
-    "first_name": "",
-    "recipient_email": ""
+  "layout": "oxen-layout",
+  "title": "🔒 Nous avons temporairement désactivé votre carte pour des raisons de sécurité",
+  "subject": "🔒 Nous avons temporairement désactivé votre carte pour des raisons de sécurité",
+  "card_disabled_message": "Suite à une activité suspecte, votre carte a été désactivée.",
+  "security_message": "👉 Contactez votre chargé de compte pour la réactiver.",
+  "signature": "L'équipe Oxen.",
+  "first_name": "",
+  "recipient_email": ""
 }

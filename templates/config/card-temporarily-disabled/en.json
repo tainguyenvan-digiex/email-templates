@@ -1,10 +1,10 @@
 {
-    "layout": "oxen-layout",
-    "title": "🔒 We temporarily disabled your card for security reasons",
-    "subject": "🔒 We temporarily disabled your card for security reasons",
-    "card_disabled_message": "Due to suspicious activity, your card has been disabled.",
-    "security_message": "👉 Contact your account manager to reactivate it.",
-    "signature": "The Oxen Team.",
-    "first_name": "",
-    "recipient_email": ""
+  "layout": "oxen-layout",
+  "title": "🔒 We temporarily disabled your card for security reasons",
+  "subject": "🔒 We temporarily disabled your card for security reasons",
+  "card_disabled_message": "Due to suspicious activity, your card has been disabled.",
+  "security_message": "👉 Contact your account manager to reactivate it.",
+  "signature": "The Oxen Security Team.",
+  "first_name": "",
+  "recipient_email": ""
 }
