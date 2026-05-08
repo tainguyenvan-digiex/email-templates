@@ -1,13 +1,13 @@
 {
-    "layout": "oxen-layout",
-    "title": "KYC Invitation - Oxen",
-    "subject": "KYC Invitation",
-    "greeting": "Hello",
-    "kyc_invitation_message": "You have been invited to complete the KYC process. This verification ensures secure access to our services.",
-    "cta_text": "👉 Start KYC Verification",
-    "signature": "The Oxen Compliance Team.",
-    "cta_url": "",
-    "first_name": "",
-    "recipient_email": "",
-    "sign_off": "Thank you,"
+  "layout": "oxen-layout",
+  "title": "KYC Invitation - Oxen",
+  "subject": "KYC Invitation",
+  "greeting": "Hello",
+  "kyc_invitation_message": "We invite you to complete your KYC in order to finalise your account opening. This verification ensures secure access to our services.",
+  "cta_text": "👉 Start KYC Verification",
+  "signature": "The Oxen Compliance Team.",
+  "cta_url": "",
+  "first_name": "",
+  "recipient_email": "",
+  "sign_off": "Thank you,"
 }
