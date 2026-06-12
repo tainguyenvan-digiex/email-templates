@@ -18,7 +18,7 @@ This document lists all email templates with their aliases, mappings to the data
 | 10 | Card Shipping | `card-shipping` | ❌ Not in DB | `first_name` |
 | 11 | Card Temporarily Disabled | `card-temporarily-disabled` | ❌ Not in DB | `first_name` |
 | 12 | Card Unblocked | `card-unblocked` | ❌ Not in DB | `first_name`, `card_last_four` |
-| 13 | Company Verified | `company-verified` | `gn-b2b-onboarding-kyb-validated-en/fr` | `first_name` |
+| 13 | Company Verified | `company-verified` | `gn-b2b-onboarding-kyb-validated-en/fr` | `first_name`, `company_name`, `cta_url` |
 | 14 | Document Resubmit Required | `document-resubmit-required` | `gn-b2b-onboarding-document-rejected-en/fr` | `first_name`, `reason`, `cta_url` |
 | 15 | Failed Login Attempts | `failed-login-attempts` | `gn-b2b-auth-multiple-failed-login-attempts-en/fr` | `first_name` |
 | 16 | High Spending | `high-spending` | `gn-b2b-card-high-spending-en/fr` | `first_name`, `amount`, `card_last_four`, `location` |

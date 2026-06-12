@@ -1,10 +1,16 @@
 {
-    "layout": "oxen-layout",
-    "title": "✅ Your company has been verified",
-    "subject": "✅ Your company has been verified",
-    "signature": "L'équipe Oxen.",
-    "verification_success_message": "Bonne nouvelle ! Votre vérification d'entreprise a été validée avec succès.",
-    "verification_access_message": "Vous avez désormais accès à toutes les fonctionnalités de votre compte Oxen Business.",
-    "first_name": "",
-    "recipient_email": ""
+  "layout": "oxen-layout",
+  "title": "✅ Votre entreprise a été vérifiée",
+  "subject": "✅ Votre entreprise a été vérifiée",
+  "signature": "L'équipe Oxen.",
+  "verification_success_message": "Bonne nouvelle ! La vérification de votre entreprise a été effectuée avec succès.",
+  "label_company": "Entreprise",
+  "label_status": "Statut",
+  "status_approved": "Approuvé",
+  "company_name": "",
+  "verification_access_message": "Vous avez désormais accès à toutes les fonctionnalités de votre compte Oxen Business.",
+  "cta_text": "Accéder au tableau de bord",
+  "cta_url": "",
+  "first_name": "",
+  "recipient_email": ""
 }
