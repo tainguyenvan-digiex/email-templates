@@ -50,6 +50,7 @@ This document lists all email templates with their aliases, mappings to the data
 | 42 | Welcome (B2B) | `welcome` (b2b.json) | ❌ Not in DB | `first_name`, `book_call_url`, `faq_url` |
 | 43 | Welcome (B2C) | `welcome` (b2c.json) | ❌ Not in DB | `first_name`, `book_call_url`, `faq_url` |
 | 44 | Expense Report | `expense-report` | `gn-b2b-expense-report-ready-en/fr` | `first_name`, `date_from`, `date_to`, `cta_url` |
+| 45 | Revenue Export (KPI, fiat/crypto) | `revenue-export` | ❌ Not in DB | `revenue_label` (`fiat` or `crypto`), `date_from`, `date_to`, `download_url`, `expiration_minutes` |
 
 ## Common Dynamic Fields
 

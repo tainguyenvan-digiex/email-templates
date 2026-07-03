@@ -1,0 +1,20 @@
+{
+  "layout": "oxen-layout",
+  "title": "Votre export du détail des revenus est prêt - Oxen",
+  "subject": "📊 Votre export du détail des revenus de frais de plateforme est prêt",
+  "message_prefix": "Le détail des revenus de frais de plateforme",
+  "message_middle": "pour la période du",
+  "date_range_separator": "au",
+  "message_suffix": "(UTC) est prêt.",
+  "instruction": "Cliquez sur le lien ci-dessous pour télécharger le fichier CSV :",
+  "cta_text": "Télécharger le détail des revenus (CSV)",
+  "expiration_prefix": "Ce lien expire dans",
+  "expiration_suffix": "minutes.",
+  "revenue_label": "",
+  "date_from": "",
+  "date_to": "",
+  "download_url": "",
+  "expiration_minutes": "120",
+  "sign_off": "Cordialement,",
+  "signature": "L'équipe Oxen."
+}

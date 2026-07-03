@@ -1,0 +1,20 @@
+{
+  "layout": "oxen-layout",
+  "title": "Your revenue detail export is ready - Oxen",
+  "subject": "📊 Your platform-fee revenue detail export is ready",
+  "message_prefix": "Your",
+  "message_middle": "platform-fee revenue detail for",
+  "date_range_separator": "to",
+  "message_suffix": "(UTC) is ready.",
+  "instruction": "Click the link below to download the CSV:",
+  "cta_text": "Download revenue detail (CSV)",
+  "expiration_prefix": "This link expires in",
+  "expiration_suffix": "minutes.",
+  "revenue_label": "",
+  "date_from": "",
+  "date_to": "",
+  "download_url": "",
+  "expiration_minutes": "120",
+  "sign_off": "Best regards,",
+  "signature": "The Oxen Team."
+}
