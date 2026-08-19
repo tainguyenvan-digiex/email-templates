@@ -1,0 +1,39 @@
+{
+  "layout": "oxen-layout",
+  "title": "Vos cartes Visa Signature sont disponibles - Oxen",
+  "subject": "💳 Vos cartes Visa Signature sont disponibles",
+
+  "greeting": "Bonjour",
+  "headline": "Vos cartes Visa Signature sont disponibles",
+  "intro": "Vos cartes Visa Signature sont désormais disponibles. Elles sont émises par Rain, Visa Principal Member, et vous les gérez directement depuis votre compte Oxen. Voici ce qu'il faut savoir.",
+  "cta_create_card": "Créer votre première carte",
+
+  "s1_heading": "Des cartes pour toute votre équipe",
+  "s1_body": "Vous pouvez attribuer des cartes à vos employés : chacun dépense depuis le solde de l'entreprise sans que vous ayez à déplacer des fonds. Les cartes existent en deux formats : physique et virtuel. Les cartes virtuelles sont créées instantanément dans l'application, prêtes pour les paiements en ligne et les abonnements.",
+
+  "s2_heading": "Un solde unique pour toutes vos cartes",
+  "s2_body": "Toutes vos cartes puisent dans un solde d'entreprise unique. Vous ajoutez des fonds une seule fois, au niveau de l'entreprise, et chaque carte s'y alimente. Inutile de recharger chaque carte séparément.",
+
+  "s3_heading": "Créer et alimenter une carte",
+  "s3_body": "Depuis le menu, ouvrez la section Cartes, créez votre carte et ajoutez des fonds depuis votre compte en euros. Pour le moment, les cartes fonctionnent en dollars américains : les euros ajoutés sont convertis en USD lors de la recharge. Vos cartes sont ainsi prêtes à être utilisées à l'international, partout où Visa est acceptée.",
+
+  "s4_heading": "Recharge automatique",
+  "s4_body": "Configurez une recharge automatique qui se déclenche dès que votre solde passe sous le seuil de votre choix. Réglez-la une fois, et vos cartes restent alimentées sans que vous ayez à y penser.",
+
+  "tip_heading": "Une astuce qui vous fait économiser à l'étranger",
+  "tip_body_prefix": "Lorsque vous payez dans un autre pays, choisissez toujours la devise locale au moment de payer, jamais celle de votre carte. Laisser Visa gérer la conversion plutôt que le commerçant vous fait économiser environ",
+  "tip_highlight": "1 à 2 %",
+  "tip_body_suffix": "sur chaque transaction.",
+
+  "closing_line": "Ouvrez votre tableau de bord Oxen pour créer votre première carte.",
+  "closing_questions": "Une question ? Écrivez-nous sur",
+  "telegram_text": "Telegram",
+  "telegram_url": "",
+  "cta_dashboard": "Ouvrir votre tableau de bord",
+
+  "first_name": "",
+  "cta_url": "",
+
+  "sign_off": "Cordialement,",
+  "signature": "L'équipe Oxen."
+}
