@@ -11,36 +11,45 @@
   Static config params: telegram_url (set once per language file).
 
   Figma reference: Oxen Admin_v2, node 17103-110017 ("Newsletter").
-  Image assets live in /assets (visa-*.png) and are served from GitHub:
+  Design tokens (from Figma variables): text-primary #e2e8f0, text-secondary #cecfd2,
+  accent Rose Gold #c08b88, section divider rgba(255,255,255,0.1),
+  diamond button gradient #606776 → #aeb4c0 → #f7f8fb with #101828 text.
+  Image assets live in /assets (visa-*.png, exported from Figma at 2x/4x) and are
+  served from GitHub:
   https://raw.githubusercontent.com/tainguyenvan-digiex/email-templates/main/assets/
 -->
 
-<!-- ========== HERO: greeting + headline + cards visual ========== -->
+<!-- ========== HERO: greeting + headline + cards visual + CTA ========== -->
 <tr>
-  <td style="padding: 32px 0 0 24px">
+  <td
+    style="
+      padding: 8px 0 24px 24px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    "
+  >
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
       <tr>
         <!-- Hero text -->
-        <td width="316" style="vertical-align: middle; padding: 0 8px 0 0">
+        <td width="300" style="vertical-align: middle; padding: 0">
           <p
             style="
-              margin: 0 0 10px 0;
+              margin: 0 0 8px 0;
               font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-              font-size: 15px;
-              color: #f5f0eb;
-              line-height: 22px;
+              font-size: 14px;
+              color: #cecfd2;
+              line-height: 20px;
             "
           >
             {{greeting}} {{first_name}},
           </p>
           <p
             style="
-              margin: 0 0 14px 0;
+              margin: 0 0 8px 0;
               font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-              font-size: 28px;
+              font-size: 30px;
               font-weight: 600;
-              color: #f5f0eb;
-              line-height: 34px;
+              color: #e2e8f0;
+              line-height: 36px;
             "
           >
             {{headline}}
@@ -50,65 +59,60 @@
               margin: 0;
               font-family: &quot;DM Sans&quot;, Arial, sans-serif;
               font-size: 14px;
-              color: rgba(245, 240, 235, 0.8);
-              line-height: 22px;
+              color: #cecfd2;
+              line-height: 20px;
             "
           >
             {{intro}}
           </p>
         </td>
         <!-- Cards visual -->
-        <td width="252" style="vertical-align: middle; padding: 0">
+        <td width="276" style="vertical-align: middle; padding: 0">
           <img
             src="https://raw.githubusercontent.com/tainguyenvan-digiex/email-templates/main/assets/visa-hero-cards.png"
             alt=""
-            width="252"
-            style="display: block; width: 252px; max-width: 100%; height: auto"
+            width="276"
+            style="display: block; width: 276px; max-width: 100%; height: auto"
           />
         </td>
       </tr>
-    </table>
-  </td>
-</tr>
-
-<!-- Hero CTA -->
-<tr>
-  <td style="padding: 20px 24px 32px 24px">
-    <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+      <!-- Hero CTA -->
       <tr>
-        <td bgcolor="#c8c8c8"
-          align="center"
-          style="
-            background-color: #c8c8c8;
-            background-image: linear-gradient(
-              188.53deg,
-              #e8e8e8 14.645%,
-              #c0c0c0 42.929%,
-              #e0e0e0 50%,
-              #a8a8a8 85.355%
-            );
-            border-radius: 40px;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            box-shadow:
-              0 2px 8px rgba(0, 0, 0, 0.3),
-              inset 0 1px 0 rgba(255, 255, 255, 0.25);
-          "
-        >
-          <a
-            href="{{cta_url}}"
-            target="_blank"
-            style="
-              display: inline-block;
-              padding: 12px 28px;
-              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-              font-size: 14px;
-              font-weight: 600;
-              color: #060709;
-              text-decoration: none;
-              line-height: 20px;
-            "
-            >{{cta_create_card}}</a
-          >
+        <td colspan="2" style="padding: 16px 0 0 0">
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td bgcolor="#aeb4c0"
+                align="center"
+                style="
+                  background-color: #aeb4c0;
+                  background-image: linear-gradient(
+                    90deg,
+                    #606776 0%,
+                    #aeb4c0 50%,
+                    #f7f8fb 100%
+                  );
+                  border-radius: 40px;
+                  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+                "
+              >
+                <a
+                  href="{{cta_url}}"
+                  target="_blank"
+                  style="
+                    display: inline-block;
+                    padding: 8px 26px;
+                    font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #101828;
+                    text-decoration: none;
+                    line-height: 20px;
+                  "
+                  >{{cta_create_card}}</a
+                >
+              </td>
+            </tr>
+          </table>
         </td>
       </tr>
     </table>
@@ -117,24 +121,30 @@
 
 <!-- ========== SECTION 1: Cards for your whole team (text left, table right) ========== -->
 <tr>
-  <td bgcolor="#161922" style="background-color: #161922; padding: 32px 0 32px 24px">
+  <td bgcolor="#161922"
+    style="
+      background-color: #161922;
+      padding: 24px 0 24px 24px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    "
+  >
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
       <tr>
         <!-- Text -->
-        <td width="216" style="vertical-align: top; padding: 4px 16px 0 0">
+        <td width="200" style="vertical-align: top; padding: 0 16px 0 0">
           <img
             src="https://raw.githubusercontent.com/tainguyenvan-digiex/email-templates/main/assets/visa-icon-team.png"
             alt=""
-            width="26"
-            style="display: block; width: 26px; height: auto; margin: 0 0 12px 0"
+            width="24"
+            style="display: block; width: 24px; height: auto; margin: 0 0 8px 0"
           />
           <p
             style="
-              margin: 0 0 12px 0;
+              margin: 0 0 8px 0;
               font-family: &quot;DM Sans&quot;, Arial, sans-serif;
               font-size: 20px;
               font-weight: 600;
-              color: #f5f0eb;
+              color: #e2e8f0;
               line-height: 26px;
             "
           >
@@ -144,8 +154,8 @@
             style="
               margin: 0;
               font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-              font-size: 13px;
-              color: rgba(245, 240, 235, 0.8);
+              font-size: 14px;
+              color: #cecfd2;
               line-height: 20px;
             "
           >
@@ -153,12 +163,12 @@
           </p>
         </td>
         <!-- Cards table screenshot (bleeds to right edge) -->
-        <td width="344" style="vertical-align: middle; padding: 0">
+        <td width="360" style="vertical-align: top; padding: 0">
           <img
             src="https://raw.githubusercontent.com/tainguyenvan-digiex/email-templates/main/assets/visa-cards-table.png"
             alt=""
-            width="344"
-            style="display: block; width: 344px; max-width: 100%; height: auto"
+            width="360"
+            style="display: block; width: 360px; max-width: 100%; height: auto"
           />
         </td>
       </tr>
@@ -168,33 +178,38 @@
 
 <!-- ========== SECTION 2: One balance for every card (diagram left, text right) ========== -->
 <tr>
-  <td style="padding: 32px 24px">
+  <td
+    style="
+      padding: 24px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    "
+  >
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
       <tr>
         <!-- Balance diagram -->
-        <td width="330" style="vertical-align: middle; padding: 0 16px 0 0">
+        <td width="321" style="vertical-align: top; padding: 0 31px 0 0">
           <img
             src="https://raw.githubusercontent.com/tainguyenvan-digiex/email-templates/main/assets/visa-balance-diagram.png"
             alt=""
-            width="330"
-            style="display: block; width: 330px; max-width: 100%; height: auto"
+            width="321"
+            style="display: block; width: 321px; max-width: 100%; height: auto"
           />
         </td>
         <!-- Text -->
-        <td width="206" style="vertical-align: top; padding: 4px 0 0 0">
+        <td width="200" style="vertical-align: top; padding: 0">
           <img
             src="https://raw.githubusercontent.com/tainguyenvan-digiex/email-templates/main/assets/visa-icon-balance.png"
             alt=""
-            width="26"
-            style="display: block; width: 26px; height: auto; margin: 0 0 12px 0"
+            width="24"
+            style="display: block; width: 24px; height: auto; margin: 0 0 8px 0"
           />
           <p
             style="
-              margin: 0 0 12px 0;
+              margin: 0 0 8px 0;
               font-family: &quot;DM Sans&quot;, Arial, sans-serif;
               font-size: 20px;
               font-weight: 600;
-              color: #f5f0eb;
+              color: #e2e8f0;
               line-height: 26px;
             "
           >
@@ -204,8 +219,8 @@
             style="
               margin: 0;
               font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-              font-size: 13px;
-              color: rgba(245, 240, 235, 0.8);
+              font-size: 14px;
+              color: #cecfd2;
               line-height: 20px;
             "
           >
@@ -219,24 +234,30 @@
 
 <!-- ========== SECTION 3: Creating and funding a card (text left, modal right) ========== -->
 <tr>
-  <td bgcolor="#161922" style="background-color: #161922; padding: 32px 24px">
+  <td bgcolor="#161922"
+    style="
+      background-color: #161922;
+      padding: 24px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    "
+  >
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
       <tr>
         <!-- Text -->
-        <td width="248" style="vertical-align: top; padding: 4px 16px 0 0">
+        <td width="252" style="vertical-align: top; padding: 0 21px 0 0">
           <img
             src="https://raw.githubusercontent.com/tainguyenvan-digiex/email-templates/main/assets/visa-icon-card.png"
             alt=""
-            width="26"
-            style="display: block; width: 26px; height: auto; margin: 0 0 12px 0"
+            width="24"
+            style="display: block; width: 24px; height: auto; margin: 0 0 8px 0"
           />
           <p
             style="
-              margin: 0 0 12px 0;
+              margin: 0 0 8px 0;
               font-family: &quot;DM Sans&quot;, Arial, sans-serif;
               font-size: 20px;
               font-weight: 600;
-              color: #f5f0eb;
+              color: #e2e8f0;
               line-height: 26px;
             "
           >
@@ -246,8 +267,8 @@
             style="
               margin: 0;
               font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-              font-size: 13px;
-              color: rgba(245, 240, 235, 0.8);
+              font-size: 14px;
+              color: #cecfd2;
               line-height: 20px;
             "
           >
@@ -255,12 +276,12 @@
           </p>
         </td>
         <!-- Fund Card modal screenshot -->
-        <td width="288" style="vertical-align: middle; padding: 0">
+        <td width="279" style="vertical-align: top; padding: 0">
           <img
             src="https://raw.githubusercontent.com/tainguyenvan-digiex/email-templates/main/assets/visa-fund-card.png"
             alt=""
-            width="288"
-            style="display: block; width: 288px; max-width: 100%; height: auto"
+            width="279"
+            style="display: block; width: 279px; max-width: 100%; height: auto"
           />
         </td>
       </tr>
@@ -270,33 +291,38 @@
 
 <!-- ========== SECTION 4: Automatic top-up (widget left, text right) ========== -->
 <tr>
-  <td style="padding: 32px 24px">
+  <td
+    style="
+      padding: 24px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    "
+  >
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
       <tr>
         <!-- Auto-Fund widget screenshot -->
-        <td width="330" style="vertical-align: middle; padding: 0 16px 0 0">
+        <td width="336" style="vertical-align: middle; padding: 0 16px 0 0">
           <img
             src="https://raw.githubusercontent.com/tainguyenvan-digiex/email-templates/main/assets/visa-auto-fund.png"
             alt=""
-            width="330"
-            style="display: block; width: 330px; max-width: 100%; height: auto"
+            width="336"
+            style="display: block; width: 336px; max-width: 100%; height: auto"
           />
         </td>
         <!-- Text -->
-        <td width="206" style="vertical-align: top; padding: 4px 0 0 0">
+        <td width="200" style="vertical-align: middle; padding: 0">
           <img
             src="https://raw.githubusercontent.com/tainguyenvan-digiex/email-templates/main/assets/visa-icon-autofund.png"
             alt=""
-            width="26"
-            style="display: block; width: 26px; height: auto; margin: 0 0 12px 0"
+            width="24"
+            style="display: block; width: 24px; height: auto; margin: 0 0 8px 0"
           />
           <p
             style="
-              margin: 0 0 12px 0;
+              margin: 0 0 8px 0;
               font-family: &quot;DM Sans&quot;, Arial, sans-serif;
               font-size: 20px;
               font-weight: 600;
-              color: #f5f0eb;
+              color: #e2e8f0;
               line-height: 26px;
             "
           >
@@ -306,8 +332,8 @@
             style="
               margin: 0;
               font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-              font-size: 13px;
-              color: rgba(245, 240, 235, 0.8);
+              font-size: 14px;
+              color: #cecfd2;
               line-height: 20px;
             "
           >
@@ -321,7 +347,7 @@
 
 <!-- ========== TIP CALLOUT ========== -->
 <tr>
-  <td style="padding: 8px 24px 0 24px">
+  <td style="padding: 24px">
     <table
       role="presentation"
       width="100%"
@@ -331,31 +357,31 @@
       bgcolor="#1c1c21"
       style="
         background-color: #1c1c21;
-        border: 1px solid rgba(245, 240, 235, 0.12);
-        border-radius: 12px;
+        border: 1px solid rgba(192, 139, 136, 0.5);
+        border-radius: 8px;
       "
     >
       <tr>
-        <td style="padding: 20px 24px">
+        <td style="padding: 16px">
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
             <tr>
-              <td width="42" style="vertical-align: top; padding: 0 12px 0 0">
+              <td width="58" style="vertical-align: top; padding: 0 10px 0 0">
                 <img
                   src="https://raw.githubusercontent.com/tainguyenvan-digiex/email-templates/main/assets/visa-icon-tip.png"
                   alt=""
-                  width="30"
-                  style="display: block; width: 30px; height: auto"
+                  width="48"
+                  style="display: block; width: 48px; height: auto"
                 />
               </td>
               <td style="vertical-align: top">
                 <p
                   style="
-                    margin: 0 0 8px 0;
+                    margin: 0 0 10px 0;
                     font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-                    font-size: 16px;
+                    font-size: 20px;
                     font-weight: 600;
-                    color: #f5f0eb;
-                    line-height: 22px;
+                    color: #e2e8f0;
+                    line-height: 26px;
                   "
                 >
                   {{tip_heading}}
@@ -364,9 +390,9 @@
                   style="
                     margin: 0;
                     font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-                    font-size: 13px;
-                    color: rgba(245, 240, 235, 0.8);
-                    line-height: 20px;
+                    font-size: 12px;
+                    color: #cecfd2;
+                    line-height: 18px;
                   "
                 >
                   {{tip_body_prefix}}
@@ -384,31 +410,20 @@
 
 <!-- ========== CLOSING ========== -->
 <tr>
-  <td align="center" style="padding: 32px 40px 0 40px" class="mobile-padding">
-    <p
-      class="body-text"
-      style="
-        margin: 0 0 4px 0;
-        font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-        font-size: 15px;
-        color: #f5f0eb;
-        line-height: 24px;
-        text-align: center;
-      "
-    >
-      {{closing_line}}
-    </p>
+  <td align="center" style="padding: 0 24px" class="mobile-padding">
     <p
       class="body-text"
       style="
         margin: 0;
         font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-        font-size: 15px;
-        color: #f5f0eb;
-        line-height: 24px;
+        font-size: 14px;
+        color: #cecfd2;
+        line-height: 20px;
         text-align: center;
       "
     >
+      {{closing_line}}
+      <br />
       {{closing_questions}}
       <a
         href="{{telegram_url}}"
@@ -422,25 +437,21 @@
 
 <!-- Closing CTA -->
 <tr>
-  <td align="center" style="padding: 20px 40px 0 40px">
+  <td align="center" style="padding: 16px 24px 0 24px">
     <table role="presentation" cellpadding="0" cellspacing="0" border="0">
       <tr>
-        <td bgcolor="#c8c8c8"
+        <td bgcolor="#aeb4c0"
           align="center"
           style="
-            background-color: #c8c8c8;
+            background-color: #aeb4c0;
             background-image: linear-gradient(
-              188.53deg,
-              #e8e8e8 14.645%,
-              #c0c0c0 42.929%,
-              #e0e0e0 50%,
-              #a8a8a8 85.355%
+              90deg,
+              #606776 0%,
+              #aeb4c0 50%,
+              #f7f8fb 100%
             );
             border-radius: 40px;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            box-shadow:
-              0 2px 8px rgba(0, 0, 0, 0.3),
-              inset 0 1px 0 rgba(255, 255, 255, 0.25);
+            box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
           "
         >
           <a
@@ -448,11 +459,11 @@
             target="_blank"
             style="
               display: inline-block;
-              padding: 12px 28px;
+              padding: 8px 26px;
               font-family: &quot;DM Sans&quot;, Arial, sans-serif;
               font-size: 14px;
               font-weight: 600;
-              color: #060709;
+              color: #101828;
               text-decoration: none;
               line-height: 20px;
             "
