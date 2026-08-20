@@ -2,37 +2,28 @@
   "layout": "oxen-layout",
   "title": "Your Visa Signature cards are live - Oxen",
   "subject": "💳 Your Visa Signature cards are live",
-
   "greeting": "Hello",
   "headline": "Your Visa Signature cards are live",
   "intro": "Your Visa Signature cards are now available. They are issued by Rain, a Visa Principal Member, and you manage them directly from your Oxen account. Here's what you need to know.",
   "cta_create_card": "Create your first card",
-
   "s1_heading": "Cards for your whole team",
   "s1_body": "You can assign cards to your employees, so each person spends from the company balance without you moving money around. Cards come in two formats: physical and virtual. Virtual cards are created instantly in the app, ready for online payments or subscriptions.",
-
   "s2_heading": "One balance for every card",
   "s2_body": "All your cards draw from a single company balance. You add funds once, at the company level, and every card pulls from it. No need to top up each card separately.",
-
   "s3_heading": "Creating and funding a card",
   "s3_body": "From the menu, open the Cards section, create your card, and add funds from your euro account. For now, cards run in US dollars, so the euros you add are converted to USD at top-up. This keeps your cards ready to use internationally, anywhere Visa is accepted.",
-
   "s4_heading": "Automatic top-up",
   "s4_body": "Set an automatic top-up that triggers whenever your balance drops below a threshold you choose. Set it once, and your cards stay funded without you thinking about it.",
-
   "tip_heading": "A tip that saves you money abroad",
   "tip_body_prefix": "When you pay in another country, always select the local currency at checkout, never your card's currency. Letting Visa handle the conversion instead of the merchant saves you roughly",
   "tip_highlight": "1 to 2%",
   "tip_body_suffix": "on every transaction.",
-
   "closing_line": "Open your Oxen dashboard to create your first card.",
   "closing_questions": "Any questions, message us on",
   "telegram_text": "Telegram",
   "cta_dashboard": "Open your dashboard",
-
   "first_name": "",
   "cta_url": "",
-
   "sign_off": "Best regards,",
   "signature": "The Oxen Team."
 }
