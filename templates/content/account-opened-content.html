@@ -6,7 +6,7 @@
   attachment (not rendered here).
 
   The layout provides: silk-wave header, logo, sign-off, footer and legal sections.
-  Dynamic params injected by the backend: company_name, currency (see SendAccountOpeningLetterMessageHandler).
+  Static copy only: every param comes from templates/config/account-opened/{locale}.json.
 -->
 
 <!-- Welcome Message -->
@@ -35,94 +35,6 @@
           >
             {{welcome_message_1}}
           </p></div></div>
-        </td>
-      </tr>
-    </table>
-  </td>
-</tr>
-
-<!-- Featured card: Company + Currency -->
-<tr>
-  <td style="padding: 24px 40px 0 40px" class="mobile-padding">
-    <table
-      role="presentation"
-      width="100%"
-      cellpadding="0"
-      cellspacing="0"
-      border="0"
-      style="
-        background-color: #12131b;
-        border: 1px solid #231e20;
-        border-radius: 12px; background-image: linear-gradient(#12131b, #12131b);"
-    >
-      <tr>
-        <td style="padding: 24px">
-          <table
-            role="presentation"
-            width="100%"
-            cellpadding="0"
-            cellspacing="0"
-            border="0"
-          >
-            <!-- Company -->
-            <tr>
-              <td
-                style="
-                  padding: 0 0 14px 0;
-                  font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-                  font-size: 12px;
-                  color: #c8c8c8;
-                  line-height: 20px;
-                  width: 110px;
-                  vertical-align: top;
-                "
-              >
-                {{label_company}}
-              </td>
-              <td
-                style="
-                  padding: 0 0 14px 0;
-                  font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-                  font-size: 14px;
-                  color: #f5f0eb;
-                  font-weight: 500;
-                  line-height: 20px;
-                  vertical-align: top;
-                "
-              >
-                {{company_name}}
-              </td>
-            </tr>
-            <!-- Currency -->
-            <tr>
-              <td
-                style="
-                  padding: 0;
-                  font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-                  font-size: 12px;
-                  color: #c8c8c8;
-                  line-height: 24px;
-                  width: 110px;
-                  vertical-align: middle;
-                "
-              >
-                {{label_currency}}
-              </td>
-              <td
-                style="
-                  padding: 0;
-                  font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-                  font-size: 14px;
-                  color: #f5f0eb;
-                  font-weight: 500;
-                  line-height: 24px;
-                  vertical-align: middle;
-                "
-              >
-                {{currency}}
-              </td>
-            </tr>
-          </table>
         </td>
       </tr>
     </table>

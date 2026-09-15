@@ -7,7 +7,7 @@ This document lists all email templates with their aliases, mappings to the data
 | # | Template Name | Alias | CSV Mapping | Dynamic Fields (Server-Provided) |
 |---|--------------|-------|-------------|-----------------------------------|
 | 1 | Account Closed | `account-closed` | `gn-b2b-account-closed-confirmation-en/fr` | `first_name` |
-| 2 | Account Opened | `account-opened` | `gn-b2b-account-opened-confirmation-en/fr` | `first_name`, `company_name`, `currency` — sent with the Account Confirmation Letter PDF attached |
+| 2 | Account Opened | `account-opened` | `gn-b2b-account-opened-confirmation-en/fr` | `first_name` — sent with the Account Confirmation Letter PDF attached |
 | 3 | Account Opening Incomplete | `account-opening-incomplete` | `gn-b2b-onboarding-incomplete-en/fr` | `first_name` |
 | 4 | Call Cancelled | `call-cancelled` | `gn-b2b-call-cancelled-en/fr` | `first_name` |
 | 5 | Call Confirmed | `call-confirmed` | `gn-b2b-call-booked-en/fr` | `first_name`, `appointment_date`, `appointment_time`, `location` |
