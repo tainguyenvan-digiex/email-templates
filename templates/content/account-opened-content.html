@@ -6,7 +6,9 @@
   attachment (not rendered here).
 
   The layout provides: silk-wave header, logo, sign-off, footer and legal sections.
-  Static copy only: every param comes from templates/config/account-opened/{locale}.json.
+  Labels are static (templates/config/account-opened/{locale}.json). The backend fills the account details:
+  iban, bic, account_number, sort_code, bank_name, bank_address, currency, addressable_in
+  (see SendAccountOpeningLetterMessageHandler).
 -->
 
 <!-- Welcome Message -->
@@ -35,6 +37,53 @@
           >
             {{welcome_message_1}}
           </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<!-- Account details card: the rows of the Account Confirmation Letter; a value the account does not have stays empty -->
+<tr>
+  <td style="padding: 24px 40px 0 40px" class="mobile-padding">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #12131b; border: 1px solid #231e20; border-radius: 12px; background-image: linear-gradient(#12131b, #12131b);">
+      <tr>
+        <td style="padding: 24px">
+          <p style="margin: 0 0 16px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; line-height: 18px; color: #f5f0eb;">{{label_account_details}}</p>
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;">{{label_iban}}</td>
+              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;">{{iban}}</td>
+            </tr>
+            <tr>
+              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;">{{label_bic}}</td>
+              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;">{{bic}}</td>
+            </tr>
+            <tr>
+              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;">{{label_account_number}}</td>
+              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;">{{account_number}}</td>
+            </tr>
+            <tr>
+              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;">{{label_sort_code}}</td>
+              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;">{{sort_code}}</td>
+            </tr>
+            <tr>
+              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;">{{label_bank_name}}</td>
+              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;">{{bank_name}}</td>
+            </tr>
+            <tr>
+              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;">{{label_bank_address}}</td>
+              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;">{{bank_address}}</td>
+            </tr>
+            <tr>
+              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;">{{label_currency}}</td>
+              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;">{{currency}}</td>
+            </tr>
+            <tr>
+              <td style="padding: 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;">{{label_addressable_in}}</td>
+              <td style="padding: 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;">{{addressable_in}}</td>
+            </tr>
+          </table>
         </td>
       </tr>
     </table>
