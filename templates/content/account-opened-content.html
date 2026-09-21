@@ -1,17 +1,16 @@
 <!--
   Account Opened Content - For use with oxen-layout.html
 
-  This content file is designed to work with the oxen-layout.html layout.
-  It confirms that a company's account is open. The Account Confirmation Letter PDF travels as an email
-  attachment (not rendered here).
+  The email a client gets for their FIRST account. A currency added later gets
+  account-currency-opened-content.html instead (same card, shorter copy).
 
   The layout provides: silk-wave header, logo, sign-off, footer and legal sections.
-  Labels are static (templates/config/account-opened/{locale}.json). The backend fills the account details:
-  iban, bic, account_number, sort_code, bank_name, bank_address, currency, addressable_in
-  (see SendAccountOpeningLetterMessageHandler).
+  Labels are static (templates/config/account-opened/{locale}.json). The backend fills greeting,
+  company_name and the account details: iban, bic, account_number, sort_code, routing_code, bank_name,
+  bank_address, currency, addressable_in (see SendAccountOpeningLetterMessageHandler).
 -->
 
-<!-- Welcome Message -->
+<!-- Greeting and opening line -->
 <tr>
   <td style="padding: 0 40px 0 40px" class="mobile-padding">
     <table
@@ -35,7 +34,38 @@
             "
             class="body-text"
           >
-            {{welcome_message_1}}
+            {{greeting}}
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 12px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 24px;
+              color: #f5f0eb;
+              text-align: justify;
+            "
+            class="body-text"
+          >
+            The Oxen account for {{company_name}} is now open.
           </p></div></div>
         </td>
       </tr>
@@ -66,6 +96,10 @@
             <tr>
               <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{label_sort_code}}</div></div></td>
               <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{sort_code}}</div></div></td>
+            </tr>
+            <tr>
+              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{label_routing_code}}</div></div></td>
+              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{routing_code}}</div></div></td>
             </tr>
             <tr>
               <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{label_bank_name}}</div></div></td>
