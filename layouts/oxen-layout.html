@@ -66,6 +66,15 @@
         u + .body .btn-diamond {
           background-image: none !important;
         }
+        /*
+         * ONLY EVER WRAP LIGHT TEXT IN THESE. The pair composites a group against black, which undoes
+         * Gmail's dark-mode inversion — but in the Gmail app's LIGHT mode nothing is inverted, so a
+         * DARK group (dark text on the wrapper's own black ground) stays black and is then screened
+         * straight back into whatever is under it. On a light pill that means the text disappears:
+         * the OTP box rendered as an empty grey rectangle on Gmail iOS (2026-09-28), and five CTA
+         * buttons had the same defect. Dark text on a light pill goes UNWRAPPED — Gmail then inverts
+         * the pill and its label together, or leaves both alone. `tools/blend-audit.py` checks this.
+         */
         u + .body .gmail-blend-screen {
           background: #000;
           mix-blend-mode: screen;
