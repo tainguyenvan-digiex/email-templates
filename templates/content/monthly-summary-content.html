@@ -105,7 +105,8 @@
                     inset 0 1px 0 rgba(255, 255, 255, 0.25);
                 "
               >
-                <div class="gmail-blend-screen"><div class="gmail-blend-difference"><a
+                <!-- No gmail-blend wrappers on this button: the pair is safe only for LIGHT text. On a light pill, dark text differenced against the wrapper's own black ground is screened straight back into the pill and vanishes in the Gmail app's LIGHT mode (the OTP bug, 2026-09-28). Unwrapped, Gmail inverts the pill and its label together or leaves both alone. -->
+                <a
                   href="{{cta_url}}"
                   style="
                     font-family: &quot;DM Sans&quot;, Arial, sans-serif;
@@ -117,7 +118,7 @@
                   "
                 >
                   {{cta_text}}
-                </a></div></div>
+                </a>
               </td>
             </tr>
           </table>

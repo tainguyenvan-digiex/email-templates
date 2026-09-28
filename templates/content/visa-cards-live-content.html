@@ -93,10 +93,11 @@
                   box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
                 "
               >
-                <div class="gmail-blend-screen"><div class="gmail-blend-difference"><a href="{{cta_url}}" target="_blank"
+                <!-- No gmail-blend wrappers on this button: the pair is safe only for LIGHT text. On a light pill, dark text differenced against the wrapper's own black ground is screened straight back into the pill and vanishes in the Gmail app's LIGHT mode (the OTP bug, 2026-09-28). Unwrapped, Gmail inverts the pill and its label together or leaves both alone. -->
+                <a href="{{cta_url}}" target="_blank"
                   style="display: inline-block; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; font-weight: 600; color: #060709; text-decoration: none; line-height: 20px;"
                   ><span style="color: #060709;">{{cta_create_card}}</span></a
-                ></div></div>
+                >
               </td>
             </tr>
           </table>
@@ -433,10 +434,11 @@
                   box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
                 "
               >
-                <div class="gmail-blend-screen"><div class="gmail-blend-difference"><a href="{{cta_url}}" target="_blank"
+                <!-- No gmail-blend wrappers on this button: the pair is safe only for LIGHT text. On a light pill, dark text differenced against the wrapper's own black ground is screened straight back into the pill and vanishes in the Gmail app's LIGHT mode (the OTP bug, 2026-09-28). Unwrapped, Gmail inverts the pill and its label together or leaves both alone. -->
+                <a href="{{cta_url}}" target="_blank"
                   style="display: inline-block; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; font-weight: 600; color: #060709; text-decoration: none; line-height: 20px;"
                   ><span style="color: #060709;">{{cta_dashboard}}</span></a
-                ></div></div>
+                >
               </td>
             </tr>
           </table>

@@ -30,3 +30,20 @@ So to fully render one email you combine: layout HTML (from `layouts/`) + conten
 1. Add/edit `templates/content/<slug>-content.html` with only the body markup, referencing `{{variable}}` placeholders.
 2. Add/edit `templates/config/<slug>/en.json` and `fr.json` with matching keys (include `"layout"`, `"title"`, `"subject"`, and any content variables).
 3. If new variables are introduced, document them in `TEMPLATES_TABLE.md` (dynamic fields table) so backend integrators know what to supply.
+4. Run `python3 tools/blend-audit.py $(ls templates/content/*.html | grep -v lapkipay)` and require
+   **A = 0 and B = 0**. Verification here is visual, and this particular defect is invisible on a
+   desktop: it only shows in the Gmail app, and only in one of its two modes.
+
+### The Gmail blend wrappers — the rule that keeps being broken
+
+`oxen-layout` renders text inside `gmail-blend-screen` / `gmail-blend-difference` against black so
+Gmail's **dark** mode cannot invert it. That is an identity only for **light** text.
+
+- **Light text on the dark ground → WRAP it.** Unwrapped, Gmail dark mode turns it dark: invisible.
+- **Dark text on a light pill (buttons, the OTP box) → do NOT wrap it.** Wrapped, the Gmail app's
+  **light** mode (which inverts nothing) leaves the group black and screens it back into the pill:
+  invisible. Unwrapped, Gmail inverts pill and label together, so either mode keeps its contrast.
+
+Both mistakes have shipped more than once — the OTP box came back empty on Gmail iOS on 2026-09-28 —
+which is what `tools/blend-audit.py` exists to catch. It reads the templates as a tree and judges each
+text node by its inherited colour, its nearest background, and whether a wrapper is open.
