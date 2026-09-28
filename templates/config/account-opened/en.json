@@ -24,6 +24,15 @@
   "bank_address": "",
   "currency": "",
   "addressable_in": "",
+  "international": {
+    "label_details": "International account details",
+    "label_account_number": "Account number",
+    "label_bic": "BIC",
+    "label_bank_name": "Bank name",
+    "label_bank_address": "Bank address",
+    "label_bank_country": "Bank country",
+    "label_payment_type": "Payment type"
+  },
   "attachment_message": "Your Account Confirmation Letter is attached to this email as a PDF. It confirms your account details — keep it for your records and share it with anyone who needs to pay you.",
   "welcome_message_2": "You can now access the platform, set up your team, order your cards, and start moving funds.",
   "welcome_message_3": "If you need anything, we're one message away.",

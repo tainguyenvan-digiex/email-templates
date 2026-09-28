@@ -24,6 +24,15 @@
   "bank_address": "",
   "currency": "",
   "addressable_in": "",
+  "international": {
+    "label_details": "Coordonnées bancaires internationales",
+    "label_account_number": "Numéro de compte",
+    "label_bic": "BIC",
+    "label_bank_name": "Nom de la banque",
+    "label_bank_address": "Adresse de la banque",
+    "label_bank_country": "Pays de la banque",
+    "label_payment_type": "Type de paiement"
+  },
   "sign_off": "Cordialement,",
   "first_name": "",
   "recipient_email": ""
