@@ -23,12 +23,18 @@ So to fully render one email you combine: layout HTML (from `layouts/`) + conten
 
 - Placeholders use `{{variable_name}}` (Postmark/Mustache-style); the layout's content injection point uses triple braces (`{{{ content }}}`).
 - Every template has parallel `en.json`/`fr.json` config files with identical key structure — when adding a template or a field, update both languages.
+- **`templates/config/` must match the PHP service's config exactly — they are one and the same.** The PHP
+  service (the backend that sends these emails) keeps its own copy of every `templates/config/<slug>/{en,fr}.json`
+  (and the layout configs). Any change here — a new template, a new/renamed/removed key, a changed value — must
+  be applied identically to the PHP service's config in the same change, and vice versa. Never edit one side
+  without the other; a mismatch means Postmark gets a placeholder with no value (or a value nobody sees).
 - Some fields are filled by the backend at send time (e.g. `first_name`, `cta_url`, OTP codes) rather than being static in the config — see `TEMPLATES_TABLE.md` for the authoritative per-template list of server-provided dynamic fields, their Postmark alias, and CSV/DB mapping, and `docs/POSTMARK_LAYOUT_MIGRATION.md` for the fields the backend must inject per template during the `oxen-layout` migration.
 
 ## Adding or changing a template
 
 1. Add/edit `templates/content/<slug>-content.html` with only the body markup, referencing `{{variable}}` placeholders.
 2. Add/edit `templates/config/<slug>/en.json` and `fr.json` with matching keys (include `"layout"`, `"title"`, `"subject"`, and any content variables).
+   Mirror the exact same change into the PHP service's config (see "Variables & language files") — the two must stay identical.
 3. If new variables are introduced, document them in `TEMPLATES_TABLE.md` (dynamic fields table) so backend integrators know what to supply.
 4. Run `python3 tools/blend-audit.py $(ls templates/content/*.html | grep -v lapkipay)` and require
    **A = 0 and B = 0**. Verification here is visual, and this particular defect is invisible on a
