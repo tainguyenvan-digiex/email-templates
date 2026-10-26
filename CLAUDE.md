@@ -38,6 +38,16 @@ So to fully render one email you combine: layout HTML (from `layouts/`) + conten
   translate the logic into Postmark syntax; never copy Twig (`{% … %}`, `{{ var|filter }}`) in here.
 - Some fields are filled by the backend at send time (e.g. `first_name`, `cta_url`, OTP codes) rather than being static in the config — see `TEMPLATES_TABLE.md` for the authoritative per-template list of server-provided dynamic fields, their Postmark alias, and CSV/DB mapping, and `docs/POSTMARK_LAYOUT_MIGRATION.md` for the fields the backend must inject per template during the `oxen-layout` migration.
 
+## Workflow: commit straight to `main`, no MR
+
+This repo has no review step. Commit directly on `main` and push to `origin`; do not open a merge or pull
+request, and do not leave feature branches behind. (`gitlab` is a stale mirror, not where work lands.)
+
+A template change is only live once it is on Postmark, which is **one server for stg and prod**: an upload
+changes the email on prod at once. So the order for an existing template is: commit and push, upload, then say
+so in the commit or the PR of the PHP service that depends on it. A *new* alias is safe to upload any time (no
+sender uses it until its `email_mapping` row exists in the notification DB).
+
 ## Adding or changing a template
 
 1. Add/edit `templates/content/<slug>-content.html` with only the body markup, referencing `{{variable}}` placeholders.
