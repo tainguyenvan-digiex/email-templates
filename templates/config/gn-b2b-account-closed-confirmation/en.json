@@ -11,5 +11,6 @@
   "sign_off": "",
   "signature": "The Oxen Team.",
   "first_name": "",
-  "recipient_email": ""
+  "recipient_email": "",
+  "hide_contact_block": true
 }

@@ -1,7 +1,7 @@
 {
   "layout": "oxen-layout",
   "title": "Statement Ready - Oxen",
-  "subject": "📄 Your statement for {{period}} is ready for download",
+  "subject": "Your statement for {{period_short}} is ready for download",
   "greeting": "Hello",
   "message_prefix": "Your statement for",
   "message_suffix": "has been generated and is ready for view. Since this took longer than expected, we're sending you the link via email.",

@@ -10,5 +10,6 @@
   "cta_url": "",
   "first_name": "",
   "company_name": "",
-  "recipient_email": ""
+  "recipient_email": "",
+  "hide_contact_block": true
 }

@@ -9,6 +9,9 @@
     "sign_off": "Best regards,",
     "signature": "The Oxen Compliance Team.",
     "reason": "incomplete documentation",
+    "cta_text": "👉 View your compliance request",
+    "cta_url": "",
     "first_name": "",
-    "recipient_email": ""
+    "recipient_email": "",
+    "hide_contact_block": true
 }

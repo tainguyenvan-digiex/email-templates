@@ -6,6 +6,8 @@
     "approval_message": "Votre demande a été approuvée. Merci d'avoir fourni les informations nécessaires.",
     "sign_off": "Cordialement,",
     "signature": "L'équipe Conformité.",
+    "cta_text": "👉 Voir votre demande de conformité",
+    "cta_url": "",
     "first_name": "",
     "recipient_email": ""
 }

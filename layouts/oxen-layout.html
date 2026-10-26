@@ -180,7 +180,7 @@
                   </tr>
                   <tr>
                     <td align="center">
-                      <a href="{{website_url}}" target="_blank">
+                      <a href="https://oxen.finance/" target="_blank">
                         <img
                           src="https://public-assets.oxen.finance/b2b/emails/assets/logo.png"
                           alt="Oxen"
@@ -230,6 +230,43 @@
             <!-- ========== BODY CONTENT (injected by each template) ========== -->
             {{{ @content }}}
 
+            <!-- ========== CONTACT BLOCK (spec v14, Layout & rules R4); hidden by config `hide_contact_block` (O13 refusal and internal emails; O19 when built) ========== -->
+            {{^hide_contact_block}}
+            <tr>
+              <td style="padding: 8px 40px 0 40px" class="mobile-padding">
+                <table
+                  role="presentation"
+                  cellspacing="0"
+                  cellpadding="0"
+                  border="0"
+                  width="100%"
+                >
+                  <tr>
+                    <td align="center">
+                      <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+                        style="
+                          margin: 0;
+                          font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                          font-size: 18px;
+                          font-weight: 500;
+                          line-height: 26px;
+                          color: #f5f0eb;
+                          text-align: center;
+                        "
+                        class="body-text"
+                      >
+                        For any question, write to
+                        <a href="mailto:support@oxen.finance" style="color: #c08b88; text-decoration: none"><span style="color: #c08b88">support@oxen.finance</span></a>
+                        or message us on
+                        <a href="https://t.me/account_manager_oxen" target="_blank" style="color: #c08b88; text-decoration: none"><span style="color: #c08b88">Telegram</span></a>.
+                      </p></div></div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            {{/hide_contact_block}}
+
             <!-- ========== SIGN-OFF ========== -->
             <tr>
               <td style="padding: 20px 40px 0 40px" class="mobile-padding">
@@ -257,7 +294,7 @@
                             "
                             class="body-text"
                           >
-                            {{sign_off}}
+                            Kind regards,
                           </p>
                           <p
                             style="
@@ -272,7 +309,7 @@
                             "
                             class="body-text"
                           >
-                            {{signature}}
+                            The Oxen Team
                           </p>
                         </div>
                       </div>
@@ -311,29 +348,11 @@
               </td>
             </tr>
 
-            <!-- Automated message -->
+            <!-- Legal footer (spec v14, Layout & rules R7), verbatim, English only -->
             <tr>
               <td
                 style="
                   padding: 24px 32px 0 32px;
-                  font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-                  font-size: 11px;
-                  color: #8f8b91;
-                  line-height: 18px;
-                  background-image: linear-gradient(#0c0d14, #0c0d14);
-                "
-              >
-                <div class="gmail-blend-screen">
-                  <div class="gmail-blend-difference">{{footer_automated}}</div>
-                </div>
-              </td>
-            </tr>
-
-            <!-- Legal text -->
-            <tr>
-              <td
-                style="
-                  padding: 12px 32px 0 32px;
                   font-family: &quot;DM Sans&quot;, Arial, sans-serif;
                   font-size: 10px;
                   color: #8f8b91;
@@ -342,7 +361,39 @@
                 "
               >
                 <div class="gmail-blend-screen">
-                  <div class="gmail-blend-difference">{{footer_legal}}</div>
+                  <div class="gmail-blend-difference">Oxen is the trading name of Escrowfy GmbH, a company incorporated in Switzerland with its registered office at Bahnhofstrasse 7, 6300 Zug, Switzerland (company number CHE-281.608.494).</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  padding: 10px 32px 0 32px;
+                  font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                  font-size: 10px;
+                  color: #8f8b91;
+                  line-height: 16px;
+                  background-image: linear-gradient(#0c0d14, #0c0d14);
+                "
+              >
+                <div class="gmail-blend-screen">
+                  <div class="gmail-blend-difference">Escrowfy GmbH operates as a Swiss financial intermediary and is a member of VQF (Verein zur Qualitätssicherung von Finanzdienstleistungen), membership no. 101009, a self-regulatory organisation recognised by the Swiss Financial Market Supervisory Authority (FINMA) for anti-money laundering supervision.</div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="
+                  padding: 10px 32px 0 32px;
+                  font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                  font-size: 10px;
+                  color: #8f8b91;
+                  line-height: 16px;
+                  background-image: linear-gradient(#0c0d14, #0c0d14);
+                "
+              >
+                <div class="gmail-blend-screen">
+                  <div class="gmail-blend-difference">Oxen's services are intended exclusively for corporate and business clients and are not offered to consumers. Services are subject to eligibility, onboarding and compliance requirements and may not be available in all jurisdictions.</div>
                 </div>
               </td>
             </tr>
@@ -361,21 +412,21 @@
                 <div class="gmail-blend-screen">
                   <div class="gmail-blend-difference">
                     <a
-                      href="{{help_url}}"
+                      href="https://oxen.finance/"
                       style="color: #989495; text-decoration: none"
-                      >{{footer_help}}</a
+                      >Help Centre</a
                     >
                     <span style="color: #8f8b91"> &middot; </span>
                     <a
-                      href="{{privacy_url}}"
+                      href="https://oxen.finance/privacy-policy"
                       style="color: #989495; text-decoration: none"
-                      >{{footer_privacy}}</a
+                      >Privacy Policy</a
                     >
                     <span style="color: #8f8b91"> &middot; </span>
                     <a
-                      href="{{terms_url}}"
+                      href="https://oxen.finance/terms-of-use"
                       style="color: #989495; text-decoration: none"
-                      >{{footer_terms}}</a
+                      >Terms of Service</a
                     >
                   </div>
                 </div>
@@ -396,7 +447,7 @@
                 "
               >
                 <div class="gmail-blend-screen">
-                  <div class="gmail-blend-difference">{{footer_copyright}}</div>
+                  <div class="gmail-blend-difference">© 2026 Oxen Finance</div>
                 </div>
               </td>
             </tr>

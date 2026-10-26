@@ -10,5 +10,6 @@
     "signature": "L'équipe Oxen.",
     "cta_url": "",
     "first_name": "",
-    "recipient_email": ""
+    "recipient_email": "",
+    "hide_contact_block": true
 }

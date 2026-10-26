@@ -1,0 +1,16 @@
+{
+    "layout": "oxen-layout",
+    "title": "Action requise : demande de conformité",
+    "subject": "Action requise : nous avons besoin d'informations",
+    "greeting": "Bonjour",
+    "request_message": "Notre équipe conformité a ouvert une demande sur votre compte et attend votre réponse.",
+    "requirement_document": "",
+    "instructions": "Vous pouvez répondre directement depuis votre compte — en téléversant des documents ou en rédigeant une explication.",
+    "support_message": "Si vous avez des questions ou avez besoin d'aide, n'hésitez pas à contacter notre équipe d'assistance.",
+    "sign_off": "Cordialement,",
+    "signature": "L'équipe Conformité.",
+    "cta_text": "👉 Répondre à cette demande",
+    "cta_url": "",
+    "first_name": "",
+    "recipient_email": ""
+}

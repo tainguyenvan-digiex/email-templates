@@ -40,5 +40,6 @@
         }
     ],
     "bigQueryLink": "",
-    "currentYear": "2025"
+    "currentYear": "2025",
+    "hide_contact_block": true
 }

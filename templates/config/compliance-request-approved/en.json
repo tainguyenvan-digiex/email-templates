@@ -6,6 +6,8 @@
     "approval_message": "Your request has been approved. Thank you for providing the necessary information.",
     "sign_off": "Best regards,",
     "signature": "The Oxen Compliance Team.",
+    "cta_text": "👉 View your compliance request",
+    "cta_url": "",
     "first_name": "",
     "recipient_email": ""
 }

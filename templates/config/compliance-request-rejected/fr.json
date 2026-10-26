@@ -9,6 +9,9 @@
     "sign_off": "Cordialement,",
     "signature": "L'équipe Conformité.",
     "reason": "documentation incomplète",
+    "cta_text": "👉 Voir votre demande de conformité",
+    "cta_url": "",
     "first_name": "",
-    "recipient_email": ""
+    "recipient_email": "",
+    "hide_contact_block": true
 }
