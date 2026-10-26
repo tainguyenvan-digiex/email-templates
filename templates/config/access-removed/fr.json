@@ -1,0 +1,9 @@
+{
+  "layout": "oxen-layout",
+  "title": "Your access to {{company_name}} on Oxen has been removed",
+  "subject": "Your access to {{company_name}} on Oxen has been removed",
+  "first_name": "",
+  "company_name": "",
+  "date": "",
+  "recipient_email": ""
+}

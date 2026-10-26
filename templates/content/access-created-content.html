@@ -1,0 +1,152 @@
+<!--
+  Access created (M02, spec v14) - For use with oxen-layout.html
+
+  A user login was created. Replaces the bank-letter template that was sent by mistake.
+  Backend fills: first_name, company_name, role_name, cta_url (login URL).
+-->
+
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 24px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            Hello{{#first_name}} {{.}}{{/first_name}},
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 16px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            Your access to the Oxen account of {{company_name}} is ready. Your role is {{role_name}}.
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 16px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            You can log in at any time with this email address.
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<tr>
+  <td style="padding: 28px 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center">
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td class="btn-diamond" bgcolor="#c8c8c8"
+                style="
+                  padding: 12px 32px;
+                  background-color: #c8c8c8;
+                  background-image: linear-gradient(
+                    135deg,
+                    #e8e8e8 0%,
+                    #c0c0c0 40%,
+                    #e0e0e0 50%,
+                    #a8a8a8 100%
+                  );
+                  border-radius: 40px;
+                  border: 1px solid rgba(255, 255, 255, 0.15);
+                  box-shadow:
+                    0 2px 8px rgba(0, 0, 0, 0.3),
+                    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+                "
+              >
+                <a
+                  href="{{cta_url}}"
+                  style="
+                    font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #000;
+                    text-decoration: none;
+                    display: inline-block;
+                  "
+                >
+                  {{cta_message}}
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>

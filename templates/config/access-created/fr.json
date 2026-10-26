@@ -1,0 +1,11 @@
+{
+  "layout": "oxen-layout",
+  "title": "Your access to {{company_name}} on Oxen is ready",
+  "subject": "Your access to {{company_name}} on Oxen is ready",
+  "cta_message": "Log in",
+  "first_name": "",
+  "company_name": "",
+  "role_name": "",
+  "cta_url": "",
+  "recipient_email": ""
+}
