@@ -28,6 +28,14 @@ So to fully render one email you combine: layout HTML (from `layouts/`) + conten
   (and the layout configs). Any change here — a new template, a new/renamed/removed key, a changed value — must
   be applied identically to the PHP service's config in the same change, and vice versa. Never edit one side
   without the other; a mismatch means Postmark gets a placeholder with no value (or a value nobody sees).
+- **be-b2b is the source of truth.** The PHP service is `greennation-be-b2b`
+  (`../php/greennation-be-b2b/config/email-template-params/oxen/<slug>/{en,fr}.json`). Its configs and
+  templates are the latest; this repo follows them, not the other way round. Before changing a template or
+  config here, read the be-b2b version first, and when the two disagree, take be-b2b's keys/values.
+- **Write Postmark syntax only.** Everything in this repo is uploaded to Postmark, so it must use Postmark's
+  Mustachio syntax: `{{var}}`, `{{{ @content }}}`, `{{#section}}…{{/section}}`, `{{^section}}…{{/section}}`,
+  `{{#each list}}…{{/each}}`. be-b2b's own `templates/emails/*.html.twig` are Twig — when porting from them,
+  translate the logic into Postmark syntax; never copy Twig (`{% … %}`, `{{ var|filter }}`) in here.
 - Some fields are filled by the backend at send time (e.g. `first_name`, `cta_url`, OTP codes) rather than being static in the config — see `TEMPLATES_TABLE.md` for the authoritative per-template list of server-provided dynamic fields, their Postmark alias, and CSV/DB mapping, and `docs/POSTMARK_LAYOUT_MIGRATION.md` for the fields the backend must inject per template during the `oxen-layout` migration.
 
 ## Adding or changing a template
