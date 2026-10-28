@@ -1,0 +1,13 @@
+{
+    "layout": "oxen-layout",
+    "title": "Verify your email - Oxen",
+    "subject": "Your Oxen verification code",
+    "greeting": "Hello",
+    "instruction": "Use this code to verify your email address:",
+    "validity_notice": "This code is valid for 10 minutes.",
+    "security_notice": "Never share this code. Oxen will never ask you for it by phone, email or message. If you did not request this code, you can ignore this email.",
+    "signature": "The Oxen Team.",
+    "otp_code": "",
+    "first_name": "",
+    "recipient_email": ""
+}
