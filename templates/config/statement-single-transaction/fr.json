@@ -16,6 +16,8 @@
     "customer_name": "Jean Dupont",
     "transaction_amount": "250,00 €",
     "transaction_currency": "EUR",
+    "counterparty": "",
+    "reference": "",
     "transaction_date": "26 décembre 2025",
     "download_url": "",
     "expiration_time": "26 décembre 2025 14:30 UTC",

@@ -33,6 +33,22 @@
           >
             {{request_message}}
           </p>
+          {{#each additional_documents}}
+          <p
+            style="
+              margin: 0 0 8px 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 22px;
+              color: #f5f0eb;
+              text-align: left;
+            "
+            class="body-text"
+          >
+            &bull; {{name}}
+          </p>
+          {{/each}}
           <p
             style="
               margin: 0 0 16px 0;

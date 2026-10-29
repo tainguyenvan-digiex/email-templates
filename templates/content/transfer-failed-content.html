@@ -61,7 +61,7 @@
           >
             {{transaction_type_label}} <b>{{transaction_type}}</b>
           </p>
-          <p
+          {{#failure_reason_line}}<p
             style="
               margin: 0;
               font-family: &quot;DM Sans&quot;, Arial, sans-serif;
@@ -73,8 +73,8 @@
             "
             class="body-text"
           >
-            {{failure_reason_label}} <b>{{failure_reason}}</b>
-          </p></div></div>
+            {{label}} <b>{{text}}</b>
+          </p>{{/failure_reason_line}}</div></div>
         </td>
       </tr>
     </table>

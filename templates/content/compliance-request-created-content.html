@@ -19,6 +19,7 @@
     >
       <tr>
         <td align="left" style="padding: 20px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference">
           <p
             style="
               margin: 0 0 16px 0;
@@ -33,9 +34,9 @@
           >
             {{request_message}}
           </p>
-          <!-- The officer's own words. Conditional: requirementDocument is optional on create,
-               so an empty one renders the fallback line instead of an empty quote box. -->
-          {{#requirement_document}}
+          <!-- What the request is about: its type only, never the officer's own words (OP-1147 O09).
+               Conditional, so an empty type renders no empty quote box. -->
+          {{#request_type}}
           <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
                  style="margin: 0 0 16px 0;">
             <tr>
@@ -58,7 +59,7 @@
               </td>
             </tr>
           </table>
-          {{/requirement_document}}
+          {{/request_type}}
 
 
           <p
@@ -89,6 +90,7 @@
           >
             {{support_message}}
           </p>
+          </div></div>
         </td>
       </tr>
     </table>

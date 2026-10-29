@@ -23,7 +23,27 @@
             <strong>{{transaction_amount}}{{transaction_currency}}</strong>
             {{message_middle}}
             <strong>{{transaction_date}}</strong> {{message_suffix}}
-          </p></div></div>
+          </p>{{#counterparty}}<p
+            class="body-text"
+            style="
+              margin: 12px 0 0;
+              text-align: center;
+              color: #f5f0eb;
+              font-size: 18px;
+            "
+          >
+            Counterparty: <strong>{{.}}</strong>
+          </p>{{/counterparty}}{{#reference}}<p
+            class="body-text"
+            style="
+              margin: 12px 0 0;
+              text-align: center;
+              color: #f5f0eb;
+              font-size: 18px;
+            "
+          >
+            Reference: <strong>{{.}}</strong>
+          </p>{{/reference}}</div></div>
         </td>
       </tr>
     </table>

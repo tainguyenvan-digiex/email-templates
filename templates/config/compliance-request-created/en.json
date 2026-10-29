@@ -4,7 +4,7 @@
     "subject": "Action required: we need some information",
     "greeting": "Hello",
     "request_message": "Our compliance team has raised a request on your account and needs your response.",
-    "requirement_document": "",
+    "request_type": "",
     "instructions": "You can reply directly from your account — upload documents or write an explanation.",
     "support_message": "If you have any questions or need help, feel free to reach out to our support team.",
     "sign_off": "Best regards,",
