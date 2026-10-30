@@ -15,6 +15,8 @@
     "customer_name": "Jean Dupont",
     "transaction_amount": "0,5",
     "transaction_currency": "BTC",
+    "counterparty": "",
+    "tx_hash": "",
     "transaction_date": "26 décembre 2025",
     "download_url": ""
 }

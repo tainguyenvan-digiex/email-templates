@@ -23,7 +23,28 @@
             <strong>{{transaction_amount}} {{transaction_currency}}</strong>
             {{message_middle}}
             <strong>{{transaction_date}}</strong> {{message_suffix}}
-          </p></div></div>
+          </p>{{#counterparty}}<p
+            class="body-text"
+            style="
+              margin: 12px 0 0;
+              text-align: center;
+              color: #f5f0eb;
+              font-size: 16px;
+            "
+          >
+            Counterparty: <strong>{{.}}</strong>
+          </p>{{/counterparty}}{{#tx_hash}}<p
+            class="body-text"
+            style="
+              margin: 12px 0 0;
+              text-align: center;
+              color: #f5f0eb;
+              font-size: 16px;
+              word-break: break-all;
+            "
+          >
+            Transaction hash: <strong>{{.}}</strong>
+          </p>{{/tx_hash}}</div></div>
         </td>
       </tr>
     </table>
