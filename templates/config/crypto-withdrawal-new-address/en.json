@@ -1,0 +1,16 @@
+{
+  "layout": "oxen-layout",
+  "title": "Crypto withdrawal to a new address",
+  "subject": "Crypto withdrawal to a new address",
+  "cta_text": "View the withdrawal",
+  "signature": "The Oxen Team.",
+  "cta_url": "",
+  "first_name": "",
+  "initiator_name": "",
+  "amount": "",
+  "symbol": "",
+  "network": "",
+  "address": "",
+  "date": "",
+  "recipient_email": ""
+}
