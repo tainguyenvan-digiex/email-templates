@@ -1,0 +1,13 @@
+{
+  "layout": "oxen-layout",
+  "title": "Crypto withdrawal completed: {{amount}} {{symbol}}",
+  "subject": "Crypto withdrawal completed: {{amount}} {{symbol}}",
+  "cta_text": "View the transaction",
+  "signature": "The Oxen Team.",
+  "cta_url": "",
+  "first_name": "",
+  "amount": "",
+  "symbol": "",
+  "address": "",
+  "recipient_email": ""
+}
