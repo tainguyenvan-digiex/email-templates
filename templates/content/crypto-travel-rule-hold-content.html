@@ -1,0 +1,142 @@
+<!--
+  Crypto transfer on hold, travel rule information needed (X10) - For use with oxen-layout.html
+
+  Sent to the company Owners, Admins and the initiator when a crypto transfer is held for travel rule information.
+  Backend fills: first_name, amount, symbol, cta_url.
+-->
+
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 24px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            Hello{{#first_name}} {{.}}{{/first_name}},
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 16px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            Your crypto transfer of {{amount}} {{symbol}} is on hold.
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 14px 0 28px">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            For crypto transfers, the travel rule requires information about the sender and the recipient. Please complete the requested information in your Oxen space to release the transfer.
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<!-- CTA: complete the information in the web portal -->
+<tr>
+  <td align="center" style="padding: 0 40px 20px 40px" class="mobile-padding">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td bgcolor="#c8c8c8"
+          style="
+            padding: 12px 32px;
+            background-color: #c8c8c8;
+            background-image: linear-gradient(
+              135deg,
+              #e8e8e8 0%,
+              #c0c0c0 40%,
+              #e0e0e0 50%,
+              #a8a8a8 100%
+            );
+            border-radius: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow:
+              0 2px 8px rgba(0, 0, 0, 0.3),
+              inset 0 1px 0 rgba(255, 255, 255, 0.25);
+          "
+        >
+          <a
+            href="{{cta_url}}"
+            style="
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 16px;
+              font-weight: 600;
+              color: #000;
+              text-decoration: none;
+              display: inline-block;
+            "
+            class="cta-button"
+          >
+            {{cta_text}}
+          </a>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
