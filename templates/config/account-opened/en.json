@@ -18,5 +18,14 @@
   "addressable_in": "",
   "account_provider": "",
   "account_disclosure": "",
-  "onboarding_url": ""
+  "onboarding_url": "",
+  "international": {
+    "label_details": "International account details",
+    "label_account_number": "Account number",
+    "label_bic": "BIC",
+    "label_bank_name": "Bank name",
+    "label_bank_address": "Bank address",
+    "label_bank_country": "Bank country",
+    "label_payment_type": "Payment type"
+  }
 }
