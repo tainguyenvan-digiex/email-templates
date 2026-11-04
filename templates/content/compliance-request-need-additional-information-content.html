@@ -60,7 +60,7 @@
   </td>
 </tr>
 
-{{#additional_documents}}<tr>
+{{#each additional_documents}}<tr>
   <td style="padding: 0 40px 0 40px" class="mobile-padding">
     <table
       role="presentation"
@@ -83,7 +83,7 @@
             "
             class="body-text"
           >
-            {{{.}}}
+            {{name}}
           </p></div></div>
         </td>
       </tr>
@@ -91,7 +91,7 @@
   </td>
 </tr>
 
-{{/additional_documents}}<tr>
+{{/each}}<tr>
   <td style="padding: 0 40px 0 40px" class="mobile-padding">
     <table
       role="presentation"
