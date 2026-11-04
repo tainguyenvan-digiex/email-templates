@@ -72,46 +72,43 @@
 <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">Account holder</div></div></td>
 <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{account_holder}}</div></div></td>
 </tr>
-{{#iban}}<tr>
+<tr>
 <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">IBAN</div></div></td>
-<td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{.}}</div></div></td>
+<td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{iban}}</div></div></td>
 </tr>
-{{/iban}}
-{{#account_number}}<tr>
+<tr>
 <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">Account number</div></div></td>
-<td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{.}}</div></div></td>
+<td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{account_number}}</div></div></td>
 </tr>
-{{/account_number}}
-{{#sort_code}}<tr>
+<tr>
 <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">Sort code</div></div></td>
-<td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{.}}</div></div></td>
+<td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{sort_code}}</div></div></td>
 </tr>
-{{/sort_code}}
-{{#routing_number}}<tr>
+<tr>
 <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">Routing number</div></div></td>
-<td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{.}}</div></div></td>
+<td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{routing_number}}</div></div></td>
 </tr>
-{{/routing_number}}
 {{#bic_detail}}<tr>
 <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{label}}</div></div></td>
 <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{value}}</div></div></td>
 </tr>
+{{/bic_detail}}{{^bic_detail}}<tr>
+<td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">BIC</div></div></td>
+<td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference"></div></div></td>
+</tr>
 {{/bic_detail}}
-{{#currency}}<tr>
+<tr>
 <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">Currency</div></div></td>
-<td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{.}}</div></div></td>
+<td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{currency}}</div></div></td>
 </tr>
-{{/currency}}
-{{#addressable_in}}<tr>
+<tr>
 <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">Payment networks</div></div></td>
-<td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{.}}</div></div></td>
+<td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{addressable_in}}</div></div></td>
 </tr>
-{{/addressable_in}}
-{{#account_provider}}<tr>
+<tr>
 <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">Account provider</div></div></td>
-<td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{.}}</div></div></td>
+<td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{account_provider}}</div></div></td>
 </tr>
-{{/account_provider}}
 </table>
 </td>
 </tr>
