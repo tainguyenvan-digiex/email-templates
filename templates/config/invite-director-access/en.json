@@ -6,5 +6,8 @@
   "title": "{{inviter_name}} invited you to {{company_name}} on Oxen",
   "subject": "{{inviter_name}} invited you to {{company_name}} on Oxen",
   "cta_text": "Accept the invitation",
-  "cta_url": ""
+  "cta_url": "",
+  "inviter_name": "",
+  "company_name": "",
+  "expiry_date": ""
 }

@@ -6,5 +6,7 @@
   "title": "Action needed on your Oxen account",
   "subject": "Action needed on your Oxen account",
   "cta_text": "Open the request",
-  "cta_url": ""
+  "cta_url": "",
+  "request_type": "",
+  "due_date": ""
 }

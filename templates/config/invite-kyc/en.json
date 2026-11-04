@@ -6,5 +6,8 @@
   "title": "Identity check needed for {{company_name}}",
   "subject": "Identity check needed for {{company_name}}",
   "cta_text": "Start my identity check",
-  "cta_url": ""
+  "cta_url": "",
+  "inviter_name": "",
+  "company_name": "",
+  "rep_role": ""
 }

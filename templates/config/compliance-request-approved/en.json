@@ -6,5 +6,6 @@
   "title": "Your request has been approved",
   "subject": "Your request has been approved",
   "cta_text": "Go to my dashboard",
-  "cta_url": ""
+  "cta_url": "",
+  "request_type": ""
 }
