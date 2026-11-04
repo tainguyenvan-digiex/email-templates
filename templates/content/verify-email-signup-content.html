@@ -1,15 +1,10 @@
 <!--
-  Verification code content (one template per purpose) - For use with oxen-layout
-
-  This content file is designed to work with the shared-layout.html layout.
-  It contains the email verification with OTP code content.
-
-  The layout provides: logo, heading, greeting, social media promotion, footer, and unsubscribe sections.
+  Verification code: sign-up (S04a)
+  For use with oxen-layout. The layout provides the logo, the contact block, the signature and the legal footer.
 -->
 
-<!-- Instruction -->
 <tr>
-  <td style="padding: 20px 40px 20px 40px" class="mobile-padding">
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
     <table
       role="presentation"
       cellspacing="0"
@@ -18,20 +13,51 @@
       width="100%"
     >
       <tr>
-        <td align="center" style="padding: 0">
+        <td align="center" style="padding: 24px 0 0">
           <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
-              margin: 0 0 20px 0;
+              margin: 0;
               font-family: &quot;DM Sans&quot;, Arial, sans-serif;
               font-size: 18px;
               font-weight: 500;
-              line-height: 22px;
+              line-height: 26px;
               color: #f5f0eb;
               text-align: center;
             "
             class="body-text"
           >
-            {{instruction}}
+            Hello{{#first_name}} {{.}}{{/first_name}},
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 16px 0 20px">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            Use this code to verify your email address:
           </p></div></div>
         </td>
       </tr>
@@ -91,8 +117,7 @@
   </td>
 </tr>
 
-<!-- Validity Notice -->
-<tr>
+{{#otp_minutes}}<tr>
   <td style="padding: 0 40px 0 40px" class="mobile-padding">
     <table
       role="presentation"
@@ -105,17 +130,17 @@
         <td align="center" style="padding: 0">
           <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
-              margin: 0 0 13px 0;
+              margin: 0;
               font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-              font-size: 16px;
+              font-size: 18px;
               font-weight: 500;
-              line-height: 20px;
+              line-height: 26px;
               color: #f5f0eb;
               text-align: center;
             "
             class="body-text"
           >
-            {{validity_notice}}
+            The code is valid for {{.}} minutes.
           </p></div></div>
         </td>
       </tr>
@@ -123,7 +148,37 @@
   </td>
 </tr>
 
-<!-- Security Notice -->
+{{/otp_minutes}}<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 16px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            Never share this code. Oxen will never ask you for it by phone, email or message.
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
 <tr>
   <td style="padding: 0 40px 0 40px" class="mobile-padding">
     <table
@@ -134,23 +189,24 @@
       width="100%"
     >
       <tr>
-        <td align="center" style="padding: 0">
+        <td align="center" style="padding: 16px 0 24px">
           <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
-              margin: 0 0 13px 0;
+              margin: 0;
               font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-              font-size: 14px;
+              font-size: 18px;
               font-weight: 500;
-              line-height: 20px;
+              line-height: 26px;
               color: #f5f0eb;
               text-align: center;
             "
             class="body-text"
           >
-            {{security_notice}}
+            If you did not request this code, you can ignore this email.
           </p></div></div>
         </td>
       </tr>
     </table>
   </td>
 </tr>
+

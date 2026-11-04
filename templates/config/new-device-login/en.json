@@ -1,16 +1,10 @@
 {
   "layout": "oxen-layout",
-  "title": "New device login detected - Oxen",
-  "subject": "📱 New device login detected",
-  "device_label": "Device:",
-  "device_name": "MacBook Air",
-  "location_label": "Location:",
-  "new_device_intro": "Your account was accessed from a new device:",
-  "security_warning": "If this wasn't you please contact your account manager immediately.",
-  "signature": "The Oxen Security Team.",
-  "time_label": "Time:",
+  "title": "New login to your Oxen account",
+  "subject": "New login to your Oxen account",
+  "signature": "The Oxen Team.",
   "first_name": "",
-  "location": "Lyon, France",
-  "time": "10:21 (UTC+2)",
-  "recipient_email": ""
+  "recipient_email": "",
+  "cta_text": "Change my password",
+  "cta_url": ""
 }

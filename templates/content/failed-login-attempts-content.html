@@ -1,13 +1,8 @@
-<!-- 
-  Failed Login Attempts Content - For use with shared-layout.html
-  
-  This content file is designed to work with the shared-layout.html layout.
-  It contains the multiple failed login attempts alert content.
-  
-  The layout provides: logo, heading, greeting, social media promotion, footer, and unsubscribe sections.
+<!--
+  Multiple failed login attempts (S02)
+  For use with oxen-layout. The layout provides the logo, the contact block, the signature and the legal footer.
 -->
 
-<!-- Failed Login Attempts Information -->
 <tr>
   <td style="padding: 0 40px 0 40px" class="mobile-padding">
     <table
@@ -18,22 +13,20 @@
       width="100%"
     >
       <tr>
-        <td align="center" style="padding: 20px 0 0">
+        <td align="center" style="padding: 24px 0 0">
           <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
-              margin: 0 0 16px 0;
+              margin: 0;
               font-family: &quot;DM Sans&quot;, Arial, sans-serif;
               font-size: 18px;
               font-weight: 500;
-              line-height: 22px;
+              line-height: 26px;
               color: #f5f0eb;
               text-align: center;
             "
             class="body-text"
           >
-            {{failed_attempts_intro}}
-            <b>{{attempt_count}}</b> {{attempt_count_suffix}}
-            <b>{{email_address}}</b>.
+            Hello{{#first_name}} {{.}}{{/first_name}},
           </p></div></div>
         </td>
       </tr>
@@ -41,9 +34,8 @@
   </td>
 </tr>
 
-<!-- Security Warning -->
 <tr>
-  <td style="padding: 0 40px" class="mobile-padding">
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
     <table
       role="presentation"
       cellspacing="0"
@@ -52,23 +44,131 @@
       width="100%"
     >
       <tr>
-        <td align="center" style="padding: 0">
+        <td align="center" style="padding: 16px 0 0">
           <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
-              margin: 0 0 8px 0;
+              margin: 0;
               font-family: &quot;DM Sans&quot;, Arial, sans-serif;
               font-size: 18px;
               font-weight: 500;
-              line-height: 34px;
+              line-height: 26px;
               color: #f5f0eb;
               text-align: center;
             "
             class="body-text"
           >
-            {{security_warning}}
+            We recorded {{attempt_count}} failed login attempts on your Oxen account ({{email_address}}).
           </p></div></div>
         </td>
       </tr>
     </table>
   </td>
 </tr>
+
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 14px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            If this was you, you can reset your password at any time.
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 14px 0 24px">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            If this was not you, reset your password now so that nobody else can access your account, and contact us.
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+{{#cta_url}}<tr><td style="height:14px;line-height:14px;font-size:0">&nbsp;</td></tr>
+
+<!-- CTA: main button -->
+<tr>
+  <td align="center" style="padding: 0 40px 36px 40px" class="mobile-padding">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td bgcolor="#c8c8c8"
+          style="
+            padding: 12px 32px;
+            background-color: #c8c8c8;
+            background-image: linear-gradient(
+              135deg,
+              #e8e8e8 0%,
+              #c0c0c0 40%,
+              #e0e0e0 50%,
+              #a8a8a8 100%
+            );
+            border-radius: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow:
+              0 2px 8px rgba(0, 0, 0, 0.3),
+              inset 0 1px 0 rgba(255, 255, 255, 0.25);
+          "
+        >
+          <a
+            href="{{.}}"
+            style="
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 16px;
+              font-weight: 600;
+              color: #000;
+              text-decoration: none;
+              display: inline-block;
+            "
+            class="cta-button"
+          >
+            Reset my password
+          </a>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+{{/cta_url}}
