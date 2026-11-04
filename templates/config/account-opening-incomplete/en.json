@@ -1,11 +1,12 @@
 {
   "layout": "oxen-layout",
-  "title": "Complete your Oxen account opening - Oxen",
-  "subject": "📝 Complete your Oxen account opening",
-  "account_opening_message": "You started creating your Oxen Business account but didn't complete the process.",
-  "cta_message": "👉 It only takes a few minutes to finish and unlock all features.",
-  "app_instruction_message": "Open the Oxen App to finish opening your account.",
   "signature": "The Oxen Team.",
   "first_name": "",
-  "recipient_email": ""
+  "recipient_email": "",
+  "title": "Your Oxen account opening is not finished",
+  "subject": "Your Oxen account opening is not finished",
+  "cta_text": "Continue my application",
+  "cta_url": "",
+  "steps_left_line": "",
+  "help_line": ""
 }
