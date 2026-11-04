@@ -1,13 +1,3 @@
-<!--
-  Compliance Request Additional Information Content - For use with shared-layout.html
-
-  This content file is designed to work with the shared-layout.html layout.
-  It contains the compliance additional information request content.
-
-  The layout provides: logo, heading, greeting, social media promotion, footer, and unsubscribe sections.
--->
-
-<!-- Request Message -->
 <tr>
   <td style="padding: 0 40px 0 40px" class="mobile-padding">
     <table
@@ -18,64 +8,20 @@
       width="100%"
     >
       <tr>
-        <td align="left" style="padding: 20px 0 0">
+        <td align="center" style="padding: 24px 0 0">
           <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
-              margin: 0 0 16px 0;
+              margin: 0;
               font-family: &quot;DM Sans&quot;, Arial, sans-serif;
               font-size: 18px;
               font-weight: 500;
-              line-height: 22px;
+              line-height: 26px;
               color: #f5f0eb;
-              text-align: left;
+              text-align: center;
             "
             class="body-text"
           >
-            {{request_message}}
-          </p>
-          {{#each additional_documents}}
-          <p
-            style="
-              margin: 0 0 8px 0;
-              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-              font-size: 18px;
-              font-weight: 500;
-              line-height: 22px;
-              color: #f5f0eb;
-              text-align: left;
-            "
-            class="body-text"
-          >
-            &bull; {{name}}
-          </p>
-          {{/each}}
-          <p
-            style="
-              margin: 0 0 16px 0;
-              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-              font-size: 18px;
-              font-weight: 400;
-              line-height: 22px;
-              color: #f5f0eb;
-              text-align: left;
-            "
-            class="body-text"
-          >
-            {{instructions}}
-          </p>
-          <p
-            style="
-              margin: 0 0 14px 0;
-              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-              font-size: 18px;
-              font-weight: 400;
-              line-height: 22px;
-              color: #f5f0eb;
-              text-align: left;
-            "
-            class="body-text"
-          >
-            {{support_message}}
+            Hello{{#first_name}} {{.}}{{/first_name}},
           </p></div></div>
         </td>
       </tr>
@@ -83,9 +29,104 @@
   </td>
 </tr>
 
-<!-- CTA: view the compliance request on the web portal -->
 <tr>
-  <td align="center" style="padding: 0 40px 20px 40px" class="mobile-padding">
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 16px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            To continue, we need the following documents:
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+{{#additional_documents}}<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 14px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            {{{.}}}
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+{{/additional_documents}}<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 14px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            Please upload them from your Oxen space. Documents sent by email cannot be accepted.
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<tr><td style="height:16px;line-height:16px;font-size:0">&nbsp;</td></tr>
+
+<!-- CTA: main button -->
+<tr>
+  <td align="center" style="padding: 0 40px 8px 40px" class="mobile-padding">
     <table role="presentation" cellspacing="0" cellpadding="0" border="0">
       <tr>
         <td bgcolor="#c8c8c8"

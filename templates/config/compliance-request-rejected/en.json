@@ -1,17 +1,11 @@
 {
-    "layout": "oxen-layout",
-    "title": "Your Request Has Been Rejected",
-    "subject": "Your Request Has Been Rejected",
-    "greeting": "Dear",
-    "rejection_message_part1": "Unfortunately, we could not approve your request. This decision was based on:",
-    "rejection_message_part2": "",
-    "support_message": "If you have any questions or need further assistance, please contact our support team.",
-    "sign_off": "Best regards,",
-    "signature": "The Oxen Compliance Team.",
-    "reason": "incomplete documentation",
-    "cta_text": "👉 View your compliance request",
-    "cta_url": "",
-    "first_name": "",
-    "recipient_email": "",
-    "hide_contact_block": true
+  "layout": "oxen-layout",
+  "signature": "The Oxen Team.",
+  "first_name": "",
+  "recipient_email": "",
+  "title": "Update on your request",
+  "subject": "Update on your request",
+  "cta_text": "",
+  "cta_url": "",
+  "hide_contact_block": true
 }

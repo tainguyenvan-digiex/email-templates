@@ -1,145 +1,42 @@
 <!--
-  Company Verified Content - For use with oxen-layout.html
-
-  This content file is designed to work with the oxen-layout.html layout.
-  It notifies the customer that their company KYB has been approved and surfaces a
-  clear next step (Go to Dashboard).
-
-  The layout provides: silk-wave header, logo, sign-off, footer and legal sections.
-  Dynamic params injected by the backend: company_name, cta_url (see OnboardingHolderMessageHandler).
+  Company verified (O14)
+  For use with oxen-layout. Greeting, contact block, signature and legal footer come from the layout
+  and the template body below.
 -->
 
-<!-- Verification Success Message -->
 <tr>
-  <td style="padding: 20px 40px 0 40px" class="mobile-padding">
-    <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
-      style="
-        margin: 0;
-        font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-        color: #f5f0eb;
-        text-align: center;
-      "
-      class="body-text"
-    >
-      {{verification_success_message}}
-    </p></div></div>
-  </td>
-</tr>
-
-<!-- Featured card: Company + Approved status -->
-<tr>
-  <td style="padding: 24px 40px 0 40px" class="mobile-padding">
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
     <table
       role="presentation"
-      width="100%"
-      cellpadding="0"
       cellspacing="0"
+      cellpadding="0"
       border="0"
-      style="
-        background-color: #12131b;
-        border: 1px solid #231e20;
-        border-radius: 12px; background-image: linear-gradient(#12131b, #12131b);"
+      width="100%"
     >
       <tr>
-        <td style="padding: 24px">
-          <table
-            role="presentation"
-            width="100%"
-            cellpadding="0"
-            cellspacing="0"
-            border="0"
+        <td align="center" style="padding: 24px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+            "
+            class="body-text"
           >
-            <!-- Company -->
-            <tr>
-              <td
-                style="
-                  padding: 0 0 14px 0;
-                  font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-                  font-size: 12px;
-                  color: #c8c8c8;
-                  line-height: 20px;
-                  width: 110px;
-                  vertical-align: top;
-                "
-              >
-                <div class="gmail-blend-screen"><div class="gmail-blend-difference">{{label_company}}</div></div>
-              </td>
-              <td
-                style="
-                  padding: 0 0 14px 0;
-                  font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-                  font-size: 14px;
-                  color: #f5f0eb;
-                  font-weight: 500;
-                  line-height: 20px;
-                  vertical-align: top;
-                "
-              >
-                <div class="gmail-blend-screen"><div class="gmail-blend-difference">{{company_name}}</div></div>
-              </td>
-            </tr>
-            <!-- Status -->
-            <tr>
-              <td
-                style="
-                  padding: 0;
-                  font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-                  font-size: 12px;
-                  color: #c8c8c8;
-                  line-height: 24px;
-                  width: 110px;
-                  vertical-align: middle;
-                "
-              >
-                <div class="gmail-blend-screen"><div class="gmail-blend-difference">{{label_status}}</div></div>
-              </td>
-              <td
-                style="
-                  padding: 0;
-                  font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-                  font-size: 14px;
-                  color: #f5f0eb;
-                  font-weight: 500;
-                  line-height: 24px;
-                  vertical-align: middle;
-                "
-              >
-                <div class="gmail-blend-screen"><div class="gmail-blend-difference">{{status_approved}}</div></div>
-              </td>
-            </tr>
-          </table>
+            Hello{{#first_name}} {{.}}{{/first_name}},
+          </p></div></div>
         </td>
       </tr>
     </table>
   </td>
 </tr>
 
-<!-- Access message -->
 <tr>
-  <td style="padding: 20px 40px 0 40px" class="mobile-padding">
-    <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
-      style="
-        margin: 0;
-        font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-        color: #f5f0eb;
-        text-align: center;
-      "
-      class="body-text"
-    >
-      {{verification_access_message}}
-    </p></div></div>
-  </td>
-</tr>
-
-<!-- CTA Button -->
-<tr>
-  <td style="padding: 24px 40px 13px 40px" class="mobile-padding">
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
     <table
       role="presentation"
       cellspacing="0"
@@ -148,47 +45,55 @@
       width="100%"
     >
       <tr>
-        <td align="center">
-          <table role="presentation" cellspacing="0" cellpadding="0" border="0">
-            <tr>
-              <td class="btn-diamond" bgcolor="#c8c8c8"
-                style="
-                  padding: 12px 32px;
-                  background-color: #c8c8c8;
-                  background-image: linear-gradient(
-                    135deg,
-                    #e8e8e8 0%,
-                    #c0c0c0 40%,
-                    #e0e0e0 50%,
-                    #a8a8a8 100%
-                  );
-                  border-radius: 40px;
-                  border: 1px solid rgba(255, 255, 255, 0.15);
-                  box-shadow:
-                    0 2px 8px rgba(0, 0, 0, 0.3),
-                    inset 0 1px 0 rgba(255, 255, 255, 0.25);
-                "
-              >
-                <a
-                  href="{{cta_url}}"
-                  target="_blank"
-                  style="
-                    font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-                    font-size: 16px;
-                    font-weight: 600;
-                    color: #000;
-                    text-decoration: none;
-                    display: block;
-                    text-align: center;
-                  "
-                >
-                  {{cta_text}}
-                </a>
-              </td>
-            </tr>
-          </table>
+        <td align="center" style="padding: 16px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            Our compliance team has verified {{company_name}}.
+          </p></div></div>
         </td>
       </tr>
     </table>
   </td>
 </tr>
+
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 14px 0 6px">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            We are now opening your account with our account provider. You will receive your account details in a separate email as soon as the account is open.
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+

@@ -1,15 +1,5 @@
-<!--
-  Invite KYC Content - For use with shared-layout.html
-
-  This content file is designed to work with the shared-layout.html layout.
-  It contains the KYC invitation content.
-
-  The layout provides: logo, heading, greeting, social media promotion, footer, and unsubscribe sections.
--->
-
-<!-- KYC Invitation Message -->
 <tr>
-  <td style="padding: 20px 40px 0px 40px" class="mobile-padding">
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
     <table
       role="presentation"
       cellspacing="0"
@@ -18,20 +8,20 @@
       width="100%"
     >
       <tr>
-        <td align="left" style="padding: 0">
+        <td align="center" style="padding: 24px 0 0">
           <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
-              margin: 0 0 20px 0;
+              margin: 0;
               font-family: &quot;DM Sans&quot;, Arial, sans-serif;
               font-size: 18px;
               font-weight: 500;
-              line-height: 22px;
+              line-height: 26px;
               color: #f5f0eb;
-              text-align: left;
+              text-align: center;
             "
             class="body-text"
           >
-            {{kyc_invitation_message}}
+            Hello{{#first_name}} {{.}}{{/first_name}},
           </p></div></div>
         </td>
       </tr>
@@ -39,12 +29,76 @@
   </td>
 </tr>
 
-<!-- CTA Button -->
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 16px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            {{inviter_name}} is opening an Oxen account for {{company_name}}. As {{rep_role}} of the company, you need to complete a short online identity check.
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 14px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            You will need a valid passport or national ID card and a device with a camera. The account can open only once every director and beneficial owner has completed this step.
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<tr><td style="height:16px;line-height:16px;font-size:0">&nbsp;</td></tr>
+
+<!-- CTA: main button -->
 <tr>
   <td align="center" style="padding: 0 40px 8px 40px" class="mobile-padding">
     <table role="presentation" cellspacing="0" cellpadding="0" border="0">
       <tr>
-        <td class="btn-diamond" bgcolor="#c8c8c8"
+        <td bgcolor="#c8c8c8"
           style="
             padding: 12px 32px;
             background-color: #c8c8c8;

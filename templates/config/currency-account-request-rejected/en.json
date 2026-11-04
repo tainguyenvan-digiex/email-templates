@@ -1,0 +1,11 @@
+{
+  "layout": "oxen-layout",
+  "signature": "The Oxen Team.",
+  "first_name": "",
+  "recipient_email": "",
+  "title": "Update on your {{currency}} account request",
+  "subject": "Update on your {{currency}} account request",
+  "hide_contact_block": true,
+  "currency": "",
+  "refusal_text": ""
+}

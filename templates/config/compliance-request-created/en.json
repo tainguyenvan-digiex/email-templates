@@ -1,16 +1,10 @@
 {
-    "layout": "oxen-layout",
-    "title": "Action Required: Compliance Request",
-    "subject": "Action required: we need some information",
-    "greeting": "Hello",
-    "request_message": "Our compliance team has raised a request on your account and needs your response.",
-    "request_type": "",
-    "instructions": "You can reply directly from your account — upload documents or write an explanation.",
-    "support_message": "If you have any questions or need help, feel free to reach out to our support team.",
-    "sign_off": "Best regards,",
-    "signature": "The Oxen Compliance Team.",
-    "cta_text": "👉 Respond to this request",
-    "cta_url": "",
-    "first_name": "",
-    "recipient_email": ""
+  "layout": "oxen-layout",
+  "signature": "The Oxen Team.",
+  "first_name": "",
+  "recipient_email": "",
+  "title": "Action needed on your Oxen account",
+  "subject": "Action needed on your Oxen account",
+  "cta_text": "Open the request",
+  "cta_url": ""
 }

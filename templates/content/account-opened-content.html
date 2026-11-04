@@ -1,16 +1,3 @@
-<!--
-  Account Opened Content - For use with oxen-layout.html
-
-  The email a client gets for their FIRST account. A currency added later gets
-  account-currency-opened-content.html instead (same card, shorter copy).
-
-  The layout provides: silk-wave header, logo, sign-off, footer and legal sections.
-  Labels are static (templates/config/account-opened/{locale}.json). The backend fills greeting,
-  company_name and the account details: iban, bic, account_number, sort_code, routing_code, bank_name,
-  bank_address, currency, addressable_in (see SendAccountOpeningLetterMessageHandler).
--->
-
-<!-- Greeting and opening line -->
 <tr>
   <td style="padding: 0 40px 0 40px" class="mobile-padding">
     <table
@@ -21,20 +8,20 @@
       width="100%"
     >
       <tr>
-        <td align="center" style="padding: 20px 0 0">
+        <td align="center" style="padding: 24px 0 0">
           <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
               margin: 0;
               font-family: &quot;DM Sans&quot;, Arial, sans-serif;
               font-size: 18px;
               font-weight: 500;
-              line-height: 24px;
+              line-height: 26px;
               color: #f5f0eb;
-              text-align: justify;
+              text-align: center;
             "
             class="body-text"
           >
-            {{greeting}}
+            Hello{{#first_name}} {{.}}{{/first_name}},
           </p></div></div>
         </td>
       </tr>
@@ -52,20 +39,20 @@
       width="100%"
     >
       <tr>
-        <td align="center" style="padding: 12px 0 0">
+        <td align="center" style="padding: 16px 0 0">
           <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
               margin: 0;
               font-family: &quot;DM Sans&quot;, Arial, sans-serif;
               font-size: 18px;
               font-weight: 500;
-              line-height: 24px;
+              line-height: 26px;
               color: #f5f0eb;
-              text-align: justify;
+              text-align: center;
             "
             class="body-text"
           >
-            The Oxen account for {{company_name}} is now open.
+            The Oxen account of {{company_name}} is open. Here are your account details:
           </p></div></div>
         </td>
       </tr>
@@ -73,101 +60,8 @@
   </td>
 </tr>
 
-<!-- Account details card: the rows of the Account Confirmation Letter; a value the account does not have stays empty -->
 <tr>
-  <td style="padding: 24px 40px 0 40px" class="mobile-padding">
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #12131b; border: 1px solid #231e20; border-radius: 12px; background-image: linear-gradient(#12131b, #12131b);">
-      <tr>
-        <td style="padding: 24px">
-          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p style="margin: 0 0 16px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; line-height: 18px; color: #f5f0eb;">{{label_account_details}}</p></div></div>
-          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-            <tr>
-              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{label_iban}}</div></div></td>
-              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{iban}}</div></div></td>
-            </tr>
-            <tr>
-              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{label_bic}}</div></div></td>
-              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{bic}}</div></div></td>
-            </tr>
-            <tr>
-              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{label_account_number}}</div></div></td>
-              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{account_number}}</div></div></td>
-            </tr>
-            <tr>
-              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{label_sort_code}}</div></div></td>
-              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{sort_code}}</div></div></td>
-            </tr>
-            <tr>
-              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{label_routing_code}}</div></div></td>
-              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{routing_code}}</div></div></td>
-            </tr>
-            <tr>
-              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{label_bank_name}}</div></div></td>
-              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{bank_name}}</div></div></td>
-            </tr>
-            <tr>
-              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{label_bank_address}}</div></div></td>
-              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{bank_address}}</div></div></td>
-            </tr>
-            <tr>
-              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{label_currency}}</div></div></td>
-              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{currency}}</div></div></td>
-            </tr>
-            <tr>
-              <td style="padding: 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{label_addressable_in}}</div></div></td>
-              <td style="padding: 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{addressable_in}}</div></div></td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-  </td>
-</tr>
-{{#international}}
-<!-- Correspondent bank, only when the account has one. Postmark renders this section in the
-     scope of `international` and does NOT fall back to the parent, so its labels live in that object. -->
-<tr>
-  <td style="padding: 16px 40px 0 40px" class="mobile-padding">
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #12131b; border: 1px solid #231e20; border-radius: 12px; background-image: linear-gradient(#12131b, #12131b);">
-      <tr>
-        <td style="padding: 24px">
-          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p style="margin: 0 0 16px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; line-height: 18px; color: #f5f0eb;">{{label_details}}</p></div></div>
-          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-            <tr>
-              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{label_account_number}}</div></div></td>
-              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{account_number}}</div></div></td>
-            </tr>
-            <tr>
-              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{label_bic}}</div></div></td>
-              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{bic}}</div></div></td>
-            </tr>
-            <tr>
-              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{label_bank_name}}</div></div></td>
-              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{bank_name}}</div></div></td>
-            </tr>
-            <tr>
-              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{label_bank_address}}</div></div></td>
-              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{bank_address}}</div></div></td>
-            </tr>
-            <tr>
-              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{label_bank_country}}</div></div></td>
-              <td style="padding: 0 0 12px 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{bank_country}}</div></div></td>
-            </tr>
-            <tr>
-              <td style="padding: 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 12px; color: #c8c8c8; line-height: 20px; width: 130px; vertical-align: top;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{label_payment_type}}</div></div></td>
-              <td style="padding: 0; font-family: &quot;DM Sans&quot;, Arial, sans-serif; font-size: 14px; color: #f5f0eb; font-weight: 500; line-height: 20px; vertical-align: top; word-break: break-word;"><div class="gmail-blend-screen"><div class="gmail-blend-difference">{{payment_type}}</div></div></td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-  </td>
-</tr>
-{{/international}}
-
-<!-- Attachment + closing messages -->
-<tr>
-  <td style="padding: 0 40px 8px 40px" class="mobile-padding">
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
     <table
       role="presentation"
       cellspacing="0"
@@ -176,49 +70,540 @@
       width="100%"
     >
       <tr>
-        <td align="center" style="padding: 20px 0 0">
+        <td align="center" style="padding: 16px 0 0">
           <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
-              margin: 0 0 16px 0;
+              margin: 0;
               font-family: &quot;DM Sans&quot;, Arial, sans-serif;
               font-size: 18px;
               font-weight: 500;
-              line-height: 24px;
+              line-height: 26px;
               color: #f5f0eb;
-              text-align: justify;
+              text-align: center;
+              word-break: break-all;
             "
             class="body-text"
           >
-            {{attachment_message}}
-          </p>
-          <p
-            style="
-              margin: 0 0 16px 0;
-              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-              font-size: 18px;
-              font-weight: 500;
-              line-height: 24px;
-              color: #f5f0eb;
-              text-align: justify;
-            "
-            class="body-text"
-          >
-            {{welcome_message_2}}
-          </p>
-          <p
-            style="
-              margin: 0 0 0px 0;
-              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-              font-size: 18px;
-              font-weight: 500;
-              line-height: 24px;
-              color: #f5f0eb;
-              text-align: justify;
-            "
-            class="body-text"
-          >
-            {{welcome_message_3}}
+            Account holder: <strong>{{account_holder}}</strong>
           </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+{{#iban}}<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 10px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+              word-break: break-all;
+            "
+            class="body-text"
+          >
+            IBAN: <strong>{{.}}</strong>
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+{{/iban}}{{#account_number}}<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 10px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+              word-break: break-all;
+            "
+            class="body-text"
+          >
+            Account number: <strong>{{.}}</strong>
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+{{/account_number}}{{#sort_code}}<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 10px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+              word-break: break-all;
+            "
+            class="body-text"
+          >
+            Sort code: <strong>{{.}}</strong>
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+{{/sort_code}}{{#routing_number}}<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 10px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+              word-break: break-all;
+            "
+            class="body-text"
+          >
+            Routing number: <strong>{{.}}</strong>
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+{{/routing_number}}{{#bic_detail}}<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 10px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+              word-break: break-all;
+            "
+            class="body-text"
+          >
+            {{label}}: <strong>{{value}}</strong>
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+{{/bic_detail}}{{#currency}}<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 10px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+              word-break: break-all;
+            "
+            class="body-text"
+          >
+            Currency: <strong>{{.}}</strong>
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+{{/currency}}{{#addressable_in}}<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 10px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+              word-break: break-all;
+            "
+            class="body-text"
+          >
+            Payment networks: <strong>{{.}}</strong>
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+{{/addressable_in}}{{#account_provider}}<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 10px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+              word-break: break-all;
+            "
+            class="body-text"
+          >
+            Account provider: <strong>{{.}}</strong>
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+{{/account_provider}}<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 14px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            Your account confirmation letter is attached. Keep it for your records and share it with anyone who needs to pay you.
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 14px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            Getting started:
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 8px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            • Send and receive payments in EUR by SEPA and SEPA Instant, and in GBP by Faster Payments, CHAPS and SWIFT.
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 8px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            • Issue physical and virtual Visa cards for your team.
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 8px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            • Invite your team and set their access rights.
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 14px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            If you would like a guided tour of your Oxen space, contact our team from the Support page: {{onboarding_url}}
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+{{#account_disclosure}}<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 14px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            {{.}}
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+{{/account_disclosure}}<tr><td style="height:16px;line-height:16px;font-size:0">&nbsp;</td></tr>
+
+<!-- CTA: main button -->
+<tr>
+  <td align="center" style="padding: 0 40px 8px 40px" class="mobile-padding">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td bgcolor="#c8c8c8"
+          style="
+            padding: 12px 32px;
+            background-color: #c8c8c8;
+            background-image: linear-gradient(
+              135deg,
+              #e8e8e8 0%,
+              #c0c0c0 40%,
+              #e0e0e0 50%,
+              #a8a8a8 100%
+            );
+            border-radius: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow:
+              0 2px 8px rgba(0, 0, 0, 0.3),
+              inset 0 1px 0 rgba(255, 255, 255, 0.25);
+          "
+        >
+          <a
+            href="{{cta_url}}"
+            style="
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 16px;
+              font-weight: 600;
+              color: #000;
+              text-decoration: none;
+              display: inline-block;
+            "
+            class="cta-button"
+          >
+            {{cta_text}}
+          </a>
         </td>
       </tr>
     </table>

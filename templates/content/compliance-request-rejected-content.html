@@ -1,13 +1,3 @@
-<!--
-  Compliance Request Rejected Content - For use with shared-layout.html
-
-  This content file is designed to work with the shared-layout.html layout.
-  It contains the compliance request rejection notification content.
-
-  The layout provides: logo, heading, greeting, social media promotion, footer, and unsubscribe sections.
--->
-
-<!-- Rejection Message -->
 <tr>
   <td style="padding: 0 40px 0 40px" class="mobile-padding">
     <table
@@ -18,65 +8,55 @@
       width="100%"
     >
       <tr>
-        <td align="left" style="padding: 20px 0 0">
+        <td align="center" style="padding: 24px 0 0">
           <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
-              margin: 0 0 8px 0;
+              margin: 0;
               font-family: &quot;DM Sans&quot;, Arial, sans-serif;
               font-size: 18px;
               font-weight: 500;
-              line-height: 22px;
+              line-height: 26px;
               color: #f5f0eb;
-              text-align: left;
+              text-align: center;
             "
             class="body-text"
           >
-            {{rejection_message_part1}}
-          </p>
-          <p
-            style="
-              margin: 0 0 16px 0;
-              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-              font-size: 18px;
-              font-weight: 600;
-              line-height: 22px;
-              color: #d32f2f;
-              text-align: left;
-            "
-            class="body-text"
-          >
-            {{reason}}
-          </p>
-          <p
-            style="
-              margin: 0 0 16px 0;
-              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-              font-size: 18px;
-              font-weight: 400;
-              line-height: 22px;
-              color: #f5f0eb;
-              text-align: left;
-            "
-            class="body-text"
-          >
-            {{rejection_message_part2}}
-          </p>
-          <p
-            style="
-              margin: 0 0 12px 0;
-              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-              font-size: 18px;
-              font-weight: 400;
-              line-height: 22px;
-              color: #f5f0eb;
-              text-align: left;
-            "
-            class="body-text"
-          >
-            {{support_message}}
+            Hello{{#first_name}} {{.}}{{/first_name}},
           </p></div></div>
         </td>
       </tr>
     </table>
   </td>
 </tr>
+
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="center" style="padding: 16px 0 24px">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: center;
+            "
+            class="body-text"
+          >
+            {{refusal_text}}
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+

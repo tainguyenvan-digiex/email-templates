@@ -1,16 +1,9 @@
 {
   "layout": "oxen-layout",
-  "title": "✅ Your company has been verified",
-  "subject": "✅ Your company has been verified",
   "signature": "The Oxen Team.",
-  "verification_success_message": "Great news! Your company has been approved and your account is now live.",
-  "label_company": "Company",
-  "label_status": "Status",
-  "status_approved": "Approved",
-  "company_name": "",
-  "verification_access_message": "You can now access all features of your Oxen Business account.",
-  "cta_text": "Go to Dashboard",
-  "cta_url": "",
   "first_name": "",
-  "recipient_email": ""
+  "recipient_email": "",
+  "title": "Your company has been verified",
+  "subject": "Your company has been verified",
+  "company_name": ""
 }

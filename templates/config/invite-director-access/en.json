@@ -1,19 +1,10 @@
 {
-    "layout": "oxen-layout",
-    "title": "Join the team - Oxen",
-    "subject": "Join the team",
-    "greeting": "Hello",
-    "invitation_prefix": "has invited you to Oxen's",
-    "invitation_suffix": "Business account",
-    "good_news_prefix": "Great news! Thanks to",
-    "good_news_middle": ", joining Oxen's",
-    "good_news_suffix": "Business account is just a click away.",
-    "instruction": "Use the button below to accept the invite and get started.",
-    "cta_text": "👉 Accept Invitation",
-    "signature": "The Oxen Team.",
-    "cta_url": "",
-    "first_name": "",
-    "inviter_name": "",
-    "company_name": "",
-    "recipient_email": ""
+  "layout": "oxen-layout",
+  "signature": "The Oxen Team.",
+  "first_name": "",
+  "recipient_email": "",
+  "title": "{{inviter_name}} invited you to {{company_name}} on Oxen",
+  "subject": "{{inviter_name}} invited you to {{company_name}} on Oxen",
+  "cta_text": "Accept the invitation",
+  "cta_url": ""
 }
