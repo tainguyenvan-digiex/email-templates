@@ -8,5 +8,6 @@
   "cta_text": "",
   "cta_url": "",
   "hide_contact_block": true,
-  "refusal_text": ""
+  "refusal_text": "",
+  "refusal_lines": ""
 }

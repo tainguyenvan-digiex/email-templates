@@ -29,7 +29,7 @@
   </td>
 </tr>
 
-<tr>
+{{#each refusal_lines}}<tr>
   <td style="padding: 0 40px 0 40px" class="mobile-padding">
     <table
       role="presentation"
@@ -39,7 +39,7 @@
       width="100%"
     >
       <tr>
-        <td align="center" style="padding: 16px 0 24px">
+        <td align="center" style="padding: 16px 0 0">
           <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
               margin: 0;
@@ -52,11 +52,11 @@
             "
             class="body-text"
           >
-            {{refusal_text}}
+            {{text}}
           </p></div></div>
         </td>
       </tr>
     </table>
   </td>
 </tr>
-
+{{/each}}
