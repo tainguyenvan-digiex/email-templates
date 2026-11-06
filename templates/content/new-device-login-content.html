@@ -13,7 +13,7 @@
       width="100%"
     >
       <tr>
-        <td align="center" style="padding: 24px 0 0">
+        <td align="left" style="padding: 24px 0 0">
           <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
               margin: 0;
@@ -22,7 +22,7 @@
               font-weight: 500;
               line-height: 26px;
               color: #f5f0eb;
-              text-align: center;
+              text-align: left;
             "
             class="body-text"
           >
@@ -44,7 +44,7 @@
       width="100%"
     >
       <tr>
-        <td align="center" style="padding: 16px 0 0">
+        <td align="left" style="padding: 16px 0 0">
           <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
               margin: 0;
@@ -53,7 +53,7 @@
               font-weight: 500;
               line-height: 26px;
               color: #f5f0eb;
-              text-align: center;
+              text-align: left;
             "
             class="body-text"
           >
@@ -65,18 +65,17 @@
   </td>
 </tr>
 
+
+
+<!-- Info panel: same markup as the account details card of account-currency-opened (task 5, 2026-11-06). Rows keep their own text and styling. -->
 <tr>
-  <td style="padding: 0 40px 0 40px" class="mobile-padding">
-    <table
-      role="presentation"
-      cellspacing="0"
-      cellpadding="0"
-      border="0"
-      width="100%"
-    >
-      <tr>
-        <td align="center" style="padding: 16px 0 0">
-          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+<td style="padding: 16px 40px 0px 40px" class="mobile-padding">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #12131b; border: 1px solid #231e20; border-radius: 12px; background-image: linear-gradient(#12131b, #12131b);">
+<tr>
+<td style="padding: 24px">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
               margin: 0;
               font-family: &quot;DM Sans&quot;, Arial, sans-serif;
@@ -84,30 +83,17 @@
               font-weight: 500;
               line-height: 26px;
               color: #f5f0eb;
-              text-align: center;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
             "
             class="body-text"
           >
             Device: <strong>{{device_name}}</strong>
-          </p></div></div>
-        </td>
-      </tr>
-    </table>
-  </td>
+          </p></div></div></td>
 </tr>
-
 <tr>
-  <td style="padding: 0 40px 0 40px" class="mobile-padding">
-    <table
-      role="presentation"
-      cellspacing="0"
-      cellpadding="0"
-      border="0"
-      width="100%"
-    >
-      <tr>
-        <td align="center" style="padding: 14px 0 0">
-          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
               margin: 0;
               font-family: &quot;DM Sans&quot;, Arial, sans-serif;
@@ -115,17 +101,20 @@
               font-weight: 500;
               line-height: 26px;
               color: #f5f0eb;
-              text-align: center;
+              text-align: left;
             "
             class="body-text"
           >
             {{#login_datetime}}Date and time: <strong>{{.}} UTC</strong>{{/login_datetime}}{{^login_datetime}}{{#time}}Time: <strong>{{.}}</strong>{{/time}}{{/login_datetime}}
-          </p></div></div>
-        </td>
-      </tr>
-    </table>
-  </td>
+          </p></div></div></td>
 </tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
 
 <tr>
   <td style="padding: 0 40px 0 40px" class="mobile-padding">
@@ -137,7 +126,7 @@
       width="100%"
     >
       <tr>
-        <td align="center" style="padding: 20px 0 0">
+        <td align="left" style="padding: 20px 0 0">
           <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
               margin: 0;
@@ -146,7 +135,7 @@
               font-weight: 500;
               line-height: 26px;
               color: #f5f0eb;
-              text-align: center;
+              text-align: left;
             "
             class="body-text"
           >
@@ -168,7 +157,7 @@
       width="100%"
     >
       <tr>
-        <td align="center" style="padding: 14px 0 {{^cta_url}}6{{/cta_url}}{{#cta_url}}0{{/cta_url}}px">
+        <td align="left" style="padding: 14px 0 {{^cta_url}}6{{/cta_url}}{{#cta_url}}0{{/cta_url}}px">
           <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
               margin: 0;
@@ -177,7 +166,7 @@
               font-weight: 500;
               line-height: 26px;
               color: #f5f0eb;
-              text-align: center;
+              text-align: left;
             "
             class="body-text"
           >

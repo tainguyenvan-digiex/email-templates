@@ -1,6 +1,6 @@
 <!-- Message -->
 <tr>
-  <td style="padding: 20px 40px 20px 40px" class="mobile-padding">
+  <td style="padding: 20px 40px 0 40px" class="mobile-padding">
     <table
       role="presentation"
       cellspacing="0"
@@ -9,12 +9,12 @@
       width="100%"
     >
       <tr>
-        <td align="center" style="padding: 0">
+        <td align="left" style="padding: 0">
           <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             class="body-text"
             style="
               margin: 0;
-              text-align: center;
+              text-align: left;
               color: #f5f0eb;
               font-size: 18px;
             "
@@ -23,32 +23,81 @@
             <strong>{{transaction_amount}}{{transaction_currency}}</strong>
             {{message_middle}}
             <strong>{{transaction_date}}</strong> {{message_suffix}}
-          </p>{{#counterparty}}<p
-            class="body-text"
-            style="
-              margin: 12px 0 0;
-              text-align: center;
-              color: #f5f0eb;
-              font-size: 18px;
-            "
-          >
-            Counterparty: <strong>{{.}}</strong>
-          </p>{{/counterparty}}{{#reference}}<p
-            class="body-text"
-            style="
-              margin: 12px 0 0;
-              text-align: center;
-              color: #f5f0eb;
-              font-size: 18px;
-            "
-          >
-            Reference: <strong>{{.}}</strong>
-          </p>{{/reference}}</div></div>
+          </p></div></div>
         </td>
       </tr>
     </table>
   </td>
 </tr>
+<!-- Info panel: same markup as the account details card of account-currency-opened (task 5, 2026-11-06). Rows keep their own text and styling. -->
+{{#counterparty}}<tr>
+<td style="padding: 16px 40px 20px 40px" class="mobile-padding">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #12131b; border: 1px solid #231e20; border-radius: 12px; background-image: linear-gradient(#12131b, #12131b);">
+<tr>
+<td style="padding: 24px">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            class="body-text"
+            style="
+              margin: 0;
+              text-align: left;
+              color: #f5f0eb;
+              font-size: 18px;
+            "
+          >
+            Counterparty: <strong>{{.}}</strong>
+          </p></div></div></td>
+</tr>
+{{#../reference}}<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            class="body-text"
+            style="
+              margin: 0;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
+              color: #f5f0eb;
+              font-size: 18px;
+            "
+          >
+            Reference: <strong>{{.}}</strong>
+          </p></div></div></td>
+</tr>
+{{/../reference}}</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+{{/counterparty}}{{^counterparty}}{{#../reference}}<tr>
+<td style="padding: 16px 40px 20px 40px" class="mobile-padding">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #12131b; border: 1px solid #231e20; border-radius: 12px; background-image: linear-gradient(#12131b, #12131b);">
+<tr>
+<td style="padding: 24px">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            class="body-text"
+            style="
+              margin: 0;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
+              color: #f5f0eb;
+              font-size: 18px;
+            "
+          >
+            Reference: <strong>{{.}}</strong>
+          </p></div></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+{{/../reference}}{{/counterparty}}
 
 <!-- CTA Button -->
 <tr>
@@ -116,7 +165,7 @@
       width="100%"
     >
       <tr>
-        <td align="center" style="padding: 0">
+        <td align="left" style="padding: 0">
           <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
               margin: 0;
@@ -125,7 +174,7 @@
               font-weight: 400;
               line-height: 20px;
               color: #6b7280;
-              text-align: center;
+              text-align: left;
             "
           >
             {{expiration_message_prefix}}

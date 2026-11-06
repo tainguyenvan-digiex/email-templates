@@ -9,7 +9,7 @@
 
 <!-- Subscription Update Information -->
 <tr>
-  <td style="padding: 0 40px 8px 40px" class="mobile-padding">
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
     <table
       role="presentation"
       cellspacing="0"
@@ -18,50 +18,8 @@
       width="100%"
     >
       <tr>
-        <td align="center" style="padding: 20px 0 0">
+        <td align="left" style="padding: 20px 0 0">
           <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
-            style="
-              margin: 0 0 16px 0;
-              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-              font-size: 18px;
-              font-weight: 500;
-              line-height: 22px;
-              color: #f5f0eb;
-              text-align: center;
-            "
-            class="body-text"
-          >
-            {{subscription_update_intro}}
-          </p>
-          <p
-            style="
-              margin: 0 0 8px 0;
-              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-              font-size: 18px;
-              font-weight: 500;
-              line-height: 22px;
-              color: #f5f0eb;
-              text-align: center;
-            "
-            class="body-text"
-          >
-            {{previous_plan_label}} <b>{{previous_plan}}</b>
-          </p>
-          <p
-            style="
-              margin: 0 0 2px 0;
-              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-              font-size: 18px;
-              font-weight: 500;
-              line-height: 22px;
-              color: #f5f0eb;
-              text-align: center;
-            "
-            class="body-text"
-          >
-            {{new_plan_label}} <b>{{new_plan}}</b>
-          </p>
-          <p
             style="
               margin: 0;
               font-family: &quot;DM Sans&quot;, Arial, sans-serif;
@@ -69,16 +27,78 @@
               font-weight: 500;
               line-height: 22px;
               color: #f5f0eb;
-              text-align: center;
+              text-align: left;
             "
             class="body-text"
           >
-            {{effective_date_label}} <b>{{effective_date}}</b>
+            {{subscription_update_intro}}
           </p></div></div>
         </td>
       </tr>
     </table>
   </td>
 </tr>
+<!-- Info panel: same markup as the account details card of account-currency-opened (task 5, 2026-11-06). Rows keep their own text and styling. -->
+<tr>
+<td style="padding: 16px 40px 8px 40px" class="mobile-padding">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #12131b; border: 1px solid #231e20; border-radius: 12px; background-image: linear-gradient(#12131b, #12131b);">
+<tr>
+<td style="padding: 24px">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 22px;
+              color: #f5f0eb;
+              text-align: left;
+            "
+            class="body-text"
+          >
+            {{previous_plan_label}} <b>{{previous_plan}}</b>
+          </p></div></div></td>
+</tr>
+<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 22px;
+              color: #f5f0eb;
+              text-align: left;
+            "
+            class="body-text"
+          >
+            {{new_plan_label}} <b>{{new_plan}}</b>
+          </p></div></div></td>
+</tr>
+<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 22px;
+              color: #f5f0eb;
+              text-align: left;
+            "
+            class="body-text"
+          >
+            {{effective_date_label}} <b>{{effective_date}}</b>
+          </p></div></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
 
 <!-- Action Message -->

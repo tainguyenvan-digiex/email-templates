@@ -13,7 +13,7 @@
       width="100%"
     >
       <tr>
-        <td align="center" style="padding: 24px 0 0">
+        <td align="left" style="padding: 24px 0 0">
           <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
               margin: 0;
@@ -22,7 +22,7 @@
               font-weight: 500;
               line-height: 26px;
               color: #f5f0eb;
-              text-align: center;
+              text-align: left;
             "
             class="body-text"
           >
@@ -44,7 +44,7 @@
       width="100%"
     >
       <tr>
-        <td align="center" style="padding: 16px 0 0">
+        <td align="left" style="padding: 16px 0 0">
           <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
               margin: 0;
@@ -53,7 +53,7 @@
               font-weight: 500;
               line-height: 26px;
               color: #f5f0eb;
-              text-align: center;
+              text-align: left;
             "
             class="body-text"
           >
@@ -65,18 +65,15 @@
   </td>
 </tr>
 
+<!-- Info panel: same markup as the account details card of account-currency-opened (task 5, 2026-11-06). Rows keep their own text and styling. -->
 {{#amount}}<tr>
-  <td style="padding: 0 40px 0 40px" class="mobile-padding">
-    <table
-      role="presentation"
-      cellspacing="0"
-      cellpadding="0"
-      border="0"
-      width="100%"
-    >
-      <tr>
-        <td align="center" style="padding: 16px 0 0">
-          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+<td style="padding: 16px 40px 0px 40px" class="mobile-padding">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #12131b; border: 1px solid #231e20; border-radius: 12px; background-image: linear-gradient(#12131b, #12131b);">
+<tr>
+<td style="padding: 24px">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
               margin: 0;
               font-family: &quot;DM Sans&quot;, Arial, sans-serif;
@@ -84,31 +81,17 @@
               font-weight: 500;
               line-height: 26px;
               color: #f5f0eb;
-              text-align: center;
-              word-break: break-all;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
             "
             class="body-text"
           >
             Amount: <strong>{{.}}</strong>
-          </p></div></div>
-        </td>
-      </tr>
-    </table>
-  </td>
+          </p></div></div></td>
 </tr>
-
-{{/amount}}{{#recipient}}<tr>
-  <td style="padding: 0 40px 0 40px" class="mobile-padding">
-    <table
-      role="presentation"
-      cellspacing="0"
-      cellpadding="0"
-      border="0"
-      width="100%"
-    >
-      <tr>
-        <td align="center" style="padding: 10px 0 0">
-          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+{{#../recipient}}<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
               margin: 0;
               font-family: &quot;DM Sans&quot;, Arial, sans-serif;
@@ -116,31 +99,17 @@
               font-weight: 500;
               line-height: 26px;
               color: #f5f0eb;
-              text-align: center;
-              word-break: break-all;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
             "
             class="body-text"
           >
             To: <strong>{{.}}</strong>
-          </p></div></div>
-        </td>
-      </tr>
-    </table>
-  </td>
+          </p></div></div></td>
 </tr>
-
-{{/recipient}}{{#iban}}<tr>
-  <td style="padding: 0 40px 0 40px" class="mobile-padding">
-    <table
-      role="presentation"
-      cellspacing="0"
-      cellpadding="0"
-      border="0"
-      width="100%"
-    >
-      <tr>
-        <td align="center" style="padding: 10px 0 0">
-          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+{{/../recipient}}{{#../iban}}<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
               margin: 0;
               font-family: &quot;DM Sans&quot;, Arial, sans-serif;
@@ -148,20 +117,100 @@
               font-weight: 500;
               line-height: 26px;
               color: #f5f0eb;
-              text-align: center;
-              word-break: break-all;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
             "
             class="body-text"
           >
             IBAN: <strong>{{.}}</strong>
-          </p></div></div>
-        </td>
-      </tr>
-    </table>
-  </td>
+          </p></div></div></td>
 </tr>
-
-{{/iban}}<tr>
+{{/../iban}}</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+{{/amount}}{{^amount}}{{#../recipient}}<tr>
+<td style="padding: 16px 40px 0px 40px" class="mobile-padding">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #12131b; border: 1px solid #231e20; border-radius: 12px; background-image: linear-gradient(#12131b, #12131b);">
+<tr>
+<td style="padding: 24px">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
+            "
+            class="body-text"
+          >
+            To: <strong>{{.}}</strong>
+          </p></div></div></td>
+</tr>
+{{#../../iban}}<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
+            "
+            class="body-text"
+          >
+            IBAN: <strong>{{.}}</strong>
+          </p></div></div></td>
+</tr>
+{{/../../iban}}</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+{{/../recipient}}{{^../recipient}}{{#../../iban}}<tr>
+<td style="padding: 16px 40px 0px 40px" class="mobile-padding">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #12131b; border: 1px solid #231e20; border-radius: 12px; background-image: linear-gradient(#12131b, #12131b);">
+<tr>
+<td style="padding: 24px">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
+            "
+            class="body-text"
+          >
+            IBAN: <strong>{{.}}</strong>
+          </p></div></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+{{/../../iban}}{{/../recipient}}{{/amount}}<tr>
   <td style="padding: 0 40px 0 40px" class="mobile-padding">
     <table
       role="presentation"
@@ -171,7 +220,7 @@
       width="100%"
     >
       <tr>
-        <td align="center" style="padding: 16px 0 20px">
+        <td align="left" style="padding: 16px 0 20px">
           <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
               margin: 0;
@@ -180,7 +229,7 @@
               font-weight: 500;
               line-height: 26px;
               color: #f5f0eb;
-              text-align: center;
+              text-align: left;
             "
             class="body-text"
           >
@@ -254,7 +303,7 @@
       width="100%"
     >
       <tr>
-        <td align="center" style="padding: 0">
+        <td align="left" style="padding: 0">
           <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
               margin: 0;
@@ -263,7 +312,7 @@
               font-weight: 500;
               line-height: 26px;
               color: #f5f0eb;
-              text-align: center;
+              text-align: left;
             "
             class="body-text"
           >
@@ -285,7 +334,7 @@
       width="100%"
     >
       <tr>
-        <td align="center" style="padding: 16px 0 8px">
+        <td align="left" style="padding: 16px 0 8px">
           <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
               margin: 0;
@@ -294,7 +343,7 @@
               font-weight: 500;
               line-height: 26px;
               color: #f5f0eb;
-              text-align: center;
+              text-align: left;
             "
             class="body-text"
           >

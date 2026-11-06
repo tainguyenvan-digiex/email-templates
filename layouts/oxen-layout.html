@@ -227,7 +227,11 @@
               </td>
             </tr>
 
-            <!-- ========== BODY CONTENT (injected by each template) ========== -->
+            <!-- ========== BODY CONTENT (injected by each template) ==========
+              House style (2026-11-06): greeting, text rows, data rows and the contact block and sign-off below
+              share the 40px left edge, link-expiry lines and the OTP label / validity lines included. Centred:
+              CTA buttons, the OTP code box, the header logo and the legal footer.
+            -->
             {{{ @content }}}
 
             <!-- ========== CONTACT BLOCK (spec v14, Layout & rules R4); hidden by config `hide_contact_block` (O13 refusal and internal emails; O19 when built) ========== -->
@@ -242,7 +246,7 @@
                   width="100%"
                 >
                   <tr>
-                    <td align="center">
+                    <td align="left">
                       <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
                         style="
                           margin: 0;
@@ -251,7 +255,7 @@
                           font-weight: 500;
                           line-height: 26px;
                           color: #f5f0eb;
-                          text-align: center;
+                          text-align: left;
                         "
                         class="body-text"
                       >
@@ -278,7 +282,7 @@
                   width="100%"
                 >
                   <tr>
-                    <td align="center">
+                    <td align="left">
                       <div class="gmail-blend-screen">
                         <div class="gmail-blend-difference">
                           <p
@@ -290,7 +294,7 @@
                               font-weight: 500;
                               line-height: 22px;
                               color: #ffffff;
-                              text-align: center;
+                              text-align: left;
                             "
                             class="body-text"
                           >
@@ -305,7 +309,7 @@
                               font-weight: 500;
                               line-height: 22px;
                               color: #ffffff;
-                              text-align: center;
+                              text-align: left;
                             "
                             class="body-text"
                           >

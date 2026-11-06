@@ -48,15 +48,56 @@ changes the email on prod at once. So the order for an existing template is: com
 so in the commit or the PR of the PHP service that depends on it. A *new* alias is safe to upload any time (no
 sender uses it until its `email_mapping` row exists in the notification DB).
 
+### Uploading to Postmark safely
+
+Only on an explicit request from the user (it is prod). For each template you change, and the layout first when it
+changed:
+
+1. **Live must equal `main`:** `GET /templates/<alias>` and compare its `HtmlBody` with the `main` version of the
+   file (whitespace-normalised). If they differ, someone uploaded something that is not in the repo: stop and ask,
+   do not overwrite it.
+2. **Back up** the full live JSON of every template before the first write.
+3. **Write the HTML only:** `PUT /templates/<alias>` with `{"HtmlBody": …}`. Subject (`{{subject}}`), TextBody,
+   Name and LayoutTemplate stay as they are.
+4. **Verify each write:** `GET` it back. `HtmlBody` must equal the file byte for byte, and Subject, TextBody, Name,
+   LayoutTemplate, TemplateType and Alias must be unchanged. Stop at the first mismatch.
+5. **Rollback** = `PUT` the backed-up `HtmlBody`.
+
+Validate before uploading (`POST /templates/validate` with `LayoutTemplate`) with sample data and with the config
+defaults: `AllContentIsValid` and no unrendered `{{…}}`. To preview layout changes before they are live, splice the
+content into the local layout (`{{{ @content }}}`) and validate that as one Standard template; `LayoutTemplate`
+renders with the layout that is on Postmark, not the one in your worktree.
+
 ## Adding or changing a template
 
 1. Add/edit `templates/content/<slug>-content.html` with only the body markup, referencing `{{variable}}` placeholders.
 2. Add/edit `templates/config/<slug>/en.json` and `fr.json` with matching keys (include `"layout"`, `"title"`, `"subject"`, and any content variables).
    Mirror the exact same change into the PHP service's config (see "Variables & language files") — the two must stay identical.
 3. If new variables are introduced, document them in `TEMPLATES_TABLE.md` (dynamic fields table) so backend integrators know what to supply.
-4. Run `python3 tools/blend-audit.py $(ls templates/content/*.html | grep -v lapkipay)` and require
+4. Align per the house style below: everything left, only CTA buttons and the OTP code box centred.
+5. Run `python3 tools/blend-audit.py $(ls templates/content/*.html | grep -v lapkipay)` and require
    **A = 0 and B = 0**. Verification here is visual, and this particular defect is invisible on a
    desktop: it only shows in the Gmail app, and only in one of its two modes.
+
+### Alignment: everything left on one edge, only buttons and the code box centred
+
+`oxen-layout` e-mails use the fintech transactional style (decided 2026-11-06):
+- **Left, on the 40px edge:** greeting, paragraphs, lists, data rows (`Label: <strong>value</strong>` on one line),
+  link-expiry lines, the OTP label ("Use this code…") and "The code is valid for … minutes.", and the layout's
+  contact block and sign-off. Text rows use `<td align="left">` and `text-align: left`.
+- **Centred, and nothing else:** every CTA button and the OTP code box (`<td align="center">` around the pill; the
+  digits are centred inside it). The layout's header logo and legal footer are centred too.
+- A sentence stays one paragraph: do not split a value onto its own line ("The card ending in **1234** has been…").
+- Right alignment is for amount columns inside a table only.
+- **Info panels:** every group of information rows (label + value: Date, Time, Location, Amount, To, IBAN, Reference,
+  Network, Address, Transaction hash, …) sits in the account-details panel of `account-currency-opened`
+  (`#12131b` background, `1px solid #231e20` border, 12px radius, 24px inside, rows `padding: 0 0 12px 0`, blend
+  wrappers), left-aligned. A sentence that merely contains a value is not a panel. If every row of a panel is
+  optional, the panel must not render empty (wrap it in the row's section, or chain the sections so it shows when any
+  row has a value). Long tokens break with `word-break: break-word; overflow-wrap: anywhere;`, never `break-all`.
+- Keep the row spacing: 24px above the greeting, 16px between paragraphs, 10px between data rows, 8px under the last
+  row (the contact block adds 8px).
+- Templates on older layouts (`shared-layout`, `common-layout`, `.lapkipay`) keep their centred design.
 
 ### The Gmail blend wrappers — the rule that keeps being broken
 
