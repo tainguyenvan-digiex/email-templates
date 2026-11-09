@@ -71,9 +71,9 @@ This document lists all email templates with their aliases, mappings to the data
 | 63 | Card Limit Updated (K20) | `card-limit-updated` | ❌ Not in DB (card-service, OP-1312) | `first_name`, `last4`, `limit_amount`, `frequency_text` (`per day`/`per week`/`per month`/`per year`/`in total`/`per transaction`, from `limitFrequencyText`) |
 | 64 | Card PIN Changed (K21) | `card-pin-changed` | ❌ Not in DB (card-service, OP-1312) | `first_name`, `last4` |
 | 65 | Card Balance Ready (K22) | `card-balance-ready` | ❌ Not in DB (card-service, OP-1312) | `first_name`, `company_name` |
-| 66 | Card Statement Ready (K23) | `card-statement-ready` | ❌ Not in DB (card-service, OP-1312) | `first_name`, `period`, `download_url`, `expiration_hours` |
+| 66 | Card Statement Ready (K23) | `card-statement-ready` | ❌ Not in DB (card-service, OP-1312) | `first_name`, `period`, `download_url`, `expiration_text` (words, e.g. `1 hour`) |
 | 67 | Card Statement Failed (K24) | `card-statement-failed` | ❌ Not in DB (card-service, OP-1312) | `first_name`, `period_from`, `period_to` (both empty = single-transaction receipt failure) |
-| 68 | Card Receipt Ready (K25) | `card-receipt-ready` | ❌ Not in DB (card-service, OP-1312) | `first_name`, `transaction_amount`, `transaction_date`, `download_url`, `expiration_hours` |
+| 68 | Card Receipt Ready (K25) | `card-receipt-ready` | ❌ Not in DB (card-service, OP-1312) | `first_name`, `transaction_amount`, `transaction_date`, `download_url`, `expiration_text` (words, e.g. `1 hour`) |
 | 69 | Card Payment Code, 3DS (K27) | `card-payment-code` | ❌ Not in DB (card-service, OP-1312) | `first_name`, `last4`, `merchant`, `amount`, `otp_code`, `otp_minutes` |
 | 70 | [internal] Rain webhook, no hash match | `card-dev-rain-no-hash` | ❌ Not in DB (card-service, OP-1312) | `transaction_hash`, `company_id`, `card_account_id`, `amount`, `reason`, `hide_contact_block: true` |
 | 71 | [internal] Rain compliance alert | `card-rain-compliance-alert` | ❌ Not in DB (card-service, OP-1312) | `company_id`, `event_code`, `rain_status`, `reason_codes`, `step`, `reason_text`, `owner`, `hold_source`, `cleared_by_admin`, `admin_url`; run: `companies` (list of `{company_id, reason_codes, admin_url}`), `company_count`; `hide_contact_block: true` |

@@ -2,7 +2,7 @@
   K23 Card statement ready (OP-1312). Alias: card-statement-ready.
   For use with oxen-layout. The layout provides the logo, the contact block, the sign-off and the legal footer.
   House style (main 032e680): text left on the 40px edge, label/value rows in an info panel, CTA and OTP box centred.
-  Variables (all pre-formatted by card-service): first_name, period, download_url, expiration_hours.
+  Variables (all pre-formatted by card-service): first_name, period, download_url, expiration_text.
   Always sent (not optional): download_url. Every other value may be empty: its words hide.
 -->
 <tr>
@@ -90,7 +90,7 @@
             "
             class="body-text"
           >
-            Download it here{{#expiration_hours}} (link valid for {{.}} hours){{/expiration_hours}}:
+            Download it here{{#expiration_text}} (link valid for {{.}}){{/expiration_text}}:
           </p></div></div>
         </td>
       </tr>
