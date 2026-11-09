@@ -1,0 +1,10 @@
+{
+  "layout": "oxen-layout",
+  "title": "Your receipt for {{transaction_amount}} on {{transaction_date}}",
+  "subject": "Your receipt for {{transaction_amount}} on {{transaction_date}}",
+  "first_name": "",
+  "transaction_amount": "",
+  "transaction_date": "",
+  "download_url": "",
+  "expiration_hours": ""
+}

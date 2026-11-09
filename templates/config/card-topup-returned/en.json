@@ -1,0 +1,7 @@
+{
+  "layout": "oxen-layout",
+  "title": "Your card top-up of {{amount}} could not be completed",
+  "subject": "Your card top-up of {{amount}} could not be completed",
+  "first_name": "",
+  "amount": ""
+}

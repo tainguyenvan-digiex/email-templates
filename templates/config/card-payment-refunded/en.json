@@ -1,0 +1,9 @@
+{
+  "layout": "oxen-layout",
+  "title": "Refund of {{amount}} from {{merchant}}",
+  "subject": "Refund of {{amount}} from {{merchant}}",
+  "first_name": "",
+  "amount": "",
+  "merchant": "",
+  "card_balance": ""
+}

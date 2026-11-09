@@ -1,0 +1,11 @@
+{
+  "layout": "oxen-layout",
+  "title": "Code to confirm a card payment of {{amount}}",
+  "subject": "Code to confirm a card payment of {{amount}}",
+  "first_name": "",
+  "last4": "",
+  "merchant": "",
+  "amount": "",
+  "otp_code": "",
+  "otp_minutes": ""
+}

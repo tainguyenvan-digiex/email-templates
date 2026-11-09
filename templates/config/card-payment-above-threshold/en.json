@@ -1,0 +1,10 @@
+{
+  "layout": "oxen-layout",
+  "title": "Card payment of {{amount}} with the card ending in {{last4}}",
+  "subject": "Card payment of {{amount}} with the card ending in {{last4}}",
+  "first_name": "",
+  "last4": "",
+  "amount": "",
+  "merchant": "",
+  "location": ""
+}

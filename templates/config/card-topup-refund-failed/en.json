@@ -1,0 +1,9 @@
+{
+  "layout": "oxen-layout",
+  "title": "Action needed: your card top-up of {{amount}}",
+  "subject": "Action needed: your card top-up of {{amount}}",
+  "first_name": "",
+  "amount": "",
+  "topup_reference": "",
+  "cta_url": ""
+}

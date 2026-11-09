@@ -1,0 +1,8 @@
+{
+  "layout": "oxen-layout",
+  "title": "Card ending in {{last4}} blocked",
+  "subject": "Card ending in {{last4}} blocked",
+  "first_name": "",
+  "last4": "",
+  "blocked_by": ""
+}

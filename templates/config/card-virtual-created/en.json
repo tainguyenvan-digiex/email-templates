@@ -1,0 +1,8 @@
+{
+  "layout": "oxen-layout",
+  "title": "A virtual card ending in {{last4}} has been created",
+  "subject": "A virtual card ending in {{last4}} has been created",
+  "first_name": "",
+  "last4": "",
+  "cardholder_name": ""
+}

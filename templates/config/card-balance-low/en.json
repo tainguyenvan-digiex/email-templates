@@ -1,0 +1,8 @@
+{
+  "layout": "oxen-layout",
+  "title": "Your card balance is below {{threshold}}",
+  "subject": "Your card balance is below {{threshold}}",
+  "first_name": "",
+  "card_balance": "",
+  "threshold": ""
+}

@@ -1,0 +1,18 @@
+{
+  "layout": "oxen-layout",
+  "title": "Rain card application needs action – {{company_id}}",
+  "subject": "Rain card application needs action – {{company_id}}",
+  "company_id": "",
+  "event_code": "",
+  "rain_status": "",
+  "reason_codes": "",
+  "step": "",
+  "reason_text": "",
+  "owner": "",
+  "hold_source": "",
+  "cleared_by_admin": "",
+  "admin_url": "",
+  "companies": [],
+  "company_count": "",
+  "hide_contact_block": true
+}

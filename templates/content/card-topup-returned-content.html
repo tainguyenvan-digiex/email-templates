@@ -1,0 +1,129 @@
+<!--
+  K14 Card top-up not completed, amount returned (OP-1312). Alias: card-topup-returned.
+  For use with oxen-layout. The layout provides the logo, the contact block, the sign-off and the legal footer.
+  House style (main 032e680): text left on the 40px edge, label/value rows in an info panel, CTA and OTP box centred.
+  Variables (all pre-formatted by card-service): first_name, amount.
+-->
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="left" style="padding: 24px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+            "
+            class="body-text"
+          >
+            Hello{{#first_name}} {{.}}{{/first_name}},
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="left" style="padding: 16px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+            "
+            class="body-text"
+          >
+            Your card top-up{{#amount}} of {{.}}{{/amount}} could not be completed. The amount is being returned to your euro account.
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="left" style="padding: 16px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+            "
+            class="body-text"
+          >
+            You can try again from the Cards section.
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="left" style="padding: 16px 0 8px">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+            "
+            class="body-text"
+          >
+            The Oxen Spend Card is issued by Nimbus LLC dba Third National, pursuant to a licence from Visa. The card programme is managed by Rain.
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>

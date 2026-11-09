@@ -1,0 +1,7 @@
+{
+  "layout": "oxen-layout",
+  "title": "PIN changed for the card ending in {{last4}}",
+  "subject": "PIN changed for the card ending in {{last4}}",
+  "first_name": "",
+  "last4": ""
+}

@@ -1,0 +1,8 @@
+{
+  "layout": "oxen-layout",
+  "title": "{{amount}} returned from your card balance",
+  "subject": "{{amount}} returned from your card balance",
+  "first_name": "",
+  "amount": "",
+  "card_balance": ""
+}

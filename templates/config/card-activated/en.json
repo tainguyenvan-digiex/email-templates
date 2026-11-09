@@ -1,0 +1,8 @@
+{
+  "layout": "oxen-layout",
+  "title": "Your Oxen card ending in {{last4}} is active",
+  "subject": "Your Oxen card ending in {{last4}} is active",
+  "first_name": "",
+  "last4": "",
+  "cardholder_name": ""
+}

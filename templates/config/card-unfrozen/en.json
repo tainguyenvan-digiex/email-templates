@@ -1,0 +1,7 @@
+{
+  "layout": "oxen-layout",
+  "title": "Card ending in {{last4}} can be used again",
+  "subject": "Card ending in {{last4}} can be used again",
+  "first_name": "",
+  "last4": ""
+}

@@ -1,0 +1,278 @@
+<!--
+  K08 Card payment above €500 (OP-1312). Alias: card-payment-above-threshold.
+  For use with oxen-layout. The layout provides the logo, the contact block, the sign-off and the legal footer.
+  House style (main 032e680): text left on the 40px edge, label/value rows in an info panel, CTA and OTP box centred.
+  Variables (all pre-formatted by card-service): first_name, last4, amount, merchant, location.
+-->
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="left" style="padding: 24px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+            "
+            class="body-text"
+          >
+            Hello{{#first_name}} {{.}}{{/first_name}},
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="left" style="padding: 16px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+            "
+            class="body-text"
+          >
+            A payment above €500 was made with the Oxen card{{#last4}} ending in {{.}}{{/last4}}:
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+{{#amount}}<!-- Info panel: same markup as the account details card of account-currency-opened (house style on main). -->
+<tr>
+<td style="padding: 16px 40px 0px 40px" class="mobile-padding">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #12131b; border: 1px solid #231e20; border-radius: 12px; background-image: linear-gradient(#12131b, #12131b);">
+<tr>
+<td style="padding: 24px">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
+            "
+            class="body-text"
+          >
+            Amount: <strong>{{.}}</strong>
+          </p></div></div></td>
+</tr>
+{{#../merchant}}<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
+            "
+            class="body-text"
+          >
+            Merchant: <strong>{{.}}</strong>
+          </p></div></div></td>
+</tr>{{/../merchant}}
+{{#../location}}<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
+            "
+            class="body-text"
+          >
+            Location: <strong>{{.}}</strong>
+          </p></div></div></td>
+</tr>{{/../location}}
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+{{/amount}}{{^amount}}{{#../merchant}}<!-- Info panel: same markup as the account details card of account-currency-opened (house style on main). -->
+<tr>
+<td style="padding: 16px 40px 0px 40px" class="mobile-padding">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #12131b; border: 1px solid #231e20; border-radius: 12px; background-image: linear-gradient(#12131b, #12131b);">
+<tr>
+<td style="padding: 24px">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
+            "
+            class="body-text"
+          >
+            Merchant: <strong>{{.}}</strong>
+          </p></div></div></td>
+</tr>
+{{#../../location}}<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
+            "
+            class="body-text"
+          >
+            Location: <strong>{{.}}</strong>
+          </p></div></div></td>
+</tr>{{/../../location}}
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+{{/../merchant}}{{^../merchant}}{{#../../location}}<!-- Info panel: same markup as the account details card of account-currency-opened (house style on main). -->
+<tr>
+<td style="padding: 16px 40px 0px 40px" class="mobile-padding">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #12131b; border: 1px solid #231e20; border-radius: 12px; background-image: linear-gradient(#12131b, #12131b);">
+<tr>
+<td style="padding: 24px">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
+            "
+            class="body-text"
+          >
+            Location: <strong>{{.}}</strong>
+          </p></div></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+{{/../../location}}{{/../merchant}}{{/amount}}
+
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="left" style="padding: 16px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+            "
+            class="body-text"
+          >
+            If you recognise this payment, there is nothing to do. If you do not, freeze the card from the Cards section and contact us immediately.
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="left" style="padding: 16px 0 8px">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+            "
+            class="body-text"
+          >
+            The Oxen Spend Card is issued by Nimbus LLC dba Third National, pursuant to a licence from Visa. The card programme is managed by Rain.
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>

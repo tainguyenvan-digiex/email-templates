@@ -1,0 +1,307 @@
+<!--
+  — [internal] Rain card application needs compliance action (OP-1312). Alias: card-rain-compliance-alert.
+  For use with oxen-layout. The layout provides the logo, the contact block, the sign-off and the legal footer.
+  House style (main 032e680): text left on the 40px edge, label/value rows in an info panel, CTA and OTP box centred.
+  Variables (all pre-formatted by card-service): company_id, event_code, rain_status, reason_codes, step, reason_text, owner, hold_source, cleared_by_admin, admin_url, companies, company_count.
+  Always sent (not optional): event_code. Every other value may be empty: its words hide.
+-->
+{{#company_id}}
+<!-- Info panel: same markup as the account details card of account-currency-opened (house style on main). -->
+<tr>
+<td style="padding: 24px 40px 0px 40px" class="mobile-padding">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #12131b; border: 1px solid #231e20; border-radius: 12px; background-image: linear-gradient(#12131b, #12131b);">
+<tr>
+<td style="padding: 24px">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
+            "
+            class="body-text"
+          >
+            Company: <strong>{{.}}</strong>
+          </p></div></div></td>
+</tr>
+<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
+            "
+            class="body-text"
+          >
+            Event: <strong>{{../event_code}}</strong>
+          </p></div></div></td>
+</tr>
+<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
+            "
+            class="body-text"
+          >
+            Rain status: <strong>{{#../rain_status}}{{.}}{{/../rain_status}}{{^../rain_status}}n/a{{/../rain_status}}</strong>
+          </p></div></div></td>
+</tr>
+<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
+            "
+            class="body-text"
+          >
+            Reason codes: <strong>{{#../reason_codes}}{{.}}{{/../reason_codes}}{{^../reason_codes}}none{{/../reason_codes}}</strong>
+          </p></div></div></td>
+</tr>
+{{#../step}}<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
+            "
+            class="body-text"
+          >
+            Step: <strong>{{.}}</strong>
+          </p></div></div></td>
+</tr>{{/../step}}
+{{#../reason_text}}<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
+            "
+            class="body-text"
+          >
+            What happened: <strong>{{.}}</strong>
+          </p></div></div></td>
+</tr>{{/../reason_text}}
+{{#../owner}}<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
+            "
+            class="body-text"
+          >
+            Owner: <strong>{{.}}</strong>
+          </p></div></div></td>
+</tr>{{/../owner}}
+{{#../hold_source}}<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
+            "
+            class="body-text"
+          >
+            Hold source: <strong>{{.}}</strong>
+          </p></div></div></td>
+</tr>{{/../hold_source}}
+{{#../cleared_by_admin}}<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
+            "
+            class="body-text"
+          >
+            Cleared by admin: <strong>{{.}}</strong>
+          </p></div></div></td>
+</tr>{{/../cleared_by_admin}}
+{{#../admin_url}}<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
+            "
+            class="body-text"
+          >
+            Open in admin: <a href="{{.}}" target="_blank" style="color: #c08b88; text-decoration: none"><span style="color: #c08b88">{{.}}</span></a>
+          </p></div></div></td>
+</tr>{{/../admin_url}}
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+{{/company_id}}
+{{^company_id}}
+<!-- Info panel: same markup as the account details card of account-currency-opened (house style on main). -->
+<tr>
+<td style="padding: 24px 40px 0px 40px" class="mobile-padding">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #12131b; border: 1px solid #231e20; border-radius: 12px; background-image: linear-gradient(#12131b, #12131b);">
+<tr>
+<td style="padding: 24px">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
+            "
+            class="body-text"
+          >
+            Event: <strong>{{../event_code}}</strong>
+          </p></div></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+{{#each ../companies}}
+<!-- Info panel: same markup as the account details card of account-currency-opened (house style on main). -->
+<tr>
+<td style="padding: 16px 40px 8px 40px" class="mobile-padding">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #12131b; border: 1px solid #231e20; border-radius: 12px; background-image: linear-gradient(#12131b, #12131b);">
+<tr>
+<td style="padding: 24px">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
+            "
+            class="body-text"
+          >
+            Company: <strong>{{company_id}}</strong>
+          </p></div></div></td>
+</tr>
+<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
+            "
+            class="body-text"
+          >
+            Reason codes: <strong>{{#reason_codes}}{{.}}{{/reason_codes}}{{^reason_codes}}none{{/reason_codes}}</strong>
+          </p></div></div></td>
+</tr>
+{{#admin_url}}<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
+            "
+            class="body-text"
+          >
+            Open in admin: <a href="{{.}}" target="_blank" style="color: #c08b88; text-decoration: none"><span style="color: #c08b88">{{.}}</span></a>
+          </p></div></div></td>
+</tr>{{/admin_url}}
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+{{/each}}
+{{/company_id}}

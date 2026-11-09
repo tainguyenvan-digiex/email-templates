@@ -54,6 +54,29 @@ This document lists all email templates with their aliases, mappings to the data
 | 46 | Visa Cards Live (announcement) | `visa-cards-live` | ❌ Not in DB | `first_name`, `cta_url` (portal Cards page, e.g. `https://portal-stg.oxen.finance/cards`; used by both CTA buttons) |
 | 47 | Access Created (M02) | `access-created` | ❌ Not in DB | `first_name`, `company_name`, `role_name`, `cta_url` (portal login URL) |
 | 48 | Access Removed (M03) | `access-removed` | ❌ Not in DB | `first_name`, `company_name`, `date` (UTC) |
+| 49 | Card Activated (K01) | `card-activated` | ❌ Not in DB (card-service, OP-1312) | `first_name`, `last4`, `cardholder_name` |
+| 50 | Virtual Card Created (K02) | `card-virtual-created` | ❌ Not in DB (card-service, OP-1312) | `first_name`, `last4`, `cardholder_name` |
+| 51 | Card Ordered (K03) | `card-ordered` | ❌ Not in DB (card-service, OP-1312) | `first_name`, `cardholder_name`, `delivery_line` (full sentence, empty hides it) |
+| 52 | Card Blocked Permanently (K04) | `card-blocked-permanently` | ❌ Not in DB (card-service, OP-1312) | `first_name`, `last4`, `blocked_by` (person's name or `Oxen`) |
+| 53 | Card Frozen (K07) | `card-frozen` | ❌ Not in DB (card-service, OP-1312) | `first_name`, `last4` |
+| 54 | Card Unfrozen (K07) | `card-unfrozen` | ❌ Not in DB (card-service, OP-1312) | `first_name`, `last4` |
+| 55 | Card Payment Above Threshold (K08) | `card-payment-above-threshold` | ❌ Not in DB (card-service, OP-1312) | `first_name`, `last4`, `amount`, `merchant`, `location` |
+| 56 | Card Payment Declined (K10) | `card-payment-declined` | ❌ Not in DB (card-service, OP-1312) | `first_name`, `amount`, `merchant`, `last4`, `decline_reason` (sentence from `mapDeclineReason`), `cta_url` |
+| 57 | Card Payment Refunded (K11) | `card-payment-refunded` | ❌ Not in DB (card-service, OP-1312) | `first_name`, `amount`, `merchant`, `card_balance` |
+| 58 | Card Top-up Returned (K14) | `card-topup-returned` | ❌ Not in DB (card-service, OP-1312) | `first_name`, `amount` |
+| 59 | Card Top-up Refund Failed (K15) | `card-topup-refund-failed` | ❌ Not in DB (card-service, OP-1312) | `first_name`, `amount`, `topup_reference`, `cta_url` (empty → `mailto:support@oxen.finance`) |
+| 60 | Card Withdrawal Completed (K17) | `card-withdrawal-completed` | ❌ Not in DB (card-service, OP-1312) | `first_name`, `amount`, `card_balance` |
+| 61 | Card Balance Low (K18) | `card-balance-low` | ❌ Not in DB (card-service, OP-1312) | `first_name`, `card_balance`, `threshold` |
+| 62 | Card Balance Used Up (K19) | `card-balance-used-up` | ❌ Not in DB (card-service, OP-1312) | `first_name`, `cta_url` |
+| 63 | Card Limit Updated (K20) | `card-limit-updated` | ❌ Not in DB (card-service, OP-1312) | `first_name`, `last4`, `limit_amount`, `frequency_text` (`per day`/`per week`/`per month`/`per year`/`in total`/`per transaction`, from `limitFrequencyText`) |
+| 64 | Card PIN Changed (K21) | `card-pin-changed` | ❌ Not in DB (card-service, OP-1312) | `first_name`, `last4` |
+| 65 | Card Balance Ready (K22) | `card-balance-ready` | ❌ Not in DB (card-service, OP-1312) | `first_name`, `company_name` |
+| 66 | Card Statement Ready (K23) | `card-statement-ready` | ❌ Not in DB (card-service, OP-1312) | `first_name`, `period`, `download_url`, `expiration_hours` |
+| 67 | Card Statement Failed (K24) | `card-statement-failed` | ❌ Not in DB (card-service, OP-1312) | `first_name`, `period_from`, `period_to` (both empty = single-transaction receipt failure) |
+| 68 | Card Receipt Ready (K25) | `card-receipt-ready` | ❌ Not in DB (card-service, OP-1312) | `first_name`, `transaction_amount`, `transaction_date`, `download_url`, `expiration_hours` |
+| 69 | Card Payment Code, 3DS (K27) | `card-payment-code` | ❌ Not in DB (card-service, OP-1312) | `first_name`, `last4`, `merchant`, `amount`, `otp_code`, `otp_minutes` |
+| 70 | [internal] Rain webhook, no hash match | `card-dev-rain-no-hash` | ❌ Not in DB (card-service, OP-1312) | `transaction_hash`, `company_id`, `card_account_id`, `amount`, `reason`, `hide_contact_block: true` |
+| 71 | [internal] Rain compliance alert | `card-rain-compliance-alert` | ❌ Not in DB (card-service, OP-1312) | `company_id`, `event_code`, `rain_status`, `reason_codes`, `step`, `reason_text`, `owner`, `hold_source`, `cleared_by_admin`, `admin_url`; run: `companies` (list of `{company_id, reason_codes, admin_url}`), `company_count`; `hide_contact_block: true` |
 
 ## Common Dynamic Fields
 

@@ -1,0 +1,9 @@
+{
+  "layout": "oxen-layout",
+  "title": "Your card statement for {{period}} is ready",
+  "subject": "Your card statement for {{period}} is ready",
+  "first_name": "",
+  "period": "",
+  "download_url": "",
+  "expiration_hours": ""
+}

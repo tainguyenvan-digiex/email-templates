@@ -1,0 +1,11 @@
+{
+  "layout": "oxen-layout",
+  "title": "Card payment declined: {{amount}} at {{merchant}}",
+  "subject": "Card payment declined: {{amount}} at {{merchant}}",
+  "first_name": "",
+  "amount": "",
+  "merchant": "",
+  "last4": "",
+  "decline_reason": "",
+  "cta_url": ""
+}

@@ -1,0 +1,11 @@
+{
+  "layout": "oxen-layout",
+  "title": "[DEV] Rain collateral webhook — no transaction_hash match",
+  "subject": "[DEV] Rain collateral webhook — no transaction_hash match",
+  "transaction_hash": "",
+  "company_id": "",
+  "card_account_id": "",
+  "amount": "",
+  "reason": "",
+  "hide_contact_block": true
+}

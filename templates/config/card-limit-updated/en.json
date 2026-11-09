@@ -1,0 +1,9 @@
+{
+  "layout": "oxen-layout",
+  "title": "New spending limit for the card ending in {{last4}}",
+  "subject": "New spending limit for the card ending in {{last4}}",
+  "first_name": "",
+  "last4": "",
+  "limit_amount": "",
+  "frequency_text": ""
+}
