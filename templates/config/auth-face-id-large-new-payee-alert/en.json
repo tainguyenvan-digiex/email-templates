@@ -1,0 +1,17 @@
+{
+  "layout": "oxen-layout",
+  "title": "{{subject}}",
+  "subject": "{{subject}}",
+  "env": "",
+  "user_id": "",
+  "company_id": "",
+  "approval_id": "",
+  "action_type": "",
+  "amount_eur": "",
+  "threshold_eur": "",
+  "payee_added_at": "",
+  "device_trusted_at": "",
+  "approved_at": "",
+  "recipient_email": "",
+  "hide_contact_block": true
+}

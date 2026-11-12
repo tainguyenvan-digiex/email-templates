@@ -1,0 +1,14 @@
+{
+  "layout": "oxen-layout",
+  "title": "{{subject}}",
+  "subject": "{{subject}}",
+  "env": "",
+  "count": "",
+  "threshold": "",
+  "window_minutes": "",
+  "window_start": "",
+  "user_ids": [],
+  "more_users": "",
+  "recipient_email": "",
+  "hide_contact_block": true
+}

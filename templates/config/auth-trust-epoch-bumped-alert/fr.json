@@ -1,0 +1,13 @@
+{
+  "layout": "oxen-layout",
+  "title": "{{subject}}",
+  "subject": "{{subject}}",
+  "env": "",
+  "epoch_before": "",
+  "epoch_after": "",
+  "requested_by": "",
+  "approved_by": "",
+  "approved_at": "",
+  "recipient_email": "",
+  "hide_contact_block": true
+}
