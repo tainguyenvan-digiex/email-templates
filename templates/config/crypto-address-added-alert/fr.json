@@ -1,0 +1,16 @@
+{
+  "layout": "oxen-layout",
+  "title": "New crypto address added: {{address_label}}",
+  "subject": "New crypto address added: {{address_label}}",
+  "cta_text": "Review my devices",
+  "signature": "The Oxen Team.",
+  "cta_url": "",
+  "first_name": "",
+  "address_label": "",
+  "address_short": "",
+  "network": "",
+  "symbol": "",
+  "initiator_name": "",
+  "date": "",
+  "recipient_email": ""
+}

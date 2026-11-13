@@ -1,0 +1,16 @@
+{
+  "layout": "oxen-layout",
+  "title": "First payment to {{payee_name}}",
+  "subject": "First payment to {{payee_name}}",
+  "cta_text": "Review my devices",
+  "signature": "The Oxen Team.",
+  "cta_url": "",
+  "first_name": "",
+  "payee_name": "",
+  "account_masked": "",
+  "amount": "",
+  "symbol": "",
+  "initiator_name": "",
+  "date": "",
+  "recipient_email": ""
+}

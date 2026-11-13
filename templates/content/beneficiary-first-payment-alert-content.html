@@ -1,0 +1,248 @@
+<!--
+  A3 beneficiary-first-payment-alert (OP-1367, REQ-G3) - For use with oxen-layout.html. Rule `beneficiary.first_payment_alert`.
+
+  Security notice to the user who did the action (recipient = initiator), after it succeeded: neutral wording, the actor is the "By" row. Same structure as X05 crypto-withdrawal-new-address.
+  Backend fills: first_name, payee_name, account_masked, amount, symbol, initiator_name, date, cta_url ({CLIENT_PORTAL_URL}/settings, "Review my devices").
+  date is "dd MMM yyyy, HH:mm" in UTC; the template writes "UTC" after it (as X05).
+-->
+
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="left" style="padding: 24px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+            "
+            class="body-text"
+          >
+            Hello{{#first_name}} {{.}}{{/first_name}},
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="left" style="padding: 16px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+            "
+            class="body-text"
+          >
+            A first payment to a payee was sent from your account:
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<!-- Info panel: same markup as the account details card of account-currency-opened (task 5, 2026-11-06). Rows keep their own text and styling. -->
+<tr>
+<td style="padding: 16px 40px 0px 40px" class="mobile-padding">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #12131b; border: 1px solid #231e20; border-radius: 12px; background-image: linear-gradient(#12131b, #12131b);">
+<tr>
+<td style="padding: 24px">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
+            "
+            class="body-text"
+          >
+            Payee: <strong>{{payee_name}}</strong>
+          </p></div></div></td>
+</tr>
+<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
+            "
+            class="body-text"
+          >
+            Account: <strong>{{account_masked}}</strong>
+          </p></div></div></td>
+</tr>
+<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
+            "
+            class="body-text"
+          >
+            Amount: <strong>{{amount}} {{symbol}}</strong>
+          </p></div></div></td>
+</tr>
+<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
+            "
+            class="body-text"
+          >
+            By: <strong>{{initiator_name}}</strong>
+          </p></div></div></td>
+</tr>
+<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
+            "
+            class="body-text"
+          >
+            Date: <strong>{{date}} UTC</strong>
+          </p></div></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="left" style="padding: 16px 0 16px">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+            "
+            class="body-text"
+          >
+            If this wasn't you, remove your mobile device and contact us.
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<!-- CTA: review my devices (web portal Settings, Security) -->
+<tr>
+  <td align="center" style="padding: 0 40px 8px 40px" class="mobile-padding">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+      <tr>
+        <td bgcolor="#c8c8c8"
+          style="
+            padding: 12px 32px;
+            background-color: #c8c8c8;
+            background-image: linear-gradient(
+              135deg,
+              #e8e8e8 0%,
+              #c0c0c0 40%,
+              #e0e0e0 50%,
+              #a8a8a8 100%
+            );
+            border-radius: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow:
+              0 2px 8px rgba(0, 0, 0, 0.3),
+              inset 0 1px 0 rgba(255, 255, 255, 0.25);
+          "
+        >
+          <a
+            href="{{cta_url}}"
+            style="
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 16px;
+              font-weight: 600;
+              color: #000;
+              text-decoration: none;
+              display: inline-block;
+            "
+            class="cta-button"
+          >
+            {{cta_text}}
+          </a>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>

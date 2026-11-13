@@ -1,8 +1,9 @@
 <!--
   Withdrawal to a new address (X05) - For use with oxen-layout.html
 
-  Sent to the company Owners and Admins when the company withdraws to an address for the first time.
-  Backend fills: first_name, initiator_name, amount, symbol, network, address, date, cta_url.
+  Sent to the company Owners and Admins, and (OP-1367) the user who started it, when the company withdraws to an address for the first time.
+  Backend fills: first_name, initiator_name, amount, symbol, network, address, date, cta_url, devices_url
+  (devices_url = {CLIENT_PORTAL_URL}/settings, OP-1367; the "Not you? Review my devices" line hides while it is empty).
 -->
 
 <tr>
@@ -190,6 +191,40 @@
     </table>
   </td>
 </tr>
+
+<!-- OP-1367: second link to the device list (web portal Settings, Security). Hidden until the sender fills devices_url. -->
+{{#devices_url}}
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="left" style="padding: 0 0 16px">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+            "
+            class="body-text"
+          >
+            Not you? <a href="{{.}}" target="_blank" style="color: #c08b88; text-decoration: none"><span style="color: #c08b88">Review my devices</span></a>
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+{{/devices_url}}
 
 <!-- CTA: view the withdrawal in the web portal -->
 <tr>
