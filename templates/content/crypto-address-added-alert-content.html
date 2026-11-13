@@ -2,7 +2,7 @@
   A4 crypto-address-added-alert (OP-1367, REQ-G3) - For use with oxen-layout.html. Rule `crypto.address_added_alert`.
 
   Security notice to the user who did the action (recipient = initiator), after it succeeded: neutral wording, the actor is the "By" row. Same structure as X05 crypto-withdrawal-new-address.
-  Backend fills: first_name, address_label, address_short, network, symbol, initiator_name, date, cta_url ({CLIENT_PORTAL_URL}/settings, "Review my devices").
+  Backend fills: first_name, approval_status (be-b2b: translated "Pending approval" when the change awaits approval, else absent/empty: the Status row is hidden), address_label, address_short, network, symbol, initiator_name, date, cta_url ({CLIENT_PORTAL_URL}/settings, "Review my devices").
   date is "dd MMM yyyy, HH:mm" in UTC; the template writes "UTC" after it (as X05). symbol is optional: its row hides when empty.
 -->
 
@@ -183,6 +183,24 @@
             Date: <strong>{{date}} UTC</strong>
           </p></div></div></td>
 </tr>
+{{#approval_status}}<tr>
+<td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+              word-break: break-word;
+              overflow-wrap: anywhere;
+            "
+            class="body-text"
+          >
+            Status: <strong>{{.}}</strong>
+          </p></div></div></td>
+</tr>{{/approval_status}}
 </table>
 </td>
 </tr>

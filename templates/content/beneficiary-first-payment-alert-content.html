@@ -2,6 +2,7 @@
   A3 beneficiary-first-payment-alert (OP-1367, REQ-G3) - For use with oxen-layout.html. Rule `beneficiary.first_payment_alert`.
 
   Security notice to the user who did the action (recipient = initiator), after it succeeded: neutral wording, the actor is the "By" row. Same structure as X05 crypto-withdrawal-new-address.
+  account_masked is empty for a green contact (another Oxen client, no IBAN): the Account row is hidden.
   Backend fills: first_name, payee_name, account_masked, amount, symbol, initiator_name, date, cta_url ({CLIENT_PORTAL_URL}/settings, "Review my devices").
   date is "dd MMM yyyy, HH:mm" in UTC; the template writes "UTC" after it (as X05).
 -->
@@ -93,7 +94,7 @@
             Payee: <strong>{{payee_name}}</strong>
           </p></div></div></td>
 </tr>
-<tr>
+{{#account_masked}}<tr>
 <td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
               margin: 0;
@@ -108,9 +109,9 @@
             "
             class="body-text"
           >
-            Account: <strong>{{account_masked}}</strong>
+            Account: <strong>{{.}}</strong>
           </p></div></div></td>
-</tr>
+</tr>{{/account_masked}}
 <tr>
 <td align="left" style="padding: 0 0 12px 0"><div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
