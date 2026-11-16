@@ -6,7 +6,8 @@
   "title": "Your Oxen account opening is not finished",
   "subject": "Your Oxen account opening is not finished",
   "cta_text": "Continue my application",
-  "cta_url": "",
+  "resume_url": "",
   "steps_left_line": "",
-  "help_line": ""
+  "stage": "",
+  "is_d7": false
 }

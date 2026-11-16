@@ -1,11 +1,13 @@
 {
   "layout": "oxen-layout",
-  "title": "Finalisez l'ouverture de votre compte Oxen - Oxen",
-  "subject": "📝 Finalisez l'ouverture de votre compte Oxen",
-  "account_opening_message": "Vous avez commencé l'ouverture de votre compte Oxen Business mais n'avez pas terminé le processus.",
-  "cta_message": "👉 Cela ne prend que quelques minutes pour finaliser et accéder à toutes les fonctionnalités.",
-  "app_instruction_message": "Ouvre l'app Oxen pour finaliser l'ouverture de votre compte.",
   "signature": "L'équipe Oxen.",
   "first_name": "",
-  "recipient_email": ""
+  "recipient_email": "",
+  "title": "L'ouverture de votre compte Oxen n'est pas terminée",
+  "subject": "L'ouverture de votre compte Oxen n'est pas terminée",
+  "cta_text": "Continuer ma demande",
+  "resume_url": "",
+  "steps_left_line": "",
+  "stage": "",
+  "is_d7": false
 }

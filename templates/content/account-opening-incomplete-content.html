@@ -70,7 +70,7 @@
       width="100%"
     >
       <tr>
-        <td align="left" style="padding: 14px 0 0">
+        <td align="left" style="padding: 16px 0 0">
           <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
               margin: 0;
@@ -101,7 +101,7 @@
       width="100%"
     >
       <tr>
-        <td align="left" style="padding: 14px 0 0">
+        <td align="left" style="padding: 16px 0 0">
           <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
               margin: 0;
@@ -121,9 +121,8 @@
     </table>
   </td>
 </tr>
-
 {{/steps_left_line}}
-{{#help_line}}<tr>
+{{#is_d7}}<tr>
   <td style="padding: 0 40px 0 40px" class="mobile-padding">
     <table
       role="presentation"
@@ -133,7 +132,7 @@
       width="100%"
     >
       <tr>
-        <td align="left" style="padding: 14px 0 0">
+        <td align="left" style="padding: 16px 0 0">
           <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
               margin: 0;
@@ -146,16 +145,16 @@
             "
             class="body-text"
           >
-            {{.}}
+            If you need help with a document, write to us: we will guide you.
           </p></div></div>
         </td>
       </tr>
     </table>
   </td>
 </tr>
-{{/help_line}}<tr><td style="height:16px;line-height:16px;font-size:0">&nbsp;</td></tr>
+{{/is_d7}}
+<tr><td style="height:16px;line-height:16px;font-size:0">&nbsp;</td></tr>
 
-<!-- CTA: main button -->
 <tr>
   <td align="center" style="padding: 0 40px 8px 40px" class="mobile-padding">
     <table role="presentation" cellspacing="0" cellpadding="0" border="0">
@@ -179,7 +178,7 @@
           "
         >
           <a
-            href="{{cta_url}}"
+            href="{{resume_url}}"
             style="
               font-family: &quot;DM Sans&quot;, Arial, sans-serif;
               font-size: 16px;
@@ -190,7 +189,7 @@
             "
             class="cta-button"
           >
-            {{cta_text}}
+            {{#cta_text}}{{.}}{{/cta_text}}{{^cta_text}}Continue my application{{/cta_text}}
           </a>
         </td>
       </tr>

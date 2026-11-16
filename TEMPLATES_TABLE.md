@@ -8,7 +8,7 @@ This document lists all email templates with their aliases, mappings to the data
 |---|--------------|-------|-------------|-----------------------------------|
 | 1 | Account Closed | `account-closed` | `gn-b2b-account-closed-confirmation-en/fr` | `first_name` |
 | 2 | Account Opened | `account-opened` | `gn-b2b-account-opened-confirmation-en/fr` | `first_name`, `iban`, `bic`, `account_number`, `sort_code`, `bank_name`, `bank_address`, `currency`, `addressable_in` — sent with the Account Confirmation Letter PDF attached |
-| 3 | Account Opening Incomplete | `account-opening-incomplete` | `gn-b2b-onboarding-incomplete-en/fr` | `first_name` |
+| 3 | Account Opening Incomplete | `account-opening-incomplete` | `gn-b2b-onboarding-incomplete-en/fr` | `first_name`, `steps_left_line` ("" hides the line), `resume_url` (button href), `stage` (`d1`/`d3`/`d7`), `is_d7` (JSON boolean: true adds the document-help line; the string "false" or 0 would show it), `subject`/`title` per stage (D+1 "Your Oxen account opening is not finished", D+3 "Finish opening your Oxen account", D+7 "Your Oxen application is still open") |
 | 4 | Call Cancelled | `call-cancelled` | `gn-b2b-call-cancelled-en/fr` | `first_name` |
 | 5 | Call Confirmed | `call-confirmed` | `gn-b2b-call-booked-en/fr` | `first_name`, `appointment_date`, `appointment_time`, `location` |
 | 6 | Call Reminder | `call-reminder` | `gn-b2b-call-reminder-1h-en/fr` | `first_name`, `date`, `time`, `meeting_link` |
