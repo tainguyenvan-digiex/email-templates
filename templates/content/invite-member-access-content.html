@@ -1,15 +1,12 @@
 <!--
-  Invite Member Access Content - For use with shared-layout.html
-
-  This content file is designed to work with the shared-layout.html layout.
-  It contains the director invitation content.
-
-  The layout provides: logo, heading, greeting, social media promotion, footer, and unsubscribe sections.
+  M01 Team member invitation (OP-1159), oxen-layout. The layout adds the contact block and sign-off.
+  Backward compatible: prod still sends the old params (first_name as the full name, no company_name,
+  rep_role or expiry_date), so the intro falls back to wording without the company and the role, and
+  the validity sentence hides without expiry_date. Inside a section Postmark only sees the dot value,
+  so no other variable is referenced in one.
 -->
-
-<!-- Invitation From Message -->
 <tr>
-  <td style="padding: 20px 40px 20px 40px" class="mobile-padding">
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
     <table
       role="presentation"
       cellspacing="0"
@@ -18,54 +15,20 @@
       width="100%"
     >
       <tr>
-        <td align="left" style="padding: 0">
+        <td align="left" style="padding: 24px 0 0">
           <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
-              margin: 0 0 20px 0;
-              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
-              font-size: 18px;
-              font-weight: 600;
-              line-height: 22px;
-              color: #f5f0eb;
-              text-align: left;
-            "
-            class="body-text"
-          >
-            {{inviter_name}} {{invitation_prefix}} {{company_name}}
-            {{invitation_suffix}}
-          </p></div></div>
-        </td>
-      </tr>
-    </table>
-  </td>
-</tr>
-
-<!-- Good News Message -->
-<tr>
-  <td style="padding: 0 40px 20px 40px" class="mobile-padding">
-    <table
-      role="presentation"
-      cellspacing="0"
-      cellpadding="0"
-      border="0"
-      width="100%"
-    >
-      <tr>
-        <td align="left" style="padding: 0">
-          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
-            style="
-              margin: 0 0 20px 0;
+              margin: 0;
               font-family: &quot;DM Sans&quot;, Arial, sans-serif;
               font-size: 18px;
               font-weight: 500;
-              line-height: 22px;
+              line-height: 26px;
               color: #f5f0eb;
               text-align: left;
             "
             class="body-text"
           >
-            {{good_news_prefix}} {{inviter_name}}{{good_news_middle}}
-            {{company_name}} {{good_news_suffix}}
+            Hello{{#first_name}} {{.}}{{/first_name}},
           </p></div></div>
         </td>
       </tr>
@@ -73,9 +36,8 @@
   </td>
 </tr>
 
-<!-- Instruction -->
 <tr>
-  <td style="padding: 0px 40px 0px 40px" class="mobile-padding">
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
     <table
       role="presentation"
       cellspacing="0"
@@ -84,20 +46,20 @@
       width="100%"
     >
       <tr>
-        <td align="left" style="padding: 0">
+        <td align="left" style="padding: 16px 0 0">
           <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
             style="
-              margin: 0 0 20px 0;
+              margin: 0;
               font-family: &quot;DM Sans&quot;, Arial, sans-serif;
               font-size: 18px;
               font-weight: 500;
-              line-height: 22px;
+              line-height: 26px;
               color: #f5f0eb;
               text-align: left;
             "
             class="body-text"
           >
-            {{instruction}}
+            {{inviter_name}} invited you to join {{#company_name}}the Oxen account of {{.}}{{/company_name}}{{^company_name}}their team on Oxen{{/company_name}}{{#rep_role}} as {{.}}{{/rep_role}}.
           </p></div></div>
         </td>
       </tr>
@@ -105,12 +67,45 @@
   </td>
 </tr>
 
-<!-- CTA Button -->
+<tr>
+  <td style="padding: 0 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      <tr>
+        <td align="left" style="padding: 16px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+            "
+            class="body-text"
+          >
+            To accept, open the invitation and create your access.{{#expiry_date}} The invitation is valid until {{.}}.{{/expiry_date}}
+          </p></div></div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
+<tr><td style="height:16px;line-height:16px;font-size:0">&nbsp;</td></tr>
+
+<!-- CTA: main button -->
 <tr>
   <td align="center" style="padding: 0 40px 8px 40px" class="mobile-padding">
     <table role="presentation" cellspacing="0" cellpadding="0" border="0">
       <tr>
-        <td class="btn-diamond" bgcolor="#c8c8c8"
+        <td bgcolor="#c8c8c8"
           style="
             padding: 12px 32px;
             background-color: #c8c8c8;
