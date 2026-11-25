@@ -1,0 +1,10 @@
+{
+  "layout": "oxen-layout",
+  "title": "Changes to your Oxen fees from {{effective_date}}",
+  "subject": "Changes to your Oxen fees from {{effective_date}}",
+  "first_name": "",
+  "company_name": "",
+  "effective_date": "",
+  "fee_changes": [],
+  "recipient_email": ""
+}
