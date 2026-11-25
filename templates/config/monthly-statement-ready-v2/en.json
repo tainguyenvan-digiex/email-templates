@@ -1,0 +1,10 @@
+{
+  "layout": "oxen-layout",
+  "title": "Your {{month_year}} statement is ready",
+  "subject": "Your {{month_year}} statement is ready",
+  "first_name": "",
+  "company_name": "",
+  "month_year": "",
+  "statement_url": "",
+  "recipient_email": ""
+}

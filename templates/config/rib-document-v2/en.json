@@ -1,0 +1,10 @@
+{
+  "layout": "oxen-layout",
+  "title": "Your account details letter is ready",
+  "subject": "Your account details letter is ready",
+  "first_name": "",
+  "account_name": "",
+  "account_number": "",
+  "download_url": "",
+  "expiration_time": ""
+}

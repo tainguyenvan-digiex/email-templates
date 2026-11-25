@@ -1,0 +1,12 @@
+{
+  "layout": "oxen-layout",
+  "title": "Your Oxen activity in {{month_year}}",
+  "subject": "Your Oxen activity in {{month_year}}",
+  "first_name": "",
+  "company_name": "",
+  "month_year": "",
+  "metrics": [],
+  "receipts_line": "",
+  "cta_url": "",
+  "recipient_email": ""
+}

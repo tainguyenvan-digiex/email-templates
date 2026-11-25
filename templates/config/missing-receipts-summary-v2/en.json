@@ -1,0 +1,12 @@
+{
+  "layout": "oxen-layout",
+  "title": "{{transactions_count}} card payments without a receipt this week",
+  "subject": "{{transactions_count}} card payments without a receipt this week",
+  "first_name": "",
+  "start_date": "",
+  "end_date": "",
+  "transactions_count": "",
+  "expenses": [],
+  "cta_url": "",
+  "recipient_email": ""
+}

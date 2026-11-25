@@ -1,0 +1,11 @@
+{
+  "layout": "oxen-layout",
+  "title": "Reminder: receipt missing for {{amount}} at {{merchant}}",
+  "subject": "Reminder: receipt missing for {{amount}} at {{merchant}}",
+  "first_name": "",
+  "amount": "",
+  "merchant": "",
+  "date": "",
+  "cta_url": "",
+  "recipient_email": ""
+}

@@ -1,0 +1,10 @@
+{
+  "layout": "oxen-layout",
+  "title": "Your account statement for {{period_short}} is ready",
+  "subject": "Your account statement for {{period_short}} is ready",
+  "first_name": "",
+  "period": "",
+  "period_short": "",
+  "download_url": "",
+  "expiration_time": ""
+}

@@ -1,0 +1,13 @@
+{
+  "layout": "oxen-layout",
+  "title": "Relevé de transaction crypto prêt - Oxen",
+  "subject": "📄 Votre relevé de transaction crypto est prêt à être téléchargé",
+  "first_name": "",
+  "transaction_amount": "",
+  "transaction_currency": "",
+  "transaction_date": "",
+  "counterparty": "",
+  "tx_hash": "",
+  "download_url": "",
+  "expiration_time": ""
+}

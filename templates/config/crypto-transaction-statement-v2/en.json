@@ -1,0 +1,13 @@
+{
+  "layout": "oxen-layout",
+  "title": "Your statement for {{transaction_amount}} {{transaction_currency}} is ready",
+  "subject": "Your statement for {{transaction_amount}} {{transaction_currency}} is ready",
+  "first_name": "",
+  "transaction_amount": "",
+  "transaction_currency": "",
+  "transaction_date": "",
+  "counterparty": "",
+  "tx_hash": "",
+  "download_url": "",
+  "expiration_time": ""
+}

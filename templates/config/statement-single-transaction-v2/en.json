@@ -1,0 +1,12 @@
+{
+  "layout": "oxen-layout",
+  "title": "Your statement for the payment of {{transaction_amount}} is ready",
+  "subject": "Your statement for the payment of {{transaction_amount}} is ready",
+  "first_name": "",
+  "transaction_amount": "",
+  "transaction_date": "",
+  "counterparty": "",
+  "reference": "",
+  "download_url": "",
+  "expiration_time": ""
+}

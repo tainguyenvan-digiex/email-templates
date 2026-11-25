@@ -1,0 +1,12 @@
+{
+  "layout": "oxen-layout",
+  "title": "Relevé de transaction prêt - Oxen",
+  "subject": "📄 Votre relevé de transaction est prêt à être téléchargé",
+  "first_name": "",
+  "transaction_amount": "",
+  "transaction_date": "",
+  "counterparty": "",
+  "reference": "",
+  "download_url": "",
+  "expiration_time": ""
+}
