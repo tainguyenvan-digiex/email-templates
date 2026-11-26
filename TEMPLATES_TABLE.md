@@ -51,7 +51,7 @@ This document lists all email templates with their aliases, mappings to the data
 | 43 | Welcome (B2C) | `welcome` (b2c.json) | ❌ Not in DB | `first_name`, `book_call_url`, `faq_url` |
 | 44 | Expense Report | `expense-report` | `gn-b2b-expense-report-ready-en/fr` | `first_name`, `date_from`, `date_to`, `cta_url` |
 | 45 | Revenue Export (KPI, fiat/crypto) | `revenue-export` | ❌ Not in DB | `revenue_label` (`fiat` or `crypto`), `date_from`, `date_to`, `download_url`, `expiration_minutes` |
-| 46 | Visa Cards Live (announcement) | `visa-cards-live` | ❌ Not in DB | `first_name`, `cta_url` (portal Cards page, e.g. `https://portal-stg.oxen.finance/cards`; used by both CTA buttons) |
+| 46 | Visa Cards Live (K28 marketing) | `visa-cards-live` | ❌ Not in DB | `first_name`, `cta_url` (portal Cards page, e.g. `https://portal-stg.oxen.finance/cards`; button "Create my first card"). Marketing email: send with `messageStream` = `broadcast` (Postmark Broadcast stream, OP-1144). The body carries `{{{ pm:unsubscribe }}}` (link text `unsubscribe_text`), filled and suppressed by Postmark, not by the backend; the other copy, including `issuer_text`, is static config |
 | 47 | Access Created (M02) | `access-created` | ❌ Not in DB | `first_name`, `company_name`, `role_name`, `cta_url` (portal login URL) |
 | 48 | Access Removed (M03) | `access-removed` | ❌ Not in DB | `first_name`, `company_name`, `date` (UTC) |
 | 49 | Card Activated (K01) | `card-activated` | ❌ Not in DB (card-service, OP-1312) | `first_name`, `last4`, `cardholder_name` |
