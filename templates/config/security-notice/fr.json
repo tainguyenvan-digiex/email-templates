@@ -1,0 +1,9 @@
+{
+  "layout": "oxen-layout",
+  "title": "{{subject}}",
+  "subject": "{{subject}}",
+  "content_lines": [],
+  "recipient_email": "",
+  "security_notification": true,
+  "is_ops": false
+}

@@ -1,0 +1,36 @@
+<tr>
+  <td style="padding: 8px 40px 0 40px" class="mobile-padding">
+    <table
+      role="presentation"
+      cellspacing="0"
+      cellpadding="0"
+      border="0"
+      width="100%"
+    >
+      {{#each content_lines}}
+      <tr>
+        <td align="left" style="padding: 16px 0 0">
+          <div class="gmail-blend-screen"><div class="gmail-blend-difference"><p
+            style="
+              margin: 0;
+              font-family: &quot;DM Sans&quot;, Arial, sans-serif;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 26px;
+              color: #f5f0eb;
+              text-align: left;
+              white-space: pre-line;
+              word-break: break-word;
+              overflow-wrap: anywhere;
+            "
+            class="body-text"
+          >{{.}}</p></div></div>
+        </td>
+      </tr>
+      {{/each}}
+      <tr>
+        <td style="padding: 8px 0 0; font-size: 0; line-height: 0">&nbsp;</td>
+      </tr>
+    </table>
+  </td>
+</tr>
